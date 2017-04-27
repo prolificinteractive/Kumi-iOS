@@ -35,7 +35,7 @@
 		8EC737161EB28E560087846F /* LayerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370A1EB28E560087846F /* LayerTheme.swift */; };
 		8EC737171EB28E560087846F /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370B1EB28E560087846F /* Shadow.swift */; };
 		8EC737181EB28E560087846F /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370C1EB28E560087846F /* ShadowStyle.swift */; };
-		8EC737191EB28E560087846F /* SomethingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370D1EB28E560087846F /* SomethingLayer.swift */; };
+		8EC737191EB28E560087846F /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370D1EB28E560087846F /* CALayerExtension.swift */; };
 		8EC7371A1EB28E560087846F /* UIViewAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370E1EB28E560087846F /* UIViewAnimationStyle.swift */; };
 		8EC7371C1EB28E750087846F /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7371B1EB28E750087846F /* AppTheme.swift */; };
 		8EC7371E1EB28EF90087846F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7371D1EB28EF90087846F /* UIColor+Extensions.swift */; };
@@ -85,7 +85,7 @@
 		8EC7370A1EB28E560087846F /* LayerTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerTheme.swift; sourceTree = "<group>"; };
 		8EC7370B1EB28E560087846F /* Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		8EC7370C1EB28E560087846F /* ShadowStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowStyle.swift; sourceTree = "<group>"; };
-		8EC7370D1EB28E560087846F /* SomethingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomethingLayer.swift; sourceTree = "<group>"; };
+		8EC7370D1EB28E560087846F /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		8EC7370E1EB28E560087846F /* UIViewAnimationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimationStyle.swift; sourceTree = "<group>"; };
 		8EC7371B1EB28E750087846F /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		8EC7371D1EB28EF90087846F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 				8EC7370A1EB28E560087846F /* LayerTheme.swift */,
 				8EC7370B1EB28E560087846F /* Shadow.swift */,
 				8EC7370C1EB28E560087846F /* ShadowStyle.swift */,
-				8EC7370D1EB28E560087846F /* SomethingLayer.swift */,
+				8EC7370D1EB28E560087846F /* CALayerExtension.swift */,
 				8EC7370E1EB28E560087846F /* UIViewAnimationStyle.swift */,
 				8EC7371D1EB28EF90087846F /* UIColor+Extensions.swift */,
 			);
@@ -416,7 +416,7 @@
 				8EC736F81EB28E230087846F /* ProductAlphaValue.swift in Sources */,
 				8EC737131EB28E560087846F /* CABasicAnimationStyle.swift in Sources */,
 				8EC7370F1EB28E560087846F /* AlphaValue.swift in Sources */,
-				8EC737191EB28E560087846F /* SomethingLayer.swift in Sources */,
+				8EC737191EB28E560087846F /* CALayerExtension.swift in Sources */,
 				8EC7371E1EB28EF90087846F /* UIColor+Extensions.swift in Sources */,
 				8EC737001EB28E230087846F /* ProductLayerTheme.swift in Sources */,
 				8EC7371C1EB28E750087846F /* AppTheme.swift in Sources */,

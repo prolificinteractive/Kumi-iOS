@@ -9,7 +9,7 @@
 import UIKit
 
 /// Defines an interface for fonts used in the app.
-internal protocol Font {
+public protocol Font {
 
     // MARK: Fonts Definition
     /// Roman Ultra Light Font (Linotype Numbering System: 130) of specified size.

@@ -2,44 +2,45 @@
 //  ProductAlphaValue.swift
 //  Prolific Design System
 //
-//  Created by VIRAKRI JINANGKUL on 3/14/17.
-//  Copyright © 2017 VIRAKRI JINANGKUL. All rights reserved.
+//  Created by Prolific Interactive on 3/14/17.
+//  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
 import UIKit
-internal struct ProductAlphaValue: AlphaValue {
 
-    var opaque: CGFloat {
+public struct ProductAlphaValue: AlphaValue {
+
+    public var opaque: CGFloat {
         let value: CGFloat = 1
         return value
     }
 
-    var clear: CGFloat {
+    public var clear: CGFloat {
         let value: CGFloat = 0
         return value
     }
 
-    var normal: CGFloat {
+    public var normal: CGFloat {
         let value: CGFloat = 1 / 2
         return value
     }
 
-    var disabled: CGFloat {
+    public var disabled: CGFloat {
         let value: CGFloat = 1 / 5
         return value
     }
 
-    var darkOverlay: CGFloat {
+    public var darkOverlay: CGFloat {
         let value: CGFloat = 1 / 6
         return value
     }
 
-    var lightOverlay: CGFloat {
+    public var lightOverlay: CGFloat {
         let value: CGFloat = 2 / 3
         return value
     }
 
-    var shadow: CGFloat {
+    public var shadow: CGFloat {
         let value: CGFloat = 1 / 5
         return value
     }

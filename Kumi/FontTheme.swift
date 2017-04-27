@@ -4,7 +4,7 @@
 import Marker
 
 /// Text styles used throughout the app.
-internal protocol FontTheme {
+public protocol FontTheme {
 
     // MARK: - Generic Text Styles
     /// Display text style.

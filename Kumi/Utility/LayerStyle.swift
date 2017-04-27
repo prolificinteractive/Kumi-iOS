@@ -2,7 +2,7 @@
 //  LayerStyle.swift
 //  Prolific Design System
 //
-//  Created by VIRAKRI JINANGKUL on 3/14/17.
+//  Created by Prolific Interactive on 3/14/17.
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 

@@ -2,34 +2,35 @@
 //  productBorderWidth.swift
 //  Prolific Design System
 //
-//  Created by VIRAKRI JINANGKUL on 3/14/17.
-//  Copyright © 2017 VIRAKRI JINANGKUL. All rights reserved.
+//  Created by Prolific Interactive on 3/14/17.
+//  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
 import UIKit
-internal struct ProductBorderWidth: BorderWidth {
 
-    var none: CGFloat {
+public struct ProductBorderWidth: BorderWidth {
+
+    public var none: CGFloat {
         let value: CGFloat = 0
         return value
     }
 
-    var hairline: CGFloat {
+    public var hairline: CGFloat {
         let value: CGFloat = 1 / UIScreen.main.scale
         return value
     }
 
-    var thin: CGFloat {
+    public var thin: CGFloat {
         let value: CGFloat = 1
         return value
     }
 
-    var regular: CGFloat {
+    public var regular: CGFloat {
         let value: CGFloat = 2
         return value
     }
 
-    var thick: CGFloat {
+    public var thick: CGFloat {
         let value: CGFloat = 4
         return value
     }

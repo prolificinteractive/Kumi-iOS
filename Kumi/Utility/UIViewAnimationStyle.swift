@@ -2,8 +2,8 @@
 //  UIViewAnimationStyle.swift
 //  Prolific David Yurman Prototype
 //
-//  Created by VIRAKRI JINANGKUL on 3/26/17.
-//  Copyright © 2017 VIRAKRI JINANGKUL. All rights reserved.
+//  Created by Prolific Interactive on 3/26/17.
+//  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
 import UIKit

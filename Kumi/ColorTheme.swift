@@ -4,7 +4,7 @@
 import UIKit
 
 /// Color theme used throughout the app.
-internal protocol ColorTheme {
+public protocol ColorTheme {
 
     /// Primary color.
     var primary: UIColor { get }
