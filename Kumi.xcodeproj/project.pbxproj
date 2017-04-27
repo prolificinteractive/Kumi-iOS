@@ -7,9 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		739AA7F5FC65EFB5B8C836AC /* Pods_KumiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B214361F8486E6AC17A2EE /* Pods_KumiTests.framework */; };
 		8EC736D61EB28CB60087846F /* Kumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC736CC1EB28CB60087846F /* Kumi.framework */; };
 		8EC736DB1EB28CB70087846F /* KumiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736DA1EB28CB70087846F /* KumiTests.swift */; };
 		8EC736DD1EB28CB70087846F /* Kumi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC736CF1EB28CB60087846F /* Kumi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC736F41EB28E230087846F /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736E61EB28E230087846F /* ColorTheme.swift */; };
+		8EC736F51EB28E230087846F /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736E71EB28E230087846F /* Font.swift */; };
+		8EC736F61EB28E230087846F /* FontTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736E81EB28E230087846F /* FontTheme.swift */; };
+		8EC736F71EB28E230087846F /* PrimaryFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736E91EB28E230087846F /* PrimaryFont.swift */; };
+		8EC736F81EB28E230087846F /* ProductAlphaValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736EA1EB28E230087846F /* ProductAlphaValue.swift */; };
+		8EC736F91EB28E230087846F /* ProductAnimationDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736EB1EB28E230087846F /* ProductAnimationDuration.swift */; };
+		8EC736FA1EB28E230087846F /* ProductAnimationTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736EC1EB28E230087846F /* ProductAnimationTheme.swift */; };
+		8EC736FB1EB28E230087846F /* ProductBorderWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736ED1EB28E230087846F /* ProductBorderWidth.swift */; };
+		8EC736FC1EB28E230087846F /* ProductColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736EE1EB28E230087846F /* ProductColors.swift */; };
+		8EC736FD1EB28E230087846F /* ProductColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736EF1EB28E230087846F /* ProductColorTheme.swift */; };
+		8EC736FE1EB28E230087846F /* ProductCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736F01EB28E230087846F /* ProductCornerRadius.swift */; };
+		8EC736FF1EB28E230087846F /* ProductFontTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736F11EB28E230087846F /* ProductFontTheme.swift */; };
+		8EC737001EB28E230087846F /* ProductLayerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736F21EB28E230087846F /* ProductLayerTheme.swift */; };
+		8EC737011EB28E230087846F /* ProductShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736F31EB28E230087846F /* ProductShadow.swift */; };
+		8EC7370F1EB28E560087846F /* AlphaValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737031EB28E560087846F /* AlphaValue.swift */; };
+		8EC737101EB28E560087846F /* AnimationDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737041EB28E560087846F /* AnimationDuration.swift */; };
+		8EC737111EB28E560087846F /* AnimationTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737051EB28E560087846F /* AnimationTheme.swift */; };
+		8EC737121EB28E560087846F /* BorderWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737061EB28E560087846F /* BorderWidth.swift */; };
+		8EC737131EB28E560087846F /* CABasicAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737071EB28E560087846F /* CABasicAnimationStyle.swift */; };
+		8EC737141EB28E560087846F /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737081EB28E560087846F /* CornerRadius.swift */; };
+		8EC737151EB28E560087846F /* LayerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737091EB28E560087846F /* LayerStyle.swift */; };
+		8EC737161EB28E560087846F /* LayerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370A1EB28E560087846F /* LayerTheme.swift */; };
+		8EC737171EB28E560087846F /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370B1EB28E560087846F /* Shadow.swift */; };
+		8EC737181EB28E560087846F /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370C1EB28E560087846F /* ShadowStyle.swift */; };
+		8EC737191EB28E560087846F /* SomethingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370D1EB28E560087846F /* SomethingLayer.swift */; };
+		8EC7371A1EB28E560087846F /* UIViewAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7370E1EB28E560087846F /* UIViewAnimationStyle.swift */; };
+		8EC7371C1EB28E750087846F /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7371B1EB28E750087846F /* AppTheme.swift */; };
+		8EC7371E1EB28EF90087846F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7371D1EB28EF90087846F /* UIColor+Extensions.swift */; };
+		AB5CCF0B6D9EB7BB0CA58726 /* Pods_Kumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4CF5A50CF18BF86C3F0A5E /* Pods_Kumi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +53,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0251124A7024710B80B393FE /* Pods-KumiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0812025D0A8EE6C4D7589FE4 /* Pods-Kumi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kumi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kumi/Pods-Kumi.release.xcconfig"; sourceTree = "<group>"; };
 		8EC736CC1EB28CB60087846F /* Kumi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kumi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC736CF1EB28CB60087846F /* Kumi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kumi.h; sourceTree = "<group>"; };
 		8EC736D01EB28CB60087846F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC736D51EB28CB60087846F /* KumiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KumiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC736DA1EB28CB70087846F /* KumiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KumiTests.swift; sourceTree = "<group>"; };
 		8EC736DC1EB28CB70087846F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC736E61EB28E230087846F /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		8EC736E71EB28E230087846F /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		8EC736E81EB28E230087846F /* FontTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontTheme.swift; sourceTree = "<group>"; };
+		8EC736E91EB28E230087846F /* PrimaryFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryFont.swift; sourceTree = "<group>"; };
+		8EC736EA1EB28E230087846F /* ProductAlphaValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAlphaValue.swift; sourceTree = "<group>"; };
+		8EC736EB1EB28E230087846F /* ProductAnimationDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAnimationDuration.swift; sourceTree = "<group>"; };
+		8EC736EC1EB28E230087846F /* ProductAnimationTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAnimationTheme.swift; sourceTree = "<group>"; };
+		8EC736ED1EB28E230087846F /* ProductBorderWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductBorderWidth.swift; sourceTree = "<group>"; };
+		8EC736EE1EB28E230087846F /* ProductColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductColors.swift; sourceTree = "<group>"; };
+		8EC736EF1EB28E230087846F /* ProductColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductColorTheme.swift; sourceTree = "<group>"; };
+		8EC736F01EB28E230087846F /* ProductCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCornerRadius.swift; sourceTree = "<group>"; };
+		8EC736F11EB28E230087846F /* ProductFontTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFontTheme.swift; sourceTree = "<group>"; };
+		8EC736F21EB28E230087846F /* ProductLayerTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductLayerTheme.swift; sourceTree = "<group>"; };
+		8EC736F31EB28E230087846F /* ProductShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductShadow.swift; sourceTree = "<group>"; };
+		8EC737031EB28E560087846F /* AlphaValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaValue.swift; sourceTree = "<group>"; };
+		8EC737041EB28E560087846F /* AnimationDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationDuration.swift; sourceTree = "<group>"; };
+		8EC737051EB28E560087846F /* AnimationTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTheme.swift; sourceTree = "<group>"; };
+		8EC737061EB28E560087846F /* BorderWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderWidth.swift; sourceTree = "<group>"; };
+		8EC737071EB28E560087846F /* CABasicAnimationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABasicAnimationStyle.swift; sourceTree = "<group>"; };
+		8EC737081EB28E560087846F /* CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		8EC737091EB28E560087846F /* LayerStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerStyle.swift; sourceTree = "<group>"; };
+		8EC7370A1EB28E560087846F /* LayerTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerTheme.swift; sourceTree = "<group>"; };
+		8EC7370B1EB28E560087846F /* Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		8EC7370C1EB28E560087846F /* ShadowStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowStyle.swift; sourceTree = "<group>"; };
+		8EC7370D1EB28E560087846F /* SomethingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomethingLayer.swift; sourceTree = "<group>"; };
+		8EC7370E1EB28E560087846F /* UIViewAnimationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimationStyle.swift; sourceTree = "<group>"; };
+		8EC7371B1EB28E750087846F /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		8EC7371D1EB28EF90087846F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		96B214361F8486E6AC17A2EE /* Pods_KumiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2015E1EE26E9062197C1AA4 /* Pods-Kumi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kumi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kumi/Pods-Kumi.debug.xcconfig"; sourceTree = "<group>"; };
+		C969D8DFF51173F62569A900 /* Pods-KumiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests.release.xcconfig"; sourceTree = "<group>"; };
+		FC4CF5A50CF18BF86C3F0A5E /* Pods_Kumi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kumi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5CCF0B6D9EB7BB0CA58726 /* Pods_Kumi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +109,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC736D61EB28CB60087846F /* Kumi.framework in Frameworks */,
+				739AA7F5FC65EFB5B8C836AC /* Pods_KumiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F79F9AF9E8405D517EA61F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4CF5A50CF18BF86C3F0A5E /* Pods_Kumi.framework */,
+				96B214361F8486E6AC17A2EE /* Pods_KumiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8EC736C21EB28CB60087846F = {
 			isa = PBXGroup;
 			children = (
 				8EC736CE1EB28CB60087846F /* Kumi */,
 				8EC736D91EB28CB70087846F /* KumiTests */,
 				8EC736CD1EB28CB60087846F /* Products */,
+				F32D11083DE4B5B87424B869 /* Pods */,
+				5F79F9AF9E8405D517EA61F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +149,22 @@
 			isa = PBXGroup;
 			children = (
 				8EC736CF1EB28CB60087846F /* Kumi.h */,
+				8EC7371B1EB28E750087846F /* AppTheme.swift */,
+				8EC737021EB28E4F0087846F /* Utility */,
+				8EC736E61EB28E230087846F /* ColorTheme.swift */,
+				8EC736E71EB28E230087846F /* Font.swift */,
+				8EC736E81EB28E230087846F /* FontTheme.swift */,
+				8EC736E91EB28E230087846F /* PrimaryFont.swift */,
+				8EC736EA1EB28E230087846F /* ProductAlphaValue.swift */,
+				8EC736EB1EB28E230087846F /* ProductAnimationDuration.swift */,
+				8EC736EC1EB28E230087846F /* ProductAnimationTheme.swift */,
+				8EC736ED1EB28E230087846F /* ProductBorderWidth.swift */,
+				8EC736EE1EB28E230087846F /* ProductColors.swift */,
+				8EC736EF1EB28E230087846F /* ProductColorTheme.swift */,
+				8EC736F01EB28E230087846F /* ProductCornerRadius.swift */,
+				8EC736F11EB28E230087846F /* ProductFontTheme.swift */,
+				8EC736F21EB28E230087846F /* ProductLayerTheme.swift */,
+				8EC736F31EB28E230087846F /* ProductShadow.swift */,
 				8EC736D01EB28CB60087846F /* Info.plist */,
 			);
 			path = Kumi;
@@ -84,6 +177,37 @@
 				8EC736DC1EB28CB70087846F /* Info.plist */,
 			);
 			path = KumiTests;
+			sourceTree = "<group>";
+		};
+		8EC737021EB28E4F0087846F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8EC737031EB28E560087846F /* AlphaValue.swift */,
+				8EC737041EB28E560087846F /* AnimationDuration.swift */,
+				8EC737051EB28E560087846F /* AnimationTheme.swift */,
+				8EC737061EB28E560087846F /* BorderWidth.swift */,
+				8EC737071EB28E560087846F /* CABasicAnimationStyle.swift */,
+				8EC737081EB28E560087846F /* CornerRadius.swift */,
+				8EC737091EB28E560087846F /* LayerStyle.swift */,
+				8EC7370A1EB28E560087846F /* LayerTheme.swift */,
+				8EC7370B1EB28E560087846F /* Shadow.swift */,
+				8EC7370C1EB28E560087846F /* ShadowStyle.swift */,
+				8EC7370D1EB28E560087846F /* SomethingLayer.swift */,
+				8EC7370E1EB28E560087846F /* UIViewAnimationStyle.swift */,
+				8EC7371D1EB28EF90087846F /* UIColor+Extensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F32D11083DE4B5B87424B869 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2015E1EE26E9062197C1AA4 /* Pods-Kumi.debug.xcconfig */,
+				0812025D0A8EE6C4D7589FE4 /* Pods-Kumi.release.xcconfig */,
+				0251124A7024710B80B393FE /* Pods-KumiTests.debug.xcconfig */,
+				C969D8DFF51173F62569A900 /* Pods-KumiTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EC736E01EB28CB70087846F /* Build configuration list for PBXNativeTarget "Kumi" */;
 			buildPhases = (
+				585CBC04231949CD5625FC69 /* [CP] Check Pods Manifest.lock */,
 				8EC736C71EB28CB60087846F /* Sources */,
 				8EC736C81EB28CB60087846F /* Frameworks */,
 				8EC736C91EB28CB60087846F /* Headers */,
 				8EC736CA1EB28CB60087846F /* Resources */,
+				F68C48B0799D420181B3BF70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EC736E31EB28CB70087846F /* Build configuration list for PBXNativeTarget "KumiTests" */;
 			buildPhases = (
+				D8759F2CF40E51A495AC2621 /* [CP] Check Pods Manifest.lock */,
 				8EC736D11EB28CB60087846F /* Sources */,
 				8EC736D21EB28CB60087846F /* Frameworks */,
 				8EC736D31EB28CB60087846F /* Resources */,
+				C8DF7ABC0BCFF8F77D3A256F /* [CP] Embed Pods Frameworks */,
+				ED88623CA29617BB06C23BB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +278,7 @@
 					8EC736CB1EB28CB60087846F = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5ZZ7W4SB26;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					8EC736D41EB28CB60087846F = {
@@ -193,11 +323,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		585CBC04231949CD5625FC69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8DF7ABC0BCFF8F77D3A256F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8759F2CF40E51A495AC2621 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED88623CA29617BB06C23BB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F68C48B0799D420181B3BF70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kumi/Pods-Kumi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8EC736C71EB28CB60087846F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC737171EB28E560087846F /* Shadow.swift in Sources */,
+				8EC736FA1EB28E230087846F /* ProductAnimationTheme.swift in Sources */,
+				8EC736F51EB28E230087846F /* Font.swift in Sources */,
+				8EC737181EB28E560087846F /* ShadowStyle.swift in Sources */,
+				8EC737141EB28E560087846F /* CornerRadius.swift in Sources */,
+				8EC737161EB28E560087846F /* LayerTheme.swift in Sources */,
+				8EC736FB1EB28E230087846F /* ProductBorderWidth.swift in Sources */,
+				8EC736F81EB28E230087846F /* ProductAlphaValue.swift in Sources */,
+				8EC737131EB28E560087846F /* CABasicAnimationStyle.swift in Sources */,
+				8EC7370F1EB28E560087846F /* AlphaValue.swift in Sources */,
+				8EC737191EB28E560087846F /* SomethingLayer.swift in Sources */,
+				8EC7371E1EB28EF90087846F /* UIColor+Extensions.swift in Sources */,
+				8EC737001EB28E230087846F /* ProductLayerTheme.swift in Sources */,
+				8EC7371C1EB28E750087846F /* AppTheme.swift in Sources */,
+				8EC736FF1EB28E230087846F /* ProductFontTheme.swift in Sources */,
+				8EC7371A1EB28E560087846F /* UIViewAnimationStyle.swift in Sources */,
+				8EC736F61EB28E230087846F /* FontTheme.swift in Sources */,
+				8EC737151EB28E560087846F /* LayerStyle.swift in Sources */,
+				8EC737121EB28E560087846F /* BorderWidth.swift in Sources */,
+				8EC737101EB28E560087846F /* AnimationDuration.swift in Sources */,
+				8EC736FD1EB28E230087846F /* ProductColorTheme.swift in Sources */,
+				8EC736FC1EB28E230087846F /* ProductColors.swift in Sources */,
+				8EC736F41EB28E230087846F /* ColorTheme.swift in Sources */,
+				8EC736F91EB28E230087846F /* ProductAnimationDuration.swift in Sources */,
+				8EC737011EB28E230087846F /* ProductShadow.swift in Sources */,
+				8EC736FE1EB28E230087846F /* ProductCornerRadius.swift in Sources */,
+				8EC737111EB28E560087846F /* AnimationTheme.swift in Sources */,
+				8EC736F71EB28E230087846F /* PrimaryFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +559,9 @@
 		};
 		8EC736E11EB28CB70087846F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2015E1EE26E9062197C1AA4 /* Pods-Kumi.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
@@ -336,13 +574,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.Kumi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8EC736E21EB28CB70087846F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0812025D0A8EE6C4D7589FE4 /* Pods-Kumi.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
@@ -361,7 +602,9 @@
 		};
 		8EC736E41EB28CB70087846F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0251124A7024710B80B393FE /* Pods-KumiTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
 				INFOPLIST_FILE = KumiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -373,7 +616,9 @@
 		};
 		8EC736E51EB28CB70087846F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C969D8DFF51173F62569A900 /* Pods-KumiTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
 				INFOPLIST_FILE = KumiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +647,7 @@
 				8EC736E21EB28CB70087846F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EC736E31EB28CB70087846F /* Build configuration list for PBXNativeTarget "KumiTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +656,7 @@
 				8EC736E51EB28CB70087846F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
