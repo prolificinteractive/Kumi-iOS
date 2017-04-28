@@ -14,16 +14,16 @@ import UIKit
 public struct ShadowStyle {
 
     /// Font for displaying regular text.
-    public var shadowOpacity: Float
+    public let shadowOpacity: Float
 
     /// Font for displaying regular text.
-    public var shadowRadius: CGFloat
+    public let shadowRadius: CGFloat
 
     /// Font for displaying regular text.
-    public var shadowOffset: CGSize
+    public let shadowOffset: CGSize
 
     /// Font for displaying regular text.
-    public var shadowColor: CGColor?
+    public let shadowColor: CGColor?
 
     public init(shadowOpacity: Float = 1.0,
                 shadowRadius: CGFloat,
@@ -33,30 +33,6 @@ public struct ShadowStyle {
         self.shadowRadius = shadowRadius
         self.shadowOffset = shadowOffset
         self.shadowColor = shadowColor
-    }
-
-    public func withShadowOpacity(_ shadowOpacity: Float) -> ShadowStyle {
-        var shadowStyle = self
-        shadowStyle.shadowOpacity = shadowOpacity
-        return shadowStyle
-    }
-
-    public func withShadowRadius(_ shadowRadius: CGFloat) -> ShadowStyle {
-        var shadowStyle = self
-        shadowStyle.shadowRadius = shadowRadius
-        return shadowStyle
-    }
-
-    public func withShadowOffset(_ shadowOffset: CGSize) -> ShadowStyle {
-        var shadowStyle = self
-        shadowStyle.shadowOffset = shadowOffset
-        return shadowStyle
-    }
-
-    public func withsShadowColor(_ shadowColor: CGColor) -> ShadowStyle {
-        var shadowStyle = self
-        shadowStyle.shadowColor = shadowColor
-        return shadowStyle
     }
 
 }
