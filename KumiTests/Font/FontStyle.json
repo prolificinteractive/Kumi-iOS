@@ -1,0 +1,26 @@
+{
+  "fontFamily": "Helvetica",
+  "textSize": 18,
+  "fontWeight": {
+    "normal": "roman/regular",
+    "strong": "roman/bold",
+    "emphasis": "roman/heavy"
+  },
+  "color": {
+    "$ref": "#/theme/color/primary/normal"
+  },
+  "letterSpacing": 1,
+  "lineSpacing": 0,
+  "lineHeightMultiple": 1,
+  "minimumLineHeight": 0,
+  "maximumLineHeight": 0,
+  "paragraphSpacing": 0,
+  "paragraphSpacingBefore": 0,
+  "textAlign": "left",
+  "lineBreakMode": "by​Truncating​Tail",
+  "textTransform": "none",
+  "textDecorationLine": "none",
+  "textDecorationColor": {
+    "$ref": "#/theme/color/primary/normal"
+  }
+}
