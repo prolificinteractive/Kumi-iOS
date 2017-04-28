@@ -1,130 +1,131 @@
 //
-//  LayerTheme.swift
-//  Prolific Design System
+//  LayerTheme.Swift
+//  Kumi
 //
-//  Created by Prolific Interactive on 3/17/17.
+//  Created by Prolific Interactive on 3/14/17.
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
-public protocol LayerTheme {
+/// Kumi layer theme.
+public struct LayerTheme {
 
-    var none: LayerStyle { get }
+    let none: LayerStyle
 
     /// default Primary Layer style.
-    var defaultPrimaryLayerStyle: LayerStyle { get }
+    let defaultPrimaryLayerStyle: LayerStyle
 
     /// default Secondary Layer style.
-    var defaultSecondaryLayerStyle: LayerStyle { get }
+    let defaultSecondaryLayerStyle: LayerStyle
 
     /// default Tertiary Layer style.
-    var defaultTertiaryLayerStyle: LayerStyle { get }
+    let defaultTertiaryLayerStyle: LayerStyle
 
     /// row Primary Layer style.
-    var rowPrimaryLayerStyle: LayerStyle { get }
+    let rowPrimaryLayerStyle: LayerStyle
 
     /// row Primary HighlightedLayer style.
-    var rowPrimaryHighlightedLayerStyle: LayerStyle { get }
+    let rowPrimaryHighlightedLayerStyle: LayerStyle
 
     /// row Primary SelectedLayer style.
-    var rowPrimarySelectedLayerStyle: LayerStyle { get }
+    let rowPrimarySelectedLayerStyle: LayerStyle
 
     /// row Primary DisabledLayer style.
-    var rowPrimaryDisabledLayerStyle: LayerStyle { get }
+    let rowPrimaryDisabledLayerStyle: LayerStyle
 
     /// row Secondary Layer style.
-    var rowSecondaryLayerStyle: LayerStyle { get }
+    let rowSecondaryLayerStyle: LayerStyle
 
     /// row Secondary HighlightedLayer style.
-    var rowSecondaryHighlightedLayerStyle: LayerStyle { get }
+    let rowSecondaryHighlightedLayerStyle: LayerStyle
 
     /// row Secondary SelectedLayer style.
-    var rowSecondarySelectedLayerStyle: LayerStyle { get }
+    let rowSecondarySelectedLayerStyle: LayerStyle
 
     /// row Secondary DisabledLayer style.
-    var rowSecondaryDisabledLayerStyle: LayerStyle { get }
+    let rowSecondaryDisabledLayerStyle: LayerStyle
 
     /// row Tertiary Layer style.
-    var rowTertiaryLayerStyle: LayerStyle { get }
+    let rowTertiaryLayerStyle: LayerStyle
 
     /// row Tertiary HighlightedLayer style.
-    var rowTertiaryHighlightedLayerStyle: LayerStyle { get }
+    let rowTertiaryHighlightedLayerStyle: LayerStyle
 
     /// row Tertiary SelectedLayer style.
-    var rowTertiarySelectedLayerStyle: LayerStyle { get }
+    let rowTertiarySelectedLayerStyle: LayerStyle
 
     /// row Tertiary DisabledLayer style.
-    var rowTertiaryDisabledLayerStyle: LayerStyle { get }
+    let rowTertiaryDisabledLayerStyle: LayerStyle
 
     /// cell Primary Layer style.
-    var cellPrimaryLayerStyle: LayerStyle { get }
+    let cellPrimaryLayerStyle: LayerStyle
 
     /// cell Primary HighlightedLayer style.
-    var cellPrimaryHighlightedLayerStyle: LayerStyle { get }
+    let cellPrimaryHighlightedLayerStyle: LayerStyle
 
     /// cell Primary SelectedLayer style.
-    var cellPrimarySelectedLayerStyle: LayerStyle { get }
+    let cellPrimarySelectedLayerStyle: LayerStyle
 
     /// cell Primary DisabledLayer style.
-    var cellPrimaryDisabledLayerStyle: LayerStyle { get }
+    let cellPrimaryDisabledLayerStyle: LayerStyle
 
     /// cell Secondary Layer style.
-    var cellSecondaryLayerStyle: LayerStyle { get }
+    let cellSecondaryLayerStyle: LayerStyle
 
     /// cell Secondary HighlightedLayer style.
-    var cellSecondaryHighlightedLayerStyle: LayerStyle { get }
+    let cellSecondaryHighlightedLayerStyle: LayerStyle
 
     /// cell Secondary SelectedLayer style.
-    var cellSecondarySelectedLayerStyle: LayerStyle { get }
+    let cellSecondarySelectedLayerStyle: LayerStyle
 
     /// cell Secondary DisabledLayer style.
-    var cellSecondaryDisabledLayerStyle: LayerStyle { get }
+    let cellSecondaryDisabledLayerStyle: LayerStyle
 
     /// cell Tertiary Layer style.
-    var cellTertiaryLayerStyle: LayerStyle { get }
+    let cellTertiaryLayerStyle: LayerStyle
 
     /// cell Tertiary HighlightedLayer style.
-    var cellTertiaryHighlightedLayerStyle: LayerStyle { get }
+    let cellTertiaryHighlightedLayerStyle: LayerStyle
 
     /// cell Tertiary SelectedLayer style.
-    var cellTertiarySelectedLayerStyle: LayerStyle { get }
+    let cellTertiarySelectedLayerStyle: LayerStyle
 
     /// cell Tertiary DisabledLayer style.
-    var cellTertiaryDisabledLayerStyle: LayerStyle { get }
+    let cellTertiaryDisabledLayerStyle: LayerStyle
 
     /// button Primary Layer style.
-    var buttonPrimaryLayerStyle: LayerStyle { get }
+    let buttonPrimaryLayerStyle: LayerStyle
 
     /// button Primary HighlightedLayer style.
-    var buttonPrimaryHighlightedLayerStyle: LayerStyle { get }
+    let buttonPrimaryHighlightedLayerStyle: LayerStyle
 
     /// button Primary SelectedLayer style.
-    var buttonPrimarySelectedLayerStyle: LayerStyle { get }
+    let buttonPrimarySelectedLayerStyle: LayerStyle
 
     /// button Primary DisabledLayer style.
-    var buttonPrimaryDisabledLayerStyle: LayerStyle { get }
+    let buttonPrimaryDisabledLayerStyle: LayerStyle
 
     /// button Secondary Layer style.
-    var buttonSecondaryLayerStyle: LayerStyle { get }
+    let buttonSecondaryLayerStyle: LayerStyle
 
     /// button Secondary HighlightedLayer style.
-    var buttonSecondaryHighlightedLayerStyle: LayerStyle { get }
+    let buttonSecondaryHighlightedLayerStyle: LayerStyle
 
     /// button Secondary SelectedLayer style.
-    var buttonSecondarySelectedLayerStyle: LayerStyle { get }
+    let buttonSecondarySelectedLayerStyle: LayerStyle
 
     /// button Secondary DisabledLayer style.
-    var buttonSecondaryDisabledLayerStyle: LayerStyle { get }
+    let buttonSecondaryDisabledLayerStyle: LayerStyle
 
     /// button Tertiary Layer style.
-    var buttonTertiaryLayerStyle: LayerStyle { get }
+    let buttonTertiaryLayerStyle: LayerStyle
 
     /// button Tertiary HighlightedLayer style.
-    var buttonTertiaryHighlightedLayerStyle: LayerStyle { get }
+    let buttonTertiaryHighlightedLayerStyle: LayerStyle
 
     /// button Tertiary SelectedLayer style.
-    var buttonTertiarySelectedLayerStyle: LayerStyle { get }
+    let buttonTertiarySelectedLayerStyle: LayerStyle
 
     /// button Tertiary DisabledLayer style.
-    var buttonTertiaryDisabledLayerStyle: LayerStyle { get }
+    let buttonTertiaryDisabledLayerStyle: LayerStyle
 
 }

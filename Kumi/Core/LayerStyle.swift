@@ -1,6 +1,6 @@
 //
 //  LayerStyle.swift
-//  Prolific Design System
+//  Kumi
 //
 //  Created by Prolific Interactive on 3/14/17.
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
@@ -8,9 +8,7 @@
 
 import UIKit
 
-/**
- *  Encapsulates style information to be applied when displaying or animating CALayer.
- */
+/// Kumi layer style to encapsulate style information to be applied when displaying or animating CALayer.
 public struct LayerStyle {
 
     // MARK: - Properties

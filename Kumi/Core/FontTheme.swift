@@ -1,110 +1,117 @@
-//  Copyright © 2016 Prolific Interactive. All rights reserved.
+//
+//  FontTheme.Swift
+//  Kumi
+//
+//  Created by Prolific Interactive on 3/14/17.
+//  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
 import Marker
 
 /// Text styles used throughout the app.
-public protocol FontTheme {
+public struct FontTheme {
 
     // MARK: - Generic Text Styles
+
     /// Display text style.
-    var displayTextStyle: TextStyle { get }
+    let displayTextStyle: TextStyle
 
     /// Display Large text style.
-    var displayLargeTextStyle: TextStyle { get }
+    let displayLargeTextStyle: TextStyle
 
     /// Display Small text style.
-    var displaySmallTextStyle: TextStyle { get }
+    let displaySmallTextStyle: TextStyle
 
     /// Headline 1 text style.
-    var headline1TextStyle: TextStyle { get }
+    let headline1TextStyle: TextStyle
 
     /// Headline 2 text style.
-    var headline2TextStyle: TextStyle { get }
+    let headline2TextStyle: TextStyle
 
     /// Headline 3 text style.
-    var headline3TextStyle: TextStyle { get }
+    let headline3TextStyle: TextStyle
 
     /// Headline 4 text style.
-    var headline4TextStyle: TextStyle { get }
+    let headline4TextStyle: TextStyle
 
     /// Headline 5 text style.
-    var headline5TextStyle: TextStyle { get }
+    let headline5TextStyle: TextStyle
 
     /// Headline 6 text style.
-    var headline6TextStyle: TextStyle { get }
+    let headline6TextStyle: TextStyle
 
     /// Sub-headline text style.
-    var subHeadlineTextStyle: TextStyle { get }
+    let subHeadlineTextStyle: TextStyle
 
     /// Sub-headline Large text style.
-    var subHeadlineLargeTextStyle: TextStyle { get }
+    let subHeadlineLargeTextStyle: TextStyle
 
     /// Sub-headline Small text style.
-    var subHeadlineSmallTextStyle: TextStyle { get }
+    let subHeadlineSmallTextStyle: TextStyle
 
     /// Body text style.
-    var bodyTextStyle: TextStyle { get }
+    let bodyTextStyle: TextStyle
 
     /// Body Large text style.
-    var bodyLargeTextStyle: TextStyle { get }
+    let bodyLargeTextStyle: TextStyle
 
     /// Body Small text style.
-    var bodySmallTextStyle: TextStyle { get }
+    let bodySmallTextStyle: TextStyle
 
     /// Caption text style.
-    var captionTextStyle: TextStyle { get }
+    let captionTextStyle: TextStyle
 
     /// Caption Large text style.
-    var captionLargeTextStyle: TextStyle { get }
+    let captionLargeTextStyle: TextStyle
 
     /// Caption Small text style.
-    var captionSmallTextStyle: TextStyle { get }
+    let captionSmallTextStyle: TextStyle
 
     // MARK: - Element-related Text Styles
+
     /// Button Title text style.
-    var buttonTitleTextStyle: TextStyle { get }
+    let buttonTitleTextStyle: TextStyle
 
     /// Button Title Large text style.
-    var buttonTitleLargeTextStyle: TextStyle { get }
+    let buttonTitleLargeTextStyle: TextStyle
 
     /// Button Title Small text style.
-    var buttonTitleSmallTextStyle: TextStyle { get }
+    let buttonTitleSmallTextStyle: TextStyle
 
     /// Button Title Floating text style.
-    var buttonFloatingTitleTextStyle: TextStyle { get }
+    let buttonFloatingTitleTextStyle: TextStyle
 
     /// Button Title Floating Large text style.
-    var buttonFloatingTitleLargeTextStyle: TextStyle { get }
+    let buttonFloatingTitleLargeTextStyle: TextStyle
 
     /// Button Title Floating Small text style.
-    var buttonFloatingTitleSmallTextStyle: TextStyle { get }
+    let buttonFloatingTitleSmallTextStyle: TextStyle
 
     /// Top Item Prompt text style.
-    var topItemPromptTextStyle: TextStyle { get }
+    let topItemPromptTextStyle: TextStyle
 
     /// Top Item Title text style.
-    var topItemTitleTextStyle: TextStyle { get }
+    let topItemTitleTextStyle: TextStyle
 
     /// Top Item Button Item text style.
-    var topItemButtonItemTextStyle: TextStyle { get }
+    let topItemButtonItemTextStyle: TextStyle
 
     /// Tab Bar Item Title text style.
-    var tabBarItemTitleTextStyle: TextStyle { get }
+    let tabBarItemTitleTextStyle: TextStyle
 
     /// Tab Bar Item Badge text style.
-    var tabBarItemBadgeTextStyle: TextStyle { get }
+    let tabBarItemBadgeTextStyle: TextStyle
 
     /// Segmented Title text style.
-    var segmentedTitleTextStyle: TextStyle { get }
+    let segmentedTitleTextStyle: TextStyle
 
     /// Text Field Title text style.
-    var textFieldTitleTextStyle: TextStyle { get }
+    let textFieldTitleTextStyle: TextStyle
 
     /// Text Field Title Large text style.
-    var textFieldTitleLargeTextStyle: TextStyle { get }
+    let textFieldTitleLargeTextStyle: TextStyle
 
     /// Text Field Title Small text style.
-    var textFieldTitleSmallTextStyle: TextStyle { get }
+    let textFieldTitleSmallTextStyle: TextStyle
 
 }

@@ -1,6 +1,6 @@
 //
-//  ShadowStyle.swift
-//  Prolific Design System
+//  ShadowStyle.Swift
+//  Kumi
 //
 //  Created by Prolific Interactive on 3/14/17.
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
@@ -12,8 +12,6 @@ import UIKit
  *  Encapsulates style information to be applied when displaying or animating CALayer's shadow.
  */
 public struct ShadowStyle {
-
-    // MARK: - Properties
 
     /// Font for displaying regular text.
     public var shadowOpacity: Float

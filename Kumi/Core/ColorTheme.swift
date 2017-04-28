@@ -1,117 +1,122 @@
-//  Copyright © 2016 Prolific Interactive. All rights reserved.
+//
+//  ColorTheme.Swift
+//  Kumi
+//
+//  Created by Prolific Interactive on 3/14/17.
+//  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
 import UIKit
 
-/// Color theme used throughout the app.
-public protocol ColorTheme {
+/// Kumi color theme.
+public struct ColorTheme {
 
     /// Primary color.
-    var primary: UIColor { get }
+    let primary: UIColor
 
     /// Primary Muted color.
-    var primaryMuted: UIColor { get }
+    let primaryMuted: UIColor
 
     /// Primary Faded color.
-    var primaryFaded: UIColor { get }
+    let primaryFaded: UIColor
 
     /// Secondary color.
-    var secondary: UIColor { get }
+    let secondary: UIColor
 
     /// Secondary Muted color.
-    var secondaryMuted: UIColor { get }
+    let secondaryMuted: UIColor
 
     /// Secondary Faded color.
-    var secondaryFaded: UIColor { get }
+    let secondaryFaded: UIColor
 
     /// Tertiary color.
-    var tertiary: UIColor { get }
+    let tertiary: UIColor
 
     /// Tertiary Muted color.
-    var tertiaryMuted: UIColor { get }
+    let tertiaryMuted: UIColor
 
     /// Tertiary Faded color.
-    var tertiaryFaded: UIColor { get }
+    let tertiaryFaded: UIColor
 
     /// Invert Primary color.
-    var invertPrimary: UIColor { get }
+    let invertPrimary: UIColor
 
     /// Invert Primary Muted color.
-    var invertPrimaryMuted: UIColor { get }
+    let invertPrimaryMuted: UIColor
 
     /// Invert Primary Faded color.
-    var invertPrimaryFaded: UIColor { get }
+    let invertPrimaryFaded: UIColor
 
     /// Invert Secondary color.
-    var invertSecondary: UIColor { get }
+    let invertSecondary: UIColor
 
     /// Invert Secondary Muted color.
-    var invertSecondaryMuted: UIColor { get }
+    let invertSecondaryMuted: UIColor
 
     /// Invert Secondary Faded color.
-    var invertSecondaryFaded: UIColor { get }
+    let invertSecondaryFaded: UIColor
 
     /// Invert Tertiary color.
-    var invertTertiary: UIColor { get }
+    let invertTertiary: UIColor
 
     /// Invert Tertiary Muted color.
-    var invertTertiaryMuted: UIColor { get }
+    let invertTertiaryMuted: UIColor
 
     /// Invert Tertiary Faded color.
-    var invertTertiaryFaded: UIColor { get }
+    let invertTertiaryFaded: UIColor
 
     /// Emphasis Primary color.
-    var emphasisPrimary: UIColor { get }
+    let emphasisPrimary: UIColor
 
     /// Emphasis Primary Muted color.
-    var emphasisPrimaryMuted: UIColor { get }
+    let emphasisPrimaryMuted: UIColor
 
     /// Emphasis Primary Faded color.
-    var emphasisPrimaryFaded: UIColor { get }
+    let emphasisPrimaryFaded: UIColor
 
     /// Emphasis Secondary color.
-    var emphasisSecondary: UIColor { get }
+    let emphasisSecondary: UIColor
 
     /// Emphasis Secondary Muted color.
-    var emphasisSecondaryMuted: UIColor { get }
+    let emphasisSecondaryMuted: UIColor
 
     /// Emphasis Secondary Faded color.
-    var emphasisSecondaryFaded: UIColor { get }
+    let emphasisSecondaryFaded: UIColor
 
     /// Emphasis Tertiary color.
-    var emphasisTertiary: UIColor { get }
+    let emphasisTertiary: UIColor
 
     /// Emphasis Tertiary Muted color.
-    var emphasisTertiaryMuted: UIColor { get }
+    let emphasisTertiaryMuted: UIColor
 
     /// Emphasis Tertiary Faded color.
-    var emphasisTertiaryFaded: UIColor { get }
+    let emphasisTertiaryFaded: UIColor
 
     /// Grayout Primary color.
-    var grayoutPrimary: UIColor { get }
+    let grayoutPrimary: UIColor
 
     /// Grayout Secondary color.
-    var grayoutSecondary: UIColor { get }
+    let grayoutSecondary: UIColor
 
     /// Grayout Tertiary color.
-    var grayoutTertiary: UIColor { get }
+    let grayoutTertiary: UIColor
 
     /// Error Primary color.
-    var errorPrimary: UIColor { get }
+    let errorPrimary: UIColor
 
     /// Error Secondary color.
-    var errorSecondary: UIColor { get }
+    let errorSecondary: UIColor
 
     /// Error Tertiary color.
-    var errorTertiary: UIColor { get }
+    let errorTertiary: UIColor
 
     /// Overlay Primary color.
-    var overlayPrimary: UIColor { get }
+    let overlayPrimary: UIColor
 
     /// Overlay Secondary color.
-    var overlaySecondary: UIColor { get }
+    let overlaySecondary: UIColor
 
     /// Overlay Tertiary color.
-    var overlayTertiary: UIColor { get }
+    let overlayTertiary: UIColor
 
 }

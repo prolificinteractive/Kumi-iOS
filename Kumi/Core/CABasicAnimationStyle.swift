@@ -1,6 +1,6 @@
 //
-//  CABasicAnimationStyle.swift
-//  Prolific Design System
+//  CABasicAnimationStyle.Swift
+//  Kumi
 //
 //  Created by Prolific Interactive on 3/14/17.
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
@@ -8,9 +8,7 @@
 
 import UIKit
 
-/**
- *  Encapsulates animation style information to be applied when animating CALayer.
- */
+/// Kumi CALayer animation style that encapsulates animation style information to be applied when animating CALayer.
 public struct CABasicAnimationStyle {
 
     public var duration: TimeInterval
