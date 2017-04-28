@@ -9,36 +9,7 @@
 import Foundation
 import Marker
 
-/*
- {
- "fontFamily": "Helvetica",
- "textSize": 18,
- "fontWeight": {
- "normal": "roman/regular",
- "strong": "roman/bold",
- "emphasis": "roman/heavy"
- },
- "color": {
- "$ref": "#/theme/color/primary/normal"
- },
- "letterSpacing": 1,
- "lineSpacing": 0,
- "lineHeightMultiple": 1,
- "minimumLineHeight": 0,
- "maximumLineHeight": 0,
- "paragraphSpacing": 0,
- "paragraphSpacingBefore": 0,
- "textAlign": "left",
- "lineBreakMode": "by​Truncating​Tail",
- "textTransform": "none",
- "textDecorationLine": "none",
- "textDecorationColor": {
- "$ref": "#/theme/color/primary/normal"
- }
- }
- */
-
-extension TextTransform {
+private extension TextTransform {
 
     init(string: String) {
         switch string {
@@ -52,6 +23,46 @@ extension TextTransform {
             self = .capitalized
         default:
             self = .none
+        }
+    }
+
+}
+
+private extension NSTextAlignment {
+
+    static func fromString(string: String) -> NSTextAlignment? {
+        switch string {
+        case "left":
+            return NSTextAlignment.left
+        case "center":
+            return NSTextAlignment.center
+        case "right":
+            return NSTextAlignment.right
+        default:
+            return nil
+        }
+    }
+
+}
+
+private extension NSLineBreakMode {
+
+    static func fromString(string: String) -> NSLineBreakMode? {
+        switch string {
+        case "byWordWrapping":
+            return NSLineBreakMode.byWordWrapping
+        case "byCharWrapping":
+            return NSLineBreakMode.byCharWrapping
+        case "byClipping":
+            return NSLineBreakMode.byClipping
+        case "byTruncatingHead":
+            return NSLineBreakMode.byTruncatingHead
+        case "by​Truncating​Tail":
+            return NSLineBreakMode.byTruncatingTail
+        case "byTruncatingMiddle":
+            return NSLineBreakMode.byTruncatingMiddle
+        default:
+            return nil
         }
     }
 
@@ -71,6 +82,7 @@ extension TextStyle {
 
         var emFont: UIFont?
         var strongFont: UIFont?
+        // TODO: How do we get the color information from the JSON?
         var textColor: UIColor?
         var characterSpacing: CGFloat?
         var lineSpacing: CGFloat?
@@ -95,6 +107,36 @@ extension TextStyle {
 
         if let spacing = json["lineSpacing"] as? CGFloat {
             lineSpacing = spacing
+        }
+
+        if let lineHeight = json["lineHeightMultiple"] as? CGFloat {
+            lineHeightMultiple = lineHeight
+        }
+
+        if let minLineHeight = json["minimumLineHeight"] as? CGFloat {
+            minimumLineHeight = minLineHeight
+        }
+
+        if let maxLineHeight = json["maximumLineHeight"] as? CGFloat {
+            maximumLineHeight = maxLineHeight
+        }
+
+        if let paragraphSpace = json["paragraphSpacing"] as? CGFloat {
+            paragraphSpacing = paragraphSpace
+        }
+
+        if let paragraphSpaceBefore = json["paragraphSpacingBefore"] as? CGFloat {
+            paragraphSpacingBefore = paragraphSpaceBefore
+        }
+
+        if let textAlignmentString = json["textAlign"] as? String,
+            let textAlign = NSTextAlignment.fromString(string: textAlignmentString) {
+            textAlignment = textAlign
+        }
+
+        if let lineBreakModeString = json["lineBreakMode"] as? String,
+            let lineBrkMode = NSLineBreakMode.fromString(string: lineBreakModeString) {
+            lineBreakMode = lineBrkMode
         }
 
         if let transform = json["textTransform"] as? String {

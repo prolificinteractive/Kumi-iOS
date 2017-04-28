@@ -11,6 +11,12 @@ import UIKit
 /// Defines an interface for fonts used in the app.
 public struct ShadowTheme {
 
+    let none: ShadowStyle
+    let primary: ShadowStyle
+    let secondary: ShadowStyle
+    let tertiary: ShadowStyle
+
+    // TODO: Figure out what the implementation should be based on the JSON
     func by(elevation: CGFloat) -> ShadowStyle {
         let shadowRadius = elevation * 1.5
         let shadowOffset = CGSize(width: 0, height: elevation)
@@ -19,13 +25,5 @@ public struct ShadowTheme {
                            shadowRadius: shadowRadius,
                            shadowOffset: shadowOffset)
     }
-
-    let none: ShadowStyle
-
-    let primary: ShadowStyle
-
-    let secondary: ShadowStyle
-
-    let tertiary: ShadowStyle
 
 }

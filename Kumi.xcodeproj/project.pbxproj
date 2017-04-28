@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		739AA7F5FC65EFB5B8C836AC /* Pods_KumiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B214361F8486E6AC17A2EE /* Pods_KumiTests.framework */; };
 		8EC736D61EB28CB60087846F /* Kumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC736CC1EB28CB60087846F /* Kumi.framework */; };
-		8EC736DB1EB28CB70087846F /* KumiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC736DA1EB28CB70087846F /* KumiTests.swift */; };
 		8EC736DD1EB28CB70087846F /* Kumi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC736CF1EB28CB60087846F /* Kumi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EC737241EB291C70087846F /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737201EB291C70087846F /* ColorTheme.swift */; };
 		8EC737261EB291C70087846F /* FontTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737221EB291C70087846F /* FontTheme.swift */; };
@@ -37,6 +36,8 @@
 		8EC7377A1EB3AB360087846F /* TextStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737791EB3AB360087846F /* TextStyleTests.swift */; };
 		8EC7377C1EB3AC6D0087846F /* FontThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7377B1EB3AC6D0087846F /* FontThemeTests.swift */; };
 		8EC7377E1EB3ACCE0087846F /* Fonts.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7377D1EB3ACCE0087846F /* Fonts.json */; };
+		8EC737811EB3B9D20087846F /* Theme.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EC737801EB3B9D20087846F /* Theme.json */; };
+		8EC737831EB3B9DB0087846F /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737821EB3B9DB0087846F /* ThemeTests.swift */; };
 		AB5CCF0B6D9EB7BB0CA58726 /* Pods_Kumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4CF5A50CF18BF86C3F0A5E /* Pods_Kumi.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +58,6 @@
 		8EC736CF1EB28CB60087846F /* Kumi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kumi.h; sourceTree = "<group>"; };
 		8EC736D01EB28CB60087846F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC736D51EB28CB60087846F /* KumiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KumiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EC736DA1EB28CB70087846F /* KumiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KumiTests.swift; sourceTree = "<group>"; };
 		8EC736DC1EB28CB70087846F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC737201EB291C70087846F /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		8EC737221EB291C70087846F /* FontTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontTheme.swift; sourceTree = "<group>"; };
@@ -85,6 +85,8 @@
 		8EC737791EB3AB360087846F /* TextStyleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyleTests.swift; sourceTree = "<group>"; };
 		8EC7377B1EB3AC6D0087846F /* FontThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontThemeTests.swift; sourceTree = "<group>"; };
 		8EC7377D1EB3ACCE0087846F /* Fonts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fonts.json; sourceTree = "<group>"; };
+		8EC737801EB3B9D20087846F /* Theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theme.json; sourceTree = "<group>"; };
+		8EC737821EB3B9DB0087846F /* ThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
 		96B214361F8486E6AC17A2EE /* Pods_KumiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2015E1EE26E9062197C1AA4 /* Pods-Kumi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kumi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kumi/Pods-Kumi.debug.xcconfig"; sourceTree = "<group>"; };
 		C969D8DFF51173F62569A900 /* Pods-KumiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,9 +156,9 @@
 		8EC736D91EB28CB70087846F /* KumiTests */ = {
 			isa = PBXGroup;
 			children = (
-				8EC736DA1EB28CB70087846F /* KumiTests.swift */,
 				8EC7376F1EB3A02A0087846F /* Color */,
 				8EC737761EB3AAEC0087846F /* Font */,
+				8EC7377F1EB3B9D20087846F /* Theme */,
 				8EC7376C1EB39F690087846F /* Utility */,
 				8EC736DC1EB28CB70087846F /* Info.plist */,
 			);
@@ -223,6 +225,15 @@
 				8EC7377B1EB3AC6D0087846F /* FontThemeTests.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		8EC7377F1EB3B9D20087846F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				8EC737801EB3B9D20087846F /* Theme.json */,
+				8EC737821EB3B9DB0087846F /* ThemeTests.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		F32D11083DE4B5B87424B869 /* Pods */ = {
@@ -345,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC7377E1EB3ACCE0087846F /* Fonts.json in Resources */,
+				8EC737811EB3B9D20087846F /* Theme.json in Resources */,
 				8EC737781EB3AB280087846F /* FontStyle.json in Resources */,
 				8EC737731EB3A1790087846F /* Colors.json in Resources */,
 			);
@@ -464,8 +476,8 @@
 				8EC7377A1EB3AB360087846F /* TextStyleTests.swift in Sources */,
 				8EC737711EB3A0330087846F /* ColorThemeTests.swift in Sources */,
 				8EC7377C1EB3AC6D0087846F /* FontThemeTests.swift in Sources */,
-				8EC736DB1EB28CB70087846F /* KumiTests.swift in Sources */,
 				8EC7376E1EB39FA40087846F /* JSONHelper.swift in Sources */,
+				8EC737831EB3B9DB0087846F /* ThemeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

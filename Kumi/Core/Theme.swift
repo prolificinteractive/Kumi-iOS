@@ -12,7 +12,7 @@ public typealias JSON = [String: Any]
 
 public struct Theme {
     let colorTheme: ColorTheme
-    //    let fontTheme =  FontTheme()
+    let fontTheme: FontTheme
     //    let layerTheme = LayerTheme()
     //    let animationTheme = AnimationTheme()
 
@@ -21,15 +21,18 @@ public struct Theme {
             return nil
         }
 
-        guard let colorJSON = themeJSON["color"] as? JSON else {
+        guard let colorJSON = themeJSON["color"] as? JSON,
+        let colorTheme = ColorTheme(json: colorJSON) else {
             return nil
         }
 
-        guard let colorTheme = ColorTheme(json: colorJSON) else {
+        guard let fontJSON = themeJSON["font"] as? JSON,
+            let fontTheme = FontTheme(json: fontJSON) else {
             return nil
         }
 
         self.colorTheme = colorTheme
+        self.fontTheme = fontTheme
     }
 
 }

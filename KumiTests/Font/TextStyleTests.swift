@@ -36,6 +36,13 @@ class TextStyleTests: XCTestCase {
         XCTAssertNotNil(textStyle.font)
         XCTAssertEqual(textStyle.characterSpacing, 1.0)
         XCTAssertEqual(textStyle.lineSpacing, 0.0)
+        XCTAssertEqual(textStyle.lineHeightMultiple, 1.0)
+        XCTAssertEqual(textStyle.minimumLineHeight, 10.0)
+        XCTAssertEqual(textStyle.maximumLineHeight, 25.0)
+        XCTAssertEqual(textStyle.paragraphSpacing, 12.0)
+        XCTAssertEqual(textStyle.paragraphSpacingBefore, 3.0)
+        XCTAssertEqual(textStyle.textAlignment, .left)
+        XCTAssertEqual(textStyle.lineBreakMode, .byTruncatingTail)
     }
     
 }
