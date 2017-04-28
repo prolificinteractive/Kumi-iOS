@@ -12,111 +12,197 @@ import UIKit
 public struct ColorTheme {
 
     /// Primary color.
-    let primary: UIColor
+    var primary: UIColor?
 
     /// Primary Muted color.
-    let primaryMuted: UIColor
+    var primaryMuted: UIColor?
 
     /// Primary Faded color.
-    let primaryFaded: UIColor
+    var primaryFaded: UIColor?
 
     /// Secondary color.
-    let secondary: UIColor
+    var secondary: UIColor?
 
     /// Secondary Muted color.
-    let secondaryMuted: UIColor
+    var secondaryMuted: UIColor?
 
     /// Secondary Faded color.
-    let secondaryFaded: UIColor
+    var secondaryFaded: UIColor?
 
     /// Tertiary color.
-    let tertiary: UIColor
+    var tertiary: UIColor?
 
     /// Tertiary Muted color.
-    let tertiaryMuted: UIColor
+    var tertiaryMuted: UIColor?
 
     /// Tertiary Faded color.
-    let tertiaryFaded: UIColor
+    var tertiaryFaded: UIColor?
 
     /// Invert Primary color.
-    let invertPrimary: UIColor
+    var invertPrimary: UIColor?
 
     /// Invert Primary Muted color.
-    let invertPrimaryMuted: UIColor
+    var invertPrimaryMuted: UIColor?
 
     /// Invert Primary Faded color.
-    let invertPrimaryFaded: UIColor
+    var invertPrimaryFaded: UIColor?
 
     /// Invert Secondary color.
-    let invertSecondary: UIColor
+    var invertSecondary: UIColor?
 
     /// Invert Secondary Muted color.
-    let invertSecondaryMuted: UIColor
+    var invertSecondaryMuted: UIColor?
 
     /// Invert Secondary Faded color.
-    let invertSecondaryFaded: UIColor
+    var invertSecondaryFaded: UIColor?
 
     /// Invert Tertiary color.
-    let invertTertiary: UIColor
+    var invertTertiary: UIColor?
 
     /// Invert Tertiary Muted color.
-    let invertTertiaryMuted: UIColor
+    var invertTertiaryMuted: UIColor?
 
     /// Invert Tertiary Faded color.
-    let invertTertiaryFaded: UIColor
+    var invertTertiaryFaded: UIColor?
 
     /// Emphasis Primary color.
-    let emphasisPrimary: UIColor
+    var emphasisPrimary: UIColor?
 
     /// Emphasis Primary Muted color.
-    let emphasisPrimaryMuted: UIColor
+    var emphasisPrimaryMuted: UIColor?
 
     /// Emphasis Primary Faded color.
-    let emphasisPrimaryFaded: UIColor
+    var emphasisPrimaryFaded: UIColor?
 
     /// Emphasis Secondary color.
-    let emphasisSecondary: UIColor
+    var emphasisSecondary: UIColor?
 
     /// Emphasis Secondary Muted color.
-    let emphasisSecondaryMuted: UIColor
+    var emphasisSecondaryMuted: UIColor?
 
     /// Emphasis Secondary Faded color.
-    let emphasisSecondaryFaded: UIColor
+    var emphasisSecondaryFaded: UIColor?
 
     /// Emphasis Tertiary color.
-    let emphasisTertiary: UIColor
+    var emphasisTertiary: UIColor?
 
     /// Emphasis Tertiary Muted color.
-    let emphasisTertiaryMuted: UIColor
+    var emphasisTertiaryMuted: UIColor?
 
     /// Emphasis Tertiary Faded color.
-    let emphasisTertiaryFaded: UIColor
+    var emphasisTertiaryFaded: UIColor?
 
     /// Grayout Primary color.
-    let grayoutPrimary: UIColor
+    var grayoutPrimary: UIColor?
 
     /// Grayout Secondary color.
-    let grayoutSecondary: UIColor
+    var grayoutSecondary: UIColor?
 
     /// Grayout Tertiary color.
-    let grayoutTertiary: UIColor
+    var grayoutTertiary: UIColor?
 
     /// Error Primary color.
-    let errorPrimary: UIColor
+    var errorPrimary: UIColor?
 
     /// Error Secondary color.
-    let errorSecondary: UIColor
+    var errorSecondary: UIColor?
 
     /// Error Tertiary color.
-    let errorTertiary: UIColor
+    var errorTertiary: UIColor?
 
     /// Overlay Primary color.
-    let overlayPrimary: UIColor
+    var overlayPrimary: UIColor?
 
     /// Overlay Secondary color.
-    let overlaySecondary: UIColor
+    var overlaySecondary: UIColor?
 
     /// Overlay Tertiary color.
-    let overlayTertiary: UIColor
+    var overlayTertiary: UIColor?
+
+    public init?(json: JSON) {
+        if let primaryJSON = json["primary"] as? JSON {
+            if let normalJSON = primaryJSON["normal"] as? JSON {
+                primary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = primaryJSON["muted"] as? JSON {
+                primaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = primaryJSON["faded"] as? JSON {
+                primaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let secondaryJSON = json["secondary"] as? JSON {
+            if let normalJSON = secondaryJSON["normal"] as? JSON {
+                secondary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = secondaryJSON["muted"] as? JSON {
+                secondaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = secondaryJSON["faded"] as? JSON {
+                secondaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let tertiaryJSON = json["tertiary"] as? JSON {
+            if let normalJSON = tertiaryJSON["normal"] as? JSON {
+                tertiary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = tertiaryJSON["muted"] as? JSON {
+                tertiaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = tertiaryJSON["faded"] as? JSON {
+                tertiaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let invertPrimaryJSON = json["invertPrimary"] as? JSON {
+            if let normalJSON = invertPrimaryJSON["normal"] as? JSON {
+                invertPrimary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = invertPrimaryJSON["muted"] as? JSON {
+                invertPrimaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = invertPrimaryJSON["faded"] as? JSON {
+                invertPrimaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let invertSecondaryJSON = json["invertSecondary"] as? JSON {
+            if let normalJSON = invertSecondaryJSON["normal"] as? JSON {
+                invertSecondary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = invertSecondaryJSON["muted"] as? JSON {
+                invertSecondaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = invertSecondaryJSON["faded"] as? JSON {
+                invertSecondaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let invertTertiaryJSON = json["invertTertiary"] as? JSON {
+            if let normalJSON = invertTertiaryJSON["normal"] as? JSON {
+                invertTertiary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = invertTertiaryJSON["muted"] as? JSON {
+                invertTertiaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = invertTertiaryJSON["faded"] as? JSON {
+                invertTertiaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let emphasisPrimaryJSON = json["emphasisPrimary"] as? JSON {
+            if let normalJSON = emphasisPrimaryJSON["normal"] as? JSON {
+                emphasisPrimary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = emphasisPrimaryJSON["muted"] as? JSON {
+                emphasisPrimaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = emphasisPrimaryJSON["faded"] as? JSON {
+                emphasisPrimaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+    }
 
 }

@@ -1,0 +1,142 @@
+{
+    "primary": {
+        "normal": {
+            "red": 0.1,
+            "green": 0.2,
+            "blue": 0.3,
+            "alpha": 0.6
+        },
+        "muted": {
+            "red": 0.9,
+            "green": 0.8,
+            "blue": 0.4,
+            "alpha": 0.3
+        },
+        "faded": {
+            "red": 0.5,
+            "green": 0.5,
+            "blue": 0.4,
+            "alpha": 0.2
+        }
+    },
+    "secondary": {
+        "normal": {
+            "red": 0.1,
+            "green": 0.2,
+            "blue": 0.3,
+            "alpha": 0.6
+        },
+        "muted": {
+            "red": 0.9,
+            "green": 0.8,
+            "blue": 0.4,
+            "alpha": 0.3
+        },
+        "faded": {
+            "red": 0.5,
+            "green": 0.5,
+            "blue": 0.4,
+            "alpha": 0.2
+        }
+    },
+    "tertiary": {
+        "normal": {
+            "red": 0.1,
+            "green": 0.2,
+            "blue": 0.3,
+            "alpha": 0.6
+        },
+        "muted": {
+            "red": 0.9,
+            "green": 0.8,
+            "blue": 0.4,
+            "alpha": 0.3
+        },
+        "faded": {
+            "red": 0.5,
+            "green": 0.5,
+            "blue": 0.4,
+            "alpha": 0.2
+        }
+    },
+    "invertPrimary": {
+        "normal": {
+            "red": 0.1,
+            "green": 0.2,
+            "blue": 0.3,
+            "alpha": 0.6
+        },
+        "muted": {
+            "red": 0.9,
+            "green": 0.8,
+            "blue": 0.4,
+            "alpha": 0.3
+        },
+        "faded": {
+            "red": 0.5,
+            "green": 0.5,
+            "blue": 0.4,
+            "alpha": 0.2
+        }
+    },
+    "invertSecondary": {
+        "normal": {
+            "red": 0.1,
+            "green": 0.2,
+            "blue": 0.3,
+            "alpha": 0.6
+        },
+        "muted": {
+            "red": 0.9,
+            "green": 0.8,
+            "blue": 0.4,
+            "alpha": 0.3
+        },
+        "faded": {
+            "red": 0.5,
+            "green": 0.5,
+            "blue": 0.4,
+            "alpha": 0.2
+        }
+    },
+    "invertTertiary": {
+        "normal": {
+            "red": 0.1,
+            "green": 0.2,
+            "blue": 0.3,
+            "alpha": 0.6
+        },
+        "muted": {
+            "red": 0.9,
+            "green": 0.8,
+            "blue": 0.4,
+            "alpha": 0.3
+        },
+        "faded": {
+            "red": 0.5,
+            "green": 0.5,
+            "blue": 0.4,
+            "alpha": 0.2
+        }
+    },
+    "emphasisPrimary": {
+        "normal": {
+            "red": 0.1,
+            "green": 0.2,
+            "blue": 0.3,
+            "alpha": 0.6
+        },
+        "muted": {
+            "red": 0.9,
+            "green": 0.8,
+            "blue": 0.4,
+            "alpha": 0.3
+        },
+        "faded": {
+            "red": 0.5,
+            "green": 0.5,
+            "blue": 0.4,
+            "alpha": 0.2
+        }
+    }
+}
