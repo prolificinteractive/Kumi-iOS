@@ -33,12 +33,12 @@
 		8EC737511EB292A10087846F /* CABasicAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737441EB292A10087846F /* CABasicAnimationStyle.swift */; };
 		8EC737521EB292A10087846F /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737451EB292A10087846F /* CALayerExtension.swift */; };
 		8EC737531EB292A10087846F /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737461EB292A10087846F /* CornerRadius.swift */; };
-		8EC737541EB292A10087846F /* LayerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737471EB292A10087846F /* LayerStyle.swift */; };
-		8EC737551EB292A10087846F /* LayerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737481EB292A10087846F /* LayerTheme.swift */; };
-		8EC737561EB292A10087846F /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737491EB292A10087846F /* Shadow.swift */; };
-		8EC737571EB292A10087846F /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7374A1EB292A10087846F /* ShadowStyle.swift */; };
 		8EC737581EB292A10087846F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7374B1EB292A10087846F /* UIColor+Extensions.swift */; };
 		8EC737591EB292A10087846F /* UIViewAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7374C1EB292A10087846F /* UIViewAnimationStyle.swift */; };
+		8EC7375E1EB386BD0087846F /* LayerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7375A1EB386BD0087846F /* LayerStyle.swift */; };
+		8EC7375F1EB386BD0087846F /* LayerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7375B1EB386BD0087846F /* LayerTheme.swift */; };
+		8EC737601EB386BD0087846F /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7375C1EB386BD0087846F /* Shadow.swift */; };
+		8EC737611EB386BD0087846F /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7375D1EB386BD0087846F /* ShadowStyle.swift */; };
 		AB5CCF0B6D9EB7BB0CA58726 /* Pods_Kumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4CF5A50CF18BF86C3F0A5E /* Pods_Kumi.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,12 +83,12 @@
 		8EC737441EB292A10087846F /* CABasicAnimationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABasicAnimationStyle.swift; sourceTree = "<group>"; };
 		8EC737451EB292A10087846F /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		8EC737461EB292A10087846F /* CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
-		8EC737471EB292A10087846F /* LayerStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerStyle.swift; sourceTree = "<group>"; };
-		8EC737481EB292A10087846F /* LayerTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerTheme.swift; sourceTree = "<group>"; };
-		8EC737491EB292A10087846F /* Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
-		8EC7374A1EB292A10087846F /* ShadowStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowStyle.swift; sourceTree = "<group>"; };
 		8EC7374B1EB292A10087846F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		8EC7374C1EB292A10087846F /* UIViewAnimationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimationStyle.swift; sourceTree = "<group>"; };
+		8EC7375A1EB386BD0087846F /* LayerStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerStyle.swift; sourceTree = "<group>"; };
+		8EC7375B1EB386BD0087846F /* LayerTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerTheme.swift; sourceTree = "<group>"; };
+		8EC7375C1EB386BD0087846F /* Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		8EC7375D1EB386BD0087846F /* ShadowStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowStyle.swift; sourceTree = "<group>"; };
 		96B214361F8486E6AC17A2EE /* Pods_KumiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2015E1EE26E9062197C1AA4 /* Pods-Kumi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kumi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kumi/Pods-Kumi.debug.xcconfig"; sourceTree = "<group>"; };
 		C969D8DFF51173F62569A900 /* Pods-KumiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +173,10 @@
 				8EC737211EB291C70087846F /* Font.swift */,
 				8EC737221EB291C70087846F /* FontTheme.swift */,
 				8EC737231EB291C70087846F /* PrimaryFont.swift */,
+				8EC7375A1EB386BD0087846F /* LayerStyle.swift */,
+				8EC7375B1EB386BD0087846F /* LayerTheme.swift */,
+				8EC7375C1EB386BD0087846F /* Shadow.swift */,
+				8EC7375D1EB386BD0087846F /* ShadowStyle.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -205,10 +209,6 @@
 				8EC737441EB292A10087846F /* CABasicAnimationStyle.swift */,
 				8EC737451EB292A10087846F /* CALayerExtension.swift */,
 				8EC737461EB292A10087846F /* CornerRadius.swift */,
-				8EC737471EB292A10087846F /* LayerStyle.swift */,
-				8EC737481EB292A10087846F /* LayerTheme.swift */,
-				8EC737491EB292A10087846F /* Shadow.swift */,
-				8EC7374A1EB292A10087846F /* ShadowStyle.swift */,
 				8EC7374B1EB292A10087846F /* UIColor+Extensions.swift */,
 				8EC7374C1EB292A10087846F /* UIViewAnimationStyle.swift */,
 			);
@@ -425,17 +425,14 @@
 				8EC7373D1EB291DE0087846F /* ProductLayerTheme.swift in Sources */,
 				8EC737511EB292A10087846F /* CABasicAnimationStyle.swift in Sources */,
 				8EC737391EB291DE0087846F /* ProductColors.swift in Sources */,
-				8EC737551EB292A10087846F /* LayerTheme.swift in Sources */,
-				8EC737541EB292A10087846F /* LayerStyle.swift in Sources */,
-				8EC737571EB292A10087846F /* ShadowStyle.swift in Sources */,
 				8EC737341EB291DE0087846F /* AppTheme.swift in Sources */,
 				8EC737261EB291C70087846F /* FontTheme.swift in Sources */,
 				8EC737371EB291DE0087846F /* ProductAnimationTheme.swift in Sources */,
 				8EC737531EB292A10087846F /* CornerRadius.swift in Sources */,
+				8EC7375E1EB386BD0087846F /* LayerStyle.swift in Sources */,
 				8EC737381EB291DE0087846F /* ProductBorderWidth.swift in Sources */,
 				8EC7373C1EB291DE0087846F /* ProductFontTheme.swift in Sources */,
 				8EC737351EB291DE0087846F /* ProductAlphaValue.swift in Sources */,
-				8EC737561EB292A10087846F /* Shadow.swift in Sources */,
 				8EC737361EB291DE0087846F /* ProductAnimationDuration.swift in Sources */,
 				8EC737591EB292A10087846F /* UIViewAnimationStyle.swift in Sources */,
 				8EC737271EB291C70087846F /* PrimaryFont.swift in Sources */,
@@ -443,11 +440,14 @@
 				8EC737521EB292A10087846F /* CALayerExtension.swift in Sources */,
 				8EC7373A1EB291DE0087846F /* ProductColorTheme.swift in Sources */,
 				8EC737241EB291C70087846F /* ColorTheme.swift in Sources */,
+				8EC737601EB386BD0087846F /* Shadow.swift in Sources */,
 				8EC7373E1EB291DE0087846F /* ProductShadow.swift in Sources */,
 				8EC7374D1EB292A10087846F /* AlphaValue.swift in Sources */,
 				8EC7373B1EB291DE0087846F /* ProductCornerRadius.swift in Sources */,
 				8EC7374F1EB292A10087846F /* AnimationTheme.swift in Sources */,
+				8EC737611EB386BD0087846F /* ShadowStyle.swift in Sources */,
 				8EC7374E1EB292A10087846F /* AnimationDuration.swift in Sources */,
+				8EC7375F1EB386BD0087846F /* LayerTheme.swift in Sources */,
 				8EC737581EB292A10087846F /* UIColor+Extensions.swift in Sources */,
 				8EC737501EB292A10087846F /* BorderWidth.swift in Sources */,
 			);
