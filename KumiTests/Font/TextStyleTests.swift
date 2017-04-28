@@ -44,5 +44,5 @@ class TextStyleTests: XCTestCase {
         XCTAssertEqual(textStyle.textAlignment, .left)
         XCTAssertEqual(textStyle.lineBreakMode, .byTruncatingTail)
     }
-    
+
 }

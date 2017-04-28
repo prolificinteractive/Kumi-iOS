@@ -57,7 +57,7 @@ private extension NSLineBreakMode {
             return NSLineBreakMode.byClipping
         case "byTruncatingHead":
             return NSLineBreakMode.byTruncatingHead
-        case "by​Truncating​Tail":
+        case "​​byTruncatingTail":
             return NSLineBreakMode.byTruncatingTail
         case "byTruncatingMiddle":
             return NSLineBreakMode.byTruncatingMiddle
