@@ -1,28 +1,860 @@
 {
-  "display": {
-    "fontFamily": "Helvetica",
-    "textSize": 18,
-    "fontWeight": {
-      "normal": "roman/regular",
-      "strong": "roman/bold",
-      "emphasis": "roman/heavy"
+    "display": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
     },
-    "color": {
-      "$ref": "#/theme/color/primary/normal"
+    "displayLarge": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
     },
-    "letterSpacing": 1,
-    "lineSpacing": 0,
-    "lineHeightMultiple": 1,
-    "minimumLineHeight": 0,
-    "maximumLineHeight": 0,
-    "paragraphSpacing": 0,
-    "paragraphSpacingBefore": 0,
-    "textAlign": "left",
-    "lineBreakMode": "by​Truncating​Tail",
-    "textTransform": "none",
-    "textDecorationLine": "none",
-    "textDecorationColor": {
-      "$ref": "#/theme/color/primary/normal"
+    "displaySmall": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "headline1": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "headline2": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "headline3": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "headline4": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "headline5": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "headline6": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "subHeadline": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "subHeadlineLarge": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "subHeadlineSmall": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "body": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "bodyLarge": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "bodySmall": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "caption": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "captionLarge": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "captionSmall": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "buttonTitle": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "buttonTitleLarge": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "buttonTitleSmall": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "buttonTitleFloating": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "buttonTitleFloatingLarge": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "buttonTitleFloatingSmall": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "textFieldTitle": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "textFieldTitleLarge": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "textFieldTitleSmall": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "topItemPrompt": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "topItemTitle": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "topItemButtonItem": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "tabBarItemTitle": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "tabBarItemBadge": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
+    },
+    "segmentedTitle": {
+        "fontFamily": "Helvetica",
+        "textSize": 18,
+        "fontWeight": {
+            "normal": "roman/regular",
+            "strong": "roman/bold",
+            "emphasis": "roman/heavy"
+        },
+        "color": {
+            "$ref": "#/theme/color/primary/normal"
+        },
+        "letterSpacing": 1,
+        "lineSpacing": 0,
+        "lineHeightMultiple": 1,
+        "minimumLineHeight": 0,
+        "maximumLineHeight": 0,
+        "paragraphSpacing": 0,
+        "paragraphSpacingBefore": 0,
+        "textAlign": "left",
+        "lineBreakMode": "by​Truncating​Tail",
+        "textTransform": "none",
+        "textDecorationLine": "none",
+        "textDecorationColor": {
+            "$ref": "#/theme/color/primary/normal"
+        }
     }
-  }
 }

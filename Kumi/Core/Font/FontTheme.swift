@@ -243,7 +243,7 @@ public struct FontTheme {
             tabBarItemBadgeTextStyle = TextStyle(json: tabBarItemBadgeJSON)
         }
 
-        if let segmentedTitleJSON = json["SegmentedTitle"] as? JSON {
+        if let segmentedTitleJSON = json["segmentedTitle"] as? JSON {
             segmentedTitleTextStyle = TextStyle(json: segmentedTitleJSON)
         }
     }

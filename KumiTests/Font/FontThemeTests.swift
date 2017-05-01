@@ -33,8 +33,40 @@ class FontThemeTests: XCTestCase {
         super.tearDown()
     }
 
-    func testFontThemeDisplay() {
+    func testFontThemeCreation() {
         XCTAssertNotNil(fontTheme.displayTextStyle)
+        XCTAssertNotNil(fontTheme.displayLargeTextStyle)
+        XCTAssertNotNil(fontTheme.displaySmallTextStyle)
+        XCTAssertNotNil(fontTheme.headline1TextStyle)
+        XCTAssertNotNil(fontTheme.headline2TextStyle)
+        XCTAssertNotNil(fontTheme.headline3TextStyle)
+        XCTAssertNotNil(fontTheme.headline4TextStyle)
+        XCTAssertNotNil(fontTheme.headline5TextStyle)
+        XCTAssertNotNil(fontTheme.headline6TextStyle)
+        XCTAssertNotNil(fontTheme.subHeadlineTextStyle)
+        XCTAssertNotNil(fontTheme.subHeadlineLargeTextStyle)
+        XCTAssertNotNil(fontTheme.subHeadlineSmallTextStyle)
+        XCTAssertNotNil(fontTheme.bodyTextStyle)
+        XCTAssertNotNil(fontTheme.bodyLargeTextStyle)
+        XCTAssertNotNil(fontTheme.bodySmallTextStyle)
+        XCTAssertNotNil(fontTheme.captionTextStyle)
+        XCTAssertNotNil(fontTheme.captionLargeTextStyle)
+        XCTAssertNotNil(fontTheme.captionSmallTextStyle)
+        XCTAssertNotNil(fontTheme.buttonTitleTextStyle)
+        XCTAssertNotNil(fontTheme.buttonTitleLargeTextStyle)
+        XCTAssertNotNil(fontTheme.buttonTitleSmallTextStyle)
+        XCTAssertNotNil(fontTheme.buttonFloatingTitleTextStyle)
+        XCTAssertNotNil(fontTheme.buttonFloatingTitleLargeTextStyle)
+        XCTAssertNotNil(fontTheme.buttonFloatingTitleSmallTextStyle)
+        XCTAssertNotNil(fontTheme.topItemPromptTextStyle)
+        XCTAssertNotNil(fontTheme.topItemTitleTextStyle)
+        XCTAssertNotNil(fontTheme.topItemButtonItemTextStyle)
+        XCTAssertNotNil(fontTheme.tabBarItemTitleTextStyle)
+        XCTAssertNotNil(fontTheme.tabBarItemBadgeTextStyle)
+        XCTAssertNotNil(fontTheme.segmentedTitleTextStyle)
+        XCTAssertNotNil(fontTheme.textFieldTitleTextStyle)
+        XCTAssertNotNil(fontTheme.textFieldTitleLargeTextStyle)
+        XCTAssertNotNil(fontTheme.textFieldTitleSmallTextStyle)
     }
 
 }
