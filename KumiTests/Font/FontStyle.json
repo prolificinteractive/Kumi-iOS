@@ -1,26 +1,27 @@
 {
-  "fontFamily": "Helvetica",
-  "textSize": 18,
-  "fontWeight": {
-    "normal": "roman/regular",
-    "strong": "roman/bold",
-    "emphasis": "roman/heavy"
-  },
-  "color": {
-    "$ref": "#/theme/color/primary/normal"
-  },
-  "letterSpacing": 1,
-  "lineSpacing": 0,
-  "lineHeightMultiple": 1,
-  "minimumLineHeight": 10,
-  "maximumLineHeight": 25,
-  "paragraphSpacing": 12,
-  "paragraphSpacingBefore": 3,
-  "textAlign": "left",
-  "lineBreakMode": "​​byTruncatingTail",
-  "textTransform": "none",
-  "textDecorationLine": "none",
-  "textDecorationColor": {
-    "$ref": "#/theme/color/primary/normal"
-  }
+    "fontFamily": "Helvetica",
+    "textSize": 18,
+    "fontWeight": {
+        "normal": "Helvetica",
+        "strong": "Helvetica-Bold",
+        "emphasis": "Helvetica-Heavy"
+    },
+    "color": {
+        "$ref": "#/theme/color/primary/normal"
+    },
+    "letterSpacing": 1,
+    "lineSpacing": 0,
+    "lineHeightMultiple": 1,
+    "minimumLineHeight": 10,
+    "maximumLineHeight": 25,
+    "paragraphSpacing": 12,
+    "paragraphSpacingBefore": 3,
+    "textAlign": "left",
+    "lineBreakMode": "​​byTruncatingTail",
+    "textTransform": "none",
+    "textDecorationLine": "none",
+    "textDecorationColor": {
+        "$ref": "#/theme/color/primary/normal"
+    },
+    "strikethroughStyle": "none"
 }

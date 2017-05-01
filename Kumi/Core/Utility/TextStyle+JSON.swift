@@ -68,15 +68,46 @@ private extension NSLineBreakMode {
 
 }
 
+private extension NSUnderlineStyle {
+
+    static func fromString(string: String) -> NSUnderlineStyle? {
+        switch string {
+        case "none":
+            return NSUnderlineStyle.styleNone
+        case "single":
+            return NSUnderlineStyle.styleSingle
+        case "thick":
+            return NSUnderlineStyle.styleThick
+        case "double":
+            return NSUnderlineStyle.styleDouble
+        case "patternSolid":
+            return NSUnderlineStyle.patternSolid
+        case "patternDot":
+            return NSUnderlineStyle.patternDot
+        case "patternDash":
+            return NSUnderlineStyle.patternDash
+        case "patternDashDot":
+            return NSUnderlineStyle.patternDashDot
+        case "patternDashDotDot":
+            return NSUnderlineStyle.patternDashDotDot
+        case "byWord":
+            return NSUnderlineStyle.byWord
+        default:
+            return nil
+        }
+    }
+}
+
 extension TextStyle {
 
     init?(json: JSON) {
-        guard let fontName = json["fontFamily"] as? String,
+        guard let fontNameJSON = json["fontWeight"] as? JSON,
+            let normalFontName = fontNameJSON["normal"] as? String,
             let textSize = json["textSize"] as? CGFloat else {
                 return nil
         }
 
-        guard let font = UIFont(name: fontName, size: textSize) else {
+        guard let font = UIFont(name: normalFontName, size: textSize) else {
             return nil
         }
 
@@ -96,6 +127,14 @@ extension TextStyle {
         var strikethroughStyle: NSUnderlineStyle?
         var strikethroughColor: UIColor?
         var textTransform: TextTransform = .none
+
+        if let emFontName = fontNameJSON["emphasis"] as? String {
+            emFont = UIFont(name: emFontName, size: textSize)
+        }
+
+        if let strongFontName = fontNameJSON["strong"] as? String {
+            strongFont = UIFont(name: strongFontName, size: textSize)
+        }
 
         if let textColorJSON = json["color"] as? JSON {
             textColor = UIColor(json: textColorJSON)
@@ -129,18 +168,24 @@ extension TextStyle {
             paragraphSpacingBefore = paragraphSpaceBefore
         }
 
-        if let textAlignmentString = json["textAlign"] as? String,
-            let textAlign = NSTextAlignment.fromString(string: textAlignmentString) {
-            textAlignment = textAlign
+        if let textAlignmentString = json["textAlign"] as? String {
+            textAlignment = NSTextAlignment.fromString(string: textAlignmentString)
         }
 
-        if let lineBreakModeString = json["lineBreakMode"] as? String,
-            let lineBrkMode = NSLineBreakMode.fromString(string: lineBreakModeString) {
-            lineBreakMode = lineBrkMode
+        if let lineBreakModeString = json["lineBreakMode"] as? String {
+            lineBreakMode = NSLineBreakMode.fromString(string: lineBreakModeString)
+        }
+
+        if let strikethroughStyleString = json["strikethroughStyle"] as? String {
+            strikethroughStyle = NSUnderlineStyle.fromString(string: strikethroughStyleString)
         }
 
         if let transform = json["textTransform"] as? String {
             textTransform = TextTransform(string: transform)
+        }
+
+        if let strikethroughColorJSON = json["strikethroughColor"] as? JSON {
+            strikethroughColor = UIColor(json: strikethroughColorJSON)
         }
 
         self.init(font: font,
@@ -160,5 +205,5 @@ extension TextStyle {
                   strikethroughColor: strikethroughColor,
                   textTransform: textTransform)
     }
-
+    
 }

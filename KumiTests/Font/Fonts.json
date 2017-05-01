@@ -3,9 +3,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -29,9 +29,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -55,9 +55,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -81,9 +81,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -107,9 +107,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -133,9 +133,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -159,9 +159,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -185,9 +185,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -211,9 +211,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -237,9 +237,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -263,9 +263,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -289,9 +289,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -315,9 +315,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -341,9 +341,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -367,9 +367,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -393,9 +393,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -419,9 +419,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -445,9 +445,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -471,9 +471,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -497,9 +497,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -523,9 +523,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -549,9 +549,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -575,9 +575,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -601,9 +601,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -627,9 +627,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -653,9 +653,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -679,9 +679,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -705,9 +705,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -731,9 +731,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -757,9 +757,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -783,9 +783,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -809,9 +809,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
@@ -835,9 +835,9 @@
         "fontFamily": "Helvetica",
         "textSize": 18,
         "fontWeight": {
-            "normal": "roman/regular",
-            "strong": "roman/bold",
-            "emphasis": "roman/heavy"
+            "normal": "Helvetica",
+            "strong": "Helvetica-Bold",
+            "emphasis": "Helvetica-Heavy"
         },
         "color": {
             "$ref": "#/theme/color/primary/normal"
