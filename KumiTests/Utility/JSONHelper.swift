@@ -25,7 +25,7 @@ enum JSONError: Swift.Error {
 
     /// Error for the case that the JSON format was invalid.
     case jsonFormatInvalid(invalidObject: AnyObject)
-    
+
 }
 
 class JSONHelper {
@@ -160,7 +160,7 @@ class JSONHelper {
             guard let result = object as? [JSON] else {
                 throw JSONError.jsonFormatInvalid(invalidObject: object as AnyObject)
             }
-            
+
             return result
         } catch {
             throw JSONError.jsonDeserializationFailed(jsonSerializationError: error, data: data)

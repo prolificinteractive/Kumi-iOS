@@ -13,7 +13,7 @@ import Marker
 class FontThemeTests: XCTestCase {
 
     var fontTheme: FontTheme!
-    
+
     override func setUp() {
         super.setUp()
 
@@ -22,20 +22,19 @@ class FontThemeTests: XCTestCase {
         do {
             let fontThemeJSON = try JSONHelper.getJSON("Fonts")
             fontTheme = FontTheme(json: fontThemeJSON)
-        }
-        catch let error {
+        } catch let error {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     override func tearDown() {
         fontTheme = nil
 
         super.tearDown()
     }
-    
+
     func testFontThemeDisplay() {
         XCTAssertNotNil(fontTheme.displayTextStyle)
     }
-    
+
 }

@@ -13,25 +13,24 @@ import Marker
 class TextStyleTests: XCTestCase {
 
     var textStyle: TextStyle!
-    
+
     override func setUp() {
         super.setUp()
 
         do {
             let textStyleJSON = try JSONHelper.getJSON("FontStyle")
             textStyle = TextStyle(json: textStyleJSON)
-        }
-        catch let error {
+        } catch let error {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     override func tearDown() {
         textStyle = nil
 
         super.tearDown()
     }
-    
+
     func testTextStyleJSONCreation() {
         XCTAssertNotNil(textStyle.font)
         XCTAssertEqual(textStyle.characterSpacing, 1.0)

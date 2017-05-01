@@ -72,8 +72,8 @@ extension TextStyle {
 
     init?(json: JSON) {
         guard let fontName = json["fontFamily"] as? String,
-        let textSize = json["textSize"] as? CGFloat else {
-            return nil
+            let textSize = json["textSize"] as? CGFloat else {
+                return nil
         }
 
         guard let font = UIFont(name: fontName, size: textSize) else {

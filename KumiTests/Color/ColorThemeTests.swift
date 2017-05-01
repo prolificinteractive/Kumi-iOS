@@ -12,25 +12,24 @@ import XCTest
 class ColorThemeTests: XCTestCase {
 
     var colorTheme: ColorTheme!
-    
+
     override func setUp() {
         super.setUp()
 
         do {
             let colorThemeJSON = try JSONHelper.getJSON("Colors")
             colorTheme = ColorTheme(json: colorThemeJSON)
-        }
-        catch let error {
+        } catch let error {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     override func tearDown() {
         colorTheme = nil
 
         super.tearDown()
     }
-    
+
     func testColorThemePrimary() {
         // Given
         let primary = colorTheme.primary
@@ -149,5 +148,5 @@ class ColorThemeTests: XCTestCase {
         XCTAssertEqual(emphasisPrimaryMuted, expectedEmphasisPrimaryMuted)
         XCTAssertEqual(emphasisPrimaryFaded, expectedEmphasisPrimaryFaded)
     }
-    
+
 }
