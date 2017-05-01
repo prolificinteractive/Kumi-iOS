@@ -12,7 +12,7 @@ import XCTest
 class ThemeTests: XCTestCase {
 
     var theme: Theme!
-    
+
     override func setUp() {
         super.setUp()
 
@@ -23,17 +23,17 @@ class ThemeTests: XCTestCase {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     override func tearDown() {
         theme = nil
 
         super.tearDown()
     }
-    
+
     func testThemeCreation() {
         XCTAssertNotNil(theme)
         XCTAssertNotNil(theme.colorTheme)
         XCTAssertNotNil(theme.fontTheme)
     }
-    
+
 }

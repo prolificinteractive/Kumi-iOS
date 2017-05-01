@@ -22,13 +22,13 @@ public struct Theme {
         }
 
         guard let colorJSON = themeJSON["color"] as? JSON,
-        let colorTheme = ColorTheme(json: colorJSON) else {
-            return nil
+            let colorTheme = ColorTheme(json: colorJSON) else {
+                return nil
         }
 
         guard let fontJSON = themeJSON["font"] as? JSON,
             let fontTheme = FontTheme(json: fontJSON) else {
-            return nil
+                return nil
         }
 
         self.colorTheme = colorTheme

@@ -118,6 +118,134 @@ public struct FontTheme {
         if let displayJSON = json["display"] as? JSON {
             displayTextStyle = TextStyle(json: displayJSON)
         }
+
+        if let displayLargeJSON = json["displayLarge"] as? JSON {
+            displayLargeTextStyle = TextStyle(json: displayLargeJSON)
+        }
+
+        if let displaySmallJSON = json["displaySmall"] as? JSON {
+            displaySmallTextStyle = TextStyle(json: displaySmallJSON)
+        }
+
+        if let headline1JSON = json["headline1"] as? JSON {
+            headline1TextStyle = TextStyle(json: headline1JSON)
+        }
+
+        if let headline2JSON = json["headline2"] as? JSON {
+            headline2TextStyle = TextStyle(json: headline2JSON)
+        }
+
+        if let headline3JSON = json["headline3"] as? JSON {
+            headline3TextStyle = TextStyle(json: headline3JSON)
+        }
+
+        if let headline4JSON = json["headline4"] as? JSON {
+            headline4TextStyle = TextStyle(json: headline4JSON)
+        }
+
+        if let headline5JSON = json["headline5"] as? JSON {
+            headline5TextStyle = TextStyle(json: headline5JSON)
+        }
+
+        if let headline6JSON = json["headline6"] as? JSON {
+            headline6TextStyle = TextStyle(json: headline6JSON)
+        }
+
+        if let subHeadlineJSON = json["subHeadline"] as? JSON {
+            subHeadlineTextStyle = TextStyle(json: subHeadlineJSON)
+        }
+
+        if let subHeadlineLargeJSON = json["subHeadlineLarge"] as? JSON {
+            subHeadlineLargeTextStyle = TextStyle(json: subHeadlineLargeJSON)
+        }
+
+        if let subHeadlineSmallJSON = json["subHeadlineSmall"] as? JSON {
+            subHeadlineSmallTextStyle = TextStyle(json: subHeadlineSmallJSON)
+        }
+
+        if let bodyJSON = json["body"] as? JSON {
+            bodyTextStyle = TextStyle(json: bodyJSON)
+        }
+
+        if let bodyLargeJSON = json["bodyLarge"] as? JSON {
+            bodyLargeTextStyle = TextStyle(json: bodyLargeJSON)
+        }
+
+        if let bodySmallJSON = json["bodySmall"] as? JSON {
+            bodySmallTextStyle = TextStyle(json: bodySmallJSON)
+        }
+
+        if let captionJSON = json["caption"] as? JSON {
+            captionTextStyle = TextStyle(json: captionJSON)
+        }
+
+        if let captionLargeJSON = json["captionLarge"] as? JSON {
+            captionLargeTextStyle = TextStyle(json: captionLargeJSON)
+        }
+
+        if let captionSmallJSON = json["captionSmall"] as? JSON {
+            captionSmallTextStyle = TextStyle(json: captionSmallJSON)
+        }
+
+        if let buttonTitleJSON = json["buttonTitle"] as? JSON {
+            buttonTitleTextStyle = TextStyle(json: buttonTitleJSON)
+        }
+
+        if let buttonTitleLargeJSON = json["buttonTitleLarge"] as? JSON {
+            buttonTitleLargeTextStyle = TextStyle(json: buttonTitleLargeJSON)
+        }
+
+        if let buttonTitleSmallJSON = json["buttonTitleSmall"] as? JSON {
+            buttonTitleSmallTextStyle = TextStyle(json: buttonTitleSmallJSON)
+        }
+
+        if let buttonTitleFloatingJSON = json["buttonTitleFloating"] as? JSON {
+            buttonFloatingTitleTextStyle = TextStyle(json: buttonTitleFloatingJSON)
+        }
+
+        if let buttonTitleFloatingLargeJSON = json["buttonTitleFloatingLarge"] as? JSON {
+            buttonFloatingTitleLargeTextStyle = TextStyle(json: buttonTitleFloatingLargeJSON)
+        }
+
+        if let buttonTitleFloatingSmallJSON = json["buttonTitleFloatingSmall"] as? JSON {
+            buttonFloatingTitleSmallTextStyle = TextStyle(json: buttonTitleFloatingSmallJSON)
+        }
+
+        if let textFieldTitleJSON = json["textFieldTitle"] as? JSON {
+            textFieldTitleTextStyle = TextStyle(json: textFieldTitleJSON)
+        }
+
+        if let textFieldTitleLargeJSON = json["textFieldTitleLarge"] as? JSON {
+            textFieldTitleLargeTextStyle = TextStyle(json: textFieldTitleLargeJSON)
+        }
+
+        if let textFieldTitleSmallJSON = json["textFieldTitleSmall"] as? JSON {
+            textFieldTitleSmallTextStyle = TextStyle(json: textFieldTitleSmallJSON)
+        }
+
+        if let topItemPromptJSON = json["topItemPrompt"] as? JSON {
+            topItemPromptTextStyle = TextStyle(json: topItemPromptJSON)
+        }
+
+        if let topItemTitleJSON = json["topItemTitle"] as? JSON {
+            topItemTitleTextStyle = TextStyle(json: topItemTitleJSON)
+        }
+
+        if let topItemButtonItemJSON = json["topItemButtonItem"] as? JSON {
+            topItemButtonItemTextStyle = TextStyle(json: topItemButtonItemJSON)
+        }
+
+        if let tabBarItemTitleJSON = json["tabBarItemTitle"] as? JSON {
+            tabBarItemTitleTextStyle = TextStyle(json: tabBarItemTitleJSON)
+        }
+
+        if let tabBarItemBadgeJSON = json["tabBarItemBadge"] as? JSON {
+            tabBarItemBadgeTextStyle = TextStyle(json: tabBarItemBadgeJSON)
+        }
+
+        if let segmentedTitleJSON = json["segmentedTitle"] as? JSON {
+            segmentedTitleTextStyle = TextStyle(json: segmentedTitleJSON)
+        }
     }
 
 }

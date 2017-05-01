@@ -13,7 +13,7 @@ extension UIColor {
             let green = json["green"] as? CGFloat,
             let blue = json["blue"] as? CGFloat,
             let alpha = json["alpha"] as? CGFloat else {
-            return nil
+                return nil
         }
 
         self.init(red: red, green: green, blue: blue, alpha: alpha)

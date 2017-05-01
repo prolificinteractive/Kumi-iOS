@@ -92,32 +92,50 @@ public struct ColorTheme {
     /// Emphasis Tertiary Faded color.
     var emphasisTertiaryFaded: UIColor?
 
-    /// Grayout Primary color.
-    var grayoutPrimary: UIColor?
+    /// Invert Emphasis Primary color.
+    var invertEmphasisPrimary: UIColor?
 
-    /// Grayout Secondary color.
-    var grayoutSecondary: UIColor?
+    /// Invert Emphasis Primary Muted color.
+    var invertEmphasisPrimaryMuted: UIColor?
 
-    /// Grayout Tertiary color.
-    var grayoutTertiary: UIColor?
+    /// Invert Emphasis Primary Faded color.
+    var invertEmphasisPrimaryFaded: UIColor?
 
-    /// Error Primary color.
-    var errorPrimary: UIColor?
+    /// Invert Emphasis Secondary color.
+    var invertEmphasisSecondary: UIColor?
 
-    /// Error Secondary color.
-    var errorSecondary: UIColor?
+    /// Invert Emphasis Secondary Muted color.
+    var invertEmphasisSecondaryMuted: UIColor?
 
-    /// Error Tertiary color.
-    var errorTertiary: UIColor?
+    /// Invert Emphasis Secondary Faded color.
+    var invertEmphasisSecondaryFaded: UIColor?
 
-    /// Overlay Primary color.
-    var overlayPrimary: UIColor?
+    /// Invert Emphasis Tertiary color.
+    var invertEmphasisTertiary: UIColor?
 
-    /// Overlay Secondary color.
-    var overlaySecondary: UIColor?
+    /// Invert Emphasis Tertiary Muted color.
+    var invertEmphasisTertiaryMuted: UIColor?
 
-    /// Overlay Tertiary color.
-    var overlayTertiary: UIColor?
+    /// Invert Emphasis Tertiary Faded color.
+    var invertEmphasisTertiaryFaded: UIColor?
+
+    /// Grayout color.
+    var grayout: UIColor?
+
+    /// Grayout Muted color.
+    var grayoutMuted: UIColor?
+
+    /// Grayout Faded color.
+    var grayoutFaded: UIColor?
+
+    /// Destructive color.
+    var destructive: UIColor?
+
+    /// Destructive Muted color.
+    var destructiveMuted: UIColor?
+
+    /// Destructive Faded color.
+    var destructiveFaded: UIColor?
 
     public init?(json: JSON) {
         if let primaryJSON = json["primary"] as? JSON {
@@ -201,6 +219,90 @@ public struct ColorTheme {
             }
             if let fadedJSON = emphasisPrimaryJSON["faded"] as? JSON {
                 emphasisPrimaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let emphasisSecondaryJSON = json["emphasisSecondary"] as? JSON {
+            if let normalJSON = emphasisSecondaryJSON["normal"] as? JSON {
+                emphasisSecondary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = emphasisSecondaryJSON["muted"] as? JSON {
+                emphasisSecondaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = emphasisSecondaryJSON["faded"] as? JSON {
+                emphasisSecondaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let emphasisTertiaryJSON = json["emphasisTertiary"] as? JSON {
+            if let normalJSON = emphasisTertiaryJSON["normal"] as? JSON {
+                emphasisTertiary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = emphasisTertiaryJSON["muted"] as? JSON {
+                emphasisTertiaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = emphasisTertiaryJSON["faded"] as? JSON {
+                emphasisTertiaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let invertEmphasisPrimaryJSON = json["invertEmphasisPrimary"] as? JSON {
+            if let normalJSON = invertEmphasisPrimaryJSON["normal"] as? JSON {
+                invertEmphasisPrimary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = invertEmphasisPrimaryJSON["muted"] as? JSON {
+                invertEmphasisPrimaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = invertEmphasisPrimaryJSON["faded"] as? JSON {
+                invertEmphasisPrimaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let invertEmphasisSecondaryJSON = json["invertEmphasisSecondary"] as? JSON {
+            if let normalJSON = invertEmphasisSecondaryJSON["normal"] as? JSON {
+                invertEmphasisSecondary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = invertEmphasisSecondaryJSON["muted"] as? JSON {
+                invertEmphasisSecondaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = invertEmphasisSecondaryJSON["faded"] as? JSON {
+                invertEmphasisSecondaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let invertEmphasisTertiaryJSON = json["invertEmphasisTertiary"] as? JSON {
+            if let normalJSON = invertEmphasisTertiaryJSON["normal"] as? JSON {
+                invertEmphasisTertiary = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = invertEmphasisTertiaryJSON["muted"] as? JSON {
+                invertEmphasisTertiaryMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = invertEmphasisTertiaryJSON["faded"] as? JSON {
+                invertEmphasisTertiaryFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let grayoutJSON = json["grayout"] as? JSON {
+            if let normalJSON = grayoutJSON["normal"] as? JSON {
+                grayout = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = grayoutJSON["muted"] as? JSON {
+                grayoutMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = grayoutJSON["faded"] as? JSON {
+                grayoutFaded = UIColor(json: fadedJSON)
+            }
+        }
+
+        if let destructiveJSON = json["destructive"] as? JSON {
+            if let normalJSON = destructiveJSON["normal"] as? JSON {
+                destructive = UIColor(json: normalJSON)
+            }
+            if let mutedJSON = destructiveJSON["muted"] as? JSON {
+                destructiveMuted = UIColor(json: mutedJSON)
+            }
+            if let fadedJSON = destructiveJSON["faded"] as? JSON {
+                destructiveFaded = UIColor(json: fadedJSON)
             }
         }
     }
