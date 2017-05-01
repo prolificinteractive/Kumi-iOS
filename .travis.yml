@@ -17,5 +17,5 @@ before_install:
 - pod repo update
 - pod install
 script:
-- set -o pipefail && xcodebuild test -workspace Kumi.xcworkspace -scheme KumiTests 'platform:iOS Simulator, id:0D86C5D8-FFE3-4FAA-8FCA-1AE0C5DF7AB8, OS:10.1, name:iPhone 6s' | xcpretty
+- set -o pipefail && xcodebuild test -workspace Kumi.xcworkspace -scheme KumiTests -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' | xcpretty
 # - pod lib lint
