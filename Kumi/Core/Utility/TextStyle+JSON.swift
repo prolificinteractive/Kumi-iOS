@@ -113,7 +113,6 @@ extension TextStyle {
 
         var emFont: UIFont?
         var strongFont: UIFont?
-        // TODO: How do we get the color information from the JSON?
         var textColor: UIColor?
         var characterSpacing: CGFloat?
         var lineSpacing: CGFloat?
@@ -184,7 +183,7 @@ extension TextStyle {
             textTransform = TextTransform(string: transform)
         }
 
-        if let strikethroughColorJSON = json["strikethroughColor"] as? JSON {
+        if let strikethroughColorJSON = json["textDecorationColor"] as? JSON {
             strikethroughColor = UIColor(json: strikethroughColorJSON)
         }
 
