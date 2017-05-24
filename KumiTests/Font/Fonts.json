@@ -8,7 +8,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -22,7 +25,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "displayLarge": {
@@ -34,7 +40,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -48,7 +57,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "displaySmall": {
@@ -60,7 +72,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -74,7 +89,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "headline1": {
@@ -86,7 +104,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -100,7 +121,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "headline2": {
@@ -112,7 +136,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -126,7 +153,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "headline3": {
@@ -138,7 +168,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -152,7 +185,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "headline4": {
@@ -164,7 +200,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -178,7 +217,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "headline5": {
@@ -190,7 +232,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -204,7 +249,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "headline6": {
@@ -216,7 +264,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -230,7 +281,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "subHeadline": {
@@ -242,7 +296,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -256,7 +313,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "subHeadlineLarge": {
@@ -268,7 +328,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -282,7 +345,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "subHeadlineSmall": {
@@ -294,7 +360,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -308,7 +377,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "body": {
@@ -320,7 +392,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -334,7 +409,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "bodyLarge": {
@@ -346,7 +424,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -360,7 +441,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "bodySmall": {
@@ -372,7 +456,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -386,7 +473,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "caption": {
@@ -398,7 +488,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -412,7 +505,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "captionLarge": {
@@ -424,7 +520,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -438,7 +537,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "captionSmall": {
@@ -450,7 +552,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -464,7 +569,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "buttonTitle": {
@@ -476,7 +584,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -490,7 +601,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "buttonTitleLarge": {
@@ -502,7 +616,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -516,7 +633,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "buttonTitleSmall": {
@@ -528,7 +648,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -542,7 +665,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "buttonTitleFloating": {
@@ -554,7 +680,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -568,7 +697,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "buttonTitleFloatingLarge": {
@@ -580,7 +712,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -594,7 +729,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "buttonTitleFloatingSmall": {
@@ -606,7 +744,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -620,7 +761,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "textFieldTitle": {
@@ -632,7 +776,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -646,7 +793,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "textFieldTitleLarge": {
@@ -658,7 +808,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -672,7 +825,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "textFieldTitleSmall": {
@@ -684,7 +840,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -698,7 +857,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "topItemPrompt": {
@@ -710,7 +872,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -724,7 +889,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "topItemTitle": {
@@ -736,7 +904,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -750,7 +921,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "topItemButtonItem": {
@@ -762,7 +936,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -776,7 +953,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "tabBarItemTitle": {
@@ -788,7 +968,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -802,7 +985,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "tabBarItemBadge": {
@@ -814,7 +1000,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -828,7 +1017,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     },
     "segmentedTitle": {
@@ -840,7 +1032,10 @@
             "emphasis": "Helvetica-Heavy"
         },
         "color": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -854,7 +1049,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-            "$ref": "#/theme/color/primary/normal"
+            "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
     }
 }

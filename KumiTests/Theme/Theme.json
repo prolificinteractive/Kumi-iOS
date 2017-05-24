@@ -265,7 +265,10 @@
           "emphasis": "roman/heavy"
         },
         "color": {
-          "$ref": "#/theme/color/primary/normal"
+          "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         },
         "letterSpacing": 1,
         "lineSpacing": 0,
@@ -279,7 +282,10 @@
         "textTransform": "none",
         "textDecorationLine": "none",
         "textDecorationColor": {
-          "$ref": "#/theme/color/primary/normal"
+          "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
         }
       }
     },
@@ -291,13 +297,19 @@
         "$ref": "#/definition/cornerRadius/regular"
       },
       "backgroundColor": {
-        "$ref": "#/theme/color/primary/normal"
+        "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
       },
       "borderWidth": {
         "$ref": "#/definition/stroke/none"
       },
       "borderColor": {
-        "$ref": "#/theme/color/primary/normal"
+        "red": 0.5,
+          "green": 0.5,
+          "blue": 0.5,
+          "alpha": 0.5
       },
       "elevation": {
         "$ref": "#/theme/shadowElevation/primary"

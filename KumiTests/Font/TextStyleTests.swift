@@ -33,6 +33,8 @@ class TextStyleTests: XCTestCase {
 
     func testTextStyleJSONCreation() {
         XCTAssertNotNil(textStyle.font)
+        XCTAssertNotNil(textStyle.textColor)
+        XCTAssertNotNil(textStyle.strikethroughColor)
         XCTAssertEqual(textStyle.characterSpacing, 1.0)
         XCTAssertEqual(textStyle.lineSpacing, 0.0)
         XCTAssertEqual(textStyle.lineHeightMultiple, 1.0)
