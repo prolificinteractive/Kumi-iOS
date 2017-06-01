@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Kumi"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "An iOS framework for easy theme integration to your application"
 
   s.description      = <<-DESC
