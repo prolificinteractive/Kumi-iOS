@@ -65,7 +65,6 @@ private extension NSLineBreakMode {
             return nil
         }
     }
-
 }
 
 private extension NSUnderlineStyle {
@@ -101,7 +100,7 @@ private extension NSUnderlineStyle {
 extension TextStyle {
 
     init?(json: JSON) {
-        guard let fontNameJSON = json["fontWeight"] as? JSON,
+        guard let fontNameJSON = json["fonts"] as? JSON,
             let normalFontName = fontNameJSON["normal"] as? String,
             let textSize = json["textSize"] as? CGFloat else {
                 return nil

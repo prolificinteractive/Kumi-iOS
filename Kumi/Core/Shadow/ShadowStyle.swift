@@ -6,7 +6,7 @@
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 /**
  *  Encapsulates style information to be applied when displaying or animating CALayer's shadow.
@@ -14,16 +14,16 @@ import UIKit
 public struct ShadowStyle {
 
     /// Font for displaying regular text.
-    public let shadowOpacity: Float
+    public var shadowOpacity: Float
 
     /// Font for displaying regular text.
-    public let shadowRadius: CGFloat
+    public var shadowRadius: CGFloat
 
     /// Font for displaying regular text.
-    public let shadowOffset: CGSize
+    public var shadowOffset: CGSize
 
     /// Font for displaying regular text.
-    public let shadowColor: CGColor?
+    public var shadowColor: CGColor?
 
     public init(shadowOpacity: Float = 1.0,
                 shadowRadius: CGFloat,

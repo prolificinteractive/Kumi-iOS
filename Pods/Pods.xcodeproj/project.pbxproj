@@ -11,6 +11,14 @@
 		02A27DB57A50860FC2DCDED16047E699 /* MarkerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DB6BD455D54E77CD58FB3CC79AF1D9 /* MarkerTextField.swift */; };
 		0390EFA7B034EA5E29C8311A01F42897 /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D326207C9E30F64A4F7EF97EB4D343F4 /* ShadowStyle.swift */; };
 		1310EAF31CD05E4CEB90514A0240C59C /* Pods-KumiTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 179F1F7C96C6FBC76B0A9BC703231EE2 /* Pods-KumiTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1544875F1EE4D3B800DCD7A9 /* AnimationTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1544875E1EE4D3B800DCD7A9 /* AnimationTheme.swift */; };
+		154487751EE4E39400DCD7A9 /* CABasicAnimationStyle+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154487731EE4E39400DCD7A9 /* CABasicAnimationStyle+JSON.swift */; };
+		154487761EE4E39400DCD7A9 /* UIViewAnimationStyle+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154487741EE4E39400DCD7A9 /* UIViewAnimationStyle+JSON.swift */; };
+		154487781EE4E3A200DCD7A9 /* CAMediaTimingFunction+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154487771EE4E3A200DCD7A9 /* CAMediaTimingFunction+JSON.swift */; };
+		15C545F71EE33AE100F164D1 /* LayerStyle+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C545F61EE33AE100F164D1 /* LayerStyle+JSON.swift */; };
+		15C545F91EE4841300F164D1 /* ShadowStyle+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C545F81EE4841300F164D1 /* ShadowStyle+JSON.swift */; };
+		15C545FB1EE486ED00F164D1 /* CGSize+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C545FA1EE486ED00F164D1 /* CGSize+JSON.swift */; };
+		15C545FD1EE48F5100F164D1 /* CATransform3D+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C545FC1EE48F5100F164D1 /* CATransform3D+JSON.swift */; };
 		21CA07A8CDE46053F03D088948B2C6F5 /* BorderWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DC7E54F29271725893ED61AB9EBDE0 /* BorderWidth.swift */; };
 		2D86A363E89A568FCABCF8591B041B2C /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68F75190E14B24E687C05749CFB149 /* ColorTheme.swift */; };
 		2EE265D7AB362191606951114802044C /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C5CFA351278E1150CC3594DF5F9609 /* CornerRadius.swift */; };
@@ -30,7 +38,6 @@
 		8264BDED078DF69F4964B7AC2D6F7F9B /* AnimationDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4FF335C8AEBF0E75E3B48BB876775E /* AnimationDuration.swift */; };
 		882EBD26FCCC9768705D104D087EB20A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F67AD3E3E302C09C9B6CB63D70F520 /* Foundation.framework */; };
 		8E882A092756852F882B11D133A37F61 /* Pods-Kumi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C84FF58BCD9922F010C0A9179AADA66E /* Pods-Kumi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B6595C9E56E19FFFF9CE754B1E25D5B /* AnimationTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908BC6B9AAEB448F246B8F8BD56E36F /* AnimationTheme.swift */; };
 		9E9C3B66BABBC19047D9BBB90CD93353 /* UIViewAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C79C2EAA02FD4FC0DDE76C411CC5AB /* UIViewAnimationStyle.swift */; };
 		A062839903A85A6E01D830D25DFBF895 /* AlphaValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879884DADB3EF840CD312D77D1BE71A7 /* AlphaValue.swift */; };
 		A1ADA66AE4BE94BD2D66A96935929C21 /* CABasicAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269DE4E315326C9AD8644147B3BBE0D /* CABasicAnimationStyle.swift */; };
@@ -95,13 +102,21 @@
 		0EA9391598292D6FD7294D7DB0FAEBBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10EDF1E5CBA00811BCCDB69BECBAF328 /* Pods-Kumi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kumi-acknowledgements.markdown"; sourceTree = "<group>"; };
 		14779AAC9A3173CDD048E70ED03F0F3E /* Marker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Marker-dummy.m"; sourceTree = "<group>"; };
+		1544875E1EE4D3B800DCD7A9 /* AnimationTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTheme.swift; sourceTree = "<group>"; };
+		154487731EE4E39400DCD7A9 /* CABasicAnimationStyle+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CABasicAnimationStyle+JSON.swift"; sourceTree = "<group>"; };
+		154487741EE4E39400DCD7A9 /* UIViewAnimationStyle+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewAnimationStyle+JSON.swift"; sourceTree = "<group>"; };
+		154487771EE4E3A200DCD7A9 /* CAMediaTimingFunction+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAMediaTimingFunction+JSON.swift"; sourceTree = "<group>"; };
+		15C545F61EE33AE100F164D1 /* LayerStyle+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LayerStyle+JSON.swift"; sourceTree = "<group>"; };
+		15C545F81EE4841300F164D1 /* ShadowStyle+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShadowStyle+JSON.swift"; sourceTree = "<group>"; };
+		15C545FA1EE486ED00F164D1 /* CGSize+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+JSON.swift"; sourceTree = "<group>"; };
+		15C545FC1EE48F5100F164D1 /* CATransform3D+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CATransform3D+JSON.swift"; sourceTree = "<group>"; };
 		179F1F7C96C6FBC76B0A9BC703231EE2 /* Pods-KumiTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KumiTests-umbrella.h"; sourceTree = "<group>"; };
 		1F935FC5965836330979203536D5B3DD /* TextStyle+JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "TextStyle+JSON.swift"; sourceTree = "<group>"; };
 		2183D996681258DFD73116ADA07B6A94 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F586837678508916B1E9227AB10FD4D /* MarkerLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarkerLabel.swift; path = Marker/Classes/MarkerLabel.swift; sourceTree = "<group>"; };
 		346BEA4F6B22392D2B7CACE8ED90471D /* LayerStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayerStyle.swift; sourceTree = "<group>"; };
 		35DC7E54F29271725893ED61AB9EBDE0 /* BorderWidth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BorderWidth.swift; sourceTree = "<group>"; };
-		3943F588FBFCB27BF461614068B38110 /* Pods_Kumi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Kumi.framework; path = "Pods-Kumi.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3943F588FBFCB27BF461614068B38110 /* Pods_Kumi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kumi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E63B2693434EC39233F5A36784D7DA7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		4089E2CD629D467DF1B05926622FA891 /* Pods-Kumi-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kumi-resources.sh"; sourceTree = "<group>"; };
 		43DB6BD455D54E77CD58FB3CC79AF1D9 /* MarkerTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarkerTextField.swift; path = Marker/Classes/MarkerTextField.swift; sourceTree = "<group>"; };
@@ -112,13 +127,13 @@
 		51C79C2EAA02FD4FC0DDE76C411CC5AB /* UIViewAnimationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewAnimationStyle.swift; sourceTree = "<group>"; };
 		52B84423E26FA3A89CCB21A5F3DFB8A9 /* Pods-KumiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KumiTests.release.xcconfig"; sourceTree = "<group>"; };
 		55DC82622729B2FFBF7CA29A88A772DE /* Kumi-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kumi-prefix.pch"; sourceTree = "<group>"; };
-		577F012051BA9C4CD29D6E0840BC3C89 /* Pods_KumiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KumiTests.framework; path = "Pods-KumiTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		577F012051BA9C4CD29D6E0840BC3C89 /* Pods_KumiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		666DF364ED3740504315768AB93D2495 /* Pods-KumiTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KumiTests-resources.sh"; sourceTree = "<group>"; };
 		6AFFB253100F5E99AEC8D4760BCC07AE /* FontTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontTheme.swift; sourceTree = "<group>"; };
-		6E35A301EB0182C147D29DC09CB8738B /* Kumi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kumi.framework; path = Kumi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E35A301EB0182C147D29DC09CB8738B /* Kumi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kumi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEF2F10EBFE193CD97D9DC5061206FB /* MarkdownString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarkdownString.swift; path = Marker/Classes/Markdown/MarkdownString.swift; sourceTree = "<group>"; };
-		6EFE5FE854169024E53B00FC88DB5725 /* Kumi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kumi.modulemap; sourceTree = "<group>"; };
-		7083DD7FA6E1C5F44DE0B506A4ED4396 /* Marker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Marker.modulemap; sourceTree = "<group>"; };
+		6EFE5FE854169024E53B00FC88DB5725 /* Kumi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kumi.modulemap; sourceTree = "<group>"; };
+		7083DD7FA6E1C5F44DE0B506A4ED4396 /* Marker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Marker.modulemap; sourceTree = "<group>"; };
 		71DBC87BA84F67DB87A24397FD8AABED /* Pods-KumiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KumiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		736762B168D74076FD63F71488A5A45D /* Kumi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kumi-umbrella.h"; sourceTree = "<group>"; };
 		738FAF5A0FE466C0E22286198856D6B8 /* MarkdownParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarkdownParser.swift; path = Marker/Classes/Markdown/MarkdownParser.swift; sourceTree = "<group>"; };
@@ -126,17 +141,16 @@
 		856A55FF3E52F850AE41BCA4F451A2A2 /* Kumi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kumi-dummy.m"; sourceTree = "<group>"; };
 		879884DADB3EF840CD312D77D1BE71A7 /* AlphaValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlphaValue.swift; sourceTree = "<group>"; };
 		91F67AD3E3E302C09C9B6CB63D70F520 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		993B61A3603E2729557A75CEEC923854 /* MarkerTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarkerTextView.swift; path = Marker/Classes/MarkerTextView.swift; sourceTree = "<group>"; };
 		9C68F75190E14B24E687C05749CFB149 /* ColorTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		A4E2C3B7A9A2AB1918F036E081DABF00 /* CALayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
-		A64780119022B0EA4FEF0A35A7885BFE /* Pods-KumiTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KumiTests.modulemap"; sourceTree = "<group>"; };
-		A908BC6B9AAEB448F246B8F8BD56E36F /* AnimationTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationTheme.swift; sourceTree = "<group>"; };
-		AD12E98616C1DFE6D1DC33B057E8149F /* Pods-Kumi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Kumi.modulemap"; sourceTree = "<group>"; };
+		A64780119022B0EA4FEF0A35A7885BFE /* Pods-KumiTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KumiTests.modulemap"; sourceTree = "<group>"; };
+		AD12E98616C1DFE6D1DC33B057E8149F /* Pods-Kumi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kumi.modulemap"; sourceTree = "<group>"; };
 		B53483CB210F9C1522E8D55A436531D0 /* TextStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextStyle.swift; path = Marker/Classes/TextStyle.swift; sourceTree = "<group>"; };
 		B7CED8210E5CBEA7999ECAAA29606E14 /* ShadowTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShadowTheme.swift; sourceTree = "<group>"; };
 		BA1A2A72B2F591347E52DDD34B8A91E2 /* MarkerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarkerButton.swift; path = Marker/Classes/MarkerButton.swift; sourceTree = "<group>"; };
-		BF10463DE9F3FCDB21F81440AE3E5969 /* Marker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Marker.framework; path = Marker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF10463DE9F3FCDB21F81440AE3E5969 /* Marker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Marker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F80B8095430C0CAD9F9F620A6D21B2 /* Marker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Marker.xcconfig; sourceTree = "<group>"; };
 		C2AD475A7FCD2C28618DB31D9A9D6924 /* Kumi.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kumi.xcconfig; sourceTree = "<group>"; };
 		C30706067D0B2D19FEE2AD380DC3604D /* Pods-KumiTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KumiTests-dummy.m"; sourceTree = "<group>"; };
@@ -266,7 +280,6 @@
 			children = (
 				9C68F75190E14B24E687C05749CFB149 /* ColorTheme.swift */,
 			);
-			name = Color;
 			path = Color;
 			sourceTree = "<group>";
 		};
@@ -274,9 +287,9 @@
 			isa = PBXGroup;
 			children = (
 				346BEA4F6B22392D2B7CACE8ED90471D /* LayerStyle.swift */,
+				15C545F61EE33AE100F164D1 /* LayerStyle+JSON.swift */,
 				FC1706734E5E64E63FFED981F10EC4C0 /* LayerTheme.swift */,
 			);
-			name = Layer;
 			path = Layer;
 			sourceTree = "<group>";
 		};
@@ -285,7 +298,6 @@
 			children = (
 				C115F99BAA8FD93AECEB688693264075 /* Core */,
 			);
-			name = Kumi;
 			path = Kumi;
 			sourceTree = "<group>";
 		};
@@ -304,13 +316,15 @@
 				879884DADB3EF840CD312D77D1BE71A7 /* AlphaValue.swift */,
 				4E4FF335C8AEBF0E75E3B48BB876775E /* AnimationDuration.swift */,
 				35DC7E54F29271725893ED61AB9EBDE0 /* BorderWidth.swift */,
+				154487771EE4E3A200DCD7A9 /* CAMediaTimingFunction+JSON.swift */,
 				A4E2C3B7A9A2AB1918F036E081DABF00 /* CALayerExtension.swift */,
 				05C5CFA351278E1150CC3594DF5F9609 /* CornerRadius.swift */,
 				1F935FC5965836330979203536D5B3DD /* TextStyle+JSON.swift */,
 				3E63B2693434EC39233F5A36784D7DA7 /* UIColor+Extensions.swift */,
 				4731C7531DD4A9A0CC8C221D73596F2B /* UIColor+JSON.swift */,
+				15C545FC1EE48F5100F164D1 /* CATransform3D+JSON.swift */,
+				15C545FA1EE486ED00F164D1 /* CGSize+JSON.swift */,
 			);
-			name = Utility;
 			path = Utility;
 			sourceTree = "<group>";
 		};
@@ -350,7 +364,6 @@
 				ECB193864F9BE0330C76E97D2A0955AC /* TextTransform.swift */,
 				9B439650682AF28BE4407E1733E0CE1A /* Support Files */,
 			);
-			name = Marker;
 			path = Marker;
 			sourceTree = "<group>";
 		};
@@ -358,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -389,18 +401,18 @@
 			children = (
 				6AFFB253100F5E99AEC8D4760BCC07AE /* FontTheme.swift */,
 			);
-			name = Font;
 			path = Font;
 			sourceTree = "<group>";
 		};
 		B5AC8E774E0B868CC80EC76469C3C3D7 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				A908BC6B9AAEB448F246B8F8BD56E36F /* AnimationTheme.swift */,
+				1544875E1EE4D3B800DCD7A9 /* AnimationTheme.swift */,
 				D269DE4E315326C9AD8644147B3BBE0D /* CABasicAnimationStyle.swift */,
 				51C79C2EAA02FD4FC0DDE76C411CC5AB /* UIViewAnimationStyle.swift */,
+				154487731EE4E39400DCD7A9 /* CABasicAnimationStyle+JSON.swift */,
+				154487741EE4E39400DCD7A9 /* UIViewAnimationStyle+JSON.swift */,
 			);
-			name = Animation;
 			path = Animation;
 			sourceTree = "<group>";
 		};
@@ -438,7 +450,6 @@
 				FE8586363142ACF6214AF57BFDF26AA0 /* Shadow */,
 				663124748BCACED99A32E45BE76402CC /* Utility */,
 			);
-			name = Core;
 			path = Core;
 			sourceTree = "<group>";
 		};
@@ -446,9 +457,9 @@
 			isa = PBXGroup;
 			children = (
 				D326207C9E30F64A4F7EF97EB4D343F4 /* ShadowStyle.swift */,
+				15C545F81EE4841300F164D1 /* ShadowStyle+JSON.swift */,
 				B7CED8210E5CBEA7999ECAAA29606E14 /* ShadowTheme.swift */,
 			);
-			name = Shadow;
 			path = Shadow;
 			sourceTree = "<group>";
 		};
@@ -599,9 +610,11 @@
 			files = (
 				A062839903A85A6E01D830D25DFBF895 /* AlphaValue.swift in Sources */,
 				8264BDED078DF69F4964B7AC2D6F7F9B /* AnimationDuration.swift in Sources */,
-				9B6595C9E56E19FFFF9CE754B1E25D5B /* AnimationTheme.swift in Sources */,
+				15C545FB1EE486ED00F164D1 /* CGSize+JSON.swift in Sources */,
 				21CA07A8CDE46053F03D088948B2C6F5 /* BorderWidth.swift in Sources */,
 				A1ADA66AE4BE94BD2D66A96935929C21 /* CABasicAnimationStyle.swift in Sources */,
+				15C545F91EE4841300F164D1 /* ShadowStyle+JSON.swift in Sources */,
+				1544875F1EE4D3B800DCD7A9 /* AnimationTheme.swift in Sources */,
 				44C4036597DEEE16C2F1A99FB0F1B2EE /* CALayerExtension.swift in Sources */,
 				2D86A363E89A568FCABCF8591B041B2C /* ColorTheme.swift in Sources */,
 				2EE265D7AB362191606951114802044C /* CornerRadius.swift in Sources */,
@@ -609,13 +622,18 @@
 				C229D60C642501E45C91D36A38A04B63 /* Kumi-dummy.m in Sources */,
 				D023095CCF340905C8B1A6FB3A002634 /* LayerStyle.swift in Sources */,
 				F313FAC467F829E23D233B0AD97B2C77 /* LayerTheme.swift in Sources */,
+				154487781EE4E3A200DCD7A9 /* CAMediaTimingFunction+JSON.swift in Sources */,
+				154487751EE4E39400DCD7A9 /* CABasicAnimationStyle+JSON.swift in Sources */,
 				0390EFA7B034EA5E29C8311A01F42897 /* ShadowStyle.swift in Sources */,
 				3F31981DCD8AEBB32F76457AE180C6CB /* ShadowTheme.swift in Sources */,
 				B35CE37146C24EF845BC839A95317CB8 /* TextStyle+JSON.swift in Sources */,
 				424B004E4A4B42C1786F2B91991ADDE2 /* Theme.swift in Sources */,
 				ADA8A3C43E5F56284D5A1960B194E802 /* UIColor+Extensions.swift in Sources */,
+				15C545FD1EE48F5100F164D1 /* CATransform3D+JSON.swift in Sources */,
 				41C547982DAC039F17D5C62892E20F2C /* UIColor+JSON.swift in Sources */,
 				9E9C3B66BABBC19047D9BBB90CD93353 /* UIViewAnimationStyle.swift in Sources */,
+				154487761EE4E39400DCD7A9 /* UIViewAnimationStyle+JSON.swift in Sources */,
+				15C545F71EE33AE100F164D1 /* LayerStyle+JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

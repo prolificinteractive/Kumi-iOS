@@ -1,0 +1,109 @@
+{
+    "none": {
+        "$ref": "test",
+        "shadowOpacity": 1,
+        "shadowRadius": 14,
+        "shadowOffset": {
+            "width": 0,
+            "height": 7
+        },
+        "shadowColor": {
+            "$ref": "#/theme/color/primary/normal",
+            "hex": "FF0000",
+            "red": 1,
+            "green": 0,
+            "blue": 0,
+            "alpha": 1
+        }
+    },
+    "extraSmall": {
+        "$ref": "test",
+        "shadowOpacity": 1,
+        "shadowRadius": 14,
+        "shadowOffset": {
+            "width": 0,
+            "height": 7
+        },
+        "shadowColor": {
+            "$ref": "#/theme/color/primary/normal",
+            "hex": "FF0000",
+            "red": 1,
+            "green": 0,
+            "blue": 0,
+            "alpha": 1
+        }
+    },
+    "small": {
+        "$ref": "test",
+        "shadowOpacity": 1,
+        "shadowRadius": 14,
+        "shadowOffset": {
+            "width": 0,
+            "height": 7
+        },
+        "shadowColor": {
+            "$ref": "#/theme/color/primary/normal",
+            "hex": "FF0000",
+            "red": 1,
+            "green": 0,
+            "blue": 0,
+            "alpha": 1
+        }
+    },
+    "medium": {
+        "$ref": "test",
+        "shadowOpacity": 1,
+        "shadowRadius": 14,
+        "shadowOffset": {
+            "width": 0,
+            "height": 7
+        },
+        "shadowColor": {
+            "$ref": "#/theme/color/primary/normal",
+            "hex": "FF0000",
+            "red": 1,
+            "green": 0,
+            "blue": 0,
+            "alpha": 1
+        }
+    },
+    "large": {
+        "$ref": "test",
+        "shadowOpacity": 1,
+        "shadowRadius": 14,
+        "shadowOffset": {
+            "width": 0,
+            "height": 7
+        },
+        "shadowColor": {
+            "$ref": "#/theme/color/primary/normal",
+            "hex": "FF0000",
+            "red": 1,
+            "green": 0,
+            "blue": 0,
+            "alpha": 1
+        }
+    },
+    "extraLarge": {
+        "$ref": "test",
+        "shadowOpacity": 1,
+        "shadowRadius": 14,
+        "shadowOffset": {
+            "width": 0,
+            "height": 7
+        },
+        "shadowColor": {
+            "$ref": "#/theme/color/primary/normal",
+            "hex": "FF0000",
+            "red": 1,
+            "green": 0,
+            "blue": 0,
+            "alpha": 1
+        }
+    },
+    "relativeElevationAttributes": {
+        "radiusRatio": 2,
+        "offsetXRatio": 0,
+        "offsetYRatio": 1
+    }
+}

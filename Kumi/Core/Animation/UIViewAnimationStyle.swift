@@ -21,7 +21,7 @@ public struct UIViewAnimationStyle {
          delay: TimeInterval = 0,
          dampingRatio: CGFloat = 1,
          velocity: CGFloat = 0,
-         options: UIViewAnimationOptions = []) {
+         options: UIViewAnimationOptions = [.allowUserInteraction]) {
         self.duration = duration
         self.delay = delay
         self.dampingRatio = dampingRatio
