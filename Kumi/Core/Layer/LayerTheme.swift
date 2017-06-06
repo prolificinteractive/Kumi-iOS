@@ -11,187 +11,187 @@
 public struct LayerTheme {
 
     /// Empty Layer Style.
-    var emptyLayerStyle: LayerStyle?
+    public var emptyLayerStyle: LayerStyle?
 
     /// Primary Normal Layer Style.
-    var primaryNormalLayerStyle: LayerStyle?
+    public var primaryNormalLayerStyle: LayerStyle?
 
     /// Primary Hightlighted Layer Style.
-    var primaryHightlightedLayerStyle: LayerStyle?
+    public var primaryHightlightedLayerStyle: LayerStyle?
 
     /// Primary Focused Layer Style.
-    var primaryFocusedLayerStyle: LayerStyle?
+    public var primaryFocusedLayerStyle: LayerStyle?
 
     /// Primary Selected Layer Style.
-    var primarySelectedLayerStyle: LayerStyle?
+    public var primarySelectedLayerStyle: LayerStyle?
 
     /// Primary Diabled Layer Style.
-    var primaryDiabledLayerStyle: LayerStyle?
+    public var primaryDiabledLayerStyle: LayerStyle?
 
     /// Secondary Normal Layer Style.
-    var secondaryNormalLayerStyle: LayerStyle?
+    public var secondaryNormalLayerStyle: LayerStyle?
 
     /// Secondary Hightlighted Layer Style.
-    var secondaryHightlightedLayerStyle: LayerStyle?
+    public var secondaryHightlightedLayerStyle: LayerStyle?
 
     /// Secondary Focused Layer Style.
-    var secondaryFocusedLayerStyle: LayerStyle?
+    public var secondaryFocusedLayerStyle: LayerStyle?
 
     /// Secondary Selected Layer Style.
-    var secondarySelectedLayerStyle: LayerStyle?
+    public var secondarySelectedLayerStyle: LayerStyle?
 
     /// Secondary Diabled Layer Style.
-    var secondaryDiabledLayerStyle: LayerStyle?
+    public var secondaryDiabledLayerStyle: LayerStyle?
 
     /// Tertiary Normal Layer Style.
-    var tertiaryNormalLayerStyle: LayerStyle?
+    public var tertiaryNormalLayerStyle: LayerStyle?
 
     /// Tertiary Hightlighted Layer Style.
-    var tertiaryHightlightedLayerStyle: LayerStyle?
+    public var tertiaryHightlightedLayerStyle: LayerStyle?
 
     /// Tertiary Focused Layer Style.
-    var tertiaryFocusedLayerStyle: LayerStyle?
+    public var tertiaryFocusedLayerStyle: LayerStyle?
 
     /// Tertiary Selected Layer Style.
-    var tertiarySelectedLayerStyle: LayerStyle?
+    public var tertiarySelectedLayerStyle: LayerStyle?
 
     /// Tertiary Diabled Layer Style.
-    var tertiaryDiabledLayerStyle: LayerStyle?
+    public var tertiaryDiabledLayerStyle: LayerStyle?
 
     /// Button Primary Normal Layer Style.
-    var buttonPrimaryNormalLayerStyle: LayerStyle?
+    public var buttonPrimaryNormalLayerStyle: LayerStyle?
 
     /// Button Primary Hightlighted Layer Style.
-    var buttonPrimaryHightlightedLayerStyle: LayerStyle?
+    public var buttonPrimaryHightlightedLayerStyle: LayerStyle?
 
     /// Button Primary Focused Layer Style.
-    var buttonPrimaryFocusedLayerStyle: LayerStyle?
+    public var buttonPrimaryFocusedLayerStyle: LayerStyle?
 
     /// Button Primary Selected Layer Style.
-    var buttonPrimarySelectedLayerStyle: LayerStyle?
+    public var buttonPrimarySelectedLayerStyle: LayerStyle?
 
     /// Button Primary Diabled Layer Style.
-    var buttonPrimaryDiabledLayerStyle: LayerStyle?
+    public var buttonPrimaryDiabledLayerStyle: LayerStyle?
 
     /// Button Secondary Normal Layer Style.
-    var buttonSecondaryNormalLayerStyle: LayerStyle?
+    public var buttonSecondaryNormalLayerStyle: LayerStyle?
 
     /// Button Secondary Hightlighted Layer Style.
-    var buttonSecondaryHightlightedLayerStyle: LayerStyle?
+    public var buttonSecondaryHightlightedLayerStyle: LayerStyle?
 
     /// Button Secondary Focused Layer Style.
-    var buttonSecondaryFocusedLayerStyle: LayerStyle?
+    public var buttonSecondaryFocusedLayerStyle: LayerStyle?
 
     /// Button Secondary Selected Layer Style.
-    var buttonSecondarySelectedLayerStyle: LayerStyle?
+    public var buttonSecondarySelectedLayerStyle: LayerStyle?
 
     /// Button Secondary Diabled Layer Style.
-    var buttonSecondaryDiabledLayerStyle: LayerStyle?
+    public var buttonSecondaryDiabledLayerStyle: LayerStyle?
 
     /// Button Tertiary Normal Layer Style.
-    var buttonTertiaryNormalLayerStyle: LayerStyle?
+    public var buttonTertiaryNormalLayerStyle: LayerStyle?
 
     /// Button Tertiary Hightlighted Layer Style.
-    var buttonTertiaryHightlightedLayerStyle: LayerStyle?
+    public var buttonTertiaryHightlightedLayerStyle: LayerStyle?
 
     /// Button Tertiary Focused Layer Style.
-    var buttonTertiaryFocusedLayerStyle: LayerStyle?
+    public var buttonTertiaryFocusedLayerStyle: LayerStyle?
 
     /// Button Tertiary Selected Layer Style.
-    var buttonTertiarySelectedLayerStyle: LayerStyle?
+    public var buttonTertiarySelectedLayerStyle: LayerStyle?
 
     /// Button Tertiary Diabled Layer Style.
-    var buttonTertiaryDiabledLayerStyle: LayerStyle?
+    public var buttonTertiaryDiabledLayerStyle: LayerStyle?
 
     /// Grid Primary Normal Layer Style.
-    var gridPrimaryNormalLayerStyle: LayerStyle?
+    public var gridPrimaryNormalLayerStyle: LayerStyle?
 
     /// Grid Primary Hightlighted Layer Style.
-    var gridPrimaryHightlightedLayerStyle: LayerStyle?
+    public var gridPrimaryHightlightedLayerStyle: LayerStyle?
 
     /// Grid Primary Focused Layer Style.
-    var gridPrimaryFocusedLayerStyle: LayerStyle?
+    public var gridPrimaryFocusedLayerStyle: LayerStyle?
 
     /// Grid Primary Selected Layer Style.
-    var gridPrimarySelectedLayerStyle: LayerStyle?
+    public var gridPrimarySelectedLayerStyle: LayerStyle?
 
     /// Grid Primary Diabled Layer Style.
-    var gridPrimaryDiabledLayerStyle: LayerStyle?
+    public var gridPrimaryDiabledLayerStyle: LayerStyle?
 
     /// Grid Secondary Normal Layer Style.
-    var gridSecondaryNormalLayerStyle: LayerStyle?
+    public var gridSecondaryNormalLayerStyle: LayerStyle?
 
     /// Grid Secondary Hightlighted Layer Style.
-    var gridSecondaryHightlightedLayerStyle: LayerStyle?
+    public var gridSecondaryHightlightedLayerStyle: LayerStyle?
 
     /// Grid Secondary Focused Layer Style.
-    var gridSecondaryFocusedLayerStyle: LayerStyle?
+    public var gridSecondaryFocusedLayerStyle: LayerStyle?
 
     /// Grid Secondary Selected Layer Style.
-    var gridSecondarySelectedLayerStyle: LayerStyle?
+    public var gridSecondarySelectedLayerStyle: LayerStyle?
 
     /// Grid Secondary Diabled Layer Style.
-    var gridSecondaryDiabledLayerStyle: LayerStyle?
+    public var gridSecondaryDiabledLayerStyle: LayerStyle?
 
     /// Grid Tertiary Normal Layer Style.
-    var gridTertiaryNormalLayerStyle: LayerStyle?
+    public var gridTertiaryNormalLayerStyle: LayerStyle?
 
     /// Grid Tertiary Hightlighted Layer Style.
-    var gridTertiaryHightlightedLayerStyle: LayerStyle?
+    public var gridTertiaryHightlightedLayerStyle: LayerStyle?
 
     /// Grid Tertiary Focused Layer Style.
-    var gridTertiaryFocusedLayerStyle: LayerStyle?
+    public var gridTertiaryFocusedLayerStyle: LayerStyle?
 
     /// Grid Tertiary Selected Layer Style.
-    var gridTertiarySelectedLayerStyle: LayerStyle?
+    public var gridTertiarySelectedLayerStyle: LayerStyle?
 
     /// Grid Tertiary Diabled Layer Style.
-    var gridTertiaryDiabledLayerStyle: LayerStyle?
+    public var gridTertiaryDiabledLayerStyle: LayerStyle?
 
     /// List Primary Normal Layer Style.
-    var listPrimaryNormalLayerStyle: LayerStyle?
+    public var listPrimaryNormalLayerStyle: LayerStyle?
 
     /// List Primary Hightlighted Layer Style.
-    var listPrimaryHightlightedLayerStyle: LayerStyle?
+    public var listPrimaryHightlightedLayerStyle: LayerStyle?
 
     /// List Primary Focused Layer Style.
-    var listPrimaryFocusedLayerStyle: LayerStyle?
+    public var listPrimaryFocusedLayerStyle: LayerStyle?
 
     /// List Primary Selected Layer Style.
-    var listPrimarySelectedLayerStyle: LayerStyle?
+    public var listPrimarySelectedLayerStyle: LayerStyle?
 
     /// List Primary Diabled Layer Style.
-    var listPrimaryDiabledLayerStyle: LayerStyle?
+    public var listPrimaryDiabledLayerStyle: LayerStyle?
 
     /// List Secondary Normal Layer Style.
-    var listSecondaryNormalLayerStyle: LayerStyle?
+    public var listSecondaryNormalLayerStyle: LayerStyle?
 
     /// List Secondary Hightlighted Layer Style.
-    var listSecondaryHightlightedLayerStyle: LayerStyle?
+    public var listSecondaryHightlightedLayerStyle: LayerStyle?
 
     /// List Secondary Focused Layer Style.
-    var listSecondaryFocusedLayerStyle: LayerStyle?
+    public var listSecondaryFocusedLayerStyle: LayerStyle?
 
     /// List Secondary Selected Layer Style.
-    var listSecondarySelectedLayerStyle: LayerStyle?
+    public var listSecondarySelectedLayerStyle: LayerStyle?
 
     /// List Secondary Diabled Layer Style.
-    var listSecondaryDiabledLayerStyle: LayerStyle?
+    public var listSecondaryDiabledLayerStyle: LayerStyle?
 
     /// List Tertiary Normal Layer Style.
-    var listTertiaryNormalLayerStyle: LayerStyle?
+    public var listTertiaryNormalLayerStyle: LayerStyle?
 
     /// List Tertiary Hightlighted Layer Style.
-    var listTertiaryHightlightedLayerStyle: LayerStyle?
+    public var listTertiaryHightlightedLayerStyle: LayerStyle?
 
     /// List Tertiary Focused Layer Style.
-    var listTertiaryFocusedLayerStyle: LayerStyle?
+    public var listTertiaryFocusedLayerStyle: LayerStyle?
 
     /// List Tertiary Selected Layer Style.
-    var listTertiarySelectedLayerStyle: LayerStyle?
+    public var listTertiarySelectedLayerStyle: LayerStyle?
 
     /// List Tertiary Diabled Layer Style.
-    var listTertiaryDiabledLayerStyle: LayerStyle?
+    public var listTertiaryDiabledLayerStyle: LayerStyle?
 
     public init?(json: JSON) {
 

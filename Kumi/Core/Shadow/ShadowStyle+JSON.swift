@@ -10,7 +10,7 @@ import Foundation
 
 extension ShadowStyle {
 
-    init?(json: JSON) {
+    public init?(json: JSON) {
         var shadowOpacity: Float = 1.0
         var shadowRadius: CGFloat = 0
         var shadowOffset: CGSize = CGSize.zero

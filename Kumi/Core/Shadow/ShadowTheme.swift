@@ -12,36 +12,39 @@ import UIKit
 public struct ShadowTheme {
 
     /// None Shadow Style.
-    var noneShadowStyle: ShadowStyle?
+    public var noneShadowStyle: ShadowStyle?
 
     /// Extra Small Shadow Style.
-    var extraSmallShadowStyle: ShadowStyle?
+    public var extraSmallShadowStyle: ShadowStyle?
 
     /// Small Shadow Style.
-    var smallShadowStyle: ShadowStyle?
+    public var smallShadowStyle: ShadowStyle?
 
     /// Medium Shadow Style.
-    var mediumShadowStyle: ShadowStyle?
+    public var mediumShadowStyle: ShadowStyle?
 
     /// Large Shadow Style.
-    var largeShadowStyle: ShadowStyle?
+    public var largeShadowStyle: ShadowStyle?
 
     /// Extra Large Shadow Style.
-    var extraLargeShadowStyle: ShadowStyle?
+    public var extraLargeShadowStyle: ShadowStyle?
 
     // MARK: - Relative Shadow to Elevation
 
     /// Radius Ratio to Elevetion Value.
-    var radiusRatio: CGFloat = 1.5
+    public var radiusRatio: CGFloat = 1.5
 
     /// Offset X Ratio to Elevetion Value.
-    var offsetXRatio: CGFloat = 0
+    public var offsetXRatio: CGFloat = 0
 
     /// Offset Y Ratio to Elevetion Value.
-    var offsetYRatio: CGFloat = 1
+    public var offsetYRatio: CGFloat = 1
 
-    // function allowing to create shadow based on elevation
-    func byElevation(_ elevation: CGFloat) -> ShadowStyle {
+    /// Allows to create a shadow based on the elevation.
+    ///
+    /// - Parameter elevation: The elevation to use.
+    /// - Returns: The shadow style.
+    public func byElevation(_ elevation: CGFloat) -> ShadowStyle {
         let shadowRadius = elevation * radiusRatio
         let shadowOffset = CGSize(width: elevation * offsetXRatio,
                                   height: elevation * offsetYRatio)

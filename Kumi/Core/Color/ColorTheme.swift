@@ -12,130 +12,130 @@ import UIKit
 public struct ColorTheme {
 
     /// Primary color.
-    var primary: UIColor?
+    public var primary: UIColor?
 
     /// Primary Muted color.
-    var primaryMuted: UIColor?
+    public var primaryMuted: UIColor?
 
     /// Primary Faded color.
-    var primaryFaded: UIColor?
+    public var primaryFaded: UIColor?
 
     /// Secondary color.
-    var secondary: UIColor?
+    public var secondary: UIColor?
 
     /// Secondary Muted color.
-    var secondaryMuted: UIColor?
+    public var secondaryMuted: UIColor?
 
     /// Secondary Faded color.
-    var secondaryFaded: UIColor?
+    public var secondaryFaded: UIColor?
 
     /// Tertiary color.
-    var tertiary: UIColor?
+    public var tertiary: UIColor?
 
     /// Tertiary Muted color.
-    var tertiaryMuted: UIColor?
+    public var tertiaryMuted: UIColor?
 
     /// Tertiary Faded color.
-    var tertiaryFaded: UIColor?
+    public var tertiaryFaded: UIColor?
 
     /// Invert Primary color.
-    var invertPrimary: UIColor?
+    public var invertPrimary: UIColor?
 
     /// Invert Primary Muted color.
-    var invertPrimaryMuted: UIColor?
+    public var invertPrimaryMuted: UIColor?
 
     /// Invert Primary Faded color.
-    var invertPrimaryFaded: UIColor?
+    public var invertPrimaryFaded: UIColor?
 
     /// Invert Secondary color.
-    var invertSecondary: UIColor?
+    public var invertSecondary: UIColor?
 
     /// Invert Secondary Muted color.
-    var invertSecondaryMuted: UIColor?
+    public var invertSecondaryMuted: UIColor?
 
     /// Invert Secondary Faded color.
-    var invertSecondaryFaded: UIColor?
+    public var invertSecondaryFaded: UIColor?
 
     /// Invert Tertiary color.
-    var invertTertiary: UIColor?
+    public var invertTertiary: UIColor?
 
     /// Invert Tertiary Muted color.
-    var invertTertiaryMuted: UIColor?
+    public var invertTertiaryMuted: UIColor?
 
     /// Invert Tertiary Faded color.
-    var invertTertiaryFaded: UIColor?
+    public var invertTertiaryFaded: UIColor?
 
     /// Emphasis Primary color.
-    var emphasisPrimary: UIColor?
+    public var emphasisPrimary: UIColor?
 
     /// Emphasis Primary Muted color.
-    var emphasisPrimaryMuted: UIColor?
+    public var emphasisPrimaryMuted: UIColor?
 
     /// Emphasis Primary Faded color.
-    var emphasisPrimaryFaded: UIColor?
+    public var emphasisPrimaryFaded: UIColor?
 
     /// Emphasis Secondary color.
-    var emphasisSecondary: UIColor?
+    public var emphasisSecondary: UIColor?
 
     /// Emphasis Secondary Muted color.
-    var emphasisSecondaryMuted: UIColor?
+    public var emphasisSecondaryMuted: UIColor?
 
     /// Emphasis Secondary Faded color.
-    var emphasisSecondaryFaded: UIColor?
+    public var emphasisSecondaryFaded: UIColor?
 
     /// Emphasis Tertiary color.
-    var emphasisTertiary: UIColor?
+    public var emphasisTertiary: UIColor?
 
     /// Emphasis Tertiary Muted color.
-    var emphasisTertiaryMuted: UIColor?
+    public var emphasisTertiaryMuted: UIColor?
 
     /// Emphasis Tertiary Faded color.
-    var emphasisTertiaryFaded: UIColor?
+    public var emphasisTertiaryFaded: UIColor?
 
     /// Invert Emphasis Primary color.
-    var invertEmphasisPrimary: UIColor?
+    public var invertEmphasisPrimary: UIColor?
 
     /// Invert Emphasis Primary Muted color.
-    var invertEmphasisPrimaryMuted: UIColor?
+    public var invertEmphasisPrimaryMuted: UIColor?
 
     /// Invert Emphasis Primary Faded color.
-    var invertEmphasisPrimaryFaded: UIColor?
+    public var invertEmphasisPrimaryFaded: UIColor?
 
     /// Invert Emphasis Secondary color.
-    var invertEmphasisSecondary: UIColor?
+    public var invertEmphasisSecondary: UIColor?
 
     /// Invert Emphasis Secondary Muted color.
-    var invertEmphasisSecondaryMuted: UIColor?
+    public var invertEmphasisSecondaryMuted: UIColor?
 
     /// Invert Emphasis Secondary Faded color.
-    var invertEmphasisSecondaryFaded: UIColor?
+    public var invertEmphasisSecondaryFaded: UIColor?
 
     /// Invert Emphasis Tertiary color.
-    var invertEmphasisTertiary: UIColor?
+    public var invertEmphasisTertiary: UIColor?
 
     /// Invert Emphasis Tertiary Muted color.
-    var invertEmphasisTertiaryMuted: UIColor?
+    public var invertEmphasisTertiaryMuted: UIColor?
 
     /// Invert Emphasis Tertiary Faded color.
-    var invertEmphasisTertiaryFaded: UIColor?
+    public var invertEmphasisTertiaryFaded: UIColor?
 
     /// Grayout color.
-    var grayout: UIColor?
+    public var grayout: UIColor?
 
     /// Grayout Muted color.
-    var grayoutMuted: UIColor?
+    public var grayoutMuted: UIColor?
 
     /// Grayout Faded color.
-    var grayoutFaded: UIColor?
+    public var grayoutFaded: UIColor?
 
     /// Destructive color.
-    var destructive: UIColor?
+    public var destructive: UIColor?
 
     /// Destructive Muted color.
-    var destructiveMuted: UIColor?
+    public var destructiveMuted: UIColor?
 
     /// Destructive Faded color.
-    var destructiveFaded: UIColor?
+    public var destructiveFaded: UIColor?
 
     public init?(json: JSON) {
         if let primaryJSON = json["primary"] as? JSON {

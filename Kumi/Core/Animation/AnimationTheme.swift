@@ -8,37 +8,38 @@
 
 import UIKit
 
+/// Animation theme.
 public struct AnimationTheme {
 
     /// Extra Fast CABasic Animation Style.
-    var extraFastCABasicAnimationStyle: CABasicAnimationStyle?
+    public var extraFastCABasicAnimationStyle: CABasicAnimationStyle?
 
     /// Fast CABasic Animation Style.
-    var fastCABasicAnimationStyle: CABasicAnimationStyle?
+    public var fastCABasicAnimationStyle: CABasicAnimationStyle?
 
     /// Normal CABasic Animation Style.
-    var normalCABasicAnimationStyle: CABasicAnimationStyle?
+    public var normalCABasicAnimationStyle: CABasicAnimationStyle?
 
     /// Slow CABasic Animation Style.
-    var slowCABasicAnimationStyle: CABasicAnimationStyle?
+    public var slowCABasicAnimationStyle: CABasicAnimationStyle?
 
     /// Extra Slow CABasic Animation Style.
-    var extraSlowCABasicAnimationStyle: CABasicAnimationStyle?
+    public var extraSlowCABasicAnimationStyle: CABasicAnimationStyle?
 
     /// Extra Fast UIView Animation Style.
-    var extraFastUIViewAnimationStyle: UIViewAnimationStyle?
+    public var extraFastUIViewAnimationStyle: UIViewAnimationStyle?
 
     /// Fast UIView Animation Style.
-    var fastUIViewAnimationStyle: UIViewAnimationStyle?
+    public var fastUIViewAnimationStyle: UIViewAnimationStyle?
 
     /// Normal UIView Animation Style.
-    var normalUIViewAnimationStyle: UIViewAnimationStyle?
+    public var normalUIViewAnimationStyle: UIViewAnimationStyle?
 
     /// Slow UIView Animation Style.
-    var slowUIViewAnimationStyle: UIViewAnimationStyle?
+    public var slowUIViewAnimationStyle: UIViewAnimationStyle?
 
     /// Extra Slow UIView Animation Style.
-    var extraSlowUIViewAnimationStyle: UIViewAnimationStyle?
+    public var extraSlowUIViewAnimationStyle: UIViewAnimationStyle?
 
     public init?(json: JSON) {
 

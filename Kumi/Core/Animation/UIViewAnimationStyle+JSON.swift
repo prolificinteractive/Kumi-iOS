@@ -8,7 +8,7 @@
 
 extension UIViewAnimationStyle {
 
-    init?(json: JSON) {
+    public init?(json: JSON) {
 
         var duration: TimeInterval = 0.35
         var delay: TimeInterval = 0
@@ -36,5 +36,5 @@ extension UIViewAnimationStyle {
                   dampingRatio: dampingRatio,
                   velocity: velocity)
     }
-
+    
 }

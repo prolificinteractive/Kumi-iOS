@@ -10,7 +10,7 @@ import Foundation
 
 extension LayerStyle {
 
-    init?(json: JSON) {
+    public init?(json: JSON) {
         var opacity: Float = 1
         var masksToBounds: Bool = false
         var isDoubleSided: Bool = true

@@ -14,123 +14,123 @@ public struct FontTheme {
     // MARK: - Generic Text Styles
 
     /// Display text style.
-    var displayTextStyle: TextStyle?
+    public var displayTextStyle: TextStyle?
 
     /// Display Large text style.
-    var displayLargeTextStyle: TextStyle?
+    public var displayLargeTextStyle: TextStyle?
 
     /// Display Small text style.
-    var displaySmallTextStyle: TextStyle?
+    public var displaySmallTextStyle: TextStyle?
 
     /// Headline 1 text style.
-    var headline1TextStyle: TextStyle?
+    public var headline1TextStyle: TextStyle?
 
     /// Headline 2 text style.
-    var headline2TextStyle: TextStyle?
+    public var headline2TextStyle: TextStyle?
 
     /// Headline 3 text style.
-    var headline3TextStyle: TextStyle?
+    public var headline3TextStyle: TextStyle?
 
     /// Headline 4 text style.
-    var headline4TextStyle: TextStyle?
+    public var headline4TextStyle: TextStyle?
 
     /// Headline 5 text style.
-    var headline5TextStyle: TextStyle?
+    public var headline5TextStyle: TextStyle?
 
     /// Headline 6 text style.
-    var headline6TextStyle: TextStyle?
+    public var headline6TextStyle: TextStyle?
 
     /// Sub-headline text style.
-    var subHeadlineTextStyle: TextStyle?
+    public var subHeadlineTextStyle: TextStyle?
 
     /// Sub-headline Large text style.
-    var subHeadlineLargeTextStyle: TextStyle?
+    public var subHeadlineLargeTextStyle: TextStyle?
 
     /// Sub-headline Small text style.
-    var subHeadlineSmallTextStyle: TextStyle?
+    public var subHeadlineSmallTextStyle: TextStyle?
 
     /// Body text style.
-    var bodyTextStyle: TextStyle?
+    public var bodyTextStyle: TextStyle?
 
     /// Body Large text style.
-    var bodyLargeTextStyle: TextStyle?
+    public var bodyLargeTextStyle: TextStyle?
 
     /// Body Small text style.
-    var bodySmallTextStyle: TextStyle?
+    public var bodySmallTextStyle: TextStyle?
 
     /// Caption text style.
-    var captionTextStyle: TextStyle?
+    public var captionTextStyle: TextStyle?
 
     /// Caption Large text style.
-    var captionLargeTextStyle: TextStyle?
+    public var captionLargeTextStyle: TextStyle?
 
     /// Caption Small text style.
-    var captionSmallTextStyle: TextStyle?
+    public var captionSmallTextStyle: TextStyle?
 
     // MARK: - Element-related Text Styles
 
     /// Top Item Title Text Style.
-    var topItemTitleTextStyle: TextStyle?
+    public var topItemTitleTextStyle: TextStyle?
 
     /// Top Item Subtitle Text Style.
-    var topItemSubtitleTextStyle: TextStyle?
+    public var topItemSubtitleTextStyle: TextStyle?
 
     /// Top Item Button Text Style.
-    var topItemButtonTextStyle: TextStyle?
+    public var topItemButtonTextStyle: TextStyle?
 
     /// Tab Bar Item Text Style.
-    var tabBarItemTextStyle: TextStyle?
+    public var tabBarItemTextStyle: TextStyle?
 
     /// Tab Bar Badge Text Style.
-    var tabBarBadgeTextStyle: TextStyle?
+    public var tabBarBadgeTextStyle: TextStyle?
 
     /// Button Text Style.
-    var buttonTextStyle: TextStyle?
+    public var buttonTextStyle: TextStyle?
 
     /// Button Large Text Style.
-    var buttonLargeTextStyle: TextStyle?
+    public var buttonLargeTextStyle: TextStyle?
 
     /// Button Small Text Style.
-    var buttonSmallTextStyle: TextStyle?
+    public var buttonSmallTextStyle: TextStyle?
 
     /// Button Flat Text Style.
-    var buttonFlatTextStyle: TextStyle?
+    public var buttonFlatTextStyle: TextStyle?
 
     /// Button Flat Large Text Style.
-    var buttonFlatLargeTextStyle: TextStyle?
+    public var buttonFlatLargeTextStyle: TextStyle?
 
     /// Button Flat Small Text Style.
-    var buttonFlatSmallTextStyle: TextStyle?
+    public var buttonFlatSmallTextStyle: TextStyle?
 
     /// Segmented Text Style.
-    var segmentedTextStyle: TextStyle?
+    public var segmentedTextStyle: TextStyle?
 
     /// Text Field Label Text Style.
-    var textFieldLabelTextStyle: TextStyle?
+    public var textFieldLabelTextStyle: TextStyle?
 
     /// Text Field Label Large Text Style.
-    var textFieldLabelLargeTextStyle: TextStyle?
+    public var textFieldLabelLargeTextStyle: TextStyle?
 
     /// Text Field Label Small Text Style.
-    var textFieldLabelSmallTextStyle: TextStyle?
+    public var textFieldLabelSmallTextStyle: TextStyle?
 
     /// Text Field Input Text Style.
-    var textFieldInputTextStyle: TextStyle?
+    public var textFieldInputTextStyle: TextStyle?
 
     /// Text Field Input Large Text Style.
-    var textFieldInputLargeTextStyle: TextStyle?
+    public var textFieldInputLargeTextStyle: TextStyle?
 
     /// Text Field Input Small Text Style.
-    var textFieldInputSmallTextStyle: TextStyle?
+    public var textFieldInputSmallTextStyle: TextStyle?
 
     /// Text Field Hint Text Style.
-    var textFieldHintTextStyle: TextStyle?
+    public var textFieldHintTextStyle: TextStyle?
 
     /// Text Field Hint Large Text Style.
-    var textFieldHintLargeTextStyle: TextStyle?
+    public var textFieldHintLargeTextStyle: TextStyle?
 
     /// Text Field Hint Small Text Style.
-    var textFieldHintSmallTextStyle: TextStyle?
+    public var textFieldHintSmallTextStyle: TextStyle?
 
     public init?(json: JSON) {
         if let displayJSON = json["display"] as? JSON {
