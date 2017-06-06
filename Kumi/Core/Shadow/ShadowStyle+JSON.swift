@@ -9,31 +9,31 @@
 import Foundation
 
 extension ShadowStyle {
-    
+
     init?(json: JSON) {
         var shadowOpacity: Float = 1.0
         var shadowRadius: CGFloat = 0
         var shadowOffset: CGSize = CGSize.zero
         var shadowColor: CGColor? = nil
-        
+
         if let shadowOpacityValue = json["shadowOpacity"] as? Float {
             shadowOpacity = shadowOpacityValue
         }
-        
+
         if let shadowRadiusValue = json["shadowRadius"] as? CGFloat {
             shadowRadius = shadowRadiusValue
         }
-        
+
         if let shadowOffsetJSON = json["shadowOffset"] as? JSON {
             if let shadowOffsetValue = CGSize(json: shadowOffsetJSON) {
                 shadowOffset = shadowOffsetValue
             }
         }
-        
+
         if let shadowColorJSON = json["shadowColor"] as? JSON {
             shadowColor = UIColor(json: shadowColorJSON)?.cgColor
         }
-        
+
         self.init(shadowOpacity: shadowOpacity,
                   shadowRadius: shadowRadius,
                   shadowOffset: shadowOffset,

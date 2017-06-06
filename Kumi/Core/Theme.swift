@@ -31,17 +31,17 @@ public struct Theme {
             let fontTheme = FontTheme(json: fontThemeJSON) else {
                 return nil
         }
-        
+
         guard let layerThemeJSON = themeJSON["layer"] as? JSON,
             let layerTheme = LayerTheme(json: layerThemeJSON) else {
                 return nil
         }
-        
+
         guard let shadowThemeJSON = themeJSON["shadow"] as? JSON,
             let shadowTheme = ShadowTheme(json: shadowThemeJSON) else {
                 return nil
         }
-        
+
         guard let animationThemeJSON = themeJSON["animation"] as? JSON,
             let animationTheme = AnimationTheme(json: animationThemeJSON) else {
                 return nil

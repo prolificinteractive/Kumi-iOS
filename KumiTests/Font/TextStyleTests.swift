@@ -46,5 +46,5 @@ class TextStyleTests: XCTestCase {
         XCTAssertEqual(textStyle.lineBreakMode, .byTruncatingTail)
         XCTAssertEqual(textStyle.strikethroughStyle, .styleNone)
     }
-    
+
 }

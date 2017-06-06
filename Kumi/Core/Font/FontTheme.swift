@@ -71,64 +71,64 @@ public struct FontTheme {
 
     /// Top Item Title Text Style.
     var topItemTitleTextStyle: TextStyle?
-    
+
     /// Top Item Subtitle Text Style.
     var topItemSubtitleTextStyle: TextStyle?
-    
+
     /// Top Item Button Text Style.
     var topItemButtonTextStyle: TextStyle?
-    
+
     /// Tab Bar Item Text Style.
     var tabBarItemTextStyle: TextStyle?
-    
+
     /// Tab Bar Badge Text Style.
     var tabBarBadgeTextStyle: TextStyle?
-    
+
     /// Button Text Style.
     var buttonTextStyle: TextStyle?
-    
+
     /// Button Large Text Style.
     var buttonLargeTextStyle: TextStyle?
-    
+
     /// Button Small Text Style.
     var buttonSmallTextStyle: TextStyle?
-    
+
     /// Button Flat Text Style.
     var buttonFlatTextStyle: TextStyle?
-    
+
     /// Button Flat Large Text Style.
     var buttonFlatLargeTextStyle: TextStyle?
-    
+
     /// Button Flat Small Text Style.
     var buttonFlatSmallTextStyle: TextStyle?
-    
+
     /// Segmented Text Style.
     var segmentedTextStyle: TextStyle?
-    
+
     /// Text Field Label Text Style.
     var textFieldLabelTextStyle: TextStyle?
-    
+
     /// Text Field Label Large Text Style.
     var textFieldLabelLargeTextStyle: TextStyle?
-    
+
     /// Text Field Label Small Text Style.
     var textFieldLabelSmallTextStyle: TextStyle?
-    
+
     /// Text Field Input Text Style.
     var textFieldInputTextStyle: TextStyle?
-    
+
     /// Text Field Input Large Text Style.
     var textFieldInputLargeTextStyle: TextStyle?
-    
+
     /// Text Field Input Small Text Style.
     var textFieldInputSmallTextStyle: TextStyle?
-    
+
     /// Text Field Hint Text Style.
     var textFieldHintTextStyle: TextStyle?
-    
+
     /// Text Field Hint Large Text Style.
     var textFieldHintLargeTextStyle: TextStyle?
-    
+
     /// Text Field Hint Small Text Style.
     var textFieldHintSmallTextStyle: TextStyle?
 
@@ -208,83 +208,83 @@ public struct FontTheme {
         if let topItemTitleJSON = json["topItemTitle"] as? JSON {
             topItemTitleTextStyle = TextStyle(json: topItemTitleJSON)
         }
-        
+
         if let topItemSubtitleJSON = json["topItemSubtitle"] as? JSON {
             topItemSubtitleTextStyle = TextStyle(json: topItemSubtitleJSON)
         }
-        
+
         if let topItemButtonJSON = json["topItemButton"] as? JSON {
             topItemButtonTextStyle = TextStyle(json: topItemButtonJSON)
         }
-        
+
         if let tabBarItemJSON = json["tabBarItem"] as? JSON {
             tabBarItemTextStyle = TextStyle(json: tabBarItemJSON)
         }
-        
+
         if let tabBarBadgeJSON = json["tabBarBadge"] as? JSON {
             tabBarBadgeTextStyle = TextStyle(json: tabBarBadgeJSON)
         }
-        
+
         if let buttonJSON = json["button"] as? JSON {
             buttonTextStyle = TextStyle(json: buttonJSON)
         }
-        
+
         if let buttonLargeJSON = json["buttonLarge"] as? JSON {
             buttonLargeTextStyle = TextStyle(json: buttonLargeJSON)
         }
-        
+
         if let buttonSmallJSON = json["buttonSmall"] as? JSON {
             buttonSmallTextStyle = TextStyle(json: buttonSmallJSON)
         }
-        
+
         if let buttonFlatJSON = json["buttonFlat"] as? JSON {
             buttonFlatTextStyle = TextStyle(json: buttonFlatJSON)
         }
-        
+
         if let buttonFlatLargeJSON = json["buttonFlatLarge"] as? JSON {
             buttonFlatLargeTextStyle = TextStyle(json: buttonFlatLargeJSON)
         }
-        
+
         if let buttonFlatSmallJSON = json["buttonFlatSmall"] as? JSON {
             buttonFlatSmallTextStyle = TextStyle(json: buttonFlatSmallJSON)
         }
-        
+
         if let segmentedJSON = json["segmented"] as? JSON {
             segmentedTextStyle = TextStyle(json: segmentedJSON)
         }
-        
+
         if let textFieldLabelJSON = json["textFieldLabel"] as? JSON {
             textFieldLabelTextStyle = TextStyle(json: textFieldLabelJSON)
         }
-        
+
         if let textFieldLabelLargeJSON = json["textFieldLabelLarge"] as? JSON {
             textFieldLabelLargeTextStyle = TextStyle(json: textFieldLabelLargeJSON)
         }
-        
+
         if let textFieldLabelSmallJSON = json["textFieldLabelSmall"] as? JSON {
             textFieldLabelSmallTextStyle = TextStyle(json: textFieldLabelSmallJSON)
         }
-        
+
         if let textFieldInputJSON = json["textFieldInput"] as? JSON {
             textFieldInputTextStyle = TextStyle(json: textFieldInputJSON)
         }
-        
+
         if let textFieldInputLargeJSON = json["textFieldInputLarge"] as? JSON {
             textFieldInputLargeTextStyle = TextStyle(json: textFieldInputLargeJSON)
         }
-        
+
         if let textFieldInputSmallJSON = json["textFieldInputSmall"] as? JSON {
             textFieldInputSmallTextStyle = TextStyle(json: textFieldInputSmallJSON)
         }
-        
+
         if let textFieldHintJSON = json["textFieldHint"] as? JSON {
             textFieldHintTextStyle = TextStyle(json: textFieldHintJSON)
         }
-        
+
         if let textFieldHintLargeJSON = json["textFieldHintLarge"] as? JSON {
             textFieldHintLargeTextStyle = TextStyle(json: textFieldHintLargeJSON)
         }
-        
+
         if let textFieldHintSmallJSON = json["textFieldHintSmall"] as? JSON {
             textFieldHintSmallTextStyle = TextStyle(json: textFieldHintSmallJSON)
         }

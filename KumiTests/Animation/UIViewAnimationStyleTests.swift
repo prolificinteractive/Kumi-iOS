@@ -11,12 +11,12 @@ import Marker
 @testable import Kumi
 
 class UIViewAnimationStyleTests: XCTestCase {
-    
+
     var animationStyle: UIViewAnimationStyle!
-    
+
     override func setUp() {
         super.setUp()
-        
+
         do {
             let animationStyleJSON = try JSONHelper.getJSON("UIViewAnimationStyle")
             animationStyle = UIViewAnimationStyle(json: animationStyleJSON)
@@ -24,18 +24,18 @@ class UIViewAnimationStyleTests: XCTestCase {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     override func tearDown() {
         animationStyle = nil
-        
+
         super.tearDown()
     }
-    
+
     func testCABasicAnimationStyleJSONCreation() {
         XCTAssertEqual(animationStyle.duration, 0.35)
         XCTAssertEqual(animationStyle.delay, 0.0)
         XCTAssertEqual(animationStyle.dampingRatio, 1.0)
         XCTAssertEqual(animationStyle.velocity, 0.0)
     }
-    
+
 }

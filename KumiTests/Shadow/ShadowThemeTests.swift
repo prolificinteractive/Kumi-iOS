@@ -40,7 +40,7 @@ class ShadowThemeTests: XCTestCase {
         XCTAssertNotNil(shadowTheme.mediumShadowStyle)
         XCTAssertNotNil(shadowTheme.largeShadowStyle)
         XCTAssertNotNil(shadowTheme.extraLargeShadowStyle)
-        
+
         XCTAssertEqual(shadowTheme.radiusRatio, 2.0)
         XCTAssertEqual(shadowTheme.offsetXRatio, 0.0)
         XCTAssertEqual(shadowTheme.offsetYRatio, 1.0)

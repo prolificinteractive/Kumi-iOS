@@ -37,7 +37,7 @@ class ShadowStyleTests: XCTestCase {
         XCTAssertEqual(shadowStyle.shadowOffset.width, 0.0)
         XCTAssertEqual(shadowStyle.shadowOffset.height, 7.0)
         XCTAssertEqual(shadowStyle.shadowColor, UIColor(colorLiteralRed: 1, green: 0, blue: 0, alpha: 1).cgColor)
-        
+
     }
-    
+
 }

@@ -115,7 +115,7 @@ public struct LayerStyle {
         self.isRectangularShadow      = isRectangularShadow
 
     }
-    
+
     // MARK: - Modifier Functions
 
     // Returns a layer style in the same style as the receiver with the specified corner radius.

@@ -14,7 +14,7 @@ extension CAMediaTimingFunction {
             let c2y = json["c2y"] as? Float else {
                 return nil
         }
-        
+
         self.init(controlPoints: c1x, c1y, c2x, c2y)
     }
 }

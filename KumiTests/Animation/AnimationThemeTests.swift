@@ -39,12 +39,12 @@ class AnimationThemeTests: XCTestCase {
         XCTAssertNotNil(animationTheme.normalCABasicAnimationStyle)
         XCTAssertNotNil(animationTheme.slowCABasicAnimationStyle)
         XCTAssertNotNil(animationTheme.extraSlowCABasicAnimationStyle)
-        
+
         XCTAssertNotNil(animationTheme.extraFastCABasicAnimationStyle)
         XCTAssertNotNil(animationTheme.fastUIViewAnimationStyle)
         XCTAssertNotNil(animationTheme.normalUIViewAnimationStyle)
         XCTAssertNotNil(animationTheme.slowUIViewAnimationStyle)
         XCTAssertNotNil(animationTheme.extraSlowUIViewAnimationStyle)
     }
-    
+
 }

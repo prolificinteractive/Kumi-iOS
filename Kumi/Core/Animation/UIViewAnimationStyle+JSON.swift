@@ -7,34 +7,34 @@
 //
 
 extension UIViewAnimationStyle {
-    
+
     init?(json: JSON) {
-        
+
         var duration: TimeInterval = 0.35
         var delay: TimeInterval = 0
         var dampingRatio: CGFloat = 1
         var velocity: CGFloat = 0
-        
+
         if let durationValue = json["duration"] as? TimeInterval {
             duration = durationValue
         }
-        
+
         if let delayValue = json["delay"] as? TimeInterval {
             delay = delayValue
         }
-        
+
         if let dampingRatioValue = json["dampingRatio"] as? CGFloat {
             dampingRatio = dampingRatioValue
         }
-        
+
         if let velocityValue = json["velocity"] as? CGFloat {
             velocity = velocityValue
         }
-        
+
         self.init(duration: duration,
                   delay: delay,
                   dampingRatio: dampingRatio,
                   velocity: velocity)
     }
-    
+
 }

@@ -37,5 +37,5 @@ class CABasicAnimationStyleTests: XCTestCase {
         XCTAssertNotNil(animationStyle.timingFunction)
         XCTAssertEqual(animationStyle.isRemovedOnCompletion, true)
     }
-    
+
 }

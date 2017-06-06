@@ -203,5 +203,5 @@ extension TextStyle {
                   strikethroughColor: strikethroughColor,
                   textTransform: textTransform)
     }
-    
+
 }

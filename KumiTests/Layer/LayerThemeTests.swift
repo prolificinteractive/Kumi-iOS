@@ -96,5 +96,5 @@ class LayerThemeTests: XCTestCase {
         XCTAssertNotNil(layerTheme.listTertiarySelectedLayerStyle)
         XCTAssertNotNil(layerTheme.listTertiaryDiabledLayerStyle)
     }
-    
+
 }

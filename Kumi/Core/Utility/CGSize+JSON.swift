@@ -7,15 +7,14 @@
 //
 
 extension CGSize {
-    
+
     init?(json: JSON) {
         guard let width = json["width"] as? CGFloat,
             let height = json["height"] as? CGFloat else {
                 return nil
         }
-        
+
         self.init(width: width, height: height)
     }
-    
-}
 
+}

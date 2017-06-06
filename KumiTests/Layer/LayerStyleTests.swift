@@ -46,5 +46,5 @@ class LayerStyleTests: XCTestCase {
         XCTAssertEqual(layerStyle.shadowColor, UIColor(colorLiteralRed: 1, green: 1, blue: 0, alpha: 1).cgColor)
         XCTAssertNotNil(layerStyle.transform)
     }
-    
+
 }
