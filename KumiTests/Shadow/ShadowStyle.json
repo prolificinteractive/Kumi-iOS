@@ -1,0 +1,16 @@
+{
+    "shadowOpacity": 1,
+    "shadowRadius": 14,
+    "shadowOffset": {
+        "width": 0,
+        "height": 7
+    },
+    "shadowColor": {
+        "$ref": "#/theme/color/primary/normal",
+        "hex": "",
+        "red": 1,
+        "green": 0,
+        "blue": 0,
+        "alpha": 1
+    }
+}

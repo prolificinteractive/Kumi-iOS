@@ -1,7 +1,7 @@
 {
     "fontFamily": "Helvetica",
     "textSize": 18,
-    "fontWeight": {
+    "fonts": {
         "normal": "Helvetica",
         "strong": "Helvetica-Bold",
         "emphasis": "Helvetica-Heavy"

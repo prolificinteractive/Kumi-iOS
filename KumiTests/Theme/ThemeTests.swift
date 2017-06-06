@@ -34,6 +34,9 @@ class ThemeTests: XCTestCase {
         XCTAssertNotNil(theme)
         XCTAssertNotNil(theme.colorTheme)
         XCTAssertNotNil(theme.fontTheme)
+        XCTAssertNotNil(theme.layerTheme)
+        XCTAssertNotNil(theme.shadowTheme)
+        XCTAssertNotNil(theme.animationTheme)
     }
 
 }

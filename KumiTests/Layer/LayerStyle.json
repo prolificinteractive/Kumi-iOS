@@ -1,0 +1,61 @@
+{
+    "opacity": 1,
+    "masksToBounds": false,
+    "isDoubleSided": true,
+    "cornerRadius": 3,
+    "backgroundColor": {
+        "$ref": "#/theme/color/primary/normal",
+        "hex": "",
+        "red": 1,
+        "green": 0,
+        "blue": 0,
+        "alpha": 1
+    },
+    "borderWidth": 0,
+    "borderColor": {
+        "$ref": "#/theme/color/primary/normal",
+        "hex": "",
+        "red": 0,
+        "green": 1,
+        "blue": 0,
+        "alpha": 1
+    },
+    "shadowStyle": {
+        "$ref": "test",
+        "shadowOpacity": 1,
+        "shadowRadius": 14,
+        "shadowOffset": {
+            "width": 0,
+            "height": 7
+        },
+        "shadowColor": {
+            "$ref": "#/theme/color/primary/normal",
+            "hex": "",
+            "red": 0,
+            "green": 0,
+            "blue": 1,
+            "alpha": 1
+        }
+    },
+    "shadowColor": {
+        "$ref": "#/theme/color/primary/normal",
+        "hex": "",
+        "red": 1,
+        "green": 1,
+        "blue": 0,
+        "alpha": 1
+    },
+    "transform": {
+        "perspective": 0,
+        "rotate": 0,
+        "rotateX": 0,
+        "rotateY": 0,
+        "rotateZ": 0,
+        "scaleX": 0,
+        "scaleY": 0,
+        "scaleZ": 0,
+        "translateX": 0,
+        "translateY": 0,
+        "translateZ": 0
+    }
+}

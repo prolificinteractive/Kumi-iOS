@@ -6,7 +6,7 @@
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 /// Kumi layer style to encapsulate style information to be applied when displaying or animating CALayer.
 public struct LayerStyle {
@@ -69,7 +69,7 @@ public struct LayerStyle {
      - parameter shadowStyle:           The shadow style indicating how the layer’s shadow looks like. Animatable.
      - parameter shadowColor:           The color of the layer’s shadow. Animatable.
      - parameter transform:             The transform applied to the layer’s contents. Animatable.
-     - parameter isRectangularShadow:     A Boolean indicating if the layer's shadow will only be ractangle.
+     - parameter isRectangularShadow:   A Boolean indicating if the layer's shadow will only be ractangle.
 
      - returns: An initialized layer style object.
      */
@@ -85,7 +85,7 @@ public struct LayerStyle {
                 shadowStyle: ShadowStyle?   = nil,
                 shadowColor: CGColor?       = nil,
                 transform: CATransform3D    = CATransform3DIdentity,
-                isRectangularShadow: Bool         = true) {
+                isRectangularShadow: Bool         = false) {
 
         self.opacity            = opacity
         self.masksToBounds      = masksToBounds
@@ -115,6 +115,8 @@ public struct LayerStyle {
         self.isRectangularShadow      = isRectangularShadow
 
     }
+    
+    // MARK: - Modifier Functions
 
     // Returns a layer style in the same style as the receiver with the specified corner radius.
     public func withCornerRadius(_ cornerRadius: CGFloat) -> LayerStyle {
