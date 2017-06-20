@@ -10,12 +10,23 @@ import Foundation
 
 public typealias JSON = [String: Any]
 
+/// Theme object.
 public struct Theme {
-    let colorTheme: ColorTheme
-    let fontTheme: FontTheme
-    let layerTheme: LayerTheme
-    let shadowTheme: ShadowTheme
-    let animationTheme: AnimationTheme
+
+    /// Color theme object.
+    public let colorTheme: ColorTheme
+
+    /// Font theme object.
+    public let fontTheme: FontTheme
+
+    /// Layer theme object.
+    public let layerTheme: LayerTheme
+
+    /// Shadow theme object.
+    public let shadowTheme: ShadowTheme
+
+    /// Animation theme object.
+    public let animationTheme: AnimationTheme
 
     public init?(json: JSON) {
         guard let themeJSON = json["theme"] as? JSON else {
