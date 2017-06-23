@@ -32,6 +32,7 @@
 		154487711EE4E2AA00DCD7A9 /* CABasicAnimationStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1544876E1EE4E2AA00DCD7A9 /* CABasicAnimationStyleTests.swift */; };
 		154487721EE4E2AA00DCD7A9 /* UIViewAnimationStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1544876F1EE4E2AA00DCD7A9 /* UIViewAnimationStyleTests.swift */; };
 		739AA7F5FC65EFB5B8C836AC /* Pods_KumiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B214361F8486E6AC17A2EE /* Pods_KumiTests.framework */; };
+		8E67789B1EFD653B00AA8771 /* TextStyle+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67789A1EFD653B00AA8771 /* TextStyle+Factory.swift */; };
 		8EC736D61EB28CB60087846F /* Kumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC736CC1EB28CB60087846F /* Kumi.framework */; };
 		8EC736DD1EB28CB70087846F /* Kumi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC736CF1EB28CB60087846F /* Kumi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EC7374D1EB292A10087846F /* AlphaValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737401EB292A10087846F /* AlphaValue.swift */; };
@@ -99,6 +100,7 @@
 		1544876D1EE4E2AA00DCD7A9 /* AnimationThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationThemeTests.swift; sourceTree = "<group>"; };
 		1544876E1EE4E2AA00DCD7A9 /* CABasicAnimationStyleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABasicAnimationStyleTests.swift; sourceTree = "<group>"; };
 		1544876F1EE4E2AA00DCD7A9 /* UIViewAnimationStyleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimationStyleTests.swift; sourceTree = "<group>"; };
+		8E67789A1EFD653B00AA8771 /* TextStyle+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextStyle+Factory.swift"; sourceTree = "<group>"; };
 		8EC736CC1EB28CB60087846F /* Kumi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kumi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC736CF1EB28CB60087846F /* Kumi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kumi.h; sourceTree = "<group>"; };
 		8EC736D01EB28CB60087846F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				154487381EE4AD7300DCD7A9 /* CATransform3D+JSON.swift */,
 				154487391EE4AD7300DCD7A9 /* CGSize+JSON.swift */,
 				1544873A1EE4AD7300DCD7A9 /* TextStyle+JSON.swift */,
+				8E67789A1EFD653B00AA8771 /* TextStyle+Factory.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				1544873D1EE4AD7300DCD7A9 /* TextStyle+JSON.swift in Sources */,
 				8EC737631EB38FF30087846F /* Theme.swift in Sources */,
 				154487371EE4AD4E00DCD7A9 /* ShadowStyle+JSON.swift in Sources */,
+				8E67789B1EFD653B00AA8771 /* TextStyle+Factory.swift in Sources */,
 				154487531EE4D2F200DCD7A9 /* UIViewExtension.swift in Sources */,
 				1544876C1EE4DFB500DCD7A9 /* UIViewAnimationStyle+JSON.swift in Sources */,
 				8EC737941EB3CBA90087846F /* UIViewAnimationStyle.swift in Sources */,
