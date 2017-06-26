@@ -32,6 +32,28 @@ public extension TextStyle {
         )
     }
 
+    /// Updates text style color.
+    ///
+    /// - Parameter newColor: New color.
+    /// - Returns: The updated text style with the new color.
+    public func with(newFontSize: CGFloat) -> TextStyle {
+        return TextStyle(
+            font: font.with(newSize: newFontSize),
+            emFont: emFont.with(newSize: newFontSize),
+            strongFont: strongFont.withSize(newFontSize),
+            textColor: textColor,
+            characterSpacing: characterSpacing,
+            lineSpacing: lineSpacing,
+            lineHeightMultiple: lineHeightMultiple,
+            minimumLineHeight: minimumLineHeight,
+            maximumLineHeight: maximumLineHeight,
+            paragraphSpacing: paragraphSpacing,
+            paragraphSpacingBefore: paragraphSpacingBefore,
+            textAlignment: textAlignment,
+            lineBreakMode: lineBreakMode
+        )
+    }
+
     /// Updates the text style to use the bold font.
     ///
     /// - Returns: The updated text style with the bold font.
