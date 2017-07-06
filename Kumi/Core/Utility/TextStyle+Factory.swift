@@ -38,12 +38,34 @@ public extension TextStyle {
     /// - Returns: The updated text style with the new color.
     public func with(newFontSize: CGFloat) -> TextStyle {
         return TextStyle(
-            font: font.with(newSize: newFontSize),
-            emFont: emFont.with(newSize: newFontSize),
+            font: font.withSize(newFontSize),
+            emFont: emFont.withSize(newFontSize),
             strongFont: strongFont.withSize(newFontSize),
             textColor: textColor,
             characterSpacing: characterSpacing,
             lineSpacing: lineSpacing,
+            lineHeightMultiple: lineHeightMultiple,
+            minimumLineHeight: minimumLineHeight,
+            maximumLineHeight: maximumLineHeight,
+            paragraphSpacing: paragraphSpacing,
+            paragraphSpacingBefore: paragraphSpacingBefore,
+            textAlignment: textAlignment,
+            lineBreakMode: lineBreakMode
+        )
+    }
+    
+    /// Updates text style line spacing.
+    ///
+    /// - Parameter newLineSpacing: New line spacing.
+    /// - Returns: The updated text style with the new line spacing.
+    public func with(newLineSpacing: CGFloat) -> TextStyle {
+        return TextStyle(
+            font: font,
+            emFont: emFont,
+            strongFont: strongFont,
+            textColor: textColor,
+            characterSpacing: characterSpacing,
+            lineSpacing: newLineSpacing,
             lineHeightMultiple: lineHeightMultiple,
             minimumLineHeight: minimumLineHeight,
             maximumLineHeight: maximumLineHeight,
