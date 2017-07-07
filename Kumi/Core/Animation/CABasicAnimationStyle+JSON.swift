@@ -38,5 +38,5 @@ extension CABasicAnimationStyle {
                   timingFunction: timingFunction,
                   isRemovedOnCompletion: isRemovedOnCompletion)
     }
-    
+
 }
