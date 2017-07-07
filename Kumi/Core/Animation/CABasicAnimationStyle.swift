@@ -38,7 +38,7 @@ public struct CABasicAnimationStyle {
         self.delay = delay
         self.timingFunction = timingFunction
         self.isRemovedOnCompletion = isRemovedOnCompletion
-        
+
     }
-    
+
 }

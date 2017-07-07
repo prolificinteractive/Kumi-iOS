@@ -36,5 +36,5 @@ extension UIViewAnimationStyle {
                   dampingRatio: dampingRatio,
                   velocity: velocity)
     }
-    
+
 }

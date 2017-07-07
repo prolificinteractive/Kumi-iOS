@@ -11,7 +11,7 @@ import Foundation
 public typealias JSON = [String: Any]
 
 /// Theme object.
-public struct Theme {
+public final class Theme {
 
     /// Color theme object.
     public let colorTheme: ColorTheme

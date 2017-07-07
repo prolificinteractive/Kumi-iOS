@@ -45,5 +45,5 @@ public struct UIViewAnimationStyle {
         self.velocity = velocity
         self.options = options
     }
-    
+
 }

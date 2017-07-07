@@ -200,9 +200,6 @@ public extension CALayer {
                 if layer.name == "overlay" {
 
                     if let shapeLayer = layer as? CAShapeLayer {
-
-                        print("fuck")
-
                         let overlayColor = color != nil ? color! : UIColor(cgColor: shapeLayer.fillColor!)
 
                         shapeLayer.fillColor = overlayColor.cgColor
@@ -282,7 +279,6 @@ public extension CALayer {
             for layer in layers {
 
                 if layer.name == "overlay" {
-                    print("fuck")
                     layer.removeFromSuperlayer()
                 }
 
