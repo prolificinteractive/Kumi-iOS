@@ -16,18 +16,18 @@ import Foundation
 /// - capitalized: Transform given string into capitalized string.
 /// - custom: Transform given string using custom transform function.
 public enum TextTransform {
-
+    
     case none
     case lowercased
     case uppercased
     case capitalized
     case custom((String) -> String)
-
+    
     /// Returns argument string with transformation applied
     ///
     /// - Parameter string: String to be transformed.
     /// - Returns: Transformed string.
-    internal func apply(to string: String) -> String {
+    internal func applied(to string: String) -> String {
         switch self {
         case .none:
             return string
@@ -41,5 +41,5 @@ public enum TextTransform {
             return transform(string)
         }
     }
-
+    
 }

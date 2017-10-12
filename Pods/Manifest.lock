@@ -1,12 +1,12 @@
 PODS:
-  - Kumi (0.0.2):
-    - Marker
-  - Marker (0.7.0)
+  - Kumi (0.0.4):
+    - Marker (= 1.0.0)
+  - Marker (1.0.0)
   - SwiftLint (0.18.1)
 
 DEPENDENCIES:
   - Kumi (from `./`)
-  - Marker
+  - Marker (= 1.0.0)
   - SwiftLint
 
 EXTERNAL SOURCES:
@@ -14,8 +14,8 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  Kumi: 7e9a62026351e91434d49403ff80e54c7713f79b
-  Marker: 0d8b6b52915a92a0e366ebf359414a2a734504b0
+  Kumi: 50b3765c7230f3d5f6bdb4829a55eb27d97a2fdd
+  Marker: f6b66b1e4507979bfdc110799793e74906010f4f
   SwiftLint: b467d08f5b25dc3b3cfed243d8e1b74b91714c67
 
 PODFILE CHECKSUM: 96841c94f1ec746841eb6d5603807c3ae30ccf9b
