@@ -23,5 +23,5 @@ This framework provides all the values for fonts and colors you need to apply a 
   s.ios.deployment_target = '9.0'
   s.source_files = 'Kumi/Core/**/*'
 
-  s.dependency 'Marker'
+  s.dependency 'Marker', '1.0.0'
 end
