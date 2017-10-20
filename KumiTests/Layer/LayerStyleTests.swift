@@ -36,14 +36,14 @@ class LayerStyleTests: XCTestCase {
         XCTAssertEqual(layerStyle.masksToBounds, false)
         XCTAssertEqual(layerStyle.isDoubleSided, true)
         XCTAssertEqual(layerStyle.cornerRadius, 3.0)
-        XCTAssertEqual(layerStyle.backgroundColor, UIColor(colorLiteralRed: 1, green: 0, blue: 0, alpha: 1).cgColor)
+        XCTAssertEqual(layerStyle.backgroundColor, UIColor(red: 1, green: 0, blue: 0, alpha: 1).cgColor)
         XCTAssertEqual(layerStyle.borderWidth, 0.0)
-        XCTAssertEqual(layerStyle.borderColor, UIColor(colorLiteralRed: 0, green: 1, blue: 0, alpha: 1).cgColor)
+        XCTAssertEqual(layerStyle.borderColor, UIColor(red: 0, green: 1, blue: 0, alpha: 1).cgColor)
         XCTAssertEqual(layerStyle.shadowStyle.shadowOpacity, 1.0)
         XCTAssertEqual(layerStyle.shadowStyle.shadowOffset.width, 0)
         XCTAssertEqual(layerStyle.shadowStyle.shadowOffset.height, 7)
         XCTAssertEqual(layerStyle.shadowStyle.shadowRadius, 14)
-        XCTAssertEqual(layerStyle.shadowColor, UIColor(colorLiteralRed: 1, green: 1, blue: 0, alpha: 1).cgColor)
+        XCTAssertEqual(layerStyle.shadowColor, UIColor(red: 1, green: 1, blue: 0, alpha: 1).cgColor)
         XCTAssertNotNil(layerStyle.transform)
     }
 

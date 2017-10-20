@@ -13,7 +13,7 @@ Kumi is an app's theme helper tool that can parse a JSON file generated from Ske
 
 ## Requirements
 
-* Xcode 8+
+* Xcode 9+
 * iOS 9+
 
 ## Installation

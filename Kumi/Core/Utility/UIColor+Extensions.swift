@@ -1,6 +1,6 @@
 //
 //  UIColor+Extensions.swift
-//  Gro
+//  Kumi
 //
 //  Created by Htin Linn on 11/3/16.
 //  Copyright © 2016 Prolific Interactive. All rights reserved.
@@ -20,16 +20,26 @@ internal extension UIColor {
         var rgbaValues = Array(repeating: CGFloat(0.0), count: 4)
         var blendRgbaValues = Array(repeating: CGFloat(0.0), count: 4)
 
-        getRed(&rgbaValues[0], green: &rgbaValues[1], blue: &rgbaValues[2], alpha: &rgbaValues[3])
-        blendColor.getRed(&blendRgbaValues[0], green: &blendRgbaValues[1], blue: &blendRgbaValues[2], alpha: &blendRgbaValues[3])
+        var red = rgbaValues[0]
+        var green = rgbaValues[1]
+        var blue = rgbaValues[2]
+        var alpha = rgbaValues[3]
+
+        var blendRed = blendRgbaValues[0]
+        var blendGreen = blendRgbaValues[1]
+        var blendBlue = blendRgbaValues[2]
+        var blendAlpha = blendRgbaValues[3]
+
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        blendColor.getRed(&blendRed, green: &blendGreen, blue: &blendBlue, alpha: &blendAlpha)
 
         let invertWeight = 1 - weight
 
         return UIColor(
-            red: (rgbaValues[0] * invertWeight + blendRgbaValues[0] * weight) / 1,
-            green: (rgbaValues[1] * invertWeight + blendRgbaValues[1] * weight) / 1,
-            blue: (rgbaValues[2] * invertWeight + blendRgbaValues[2] * weight) / 1,
-            alpha: (rgbaValues[3] * invertWeight + blendRgbaValues[3] * weight) / 1
+            red: (red * invertWeight + blendRed * weight) / 1,
+            green: (green * invertWeight + blendGreen * weight) / 1,
+            blue: (blue * invertWeight + blendBlue * weight) / 1,
+            alpha: (alpha * invertWeight + blendAlpha * weight) / 1
         )
     }
 
