@@ -1,6 +1,0 @@
-framework module Pods_KumiTests {
-  umbrella header "Pods-KumiTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
