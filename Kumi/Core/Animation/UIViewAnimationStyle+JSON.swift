@@ -7,6 +7,19 @@
 //
 
 extension UIViewAnimationStyle {
+    
+    public init?(json: Any?) {
+        
+        guard let json = json as? JSON else {
+            return nil
+        }
+        
+        guard let animationStyle = UIViewAnimationStyle(json: json) else {
+            return nil
+        }
+        
+        self = animationStyle
+    }
 
     public init?(json: JSON) {
 

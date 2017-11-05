@@ -9,6 +9,19 @@
 import Foundation
 
 extension ShadowStyle {
+    
+    public init?(json: Any?) {
+        
+        guard let json = json as? JSON else {
+            return nil
+        }
+        
+        guard let shadowStyle = ShadowStyle(json: json) else {
+            return nil
+        }
+        
+        self = shadowStyle
+    }
 
     public init?(json: JSON) {
         var shadowOpacity: Float = 1.0

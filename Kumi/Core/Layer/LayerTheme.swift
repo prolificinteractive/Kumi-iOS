@@ -194,249 +194,128 @@ public struct LayerTheme {
     public var listTertiaryDiabledLayerStyle: LayerStyle?
 
     public init?(json: JSON) {
-
-        if let emptyJSON = json["empty"] as? JSON {
-            emptyLayerStyle = LayerStyle(json: emptyJSON)
-        }
-
-        if let primaryNormalJSON = json["primaryNormal"] as? JSON {
-            primaryNormalLayerStyle = LayerStyle(json: primaryNormalJSON)
-        }
-
-        if let primaryHightlightedJSON = json["primaryHightlighted"] as? JSON {
-            primaryHightlightedLayerStyle = LayerStyle(json: primaryHightlightedJSON)
-        }
-
-        if let primaryFocusedJSON = json["primaryFocused"] as? JSON {
-            primaryFocusedLayerStyle = LayerStyle(json: primaryFocusedJSON)
-        }
-
-        if let primarySelectedJSON = json["primarySelected"] as? JSON {
-            primarySelectedLayerStyle = LayerStyle(json: primarySelectedJSON)
-        }
-
-        if let primaryDiabledJSON = json["primaryDiabled"] as? JSON {
-            primaryDiabledLayerStyle = LayerStyle(json: primaryDiabledJSON)
-        }
-
-        if let secondaryNormalJSON = json["secondaryNormal"] as? JSON {
-            secondaryNormalLayerStyle = LayerStyle(json: secondaryNormalJSON)
-        }
-
-        if let secondaryHightlightedJSON = json["secondaryHightlighted"] as? JSON {
-            secondaryHightlightedLayerStyle = LayerStyle(json: secondaryHightlightedJSON)
-        }
-
-        if let secondaryFocusedJSON = json["secondaryFocused"] as? JSON {
-            secondaryFocusedLayerStyle = LayerStyle(json: secondaryFocusedJSON)
-        }
-
-        if let secondarySelectedJSON = json["secondarySelected"] as? JSON {
-            secondarySelectedLayerStyle = LayerStyle(json: secondarySelectedJSON)
-        }
-
-        if let secondaryDiabledJSON = json["secondaryDiabled"] as? JSON {
-            secondaryDiabledLayerStyle = LayerStyle(json: secondaryDiabledJSON)
-        }
-
-        if let tertiaryNormalJSON = json["tertiaryNormal"] as? JSON {
-            tertiaryNormalLayerStyle = LayerStyle(json: tertiaryNormalJSON)
-        }
-
-        if let tertiaryHightlightedJSON = json["tertiaryHightlighted"] as? JSON {
-            tertiaryHightlightedLayerStyle = LayerStyle(json: tertiaryHightlightedJSON)
-        }
-
-        if let tertiaryFocusedJSON = json["tertiaryFocused"] as? JSON {
-            tertiaryFocusedLayerStyle = LayerStyle(json: tertiaryFocusedJSON)
-        }
-
-        if let tertiarySelectedJSON = json["tertiarySelected"] as? JSON {
-            tertiarySelectedLayerStyle = LayerStyle(json: tertiarySelectedJSON)
-        }
-
-        if let tertiaryDiabledJSON = json["tertiaryDiabled"] as? JSON {
-            tertiaryDiabledLayerStyle = LayerStyle(json: tertiaryDiabledJSON)
-        }
-
-        if let buttonPrimaryNormalJSON = json["buttonPrimaryNormal"] as? JSON {
-            buttonPrimaryNormalLayerStyle = LayerStyle(json: buttonPrimaryNormalJSON)
-        }
-
-        if let buttonPrimaryHightlightedJSON = json["buttonPrimaryHightlighted"] as? JSON {
-            buttonPrimaryHightlightedLayerStyle = LayerStyle(json: buttonPrimaryHightlightedJSON)
-        }
-
-        if let buttonPrimaryFocusedJSON = json["buttonPrimaryFocused"] as? JSON {
-            buttonPrimaryFocusedLayerStyle = LayerStyle(json: buttonPrimaryFocusedJSON)
-        }
-
-        if let buttonPrimarySelectedJSON = json["buttonPrimarySelected"] as? JSON {
-            buttonPrimarySelectedLayerStyle = LayerStyle(json: buttonPrimarySelectedJSON)
-        }
-
-        if let buttonPrimaryDiabledJSON = json["buttonPrimaryDiabled"] as? JSON {
-            buttonPrimaryDiabledLayerStyle = LayerStyle(json: buttonPrimaryDiabledJSON)
-        }
-
-        if let buttonSecondaryNormalJSON = json["buttonSecondaryNormal"] as? JSON {
-            buttonSecondaryNormalLayerStyle = LayerStyle(json: buttonSecondaryNormalJSON)
-        }
-
-        if let buttonSecondaryHightlightedJSON = json["buttonSecondaryHightlighted"] as? JSON {
-            buttonSecondaryHightlightedLayerStyle = LayerStyle(json: buttonSecondaryHightlightedJSON)
-        }
-
-        if let buttonSecondaryFocusedJSON = json["buttonSecondaryFocused"] as? JSON {
-            buttonSecondaryFocusedLayerStyle = LayerStyle(json: buttonSecondaryFocusedJSON)
-        }
-
-        if let buttonSecondarySelectedJSON = json["buttonSecondarySelected"] as? JSON {
-            buttonSecondarySelectedLayerStyle = LayerStyle(json: buttonSecondarySelectedJSON)
-        }
-
-        if let buttonSecondaryDiabledJSON = json["buttonSecondaryDiabled"] as? JSON {
-            buttonSecondaryDiabledLayerStyle = LayerStyle(json: buttonSecondaryDiabledJSON)
-        }
-
-        if let buttonTertiaryNormalJSON = json["buttonTertiaryNormal"] as? JSON {
-            buttonTertiaryNormalLayerStyle = LayerStyle(json: buttonTertiaryNormalJSON)
-        }
-
-        if let buttonTertiaryHightlightedJSON = json["buttonTertiaryHightlighted"] as? JSON {
-            buttonTertiaryHightlightedLayerStyle = LayerStyle(json: buttonTertiaryHightlightedJSON)
-        }
-
-        if let buttonTertiaryFocusedJSON = json["buttonTertiaryFocused"] as? JSON {
-            buttonTertiaryFocusedLayerStyle = LayerStyle(json: buttonTertiaryFocusedJSON)
-        }
-
-        if let buttonTertiarySelectedJSON = json["buttonTertiarySelected"] as? JSON {
-            buttonTertiarySelectedLayerStyle = LayerStyle(json: buttonTertiarySelectedJSON)
-        }
-
-        if let buttonTertiaryDiabledJSON = json["buttonTertiaryDiabled"] as? JSON {
-            buttonTertiaryDiabledLayerStyle = LayerStyle(json: buttonTertiaryDiabledJSON)
-        }
-
-        if let gridPrimaryNormalJSON = json["gridPrimaryNormal"] as? JSON {
-            gridPrimaryNormalLayerStyle = LayerStyle(json: gridPrimaryNormalJSON)
-        }
-
-        if let gridPrimaryHightlightedJSON = json["gridPrimaryHightlighted"] as? JSON {
-            gridPrimaryHightlightedLayerStyle = LayerStyle(json: gridPrimaryHightlightedJSON)
-        }
-
-        if let gridPrimaryFocusedJSON = json["gridPrimaryFocused"] as? JSON {
-            gridPrimaryFocusedLayerStyle = LayerStyle(json: gridPrimaryFocusedJSON)
-        }
-
-        if let gridPrimarySelectedJSON = json["gridPrimarySelected"] as? JSON {
-            gridPrimarySelectedLayerStyle = LayerStyle(json: gridPrimarySelectedJSON)
-        }
-
-        if let gridPrimaryDiabledJSON = json["gridPrimaryDiabled"] as? JSON {
-            gridPrimaryDiabledLayerStyle = LayerStyle(json: gridPrimaryDiabledJSON)
-        }
-
-        if let gridSecondaryNormalJSON = json["gridSecondaryNormal"] as? JSON {
-            gridSecondaryNormalLayerStyle = LayerStyle(json: gridSecondaryNormalJSON)
-        }
-
-        if let gridSecondaryHightlightedJSON = json["gridSecondaryHightlighted"] as? JSON {
-            gridSecondaryHightlightedLayerStyle = LayerStyle(json: gridSecondaryHightlightedJSON)
-        }
-
-        if let gridSecondaryFocusedJSON = json["gridSecondaryFocused"] as? JSON {
-            gridSecondaryFocusedLayerStyle = LayerStyle(json: gridSecondaryFocusedJSON)
-        }
-
-        if let gridSecondarySelectedJSON = json["gridSecondarySelected"] as? JSON {
-            gridSecondarySelectedLayerStyle = LayerStyle(json: gridSecondarySelectedJSON)
-        }
-
-        if let gridSecondaryDiabledJSON = json["gridSecondaryDiabled"] as? JSON {
-            gridSecondaryDiabledLayerStyle = LayerStyle(json: gridSecondaryDiabledJSON)
-        }
-
-        if let gridTertiaryNormalJSON = json["gridTertiaryNormal"] as? JSON {
-            gridTertiaryNormalLayerStyle = LayerStyle(json: gridTertiaryNormalJSON)
-        }
-
-        if let gridTertiaryHightlightedJSON = json["gridTertiaryHightlighted"] as? JSON {
-            gridTertiaryHightlightedLayerStyle = LayerStyle(json: gridTertiaryHightlightedJSON)
-        }
-
-        if let gridTertiaryFocusedJSON = json["gridTertiaryFocused"] as? JSON {
-            gridTertiaryFocusedLayerStyle = LayerStyle(json: gridTertiaryFocusedJSON)
-        }
-
-        if let gridTertiarySelectedJSON = json["gridTertiarySelected"] as? JSON {
-            gridTertiarySelectedLayerStyle = LayerStyle(json: gridTertiarySelectedJSON)
-        }
-
-        if let gridTertiaryDiabledJSON = json["gridTertiaryDiabled"] as? JSON {
-            gridTertiaryDiabledLayerStyle = LayerStyle(json: gridTertiaryDiabledJSON)
-        }
-
-        if let listPrimaryNormalJSON = json["listPrimaryNormal"] as? JSON {
-            listPrimaryNormalLayerStyle = LayerStyle(json: listPrimaryNormalJSON)
-        }
-
-        if let listPrimaryHightlightedJSON = json["listPrimaryHightlighted"] as? JSON {
-            listPrimaryHightlightedLayerStyle = LayerStyle(json: listPrimaryHightlightedJSON)
-        }
-
-        if let listPrimaryFocusedJSON = json["listPrimaryFocused"] as? JSON {
-            listPrimaryFocusedLayerStyle = LayerStyle(json: listPrimaryFocusedJSON)
-        }
-
-        if let listPrimarySelectedJSON = json["listPrimarySelected"] as? JSON {
-            listPrimarySelectedLayerStyle = LayerStyle(json: listPrimarySelectedJSON)
-        }
-
-        if let listPrimaryDiabledJSON = json["listPrimaryDiabled"] as? JSON {
-            listPrimaryDiabledLayerStyle = LayerStyle(json: listPrimaryDiabledJSON)
-        }
-
-        if let listSecondaryNormalJSON = json["listSecondaryNormal"] as? JSON {
-            listSecondaryNormalLayerStyle = LayerStyle(json: listSecondaryNormalJSON)
-        }
-
-        if let listSecondaryHightlightedJSON = json["listSecondaryHightlighted"] as? JSON {
-            listSecondaryHightlightedLayerStyle = LayerStyle(json: listSecondaryHightlightedJSON)
-        }
-
-        if let listSecondaryFocusedJSON = json["listSecondaryFocused"] as? JSON {
-            listSecondaryFocusedLayerStyle = LayerStyle(json: listSecondaryFocusedJSON)
-        }
-
-        if let listSecondarySelectedJSON = json["listSecondarySelected"] as? JSON {
-            listSecondarySelectedLayerStyle = LayerStyle(json: listSecondarySelectedJSON)
-        }
-
-        if let listSecondaryDiabledJSON = json["listSecondaryDiabled"] as? JSON {
-            listSecondaryDiabledLayerStyle = LayerStyle(json: listSecondaryDiabledJSON)
-        }
-
-        if let listTertiaryNormalJSON = json["listTertiaryNormal"] as? JSON {
-            listTertiaryNormalLayerStyle = LayerStyle(json: listTertiaryNormalJSON)
-        }
-
-        if let listTertiaryHightlightedJSON = json["listTertiaryHightlighted"] as? JSON {
-            listTertiaryHightlightedLayerStyle = LayerStyle(json: listTertiaryHightlightedJSON)
-        }
-
-        if let listTertiaryFocusedJSON = json["listTertiaryFocused"] as? JSON {
-            listTertiaryFocusedLayerStyle = LayerStyle(json: listTertiaryFocusedJSON)
-        }
-
-        if let listTertiarySelectedJSON = json["listTertiarySelected"] as? JSON {
-            listTertiarySelectedLayerStyle = LayerStyle(json: listTertiarySelectedJSON)
-        }
-
-        if let listTertiaryDiabledJSON = json["listTertiaryDiabled"] as? JSON {
-            listTertiaryDiabledLayerStyle = LayerStyle(json: listTertiaryDiabledJSON)
-        }
+        
+            emptyLayerStyle = LayerStyle(json: json["empty"])
+        
+            primaryNormalLayerStyle = LayerStyle(json: json["primaryNormal"])
+        
+            primaryHightlightedLayerStyle = LayerStyle(json: json["primaryHightlighted"])
+        
+            primaryFocusedLayerStyle = LayerStyle(json: json["primaryFocused"])
+        
+            primarySelectedLayerStyle = LayerStyle(json: json["primarySelected"])
+        
+            primaryDiabledLayerStyle = LayerStyle(json: json["primaryDiabled"])
+        
+            secondaryNormalLayerStyle = LayerStyle(json: json["secondaryNormal"])
+        
+            secondaryHightlightedLayerStyle = LayerStyle(json: json["secondaryHightlighted"])
+        
+            secondaryFocusedLayerStyle = LayerStyle(json: json["secondaryFocused"])
+        
+            secondarySelectedLayerStyle = LayerStyle(json: json["secondarySelected"])
+        
+            secondaryDiabledLayerStyle = LayerStyle(json: json["secondaryDiabled"])
+        
+            tertiaryNormalLayerStyle = LayerStyle(json: json["tertiaryNormal"])
+        
+            tertiaryHightlightedLayerStyle = LayerStyle(json: json["tertiaryHightlighted"])
+        
+            tertiaryFocusedLayerStyle = LayerStyle(json: json["tertiaryFocused"])
+        
+            tertiarySelectedLayerStyle = LayerStyle(json: json["tertiarySelected"])
+        
+            tertiaryDiabledLayerStyle = LayerStyle(json: json["tertiaryDiabled"])
+        
+            buttonPrimaryNormalLayerStyle = LayerStyle(json: json["buttonPrimaryNormal"])
+        
+            buttonPrimaryHightlightedLayerStyle = LayerStyle(json: json["buttonPrimaryHightlighted"])
+        
+            buttonPrimaryFocusedLayerStyle = LayerStyle(json: json["buttonPrimaryFocused"])
+        
+            buttonPrimarySelectedLayerStyle = LayerStyle(json: json["buttonPrimarySelected"])
+        
+            buttonPrimaryDiabledLayerStyle = LayerStyle(json: json["buttonPrimaryDiabled"])
+        
+            buttonSecondaryNormalLayerStyle = LayerStyle(json: json["buttonSecondaryNormal"])
+        
+            buttonSecondaryHightlightedLayerStyle = LayerStyle(json: json["buttonSecondaryHightlighted"])
+        
+            buttonSecondaryFocusedLayerStyle = LayerStyle(json: json["buttonSecondaryFocused"])
+        
+            buttonSecondarySelectedLayerStyle = LayerStyle(json: json["buttonSecondarySelected"])
+        
+            buttonSecondaryDiabledLayerStyle = LayerStyle(json: json["buttonSecondaryDiabled"])
+        
+            buttonTertiaryNormalLayerStyle = LayerStyle(json: json["buttonTertiaryNormal"])
+        
+            buttonTertiaryHightlightedLayerStyle = LayerStyle(json: json["buttonTertiaryHightlighted"])
+        
+            buttonTertiaryFocusedLayerStyle = LayerStyle(json: json["buttonTertiaryFocused"])
+        
+            buttonTertiarySelectedLayerStyle = LayerStyle(json: json["buttonTertiarySelected"])
+        
+            buttonTertiaryDiabledLayerStyle = LayerStyle(json: json["buttonTertiaryDiabled"])
+        
+            gridPrimaryNormalLayerStyle = LayerStyle(json: json["gridPrimaryNormal"])
+        
+            gridPrimaryHightlightedLayerStyle = LayerStyle(json: json["gridPrimaryHightlighted"])
+        
+            gridPrimaryFocusedLayerStyle = LayerStyle(json: json["gridPrimaryFocused"])
+        
+            gridPrimarySelectedLayerStyle = LayerStyle(json: json["gridPrimarySelected"])
+        
+            gridPrimaryDiabledLayerStyle = LayerStyle(json: json["gridPrimaryDiabled"])
+        
+            gridSecondaryNormalLayerStyle = LayerStyle(json: json["gridSecondaryNormal"])
+        
+            gridSecondaryHightlightedLayerStyle = LayerStyle(json: json["gridSecondaryHightlighted"])
+        
+            gridSecondaryFocusedLayerStyle = LayerStyle(json: json["gridSecondaryFocused"])
+        
+            gridSecondarySelectedLayerStyle = LayerStyle(json: json["gridSecondarySelected"])
+        
+            gridSecondaryDiabledLayerStyle = LayerStyle(json: json["gridSecondaryDiabled"])
+        
+            gridTertiaryNormalLayerStyle = LayerStyle(json: json["gridTertiaryNormal"])
+        
+            gridTertiaryHightlightedLayerStyle = LayerStyle(json: json["gridTertiaryHightlighted"])
+        
+            gridTertiaryFocusedLayerStyle = LayerStyle(json: json["gridTertiaryFocused"])
+        
+            gridTertiarySelectedLayerStyle = LayerStyle(json: json["gridTertiarySelected"])
+        
+            gridTertiaryDiabledLayerStyle = LayerStyle(json: json["gridTertiaryDiabled"])
+        
+            listPrimaryNormalLayerStyle = LayerStyle(json: json["listPrimaryNormal"])
+        
+            listPrimaryHightlightedLayerStyle = LayerStyle(json: json["listPrimaryHightlighted"])
+        
+            listPrimaryFocusedLayerStyle = LayerStyle(json: json["listPrimaryFocused"])
+        
+            listPrimarySelectedLayerStyle = LayerStyle(json: json["listPrimarySelected"])
+        
+            listPrimaryDiabledLayerStyle = LayerStyle(json: json["listPrimaryDiabled"])
+        
+            listSecondaryNormalLayerStyle = LayerStyle(json: json["listSecondaryNormal"])
+        
+            listSecondaryHightlightedLayerStyle = LayerStyle(json: json["listSecondaryHightlighted"])
+        
+            listSecondaryFocusedLayerStyle = LayerStyle(json: json["listSecondaryFocused"])
+        
+            listSecondarySelectedLayerStyle = LayerStyle(json: json["listSecondarySelected"])
+        
+            listSecondaryDiabledLayerStyle = LayerStyle(json: json["listSecondaryDiabled"])
+        
+            listTertiaryNormalLayerStyle = LayerStyle(json: json["listTertiaryNormal"])
+        
+            listTertiaryHightlightedLayerStyle = LayerStyle(json: json["listTertiaryHightlighted"])
+        
+            listTertiaryFocusedLayerStyle = LayerStyle(json: json["listTertiaryFocused"])
+        
+            listTertiarySelectedLayerStyle = LayerStyle(json: json["listTertiarySelected"])
+        
+            listTertiaryDiabledLayerStyle = LayerStyle(json: json["listTertiaryDiabled"])
+        
     }
 }

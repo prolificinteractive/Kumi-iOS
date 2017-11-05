@@ -9,6 +9,19 @@
 import Foundation
 
 extension LayerStyle {
+    
+    public init?(json: Any?) {
+        
+        guard let json = json as? JSON else {
+            return nil
+        }
+        
+        guard let layerStyle = LayerStyle(json: json) else {
+            return nil
+        }
+        
+        self = layerStyle
+    }
 
     public init?(json: JSON) {
         var opacity: Float = 1

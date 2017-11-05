@@ -32,9 +32,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemePrimary() {
         // Given
-        let primary = colorTheme.primary
-        let primaryMuted = colorTheme.primaryMuted
-        let primaryFaded = colorTheme.primaryFaded
+        let primary = colorTheme.primary?.normal
+        let primaryMuted = colorTheme.primary?.muted
+        let primaryFaded = colorTheme.primary?.faded
 
         // When
         let expectedPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -49,9 +49,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeSecondary() {
         // Given
-        let secondary = colorTheme.secondary
-        let secondaryMuted = colorTheme.secondaryMuted
-        let secondaryFaded = colorTheme.secondaryFaded
+        let secondary = colorTheme.secondary?.normal
+        let secondaryMuted = colorTheme.secondary?.muted
+        let secondaryFaded = colorTheme.secondary?.faded
 
         // When
         let expectedSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -66,9 +66,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeTertiary() {
         // Given
-        let tertiary = colorTheme.tertiary
-        let tertiaryMuted = colorTheme.tertiaryMuted
-        let tertiaryFaded = colorTheme.tertiaryFaded
+        let tertiary = colorTheme.tertiary?.normal
+        let tertiaryMuted = colorTheme.tertiary?.muted
+        let tertiaryFaded = colorTheme.tertiary?.faded
 
         // When
         let expectedTertiary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -83,9 +83,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeInvertPrimary() {
         // Given
-        let invertPrimary = colorTheme.invertPrimary
-        let invertPrimaryMuted = colorTheme.invertPrimaryMuted
-        let invertPrimaryFaded = colorTheme.invertPrimaryFaded
+        let invertPrimary = colorTheme.invertPrimary?.normal
+        let invertPrimaryMuted = colorTheme.invertPrimary?.muted
+        let invertPrimaryFaded = colorTheme.invertPrimary?.faded
 
         // When
         let expectedInvertPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -100,9 +100,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeInvertSecondary() {
         // Given
-        let invertSecondary = colorTheme.invertSecondary
-        let invertSecondaryMuted = colorTheme.invertSecondaryMuted
-        let invertSecondaryFaded = colorTheme.invertSecondaryFaded
+        let invertSecondary = colorTheme.invertSecondary?.normal
+        let invertSecondaryMuted = colorTheme.invertSecondary?.muted
+        let invertSecondaryFaded = colorTheme.invertSecondary?.faded
 
         // When
         let expectedInvertSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -117,9 +117,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeInvertTertiary() {
         // Given
-        let invertTertiary = colorTheme.invertTertiary
-        let invertTertiaryMuted = colorTheme.invertTertiaryMuted
-        let invertTertiaryFaded = colorTheme.invertTertiaryFaded
+        let invertTertiary = colorTheme.invertTertiary?.normal
+        let invertTertiaryMuted = colorTheme.invertTertiary?.muted
+        let invertTertiaryFaded = colorTheme.invertTertiary?.faded
 
         // When
         let expectedInvertTertiary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -134,9 +134,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeEmphasisPrimary() {
         // Given
-        let emphasisPrimary = colorTheme.emphasisPrimary
-        let emphasisPrimaryMuted = colorTheme.emphasisPrimaryMuted
-        let emphasisPrimaryFaded = colorTheme.emphasisPrimaryFaded
+        let emphasisPrimary = colorTheme.emphasisPrimary?.normal
+        let emphasisPrimaryMuted = colorTheme.emphasisPrimary?.muted
+        let emphasisPrimaryFaded = colorTheme.emphasisPrimary?.faded
 
         // When
         let expectedEmphasisPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -151,9 +151,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeEmphasisSecondary() {
         // Given
-        let emphasisSecondary = colorTheme.emphasisSecondary
-        let emphasisSecondaryMuted = colorTheme.emphasisSecondaryMuted
-        let emphasisSecondaryFaded = colorTheme.emphasisSecondaryFaded
+        let emphasisSecondary = colorTheme.emphasisSecondary?.normal
+        let emphasisSecondaryMuted = colorTheme.emphasisSecondary?.muted
+        let emphasisSecondaryFaded = colorTheme.emphasisSecondary?.faded
 
         // When
         let expectedEmphasisSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -168,9 +168,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeEmphasisTertiary() {
         // Given
-        let emphasisTertiary = colorTheme.emphasisTertiary
-        let emphasisTertiaryMuted = colorTheme.emphasisTertiaryMuted
-        let emphasisTertiaryFaded = colorTheme.emphasisTertiaryFaded
+        let emphasisTertiary = colorTheme.emphasisTertiary?.normal
+        let emphasisTertiaryMuted = colorTheme.emphasisTertiary?.muted
+        let emphasisTertiaryFaded = colorTheme.emphasisTertiary?.faded
 
         // When
         let expectedEmphasisTertiary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -185,9 +185,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeInvertEmphasisPrimary() {
         // Given
-        let invertEmphasisPrimary = colorTheme.invertEmphasisPrimary
-        let invertEmphasisPrimaryMuted = colorTheme.invertEmphasisPrimaryMuted
-        let invertEmphasisPrimaryFaded = colorTheme.invertEmphasisPrimaryFaded
+        let invertEmphasisPrimary = colorTheme.invertEmphasisPrimary?.normal
+        let invertEmphasisPrimaryMuted = colorTheme.invertEmphasisPrimary?.muted
+        let invertEmphasisPrimaryFaded = colorTheme.invertEmphasisPrimary?.faded
 
         // When
         let expectedInvertEmphasisPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -202,9 +202,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeInvertEmphasisSecondary() {
         // Given
-        let invertEmphasisSecondary = colorTheme.invertEmphasisSecondary
-        let invertEmphasisSecondaryMuted = colorTheme.invertEmphasisSecondaryMuted
-        let invertEmphasisSecondaryFaded = colorTheme.invertEmphasisSecondaryFaded
+        let invertEmphasisSecondary = colorTheme.invertEmphasisSecondary?.normal
+        let invertEmphasisSecondaryMuted = colorTheme.invertEmphasisSecondary?.muted
+        let invertEmphasisSecondaryFaded = colorTheme.invertEmphasisSecondary?.faded
 
         // When
         let expectedInvertEmphasisSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -219,9 +219,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeInvertEmphasisTertiary() {
         // Given
-        let invertEmphasisTertiary = colorTheme.invertEmphasisTertiary
-        let invertEmphasisTertiaryMuted = colorTheme.invertEmphasisTertiaryMuted
-        let invertEmphasisTertiaryFaded = colorTheme.invertEmphasisTertiaryFaded
+        let invertEmphasisTertiary = colorTheme.invertEmphasisTertiary?.normal
+        let invertEmphasisTertiaryMuted = colorTheme.invertEmphasisTertiary?.muted
+        let invertEmphasisTertiaryFaded = colorTheme.invertEmphasisTertiary?.faded
 
         // When
         let expectedInvertEmphasisTertiary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -236,9 +236,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeGrayout() {
         // Given
-        let grayout = colorTheme.grayout
-        let grayoutMuted = colorTheme.grayoutMuted
-        let grayoutFaded = colorTheme.grayoutFaded
+        let grayout = colorTheme.grayout?.normal
+        let grayoutMuted = colorTheme.grayout?.muted
+        let grayoutFaded = colorTheme.grayout?.faded
 
         // When
         let expectedGrayout = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
@@ -253,9 +253,9 @@ class ColorThemeTests: XCTestCase {
 
     func testColorThemeDestructive() {
         // Given
-        let destructive = colorTheme.destructive
-        let destructiveMuted = colorTheme.destructiveMuted
-        let destructiveFaded = colorTheme.destructiveFaded
+        let destructive = colorTheme.destructive?.normal
+        let destructiveMuted = colorTheme.destructive?.muted
+        let destructiveFaded = colorTheme.destructive?.faded
 
         // When
         let expectedDestructive = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)

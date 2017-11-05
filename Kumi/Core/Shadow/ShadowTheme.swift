@@ -56,43 +56,32 @@ public struct ShadowTheme {
 
     public init?(json: JSON) {
 
-        if let noneJSON = json["none"] as? JSON {
-            noneShadowStyle = ShadowStyle(json: noneJSON)
+        
+        noneShadowStyle = ShadowStyle(json: json["none"])
+    
+        extraSmallShadowStyle = ShadowStyle(json: json["extraSmall"])
+    
+        smallShadowStyle = ShadowStyle(json: json["small"])
+    
+        mediumShadowStyle = ShadowStyle(json: json["medium"])
+    
+        largeShadowStyle = ShadowStyle(json: json["large"])
+    
+        extraLargeShadowStyle = ShadowStyle(json: json["extraLarge"])
+    
+
+        let relativeElevationAttributesJSON = json["relativeElevationAttributes"] as? JSON
+
+        if let radiusRatioValue = relativeElevationAttributesJSON?["radiusRatio"] as? CGFloat {
+            radiusRatio = radiusRatioValue
         }
 
-        if let extraSmallJSON = json["extraSmall"] as? JSON {
-            extraSmallShadowStyle = ShadowStyle(json: extraSmallJSON)
+        if let offsetXRatioValue = relativeElevationAttributesJSON?["offsetXRatio"] as? CGFloat {
+            offsetXRatio = offsetXRatioValue
         }
 
-        if let smallJSON = json["small"] as? JSON {
-            smallShadowStyle = ShadowStyle(json: smallJSON)
-        }
-
-        if let mediumJSON = json["medium"] as? JSON {
-            mediumShadowStyle = ShadowStyle(json: mediumJSON)
-        }
-
-        if let largeJSON = json["large"] as? JSON {
-            largeShadowStyle = ShadowStyle(json: largeJSON)
-        }
-
-        if let extraLargeJSON = json["extraLarge"] as? JSON {
-            extraLargeShadowStyle = ShadowStyle(json: extraLargeJSON)
-        }
-
-        if let relativeElevationAttributesJSON = json["relativeElevationAttributes"] as? JSON {
-
-            if let radiusRatioValue = relativeElevationAttributesJSON["radiusRatio"] as? CGFloat {
-                radiusRatio = radiusRatioValue
-            }
-
-            if let offsetXRatioValue = relativeElevationAttributesJSON["offsetXRatio"] as? CGFloat {
-                offsetXRatio = offsetXRatioValue
-            }
-
-            if let offsetYRatioValue = relativeElevationAttributesJSON["offsetYRatio"] as? CGFloat {
-                offsetYRatio = offsetYRatioValue
-            }
+        if let offsetYRatioValue = relativeElevationAttributesJSON?["offsetYRatio"] as? CGFloat {
+            offsetYRatio = offsetYRatioValue
         }
 
     }

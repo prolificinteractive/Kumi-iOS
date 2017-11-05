@@ -7,6 +7,19 @@
 //
 
 extension CABasicAnimationStyle {
+    
+    public init?(json: Any?) {
+        
+        guard let json = json as? JSON else {
+            return nil
+        }
+        
+        guard let animationStyle = CABasicAnimationStyle(json: json) else {
+            return nil
+        }
+        
+        self = animationStyle
+    }
 
     public init?(json: JSON) {
 

@@ -8,7 +8,10 @@
 
 extension UIColor {
 
-    convenience init?(json: JSON) {
+    convenience init?(json: JSON?) {
+        guard let json = json else {
+            return nil
+        }
         guard let red = json["red"] as? CGFloat,
             let green = json["green"] as? CGFloat,
             let blue = json["blue"] as? CGFloat,

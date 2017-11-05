@@ -98,8 +98,24 @@ private extension NSUnderlineStyle {
 }
 
 extension TextStyle {
+    
+    init?(json: Any?) {
+        guard let json = json as? JSON else {
+            return nil
+        }
+        
+        guard let textStyle = TextStyle(json: json) else {
+            return nil
+        }
+        
+        self = textStyle
+    }
 
-    init?(json: JSON) {
+    init?(json: JSON?) {
+        guard let json = json else {
+            return nil
+        }
+        
         guard let fontNameJSON = json["fonts"] as? JSON,
             let normalFontName = fontNameJSON["normal"] as? String,
             let textSize = json["textSize"] as? CGFloat else {
