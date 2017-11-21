@@ -97,18 +97,43 @@ private extension NSUnderlineStyle {
     }
 }
 
-extension TextStyle {
+extension TextStyleSet {
     
     init?(json: Any?) {
         guard let json = json as? JSON else {
             return nil
         }
-        
-        guard let textStyle = TextStyle(json: json) else {
+        self.init(json: json)
+    }
+    
+    init?(json: Any?, defaultStyle: TextStyle) {
+        guard let json = json as? JSON else {
             return nil
         }
-        
-        self = textStyle
+        self.init(json: json, defaultStyle: defaultStyle)
+    }
+    
+    init?(json: JSON) {
+        self.init(normal: TextStyle(json: json["regular"])!,
+                  strong: TextStyle(json: json["strong"]),
+                  emphasis: TextStyle(json: json["emphasis"]))
+    }
+    
+    init?(json: JSON, defaultStyle: TextStyle) {
+        self.init(normal: TextStyle(json: json["regular"]) ?? defaultStyle,
+                  strong: TextStyle(json: json["strong"]),
+                  emphasis: TextStyle(json: json["emphasis"]))
+    }
+    
+}
+
+extension TextStyle {
+    
+    init?(json: Any?) {
+        guard let json = json as? JSON? else {
+            return nil
+        }
+        self.init(json: json)
     }
 
     init?(json: JSON?) {
@@ -116,18 +141,17 @@ extension TextStyle {
             return nil
         }
         
-        guard let fontNameJSON = json["fonts"] as? JSON,
-            let normalFontName = fontNameJSON["normal"] as? String,
+        guard let fontNameJSON = json["font"] as? String,
             let textSize = json["textSize"] as? CGFloat else {
                 return nil
         }
 
-        guard let font = UIFont(name: normalFontName, size: textSize) else {
+        guard let font = UIFont(name: fontNameJSON, size: textSize) else {
             return nil
         }
 
-        var emFont: UIFont?
-        var strongFont: UIFont?
+        let emFont = font
+        let strongFont = font
         var textColor: UIColor?
         var characterSpacing: CGFloat?
         var lineSpacing: CGFloat?
@@ -142,13 +166,6 @@ extension TextStyle {
         var strikethroughColor: UIColor?
         var textTransform: TextTransform = .none
 
-        if let emFontName = fontNameJSON["emphasis"] as? String {
-            emFont = UIFont(name: emFontName, size: textSize)
-        }
-
-        if let strongFontName = fontNameJSON["strong"] as? String {
-            strongFont = UIFont(name: strongFontName, size: textSize)
-        }
 
         if let textColorJSON = json["color"] as? JSON {
             textColor = UIColor(json: textColorJSON)

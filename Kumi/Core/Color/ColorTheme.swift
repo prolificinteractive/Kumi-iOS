@@ -8,98 +8,67 @@
 
 import UIKit
 
-public struct ColorStyle {
-    public var normal: UIColor?
-    public var muted: UIColor?
-    public var faded: UIColor?
-    
-    private init(normal: UIColor?, muted: UIColor?, faded: UIColor?) {
-        self.normal = normal
-        self.muted = muted
-        self.faded = faded
-    }
-    
-    public init?(json: Any?) {
-        guard let json = json as? JSON else {
-            return nil
-        }
-        guard let color = ColorStyle(json: json) else {
-            return nil
-        }
-        self = color
-    }
-    
-    public init?(json: JSON?) {
-        guard let json = json else {
-            return nil
-        }
-        self = ColorStyle(normal: UIColor(json: json["normal"] as? JSON),
-                  muted: UIColor(json: json["muted"] as? JSON),
-                  faded: UIColor(json: json["faded"] as? JSON))
-    }
-}
-
 /// Kumi color theme.
 public struct ColorTheme {
 
     /// Primary color.
-    public var primary: ColorStyle?
+    public var regularPrimary: ColorSet!
 
     /// Secondary color.
-    public var secondary: ColorStyle?
+    public var regularSecondary: ColorSet!
 
     /// Tertiary color.
-    public var tertiary: ColorStyle?
+    public var regularTertiary: ColorSet!
     
     /// Invert Primary color.
-    public var invertPrimary: ColorStyle?
+    public var invertPrimary: ColorSet!
 
     /// Invert Secondary color.
-    public var invertSecondary: ColorStyle?
+    public var invertSecondary: ColorSet!
 
     /// Invert Tertiary color.
-    public var invertTertiary: ColorStyle?
+    public var invertTertiary: ColorSet!
 
     /// Emphasis Primary color.
-    public var emphasisPrimary: ColorStyle?
+    public var emphasisPrimary: ColorSet!
 
     /// Emphasis Secondary color.
-    public var emphasisSecondary: ColorStyle?
+    public var emphasisSecondary: ColorSet!
 
     /// Emphasis Tertiary color.
-    public var emphasisTertiary: ColorStyle?
+    public var emphasisTertiary: ColorSet!
 
     /// Invert Emphasis Primary color.
-    public var invertEmphasisPrimary: ColorStyle?
+    public var invertEmphasisPrimary: ColorSet!
 
     /// Invert Emphasis Secondary color.
-    public var invertEmphasisSecondary: ColorStyle?
+    public var invertEmphasisSecondary: ColorSet!
 
     /// Invert Emphasis Tertiary color.
-    public var invertEmphasisTertiary: ColorStyle?
+    public var invertEmphasisTertiary: ColorSet!
 
     /// Grayout color.
-    public var grayout: ColorStyle?
+    public var grayout: ColorSet!
 
     /// Destructive color.
-    public var destructive: ColorStyle?
+    public var destructive: ColorSet!
 
 
     public init?(json: JSON) {
-        primary = ColorStyle(json: json["primary"])
-        secondary = ColorStyle(json: json["secondary"])
-        tertiary = ColorStyle(json: json["tertiary"])
-        invertPrimary = ColorStyle(json: json["invertPrimary"])
-        invertSecondary = ColorStyle(json: json["invertSecondary"])
-        invertTertiary = ColorStyle(json: json["invertTertiary"])
-        emphasisPrimary = ColorStyle(json: json["emphasisPrimary"])
-        emphasisSecondary = ColorStyle(json: json["emphasisSecondary"])
-        emphasisTertiary = ColorStyle(json: json["emphasisTertiary"])
-        invertEmphasisPrimary = ColorStyle(json: json["invertEmphasisPrimary"])
-        invertEmphasisSecondary = ColorStyle(json: json["invertEmphasisSecondary"])
-        invertEmphasisTertiary = ColorStyle(json: json["invertEmphasisTertiary"])
-        grayout = ColorStyle(json: json["grayout"])
-        destructive = ColorStyle(json: json["destructive"])
+        regularPrimary = ColorSet(json: json["regularPrimary"])!
+        regularSecondary = ColorSet(json: json["regularSecondary"], defaultColor: regularPrimary.normal) ?? regularPrimary
+        regularTertiary = ColorSet(json: json["regularTertiary"], defaultColor: regularSecondary.normal) ?? regularSecondary
+        invertPrimary = ColorSet(json: json["invertPrimary"], defaultColor: regularPrimary.normal) ?? regularPrimary
+        invertSecondary = ColorSet(json: json["invertSecondary"], defaultColor: invertPrimary.normal) ?? invertPrimary
+        invertTertiary = ColorSet(json: json["invertTertiary"], defaultColor: invertSecondary.normal) ?? invertSecondary
+        emphasisPrimary = ColorSet(json: json["emphasisPrimary"], defaultColor: regularPrimary.normal) ?? regularPrimary
+        emphasisSecondary = ColorSet(json: json["emphasisSecondary"], defaultColor: emphasisPrimary.normal) ?? emphasisPrimary
+        emphasisTertiary = ColorSet(json: json["emphasisTertiary"], defaultColor: emphasisSecondary.normal) ?? emphasisSecondary
+        invertEmphasisPrimary = ColorSet(json: json["invertEmphasisPrimary"], defaultColor: regularPrimary.normal) ?? regularPrimary
+        invertEmphasisSecondary = ColorSet(json: json["invertEmphasisSecondary"], defaultColor: invertEmphasisPrimary.normal) ?? invertEmphasisPrimary
+        invertEmphasisTertiary = ColorSet(json: json["invertEmphasisTertiary"], defaultColor: invertEmphasisSecondary.normal) ?? invertEmphasisSecondary
+        grayout = ColorSet(json: json["grayout"], defaultColor: regularPrimary.normal) ?? regularPrimary
+        destructive = ColorSet(json: json["destructive"], defaultColor: regularPrimary.normal) ?? regularPrimary
     }
 
 }

@@ -54,7 +54,6 @@ class JSONHelper {
             default:
                 print(error)
             }
-
             return nil
         }
     }

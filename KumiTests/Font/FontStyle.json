@@ -1,11 +1,7 @@
 {
     "fontFamily": "Helvetica",
     "textSize": 18,
-    "fonts": {
-        "normal": "Helvetica",
-        "strong": "Helvetica-Bold",
-        "emphasis": "Helvetica-Heavy"
-    },
+    "font": "Helvetica",
     "color": {
         "red": 0.5,
           "green": 0.5,

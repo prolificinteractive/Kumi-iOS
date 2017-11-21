@@ -10,312 +10,82 @@
 
 public struct LayerTheme {
 
-    /// Empty Layer Style.
-    public var emptyLayerStyle: LayerStyle?
-
-    /// Primary Normal Layer Style.
-    public var primaryNormalLayerStyle: LayerStyle?
-
-    /// Primary Hightlighted Layer Style.
-    public var primaryHightlightedLayerStyle: LayerStyle?
-
-    /// Primary Focused Layer Style.
-    public var primaryFocusedLayerStyle: LayerStyle?
-
-    /// Primary Selected Layer Style.
-    public var primarySelectedLayerStyle: LayerStyle?
-
-    /// Primary Diabled Layer Style.
-    public var primaryDiabledLayerStyle: LayerStyle?
-
-    /// Secondary Normal Layer Style.
-    public var secondaryNormalLayerStyle: LayerStyle?
-
-    /// Secondary Hightlighted Layer Style.
-    public var secondaryHightlightedLayerStyle: LayerStyle?
-
-    /// Secondary Focused Layer Style.
-    public var secondaryFocusedLayerStyle: LayerStyle?
-
-    /// Secondary Selected Layer Style.
-    public var secondarySelectedLayerStyle: LayerStyle?
-
-    /// Secondary Diabled Layer Style.
-    public var secondaryDiabledLayerStyle: LayerStyle?
-
-    /// Tertiary Normal Layer Style.
-    public var tertiaryNormalLayerStyle: LayerStyle?
-
-    /// Tertiary Hightlighted Layer Style.
-    public var tertiaryHightlightedLayerStyle: LayerStyle?
-
-    /// Tertiary Focused Layer Style.
-    public var tertiaryFocusedLayerStyle: LayerStyle?
-
-    /// Tertiary Selected Layer Style.
-    public var tertiarySelectedLayerStyle: LayerStyle?
-
-    /// Tertiary Diabled Layer Style.
-    public var tertiaryDiabledLayerStyle: LayerStyle?
-
-    /// Button Primary Normal Layer Style.
-    public var buttonPrimaryNormalLayerStyle: LayerStyle?
-
-    /// Button Primary Hightlighted Layer Style.
-    public var buttonPrimaryHightlightedLayerStyle: LayerStyle?
-
-    /// Button Primary Focused Layer Style.
-    public var buttonPrimaryFocusedLayerStyle: LayerStyle?
-
-    /// Button Primary Selected Layer Style.
-    public var buttonPrimarySelectedLayerStyle: LayerStyle?
-
-    /// Button Primary Diabled Layer Style.
-    public var buttonPrimaryDiabledLayerStyle: LayerStyle?
-
-    /// Button Secondary Normal Layer Style.
-    public var buttonSecondaryNormalLayerStyle: LayerStyle?
-
-    /// Button Secondary Hightlighted Layer Style.
-    public var buttonSecondaryHightlightedLayerStyle: LayerStyle?
-
-    /// Button Secondary Focused Layer Style.
-    public var buttonSecondaryFocusedLayerStyle: LayerStyle?
-
-    /// Button Secondary Selected Layer Style.
-    public var buttonSecondarySelectedLayerStyle: LayerStyle?
-
-    /// Button Secondary Diabled Layer Style.
-    public var buttonSecondaryDiabledLayerStyle: LayerStyle?
-
-    /// Button Tertiary Normal Layer Style.
-    public var buttonTertiaryNormalLayerStyle: LayerStyle?
-
-    /// Button Tertiary Hightlighted Layer Style.
-    public var buttonTertiaryHightlightedLayerStyle: LayerStyle?
-
-    /// Button Tertiary Focused Layer Style.
-    public var buttonTertiaryFocusedLayerStyle: LayerStyle?
-
-    /// Button Tertiary Selected Layer Style.
-    public var buttonTertiarySelectedLayerStyle: LayerStyle?
-
-    /// Button Tertiary Diabled Layer Style.
-    public var buttonTertiaryDiabledLayerStyle: LayerStyle?
-
-    /// Grid Primary Normal Layer Style.
-    public var gridPrimaryNormalLayerStyle: LayerStyle?
-
-    /// Grid Primary Hightlighted Layer Style.
-    public var gridPrimaryHightlightedLayerStyle: LayerStyle?
-
-    /// Grid Primary Focused Layer Style.
-    public var gridPrimaryFocusedLayerStyle: LayerStyle?
-
-    /// Grid Primary Selected Layer Style.
-    public var gridPrimarySelectedLayerStyle: LayerStyle?
-
-    /// Grid Primary Diabled Layer Style.
-    public var gridPrimaryDiabledLayerStyle: LayerStyle?
-
-    /// Grid Secondary Normal Layer Style.
-    public var gridSecondaryNormalLayerStyle: LayerStyle?
-
-    /// Grid Secondary Hightlighted Layer Style.
-    public var gridSecondaryHightlightedLayerStyle: LayerStyle?
-
-    /// Grid Secondary Focused Layer Style.
-    public var gridSecondaryFocusedLayerStyle: LayerStyle?
-
-    /// Grid Secondary Selected Layer Style.
-    public var gridSecondarySelectedLayerStyle: LayerStyle?
-
-    /// Grid Secondary Diabled Layer Style.
-    public var gridSecondaryDiabledLayerStyle: LayerStyle?
-
-    /// Grid Tertiary Normal Layer Style.
-    public var gridTertiaryNormalLayerStyle: LayerStyle?
-
-    /// Grid Tertiary Hightlighted Layer Style.
-    public var gridTertiaryHightlightedLayerStyle: LayerStyle?
-
-    /// Grid Tertiary Focused Layer Style.
-    public var gridTertiaryFocusedLayerStyle: LayerStyle?
-
-    /// Grid Tertiary Selected Layer Style.
-    public var gridTertiarySelectedLayerStyle: LayerStyle?
-
-    /// Grid Tertiary Diabled Layer Style.
-    public var gridTertiaryDiabledLayerStyle: LayerStyle?
-
-    /// List Primary Normal Layer Style.
-    public var listPrimaryNormalLayerStyle: LayerStyle?
-
-    /// List Primary Hightlighted Layer Style.
-    public var listPrimaryHightlightedLayerStyle: LayerStyle?
-
-    /// List Primary Focused Layer Style.
-    public var listPrimaryFocusedLayerStyle: LayerStyle?
-
-    /// List Primary Selected Layer Style.
-    public var listPrimarySelectedLayerStyle: LayerStyle?
-
-    /// List Primary Diabled Layer Style.
-    public var listPrimaryDiabledLayerStyle: LayerStyle?
-
-    /// List Secondary Normal Layer Style.
-    public var listSecondaryNormalLayerStyle: LayerStyle?
-
-    /// List Secondary Hightlighted Layer Style.
-    public var listSecondaryHightlightedLayerStyle: LayerStyle?
-
-    /// List Secondary Focused Layer Style.
-    public var listSecondaryFocusedLayerStyle: LayerStyle?
-
-    /// List Secondary Selected Layer Style.
-    public var listSecondarySelectedLayerStyle: LayerStyle?
-
-    /// List Secondary Diabled Layer Style.
-    public var listSecondaryDiabledLayerStyle: LayerStyle?
-
-    /// List Tertiary Normal Layer Style.
-    public var listTertiaryNormalLayerStyle: LayerStyle?
-
-    /// List Tertiary Hightlighted Layer Style.
-    public var listTertiaryHightlightedLayerStyle: LayerStyle?
-
-    /// List Tertiary Focused Layer Style.
-    public var listTertiaryFocusedLayerStyle: LayerStyle?
-
-    /// List Tertiary Selected Layer Style.
-    public var listTertiarySelectedLayerStyle: LayerStyle?
-
-    /// List Tertiary Diabled Layer Style.
-    public var listTertiaryDiabledLayerStyle: LayerStyle?
+    /// Text input tertiary Layer Style Set.
+    public var textInputTertiary: LayerStyleSet!
+    
+    /// Text input secondary Layer Style Set.
+    public var textInputSecondary: LayerStyleSet!
+    
+    /// Text input primary Layer Style Set.
+    public var textInputPrimary: LayerStyleSet!
+    
+    /// Button tertiary Layer Style Set.
+    public var buttonTertiary: LayerStyleSet!
+    
+    /// Button secondary Layer Style Set.
+    public var buttonSecondary: LayerStyleSet!
+    
+    /// Button primary Layer Style Set.
+    public var buttonPrimary: LayerStyleSet!
+    
+    /// List tertiary Layer Style Set.
+    public var listTertiary: LayerStyleSet!
+    
+    /// List secondary Layer Style Set.
+    public var listSecondary: LayerStyleSet!
+    
+    /// List primary Layer Style Set.
+    public var listPrimary: LayerStyleSet!
+    
+    /// Grid tertiary Layer Style Set.
+    public var gridTertiary: LayerStyleSet!
+    
+    /// Grid secondary Layer Style Set.
+    public var gridSecondary: LayerStyleSet!
+    
+    /// Grid primary Layer Style Set.
+    public var gridPrimary: LayerStyleSet!
+    
+    /// Default tertiary Layer Style Set.
+    public var defaultTertiary: LayerStyleSet!
+    
+    /// Default secondary Layer Style Set.
+    public var defaultSecondary: LayerStyleSet!
+    
+    /// Default primary Layer Style Set.
+    public var defaultPrimary: LayerStyleSet!
 
     public init?(json: JSON) {
         
-            emptyLayerStyle = LayerStyle(json: json["empty"])
+        defaultPrimary = LayerStyleSet(json: json["defaultPrimary"])
         
-            primaryNormalLayerStyle = LayerStyle(json: json["primaryNormal"])
+        defaultSecondary = LayerStyleSet(json: json["defaultSecondary"], defaultLayerStyle: defaultPrimary.normal) ?? defaultPrimary
         
-            primaryHightlightedLayerStyle = LayerStyle(json: json["primaryHightlighted"])
+        defaultTertiary = LayerStyleSet(json: json["defaultTertiary"], defaultLayerStyle: defaultSecondary.normal) ?? defaultSecondary
         
-            primaryFocusedLayerStyle = LayerStyle(json: json["primaryFocused"])
+        gridPrimary = LayerStyleSet(json: json["gridPrimary"], defaultLayerStyle: defaultPrimary.normal) ?? defaultPrimary
         
-            primarySelectedLayerStyle = LayerStyle(json: json["primarySelected"])
+        gridSecondary = LayerStyleSet(json: json["gridSecondary"], defaultLayerStyle: gridPrimary.normal) ?? gridPrimary
         
-            primaryDiabledLayerStyle = LayerStyle(json: json["primaryDiabled"])
+        gridTertiary = LayerStyleSet(json: json["gridTertiary"], defaultLayerStyle: gridSecondary.normal) ?? gridSecondary
         
-            secondaryNormalLayerStyle = LayerStyle(json: json["secondaryNormal"])
+        listPrimary = LayerStyleSet(json: json["listPrimary"], defaultLayerStyle: defaultPrimary.normal) ?? defaultPrimary
         
-            secondaryHightlightedLayerStyle = LayerStyle(json: json["secondaryHightlighted"])
+        listSecondary = LayerStyleSet(json: json["listSecondary"], defaultLayerStyle: listPrimary.normal) ?? listPrimary
         
-            secondaryFocusedLayerStyle = LayerStyle(json: json["secondaryFocused"])
+        listTertiary = LayerStyleSet(json: json["listTertiary"], defaultLayerStyle: listSecondary.normal) ?? listSecondary
         
-            secondarySelectedLayerStyle = LayerStyle(json: json["secondarySelected"])
+        buttonPrimary = LayerStyleSet(json: json["buttonPrimary"], defaultLayerStyle: defaultPrimary.normal) ?? defaultPrimary
         
-            secondaryDiabledLayerStyle = LayerStyle(json: json["secondaryDiabled"])
+        buttonSecondary = LayerStyleSet(json: json["buttonSecondary"], defaultLayerStyle: buttonPrimary.normal) ?? buttonPrimary
         
-            tertiaryNormalLayerStyle = LayerStyle(json: json["tertiaryNormal"])
+        buttonTertiary = LayerStyleSet(json: json["buttonTertiary"], defaultLayerStyle: buttonSecondary.normal) ?? buttonSecondary
         
-            tertiaryHightlightedLayerStyle = LayerStyle(json: json["tertiaryHightlighted"])
+        textInputPrimary = LayerStyleSet(json: json["textInputPrimary"], defaultLayerStyle: defaultPrimary.normal) ?? defaultPrimary
         
-            tertiaryFocusedLayerStyle = LayerStyle(json: json["tertiaryFocused"])
+        textInputSecondary = LayerStyleSet(json: json["textInputSecondary"], defaultLayerStyle: textInputPrimary.normal) ?? textInputPrimary
         
-            tertiarySelectedLayerStyle = LayerStyle(json: json["tertiarySelected"])
-        
-            tertiaryDiabledLayerStyle = LayerStyle(json: json["tertiaryDiabled"])
-        
-            buttonPrimaryNormalLayerStyle = LayerStyle(json: json["buttonPrimaryNormal"])
-        
-            buttonPrimaryHightlightedLayerStyle = LayerStyle(json: json["buttonPrimaryHightlighted"])
-        
-            buttonPrimaryFocusedLayerStyle = LayerStyle(json: json["buttonPrimaryFocused"])
-        
-            buttonPrimarySelectedLayerStyle = LayerStyle(json: json["buttonPrimarySelected"])
-        
-            buttonPrimaryDiabledLayerStyle = LayerStyle(json: json["buttonPrimaryDiabled"])
-        
-            buttonSecondaryNormalLayerStyle = LayerStyle(json: json["buttonSecondaryNormal"])
-        
-            buttonSecondaryHightlightedLayerStyle = LayerStyle(json: json["buttonSecondaryHightlighted"])
-        
-            buttonSecondaryFocusedLayerStyle = LayerStyle(json: json["buttonSecondaryFocused"])
-        
-            buttonSecondarySelectedLayerStyle = LayerStyle(json: json["buttonSecondarySelected"])
-        
-            buttonSecondaryDiabledLayerStyle = LayerStyle(json: json["buttonSecondaryDiabled"])
-        
-            buttonTertiaryNormalLayerStyle = LayerStyle(json: json["buttonTertiaryNormal"])
-        
-            buttonTertiaryHightlightedLayerStyle = LayerStyle(json: json["buttonTertiaryHightlighted"])
-        
-            buttonTertiaryFocusedLayerStyle = LayerStyle(json: json["buttonTertiaryFocused"])
-        
-            buttonTertiarySelectedLayerStyle = LayerStyle(json: json["buttonTertiarySelected"])
-        
-            buttonTertiaryDiabledLayerStyle = LayerStyle(json: json["buttonTertiaryDiabled"])
-        
-            gridPrimaryNormalLayerStyle = LayerStyle(json: json["gridPrimaryNormal"])
-        
-            gridPrimaryHightlightedLayerStyle = LayerStyle(json: json["gridPrimaryHightlighted"])
-        
-            gridPrimaryFocusedLayerStyle = LayerStyle(json: json["gridPrimaryFocused"])
-        
-            gridPrimarySelectedLayerStyle = LayerStyle(json: json["gridPrimarySelected"])
-        
-            gridPrimaryDiabledLayerStyle = LayerStyle(json: json["gridPrimaryDiabled"])
-        
-            gridSecondaryNormalLayerStyle = LayerStyle(json: json["gridSecondaryNormal"])
-        
-            gridSecondaryHightlightedLayerStyle = LayerStyle(json: json["gridSecondaryHightlighted"])
-        
-            gridSecondaryFocusedLayerStyle = LayerStyle(json: json["gridSecondaryFocused"])
-        
-            gridSecondarySelectedLayerStyle = LayerStyle(json: json["gridSecondarySelected"])
-        
-            gridSecondaryDiabledLayerStyle = LayerStyle(json: json["gridSecondaryDiabled"])
-        
-            gridTertiaryNormalLayerStyle = LayerStyle(json: json["gridTertiaryNormal"])
-        
-            gridTertiaryHightlightedLayerStyle = LayerStyle(json: json["gridTertiaryHightlighted"])
-        
-            gridTertiaryFocusedLayerStyle = LayerStyle(json: json["gridTertiaryFocused"])
-        
-            gridTertiarySelectedLayerStyle = LayerStyle(json: json["gridTertiarySelected"])
-        
-            gridTertiaryDiabledLayerStyle = LayerStyle(json: json["gridTertiaryDiabled"])
-        
-            listPrimaryNormalLayerStyle = LayerStyle(json: json["listPrimaryNormal"])
-        
-            listPrimaryHightlightedLayerStyle = LayerStyle(json: json["listPrimaryHightlighted"])
-        
-            listPrimaryFocusedLayerStyle = LayerStyle(json: json["listPrimaryFocused"])
-        
-            listPrimarySelectedLayerStyle = LayerStyle(json: json["listPrimarySelected"])
-        
-            listPrimaryDiabledLayerStyle = LayerStyle(json: json["listPrimaryDiabled"])
-        
-            listSecondaryNormalLayerStyle = LayerStyle(json: json["listSecondaryNormal"])
-        
-            listSecondaryHightlightedLayerStyle = LayerStyle(json: json["listSecondaryHightlighted"])
-        
-            listSecondaryFocusedLayerStyle = LayerStyle(json: json["listSecondaryFocused"])
-        
-            listSecondarySelectedLayerStyle = LayerStyle(json: json["listSecondarySelected"])
-        
-            listSecondaryDiabledLayerStyle = LayerStyle(json: json["listSecondaryDiabled"])
-        
-            listTertiaryNormalLayerStyle = LayerStyle(json: json["listTertiaryNormal"])
-        
-            listTertiaryHightlightedLayerStyle = LayerStyle(json: json["listTertiaryHightlighted"])
-        
-            listTertiaryFocusedLayerStyle = LayerStyle(json: json["listTertiaryFocused"])
-        
-            listTertiarySelectedLayerStyle = LayerStyle(json: json["listTertiarySelected"])
-        
-            listTertiaryDiabledLayerStyle = LayerStyle(json: json["listTertiaryDiabled"])
+        textInputTertiary = LayerStyleSet(json: json["textInputTertiary"], defaultLayerStyle: textInputSecondary.normal) ?? textInputSecondary
         
     }
 }
