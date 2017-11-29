@@ -11,32 +11,23 @@ import XCTest
 
 class ThemeTests: XCTestCase {
 
-    var theme: Theme!
-
     override func setUp() {
         super.setUp()
 
-        do {
-            let themeJSON = try JSONHelper.getJSON("Theme")
-            theme = Theme(json: themeJSON)
-        } catch let error {
-            XCTFail(error.localizedDescription)
-        }
+        Kumi.setup(bundle: Bundle(for: type(of: self)))
     }
 
     override func tearDown() {
-        theme = nil
 
         super.tearDown()
     }
 
     func testThemeCreation() {
-        XCTAssertNotNil(theme)
-        XCTAssertNotNil(theme.colorTheme)
-        XCTAssertNotNil(theme.fontTheme)
-        XCTAssertNotNil(theme.layerTheme)
-        XCTAssertNotNil(theme.shadowTheme)
-        XCTAssertNotNil(theme.animationTheme)
+        XCTAssertNotNil(Kumi.color)
+        XCTAssertNotNil(Kumi.font)
+        XCTAssertNotNil(Kumi.layer)
+        XCTAssertNotNil(Kumi.animation)
+        XCTAssertNotNil(Kumi.shadow)
     }
 
 }

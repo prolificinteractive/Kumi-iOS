@@ -6,12 +6,15 @@
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
+import SwiftyJSON
+
 extension CAMediaTimingFunction {
+    
     convenience init?(json: JSON) {
-        guard let c1x = json["c1x"] as? Float,
-            let c1y = json["c1y"] as? Float,
-            let c2x = json["c2x"] as? Float,
-            let c2y = json["c2y"] as? Float else {
+        guard let c1x = json["c1x"].float,
+            let c1y = json["c1y"].float,
+            let c2x = json["c2x"].float,
+            let c2y = json["c2y"].float else {
                 return nil
         }
 

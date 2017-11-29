@@ -6,19 +6,17 @@
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
+import SwiftyJSON
+
 extension UIColor {
 
-    convenience init?(json: JSON?) {
-        guard let json = json else {
-            return nil
-        }
-        guard let red = json["red"] as? CGFloat,
-            let green = json["green"] as? CGFloat,
-            let blue = json["blue"] as? CGFloat,
-            let alpha = json["alpha"] as? CGFloat else {
+    convenience init?(json: JSON) {
+        guard let red = json["red"].cgFloat,
+        let green = json["green"].cgFloat,
+        let blue = json["blue"].cgFloat else {
                 return nil
         }
-
+        let alpha: CGFloat = json["alpha"].cgFloat ?? 1
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
 

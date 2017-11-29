@@ -6,21 +6,10 @@
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
+import SwiftyJSON
+
 extension CABasicAnimationStyle {
     
-    public init?(json: Any?) {
-        
-        guard let json = json as? JSON else {
-            return nil
-        }
-        
-        guard let animationStyle = CABasicAnimationStyle(json: json) else {
-            return nil
-        }
-        
-        self = animationStyle
-    }
-
     public init?(json: JSON) {
 
         var duration: TimeInterval = 0.35
@@ -28,21 +17,21 @@ extension CABasicAnimationStyle {
         var timingFunction: CAMediaTimingFunction = CAMediaTimingFunction(controlPoints: 0, 0, 1, 1)
         var isRemovedOnCompletion: Bool = false
 
-        if let durationValue = json["duration"] as? TimeInterval {
+        if let durationValue = json["duration"].double {
             duration = durationValue
         }
 
-        if let delayValue = json["delay"] as? TimeInterval {
+        if let delayValue = json["delay"].double {
             delay = delayValue
         }
 
-        if let timingFunctionJSON = json["timingFunction"] as? JSON {
-            if let timingFunctionValue = CAMediaTimingFunction(json: timingFunctionJSON) {
-                timingFunction = timingFunctionValue
-            }
+        
+        if let timingFunctionValue = CAMediaTimingFunction(json: json["timingFunction"]) {
+            timingFunction = timingFunctionValue
         }
+    
 
-        if let isRemovedOnCompletionValue = json["isRemovedOnCompletion"] as? Bool {
+        if let isRemovedOnCompletionValue = json["isRemovedOnCompletion"].bool {
             isRemovedOnCompletion = isRemovedOnCompletionValue
         }
 

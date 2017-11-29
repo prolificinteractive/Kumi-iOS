@@ -6,11 +6,13 @@
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
+import SwiftyJSON
+
 extension CGSize {
 
     init?(json: JSON) {
-        guard let width = json["width"] as? CGFloat,
-            let height = json["height"] as? CGFloat else {
+        guard let width = json["width"].cgFloat,
+            let height = json["height"].cgFloat else {
                 return nil
         }
 

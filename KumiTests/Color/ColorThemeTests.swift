@@ -18,6 +18,7 @@ class ColorThemeTests: XCTestCase {
 
         do {
             let colorThemeJSON = try JSONHelper.getJSON("colorStyle")
+            print(colorThemeJSON)
             colorTheme = ColorTheme(json: colorThemeJSON)
         } catch let error {
             XCTFail(error.localizedDescription)

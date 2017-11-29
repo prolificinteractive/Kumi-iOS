@@ -7,21 +7,9 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 extension LayerStyle {
-    
-    public init?(json: Any?) {
-        
-        guard let json = json as? JSON else {
-            return nil
-        }
-        
-        guard let layerStyle = LayerStyle(json: json) else {
-            return nil
-        }
-        
-        self = layerStyle
-    }
 
     public init?(json: JSON) {
         var opacity: Float = 1
@@ -35,47 +23,43 @@ extension LayerStyle {
         var shadowColor: CGColor?
         var transform: CATransform3D = CATransform3DIdentity
 
-        if let opacityValue = json["opacity"] as? Float {
-            opacity = opacityValue
+        if let opacityValue = json["opacity"].double {
+            opacity = Float(opacityValue)
         }
 
-        if let masksToBoundsValue = json["masksToBounds"] as? Bool {
+        if let masksToBoundsValue = json["masksToBounds"].bool {
             masksToBounds = masksToBoundsValue
         }
 
-        if let isDoubleSidedValue = json["isDoubleSided"] as? Bool {
+        if let isDoubleSidedValue = json["isDoubleSided"].bool {
             isDoubleSided = isDoubleSidedValue
         }
 
-        if let cornerRadiusValue = json["cornerRadius"] as? CGFloat {
+        if let cornerRadiusValue = json["cornerRadius"].cgFloat {
             cornerRadius = cornerRadiusValue
         }
 
-        if let borderWidthValue = json["borderWidth"] as? CGFloat {
+        if let borderWidthValue = json["borderWidth"].cgFloat {
             borderWidth = borderWidthValue
         }
 
-        if let borderColorJSON = json["borderColor"] as? JSON {
-            borderColor = UIColor(json: borderColorJSON)?.cgColor
-        }
+        
+        borderColor = UIColor(json: json["borderColor"])?.cgColor
+        
 
-        if let backgroundColorJSON = json["backgroundColor"] as? JSON {
-            backgroundColor = UIColor(json: backgroundColorJSON)?.cgColor
-        }
+        backgroundColor = UIColor(json: json["backgroundColor"])?.cgColor
+        
 
-        if let shadowStyleJSON = json["shadowStyle"] as? JSON {
-            shadowStyle = ShadowStyle(json: shadowStyleJSON)
-        }
+        shadowStyle = ShadowStyle(json: json["shadowStyle"])
+        
+        
+        shadowColor = UIColor(json: json["shadowColor"])?.cgColor
+        
 
-        if let shadowColorJSON = json["shadowColor"] as? JSON {
-            shadowColor = UIColor(json: shadowColorJSON)?.cgColor
+        if let transformValue = CATransform3D(json: json["transform"]) {
+            transform = transformValue
         }
-
-        if let transformJSON = json["transform"] as? JSON {
-            if let transformValue = CATransform3D(json: transformJSON) {
-                transform = transformValue
-            }
-        }
+    
 
         self.init(opacity: opacity,
                   masksToBounds: masksToBounds,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 /// Kumi color theme.
 public struct ColorTheme {
@@ -55,7 +56,7 @@ public struct ColorTheme {
 
 
     public init?(json: JSON) {
-        regularPrimary = ColorSet(json: json["regularPrimary"])!
+        regularPrimary = ColorSet(json: json["regularPrimary"])
         regularSecondary = ColorSet(json: json["regularSecondary"], defaultColor: regularPrimary.normal) ?? regularPrimary
         regularTertiary = ColorSet(json: json["regularTertiary"], defaultColor: regularSecondary.normal) ?? regularSecondary
         invertPrimary = ColorSet(json: json["invertPrimary"], defaultColor: regularPrimary.normal) ?? regularPrimary

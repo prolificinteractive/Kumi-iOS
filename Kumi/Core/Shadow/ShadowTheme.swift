@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 /// Defines an interface for fonts used in the app.
 public struct ShadowTheme {
@@ -56,7 +57,6 @@ public struct ShadowTheme {
 
     public init?(json: JSON) {
 
-        
         noneShadowStyle = ShadowStyle(json: json["none"])
     
         extraSmallShadowStyle = ShadowStyle(json: json["extraSmall"])
@@ -69,18 +69,15 @@ public struct ShadowTheme {
     
         extraLargeShadowStyle = ShadowStyle(json: json["extraLarge"])
     
-
-        let relativeElevationAttributesJSON = json["relativeElevationAttributes"] as? JSON
-
-        if let radiusRatioValue = relativeElevationAttributesJSON?["radiusRatio"] as? CGFloat {
+        if let radiusRatioValue = json["relativeElevationAttributes"]["radiusRatio"].cgFloat {
             radiusRatio = radiusRatioValue
         }
 
-        if let offsetXRatioValue = relativeElevationAttributesJSON?["offsetXRatio"] as? CGFloat {
+        if let offsetXRatioValue = json["relativeElevationAttributes"]["offsetXRatio"].cgFloat {
             offsetXRatio = offsetXRatioValue
         }
 
-        if let offsetYRatioValue = relativeElevationAttributesJSON?["offsetYRatio"] as? CGFloat {
+        if let offsetYRatioValue = json["relativeElevationAttributes"]["offsetYRatio"].cgFloat {
             offsetYRatio = offsetYRatioValue
         }
 

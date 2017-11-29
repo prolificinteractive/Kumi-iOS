@@ -7,26 +7,21 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 extension ColorSet {
     
-    public init?(json: JSON?) {
-        guard let json = json else {
-            return nil
-        }
-        self.init(normal: UIColor(json: json["normal"] as? JSON) ?? .black,
-                  dark: UIColor(json: json["dark"] as? JSON),
-                  light: UIColor(json: json["light"] as? JSON),
-                  faded: UIColor(json: json["faded"] as? JSON))
+    public init?(json: JSON) {
+        self.init(normal: UIColor(json: json["normal"]) ?? .black,
+                  dark: UIColor(json: json["dark"]),
+                  light: UIColor(json: json["light"]),
+                  faded: UIColor(json: json["faded"]))
     }
     
-    public init?(json: JSON?, defaultColor: UIColor) {
-        guard let json = json else {
-            return nil
-        }
-        self.init(normal: UIColor(json: json["normal"] as? JSON) ?? defaultColor,
-                  dark: UIColor(json: json["dark"] as? JSON),
-                  light: UIColor(json: json["light"] as? JSON),
-                  faded: UIColor(json: json["faded"] as? JSON))
+    public init?(json: JSON, defaultColor: UIColor) {
+        self.init(normal: UIColor(json: json["normal"]) ?? defaultColor,
+                  dark: UIColor(json: json["dark"]),
+                  light: UIColor(json: json["light"]),
+                  faded: UIColor(json: json["faded"]))
     }
 }

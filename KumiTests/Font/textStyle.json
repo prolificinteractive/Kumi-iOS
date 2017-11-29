@@ -1,5 +1,9 @@
 {
-  "tabBarBadge": {
+    "kumi": {
+        "type": "font",
+        "version": "1.0.0"
+    },
+    "tabBarBadge": {
     "emphasis": {
       "color": {
         "alpha": 1,

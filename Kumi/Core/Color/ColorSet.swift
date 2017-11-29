@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 public struct ColorSet {
     
@@ -21,18 +22,5 @@ public struct ColorSet {
         self.light = light ?? normal
         self.faded = faded ?? normal
     }
-    
-    public init?(json: Any?) {
-        guard let json = json as? JSON else {
-            return nil
-        }
-        self.init(json: json)
-    }
-    
-    public init?(json: Any?, defaultColor: UIColor) {
-        guard let json = json as? JSON else {
-            return nil
-        }
-        self.init(json: json, defaultColor: defaultColor)
-    }
+
 }

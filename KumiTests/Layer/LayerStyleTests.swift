@@ -39,7 +39,7 @@ class LayerStyleTests: XCTestCase {
         XCTAssertEqual(layerStyle.backgroundColor, nil)
         XCTAssertEqual(layerStyle.borderWidth, 2.0)
         XCTAssertNotNil(layerStyle.borderColor)
-        XCTAssertEqual(layerStyle.shadowStyle.shadowOpacity, 0.0)
+        XCTAssertEqual(layerStyle.shadowStyle.shadowOpacity, 1.0)
         XCTAssertEqual(layerStyle.shadowStyle.shadowOffset.width, 0)
         XCTAssertEqual(layerStyle.shadowStyle.shadowOffset.height, 0)
         XCTAssertEqual(layerStyle.shadowStyle.shadowRadius, 0)

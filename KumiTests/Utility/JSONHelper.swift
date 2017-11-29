@@ -7,8 +7,7 @@
 //
 
 import Foundation
-
-typealias JSON = [String: Any]
+import SwiftyJSON
 
 /// JSON errors
 ///
@@ -73,7 +72,7 @@ class JSONHelper {
             throw JSONError.jsonFileNotFound(filePath: "\(jsonFileName).json")
         }
 
-        return try deserializeJSON(data)
+        return JSON(data)
     }
 
     /**
@@ -91,7 +90,7 @@ class JSONHelper {
             throw JSONError.jsonFileNotFound(filePath: "\(jsonFileName).json")
         }
 
-        return try deserializeJSONArray(data)
+        return JSON(data).arrayValue
     }
 
     /**
@@ -103,66 +102,12 @@ class JSONHelper {
      */
     fileprivate static func loadJsonFile(_ name: String) -> Data? {
         let bundle = Bundle(for: JSONHelper.self)
+        
         guard let jsonFileURL = bundle.path(forResource: name, ofType: "json") else {
             return nil
         }
-        do {
-            let content = try String(contentsOfFile: jsonFileURL)
-            return content.data(using: String.Encoding.utf8)
-        } catch {
-            return nil
-        }
+        
+        return FileManager.default.contents(atPath: jsonFileURL)
     }
 
-    /**
-     Deserializes the JSON data to a dictionary.
-
-     - parameter data: The JSON data to be parsed.
-
-     - throws: JSONError object.
-
-     - returns: The JSON structure or nil, if the parsing failed.
-     */
-    fileprivate static func deserializeJSON(_ data: Data) throws -> JSON {
-        do {
-            let object =
-                try JSONSerialization
-                    .jsonObject(with: data,
-                                options: JSONSerialization.ReadingOptions.mutableContainers)
-
-            guard let result = object as? JSON else {
-                throw JSONError.jsonFormatInvalid(invalidObject: object as AnyObject)
-            }
-
-            return result
-        } catch {
-            throw JSONError.jsonDeserializationFailed(jsonSerializationError: error, data: data)
-        }
-    }
-
-    /**
-     Deserializes the JSON data to an array.
-
-     - parameter data: The JSON data to be parsed.
-
-     - throws: JSONError object.
-
-     - returns: The JSON array structure or nil, if the parsing failed.
-     */
-    fileprivate static func deserializeJSONArray(_ data: Data) throws -> [JSON] {
-        do {
-            let object =
-                try JSONSerialization
-                    .jsonObject(with: data,
-                                options: JSONSerialization.ReadingOptions.mutableContainers)
-
-            guard let result = object as? [JSON] else {
-                throw JSONError.jsonFormatInvalid(invalidObject: object as AnyObject)
-            }
-
-            return result
-        } catch {
-            throw JSONError.jsonDeserializationFailed(jsonSerializationError: error, data: data)
-        }
-    }
 }

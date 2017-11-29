@@ -1,4 +1,8 @@
 {
+    "kumi": {
+        "type": "layer",
+        "version": "1.0.0"
+    },
     "textInputTertiary": {
         "disabled": {
             "opacity": 1,

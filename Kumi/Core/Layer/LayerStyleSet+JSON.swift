@@ -7,27 +7,12 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 public extension LayerStyleSet {
     
-    init?(json: Any?) {
-        guard let json = json as? JSON? else {
-            return nil
-        }
-        self.init(json: json)
-    }
-    
-    init?(json: Any?, defaultLayerStyle: LayerStyle) {
-        guard let json = json as? JSON? else {
-            return nil
-        }
-        self.init(json: json, defaultLayerStyle: defaultLayerStyle)
-    }
-    
-    init?(json: JSON?) {
-        guard let json = json else {
-            return nil
-        }
+    init?(json: JSON) {
+
         self.init(normal: LayerStyle(json: json["normal"])!,
                   highlighted: LayerStyle(json: json["highlighted"]),
                   focused: LayerStyle(json: json["focused"]),
@@ -35,10 +20,7 @@ public extension LayerStyleSet {
                   disabled: LayerStyle(json: json["disabled"]))
     }
     
-    init?(json: JSON?, defaultLayerStyle: LayerStyle) {
-        guard let json = json else {
-            return nil
-        }
+    init?(json: JSON, defaultLayerStyle: LayerStyle) {
         let layerNormal = LayerStyle(json: json["normal"]) ?? defaultLayerStyle
         self.init(normal: layerNormal,
                   highlighted: LayerStyle(json: json["highlighted"]),

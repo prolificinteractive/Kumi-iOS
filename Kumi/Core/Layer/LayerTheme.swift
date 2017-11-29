@@ -7,6 +7,7 @@
 //
 
 /// Kumi layer theme.
+import SwiftyJSON
 
 public struct LayerTheme {
 

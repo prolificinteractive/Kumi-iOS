@@ -7,6 +7,7 @@
 //
 
 import Marker
+import SwiftyJSON
 
 /// Text styles used throughout the app.
 public struct FontTheme {
@@ -151,13 +152,6 @@ public struct FontTheme {
     
     /// Display Normal Text Style.
     public var displayNormalTextStyle: TextStyleSet!
-    
-    public init?(json: Any?) {
-        guard let json = json as? JSON else {
-            return nil
-        }
-        self.init(json: json)
-    }
 
     public init?(json: JSON) {
         

@@ -1,4 +1,8 @@
 {
+    "kumi": {
+        "type": "animation",
+        "version": "1.0.0"
+    },
     "CABasicAnimations": {
         "extraFast": {
             "duration": 0.175,

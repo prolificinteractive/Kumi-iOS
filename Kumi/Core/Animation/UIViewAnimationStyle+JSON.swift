@@ -5,21 +5,9 @@
 //  Created by VIRAKRI JINANGKUL on 6/4/17.
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
+import SwiftyJSON
 
 extension UIViewAnimationStyle {
-    
-    public init?(json: Any?) {
-        
-        guard let json = json as? JSON else {
-            return nil
-        }
-        
-        guard let animationStyle = UIViewAnimationStyle(json: json) else {
-            return nil
-        }
-        
-        self = animationStyle
-    }
 
     public init?(json: JSON) {
 
@@ -28,19 +16,19 @@ extension UIViewAnimationStyle {
         var dampingRatio: CGFloat = 1
         var velocity: CGFloat = 0
 
-        if let durationValue = json["duration"] as? TimeInterval {
+        if let durationValue = json["duration"].double {
             duration = durationValue
         }
 
-        if let delayValue = json["delay"] as? TimeInterval {
+        if let delayValue = json["delay"].double {
             delay = delayValue
         }
 
-        if let dampingRatioValue = json["dampingRatio"] as? CGFloat {
+        if let dampingRatioValue = json["dampingRatio"].cgFloat {
             dampingRatio = dampingRatioValue
         }
 
-        if let velocityValue = json["velocity"] as? CGFloat {
+        if let velocityValue = json["velocity"].cgFloat {
             velocity = velocityValue
         }
 

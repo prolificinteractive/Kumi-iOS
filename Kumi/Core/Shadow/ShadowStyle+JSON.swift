@@ -7,21 +7,9 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 extension ShadowStyle {
-    
-    public init?(json: Any?) {
-        
-        guard let json = json as? JSON else {
-            return nil
-        }
-        
-        guard let shadowStyle = ShadowStyle(json: json) else {
-            return nil
-        }
-        
-        self = shadowStyle
-    }
 
     public init?(json: JSON) {
         var shadowOpacity: Float = 1.0
@@ -29,23 +17,19 @@ extension ShadowStyle {
         var shadowOffset: CGSize = CGSize.zero
         var shadowColor: CGColor? = nil
 
-        if let shadowOpacityValue = json["shadowOpacity"] as? Float {
-            shadowOpacity = shadowOpacityValue
+        if let shadowOpacityValue = json["shadowOpacity"].double {
+            shadowOpacity = Float(shadowOpacityValue)
         }
 
-        if let shadowRadiusValue = json["shadowRadius"] as? CGFloat {
+        if let shadowRadiusValue = json["shadowRadius"].cgFloat {
             shadowRadius = shadowRadiusValue
         }
 
-        if let shadowOffsetJSON = json["shadowOffset"] as? JSON {
-            if let shadowOffsetValue = CGSize(json: shadowOffsetJSON) {
-                shadowOffset = shadowOffsetValue
-            }
+        if let shadowOffsetValue = CGSize(json: json["shadowOffset"]) {
+            shadowOffset = shadowOffsetValue
         }
 
-        if let shadowColorJSON = json["shadowColor"] as? JSON {
-            shadowColor = UIColor(json: shadowColorJSON)?.cgColor
-        }
+        shadowColor = UIColor(json: json["shadowColor"])?.cgColor
 
         self.init(shadowOpacity: shadowOpacity,
                   shadowRadius: shadowRadius,

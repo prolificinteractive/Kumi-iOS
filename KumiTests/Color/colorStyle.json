@@ -1,4 +1,8 @@
 {
+    "kumi": {
+        "type": "color",
+        "version": "1.0.0"
+    },
     "regularTertiary": {
         "normal": {
             "red": 0.1,

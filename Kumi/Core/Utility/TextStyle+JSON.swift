@@ -8,6 +8,7 @@
 
 import Foundation
 import Marker
+import SwiftyJSON
 
 private extension TextTransform {
 
@@ -99,20 +100,6 @@ private extension NSUnderlineStyle {
 
 extension TextStyleSet {
     
-    init?(json: Any?) {
-        guard let json = json as? JSON else {
-            return nil
-        }
-        self.init(json: json)
-    }
-    
-    init?(json: Any?, defaultStyle: TextStyle) {
-        guard let json = json as? JSON else {
-            return nil
-        }
-        self.init(json: json, defaultStyle: defaultStyle)
-    }
-    
     init?(json: JSON) {
         self.init(normal: TextStyle(json: json["regular"])!,
                   strong: TextStyle(json: json["strong"]),
@@ -128,21 +115,11 @@ extension TextStyleSet {
 }
 
 extension TextStyle {
-    
-    init?(json: Any?) {
-        guard let json = json as? JSON? else {
-            return nil
-        }
-        self.init(json: json)
-    }
 
-    init?(json: JSON?) {
-        guard let json = json else {
-            return nil
-        }
+    init?(json: JSON) {
         
-        guard let fontNameJSON = json["font"] as? String,
-            let textSize = json["textSize"] as? CGFloat else {
+        guard let fontNameJSON = json["font"].string,
+            let textSize = json["textSize"].cgFloat else {
                 return nil
         }
 
@@ -167,58 +144,41 @@ extension TextStyle {
         var textTransform: TextTransform = .none
 
 
-        if let textColorJSON = json["color"] as? JSON {
-            textColor = UIColor(json: textColorJSON)
-        }
+        
+        textColor = UIColor(json: json["color"])
+        
+        characterSpacing = json["letterSpacing"].cgFloat
+        
+        lineSpacing = json["lineSpacing"].cgFloat
 
-        if let letterSpacing = json["letterSpacing"] as? CGFloat {
-            characterSpacing = letterSpacing
-        }
+        lineHeightMultiple = json["lineHeightMultiple"].cgFloat
 
-        if let spacing = json["lineSpacing"] as? CGFloat {
-            lineSpacing = spacing
-        }
+        minimumLineHeight = json["minimumLineHeight"].cgFloat
+        
+        maximumLineHeight = json["maximumLineHeight"].cgFloat
 
-        if let lineHeight = json["lineHeightMultiple"] as? CGFloat {
-            lineHeightMultiple = lineHeight
-        }
-
-        if let minLineHeight = json["minimumLineHeight"] as? CGFloat {
-            minimumLineHeight = minLineHeight
-        }
-
-        if let maxLineHeight = json["maximumLineHeight"] as? CGFloat {
-            maximumLineHeight = maxLineHeight
-        }
-
-        if let paragraphSpace = json["paragraphSpacing"] as? CGFloat {
-            paragraphSpacing = paragraphSpace
-        }
-
-        if let paragraphSpaceBefore = json["paragraphSpacingBefore"] as? CGFloat {
-            paragraphSpacingBefore = paragraphSpaceBefore
-        }
-
-        if let textAlignmentString = json["textAlign"] as? String {
+        paragraphSpacing = json["paragraphSpacing"].cgFloat
+        
+        paragraphSpacingBefore = json["paragraphSpacingBefore"].cgFloat
+        
+        if let textAlignmentString = json["textAlign"].string {
             textAlignment = NSTextAlignment.fromString(string: textAlignmentString)
         }
 
-        if let lineBreakModeString = json["lineBreakMode"] as? String {
+        if let lineBreakModeString = json["lineBreakMode"].string {
             lineBreakMode = NSLineBreakMode.fromString(string: lineBreakModeString)
         }
 
-        if let strikethroughStyleString = json["strikethroughStyle"] as? String {
+        if let strikethroughStyleString = json["strikethroughStyle"].string {
             strikethroughStyle = NSUnderlineStyle.fromString(string: strikethroughStyleString)
         }
 
-        if let transform = json["textTransform"] as? String {
+        if let transform = json["textTransform"].string {
             textTransform = TextTransform(string: transform)
         }
 
-        if let strikethroughColorJSON = json["textDecorationColor"] as? JSON {
-            strikethroughColor = UIColor(json: strikethroughColorJSON)
-        }
-
+        strikethroughColor = UIColor(json: json["textDecorationColor"] )
+        
         self.init(font: font,
                   emFont: emFont,
                   strongFont: strongFont,
