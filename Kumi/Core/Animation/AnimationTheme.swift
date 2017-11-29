@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 
 /// Animation theme.
-public struct AnimationTheme {
+public final class AnimationTheme {
 
     /// Extra Fast CABasic Animation Style.
     public var extraFastCABasicAnimationStyle: CABasicAnimationStyle?

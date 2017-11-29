@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 
 /// Defines an interface for fonts used in the app.
-public struct ShadowTheme {
+public final class ShadowTheme {
 
     /// None Shadow Style.
     public var noneShadowStyle: ShadowStyle?

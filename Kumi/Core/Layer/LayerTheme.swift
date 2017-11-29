@@ -9,7 +9,7 @@
 /// Kumi layer theme.
 import SwiftyJSON
 
-public struct LayerTheme {
+public final class LayerTheme {
 
     /// Text input tertiary Layer Style Set.
     public var textInputTertiary: LayerStyleSet!

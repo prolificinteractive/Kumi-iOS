@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 
 /// Kumi color theme.
-public struct ColorTheme {
+public final class ColorTheme {
 
     /// Primary color.
     public var regularPrimary: ColorSet!
