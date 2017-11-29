@@ -101,12 +101,15 @@ private extension NSUnderlineStyle {
 extension TextStyleSet {
     
     init?(json: JSON) {
-        self.init(normal: TextStyle(json: json["regular"])!,
+        guard let normal = TextStyle(json: json["regular"]) else {
+            return nil
+        }
+        self.init(normal: normal,
                   strong: TextStyle(json: json["strong"]),
                   emphasis: TextStyle(json: json["emphasis"]))
     }
     
-    init?(json: JSON, defaultStyle: TextStyle) {
+    init(json: JSON, defaultStyle: TextStyle) {
         self.init(normal: TextStyle(json: json["regular"]) ?? defaultStyle,
                   strong: TextStyle(json: json["strong"]),
                   emphasis: TextStyle(json: json["emphasis"]))

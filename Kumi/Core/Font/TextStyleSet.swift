@@ -11,16 +11,28 @@ import Marker
 
 public struct TextStyleSet {
     
-    public var regular: TextStyle
+    public var regular: TextStyle {
+        return _regular
+    }
     
-    public var strong: TextStyle
+    public var strong: TextStyle {
+        return _strong ?? self.regular
+    }
     
-    public var emphasis: TextStyle
+    public var emphasis: TextStyle {
+        return _emphasis ?? self.regular
+    }
+    
+    fileprivate var _regular: TextStyle
+    
+    fileprivate var _strong: TextStyle?
+    
+    fileprivate var _emphasis: TextStyle?
     
     public init(normal: TextStyle, strong: TextStyle?, emphasis: TextStyle?) {
-        self.regular = normal
-        self.strong = strong ?? normal
-        self.emphasis = emphasis ?? normal
+        self._regular = normal
+        self._strong = strong ?? normal
+        self._emphasis = emphasis ?? normal
     }
     
 }

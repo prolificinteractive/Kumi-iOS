@@ -155,68 +155,73 @@ public struct FontTheme {
 
     public init?(json: JSON) {
         
-        bodyNormalTextStyle = TextStyleSet(json: json["bodyNormal"])!
-        bodySmallTextStyle = TextStyleSet(json: json["bodySmall"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        bodyLargeTextStyle = TextStyleSet(json: json["bodyLarge"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
+        guard let bodyNormalTextStyle = TextStyleSet(json: json["bodyNormal"]) else {
+            return nil
+        }
         
-        headline1TextStyle = TextStyleSet(json: json["headline1"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        headline2TextStyle = TextStyleSet(json: json["headline2"], defaultStyle: headline1TextStyle.regular) ?? headline1TextStyle
-        headline3TextStyle = TextStyleSet(json: json["headline3"], defaultStyle: headline2TextStyle.regular) ?? headline2TextStyle
-        headline4TextStyle = TextStyleSet(json: json["headline4"], defaultStyle: headline3TextStyle.regular) ?? headline3TextStyle
-        headline5TextStyle = TextStyleSet(json: json["headline5"], defaultStyle: headline4TextStyle.regular) ?? headline4TextStyle
-        headline6TextStyle = TextStyleSet(json: json["headline6"], defaultStyle: headline5TextStyle.regular) ?? headline5TextStyle
+        self.bodyNormalTextStyle = bodyNormalTextStyle
         
-        displayNormalTextStyle = TextStyleSet(json: json["displayNormal"], defaultStyle: headline1TextStyle.regular) ?? headline1TextStyle
-        displaySmallTextStyle = TextStyleSet(json: json["displaySmall"], defaultStyle: displayNormalTextStyle.regular) ?? displayNormalTextStyle
-        displayLargeTextStyle = TextStyleSet(json: json["displayLarge"], defaultStyle: displayNormalTextStyle.regular) ?? displayNormalTextStyle
+        bodySmallTextStyle = TextStyleSet(json: json["bodySmall"], defaultStyle: bodyNormalTextStyle.regular)
+        bodyLargeTextStyle = TextStyleSet(json: json["bodyLarge"], defaultStyle: bodyNormalTextStyle.regular)
         
-        captionNormalTextStyle = TextStyleSet(json: json["captionNormal"], defaultStyle: headline1TextStyle.regular) ?? headline1TextStyle
-        captionSmallTextStyle = TextStyleSet(json: json["captionSmall"], defaultStyle: captionNormalTextStyle.regular) ?? captionNormalTextStyle
-        captionLargeTextStyle = TextStyleSet(json: json["captionLarge"], defaultStyle: captionNormalTextStyle.regular) ?? captionNormalTextStyle
+        headline1TextStyle = TextStyleSet(json: json["headline1"], defaultStyle: bodyNormalTextStyle.regular)
+        headline2TextStyle = TextStyleSet(json: json["headline2"], defaultStyle: headline1TextStyle.regular)
+        headline3TextStyle = TextStyleSet(json: json["headline3"], defaultStyle: headline2TextStyle.regular)
+        headline4TextStyle = TextStyleSet(json: json["headline4"], defaultStyle: headline3TextStyle.regular)
+        headline5TextStyle = TextStyleSet(json: json["headline5"], defaultStyle: headline4TextStyle.regular)
+        headline6TextStyle = TextStyleSet(json: json["headline6"], defaultStyle: headline5TextStyle.regular)
         
-        tabBarItemTextStyle = TextStyleSet(json: json["tabBarItem"], defaultStyle: captionNormalTextStyle.regular) ?? captionNormalTextStyle
-        tabBarItemInactiveTextStyle = TextStyleSet(json: json["tabBarItemInactive"], defaultStyle: tabBarItemTextStyle.regular) ?? tabBarItemTextStyle
-        tabBarBadgeTextStyle = TextStyleSet(json: json["tabBarBadge"], defaultStyle: tabBarItemTextStyle.regular) ?? tabBarItemTextStyle
+        displayNormalTextStyle = TextStyleSet(json: json["displayNormal"], defaultStyle: headline1TextStyle.regular)
+        displaySmallTextStyle = TextStyleSet(json: json["displaySmall"], defaultStyle: displayNormalTextStyle.regular)
+        displayLargeTextStyle = TextStyleSet(json: json["displayLarge"], defaultStyle: displayNormalTextStyle.regular)
         
-        topItemSubtitleTextStyle = TextStyleSet(json: json["topItemSubtitle"], defaultStyle: captionNormalTextStyle.regular) ?? captionNormalTextStyle
+        captionNormalTextStyle = TextStyleSet(json: json["captionNormal"], defaultStyle: headline1TextStyle.regular)
+        captionSmallTextStyle = TextStyleSet(json: json["captionSmall"], defaultStyle: captionNormalTextStyle.regular)
+        captionLargeTextStyle = TextStyleSet(json: json["captionLarge"], defaultStyle: captionNormalTextStyle.regular)
         
-        subHeadlineNormalTextStyle = TextStyleSet(json: json["subHeadlineNormal"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        subHeadlineSmallTextStyle = TextStyleSet(json: json["subHeadlineSmall"], defaultStyle: subHeadlineNormalTextStyle.regular) ?? subHeadlineNormalTextStyle
-        subHeadlineLargeTextStyle = TextStyleSet(json: json["subHeadlineLarge"], defaultStyle: subHeadlineNormalTextStyle.regular) ?? subHeadlineNormalTextStyle
+        tabBarItemTextStyle = TextStyleSet(json: json["tabBarItem"], defaultStyle: captionNormalTextStyle.regular)
+        tabBarItemInactiveTextStyle = TextStyleSet(json: json["tabBarItemInactive"], defaultStyle: tabBarItemTextStyle.regular)
+        tabBarBadgeTextStyle = TextStyleSet(json: json["tabBarBadge"], defaultStyle: tabBarItemTextStyle.regular)
         
+        topItemSubtitleTextStyle = TextStyleSet(json: json["topItemSubtitle"], defaultStyle: captionNormalTextStyle.regular)
         
-        buttonTitleNormalTextStyle = TextStyleSet(json: json["buttonTitleNormal"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        buttonTitleSmallTextStyle = TextStyleSet(json: json["buttonTitleSmall"], defaultStyle: buttonTitleNormalTextStyle.regular) ?? buttonTitleNormalTextStyle
-        buttonTitleLargeTextStyle = TextStyleSet(json: json["buttonTitleLarge"], defaultStyle: buttonTitleNormalTextStyle.regular) ?? buttonTitleNormalTextStyle
-        
-        buttonFlatTitleNormalTextStyle = TextStyleSet(json: json["buttonFlatTitleNormal"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        buttonFlatTitleSmallTextStyle = TextStyleSet(json: json["buttonFlatTitleSmall"], defaultStyle: buttonFlatTitleNormalTextStyle.regular) ?? buttonFlatTitleNormalTextStyle
-        buttonFlatTitleLargeTextStyle = TextStyleSet(json: json["buttonFlatTitleLarge"], defaultStyle: buttonFlatTitleNormalTextStyle.regular) ?? buttonFlatTitleNormalTextStyle
-        
-        textFieldInputNormalTextStyle = TextStyleSet(json: json["textFieldInputNormal"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        textFieldInputSmallTextStyle = TextStyleSet(json: json["textFieldInputSmall"], defaultStyle: textFieldInputNormalTextStyle.regular) ?? textFieldInputNormalTextStyle
-        textFieldInputLargeTextStyle = TextStyleSet(json: json["textFieldInputLarge"], defaultStyle: textFieldInputNormalTextStyle.regular) ?? textFieldInputNormalTextStyle
-        
-        textFieldLabelNormalTextStyle = TextStyleSet(json: json["textFieldLabelNormal"], defaultStyle: textFieldInputNormalTextStyle.regular) ?? textFieldInputNormalTextStyle
-        textFieldLabelSmallTextStyle = TextStyleSet(json: json["textFieldLabelSmall"], defaultStyle: textFieldLabelNormalTextStyle.regular) ?? textFieldLabelNormalTextStyle
-        textFieldLabelLargeTextStyle = TextStyleSet(json: json["textFieldLabelLarge"], defaultStyle: textFieldLabelNormalTextStyle.regular) ?? textFieldLabelNormalTextStyle
-        
-        textFieldHintNormalTextStyle = TextStyleSet(json: json["textFieldHintNormal"], defaultStyle: textFieldInputNormalTextStyle.regular) ?? textFieldInputNormalTextStyle
-        textFieldHintSmallTextStyle = TextStyleSet(json: json["textFieldHintSmall"], defaultStyle: textFieldHintNormalTextStyle.regular) ?? textFieldHintNormalTextStyle
-        textFieldHintLargeTextStyle = TextStyleSet(json: json["textFieldHintLarge"], defaultStyle: textFieldHintNormalTextStyle.regular) ?? textFieldHintNormalTextStyle
+        subHeadlineNormalTextStyle = TextStyleSet(json: json["subHeadlineNormal"], defaultStyle: bodyNormalTextStyle.regular)
+        subHeadlineSmallTextStyle = TextStyleSet(json: json["subHeadlineSmall"], defaultStyle: subHeadlineNormalTextStyle.regular)
+        subHeadlineLargeTextStyle = TextStyleSet(json: json["subHeadlineLarge"], defaultStyle: subHeadlineNormalTextStyle.regular)
         
         
-        topItemTitleNormalTextStyle = TextStyleSet(json: json["topItemTitleNormal"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        topItemTitleSmallTextStyle = TextStyleSet(json: json["topItemTitleSmall"], defaultStyle: topItemTitleNormalTextStyle.regular) ?? topItemTitleNormalTextStyle
-        topItemTitleLargeTextStyle = TextStyleSet(json: json["topItemTitleLarge"], defaultStyle: topItemTitleNormalTextStyle.regular) ?? topItemTitleNormalTextStyle
-        topItemButtonTitleTextStyle = TextStyleSet(json: json["topItemButtonTitle"], defaultStyle: topItemTitleNormalTextStyle.regular) ?? topItemTitleNormalTextStyle
+        buttonTitleNormalTextStyle = TextStyleSet(json: json["buttonTitleNormal"], defaultStyle: bodyNormalTextStyle.regular)
+        buttonTitleSmallTextStyle = TextStyleSet(json: json["buttonTitleSmall"], defaultStyle: buttonTitleNormalTextStyle.regular)
+        buttonTitleLargeTextStyle = TextStyleSet(json: json["buttonTitleLarge"], defaultStyle: buttonTitleNormalTextStyle.regular)
         
-        tooltipsTextStyle = TextStyleSet(json: json["tooltips"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        chipTextStyle = TextStyleSet(json: json["chip"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        menuTextStyle = TextStyleSet(json: json["menu"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        segmentedTitleTextStyle = TextStyleSet(json: json["segmentedTitle"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        snackbarTextTextStyle = TextStyleSet(json: json["snackbarText"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
-        snackbarActionButtonTitleTextStyle = TextStyleSet(json: json["snackbarActionButtonTitle"], defaultStyle: bodyNormalTextStyle.regular) ?? bodyNormalTextStyle
+        buttonFlatTitleNormalTextStyle = TextStyleSet(json: json["buttonFlatTitleNormal"], defaultStyle: bodyNormalTextStyle.regular)
+        buttonFlatTitleSmallTextStyle = TextStyleSet(json: json["buttonFlatTitleSmall"], defaultStyle: buttonFlatTitleNormalTextStyle.regular)
+        buttonFlatTitleLargeTextStyle = TextStyleSet(json: json["buttonFlatTitleLarge"], defaultStyle: buttonFlatTitleNormalTextStyle.regular)
+        
+        textFieldInputNormalTextStyle = TextStyleSet(json: json["textFieldInputNormal"], defaultStyle: bodyNormalTextStyle.regular)
+        textFieldInputSmallTextStyle = TextStyleSet(json: json["textFieldInputSmall"], defaultStyle: textFieldInputNormalTextStyle.regular)
+        textFieldInputLargeTextStyle = TextStyleSet(json: json["textFieldInputLarge"], defaultStyle: textFieldInputNormalTextStyle.regular)
+        
+        textFieldLabelNormalTextStyle = TextStyleSet(json: json["textFieldLabelNormal"], defaultStyle: textFieldInputNormalTextStyle.regular)
+        textFieldLabelSmallTextStyle = TextStyleSet(json: json["textFieldLabelSmall"], defaultStyle: textFieldLabelNormalTextStyle.regular)
+        textFieldLabelLargeTextStyle = TextStyleSet(json: json["textFieldLabelLarge"], defaultStyle: textFieldLabelNormalTextStyle.regular)
+        
+        textFieldHintNormalTextStyle = TextStyleSet(json: json["textFieldHintNormal"], defaultStyle: textFieldInputNormalTextStyle.regular)
+        textFieldHintSmallTextStyle = TextStyleSet(json: json["textFieldHintSmall"], defaultStyle: textFieldHintNormalTextStyle.regular)
+        textFieldHintLargeTextStyle = TextStyleSet(json: json["textFieldHintLarge"], defaultStyle: textFieldHintNormalTextStyle.regular)
+        
+        
+        topItemTitleNormalTextStyle = TextStyleSet(json: json["topItemTitleNormal"], defaultStyle: bodyNormalTextStyle.regular)
+        topItemTitleSmallTextStyle = TextStyleSet(json: json["topItemTitleSmall"], defaultStyle: topItemTitleNormalTextStyle.regular)
+        topItemTitleLargeTextStyle = TextStyleSet(json: json["topItemTitleLarge"], defaultStyle: topItemTitleNormalTextStyle.regular)
+        topItemButtonTitleTextStyle = TextStyleSet(json: json["topItemButtonTitle"], defaultStyle: topItemTitleNormalTextStyle.regular)
+        
+        tooltipsTextStyle = TextStyleSet(json: json["tooltips"], defaultStyle: bodyNormalTextStyle.regular)
+        chipTextStyle = TextStyleSet(json: json["chip"], defaultStyle: bodyNormalTextStyle.regular)
+        menuTextStyle = TextStyleSet(json: json["menu"], defaultStyle: bodyNormalTextStyle.regular)
+        segmentedTitleTextStyle = TextStyleSet(json: json["segmentedTitle"], defaultStyle: bodyNormalTextStyle.regular)
+        snackbarTextTextStyle = TextStyleSet(json: json["snackbarText"], defaultStyle: bodyNormalTextStyle.regular)
+        snackbarActionButtonTitleTextStyle = TextStyleSet(json: json["snackbarActionButtonTitle"], defaultStyle: bodyNormalTextStyle.regular)
         
     
     }
