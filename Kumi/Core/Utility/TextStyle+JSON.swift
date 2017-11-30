@@ -129,9 +129,9 @@ extension TextStyle {
         var font = Font(name: fontNameJSON, size: textSize)
         if font == nil {
             print("WARNING Missing font : \(fontNameJSON)")
+            font = Font.systemFont(ofSize: textSize)
         }
-        font = Font.systemFont(ofSize: textSize)
-
+        
         let emFont = font
         let strongFont = font
         var textColor: UIColor?
