@@ -121,14 +121,16 @@ extension TextStyle {
 
     init?(json: JSON) {
         
-        guard let fontNameJSON = json["font"].string,
-            let textSize = json["textSize"].cgFloat else {
-                return nil
-        }
-
-        guard let font = UIFont(name: fontNameJSON, size: textSize) else {
+        guard let fontNameJSON = json["font"].string else {
             return nil
         }
+        let textSize = json["textSize"].cgFloat ?? 14
+
+        var font = Font(name: fontNameJSON, size: textSize)
+        if font == nil {
+            print("WARNING Missing font : \(fontNameJSON)")
+        }
+        font = Font.systemFont(ofSize: textSize)
 
         let emFont = font
         let strongFont = font
