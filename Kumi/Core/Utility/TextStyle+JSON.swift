@@ -184,7 +184,7 @@ extension TextStyle {
 
         strikethroughColor = UIColor(json: json["textDecorationColor"] )
         
-        self.init(font: font,
+        self.init(font: font!,
                   emFont: emFont,
                   strongFont: strongFont,
                   textColor: textColor,
