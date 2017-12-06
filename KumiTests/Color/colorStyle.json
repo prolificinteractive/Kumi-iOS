@@ -1,16 +1,26 @@
 {
-    "primary": {
+    "kumi": {
+        "type": "color",
+        "version": "1.0.0"
+    },
+    "regularTertiary": {
         "normal": {
             "red": 0.1,
             "green": 0.2,
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -19,18 +29,24 @@
             "alpha": 0.2
         }
     },
-    "secondary": {
+    "regularSecondary": {
         "normal": {
             "red": 0.1,
             "green": 0.2,
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -39,58 +55,24 @@
             "alpha": 0.2
         }
     },
-    "tertiary": {
+    "regularPrimary": {
         "normal": {
             "red": 0.1,
             "green": 0.2,
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
         },
-        "faded": {
-            "red": 0.5,
-            "green": 0.5,
-            "blue": 0.4,
-            "alpha": 0.2
-        }
-    },
-    "invertPrimary": {
-        "normal": {
-            "red": 0.1,
+        "dark": {
+            "red": 0.3,
             "green": 0.2,
-            "blue": 0.3,
-            "alpha": 0.6
-        },
-        "muted": {
-            "red": 0.9,
-            "green": 0.8,
-            "blue": 0.4,
-            "alpha": 0.3
-        },
-        "faded": {
-            "red": 0.5,
-            "green": 0.5,
-            "blue": 0.4,
-            "alpha": 0.2
-        }
-    },
-    "invertSecondary": {
-        "normal": {
-            "red": 0.1,
-            "green": 0.2,
-            "blue": 0.3,
-            "alpha": 0.6
-        },
-        "muted": {
-            "red": 0.9,
-            "green": 0.8,
-            "blue": 0.4,
-            "alpha": 0.3
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -106,11 +88,17 @@
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -119,18 +107,24 @@
             "alpha": 0.2
         }
     },
-    "emphasisPrimary": {
+    "invertSecondary": {
         "normal": {
             "red": 0.1,
             "green": 0.2,
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -139,18 +133,24 @@
             "alpha": 0.2
         }
     },
-    "emphasisSecondary": {
+    "invertPrimary": {
         "normal": {
             "red": 0.1,
             "green": 0.2,
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -166,11 +166,17 @@
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -179,18 +185,24 @@
             "alpha": 0.2
         }
     },
-    "invertEmphasisPrimary": {
+    "emphasisSecondary": {
         "normal": {
             "red": 0.1,
             "green": 0.2,
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -199,18 +211,24 @@
             "alpha": 0.2
         }
     },
-    "invertEmphasisSecondary": {
+    "emphasisPrimary": {
         "normal": {
             "red": 0.1,
             "green": 0.2,
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -226,11 +244,17 @@
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -239,18 +263,50 @@
             "alpha": 0.2
         }
     },
-    "grayout": {
+    "invertEmphasisSecondary": {
         "normal": {
             "red": 0.1,
             "green": 0.2,
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
+        },
+        "faded": {
+            "red": 0.5,
+            "green": 0.5,
+            "blue": 0.4,
+            "alpha": 0.2
+        }
+    },
+    "invertEmphasisPrimary": {
+        "normal": {
+            "red": 0.1,
+            "green": 0.2,
+            "blue": 0.3,
+            "alpha": 0.6
+        },
+        "light": {
+            "red": 0.9,
+            "green": 0.8,
+            "blue": 0.4,
+            "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,
@@ -266,11 +322,43 @@
             "blue": 0.3,
             "alpha": 0.6
         },
-        "muted": {
+        "light": {
             "red": 0.9,
             "green": 0.8,
             "blue": 0.4,
             "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
+        },
+        "faded": {
+            "red": 0.5,
+            "green": 0.5,
+            "blue": 0.4,
+            "alpha": 0.2
+        }
+    },
+    "grayout": {
+        "normal": {
+            "red": 0.1,
+            "green": 0.2,
+            "blue": 0.3,
+            "alpha": 0.6
+        },
+        "light": {
+            "red": 0.9,
+            "green": 0.8,
+            "blue": 0.4,
+            "alpha": 0.3
+        },
+        "dark": {
+            "red": 0.3,
+            "green": 0.2,
+            "blue": 0.2,
+            "alpha": 1
         },
         "faded": {
             "red": 0.5,

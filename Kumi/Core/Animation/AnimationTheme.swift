@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 /// Animation theme.
-public struct AnimationTheme {
+public final class AnimationTheme {
 
     /// Extra Fast CABasic Animation Style.
     public var extraFastCABasicAnimationStyle: CABasicAnimationStyle?
@@ -43,53 +44,31 @@ public struct AnimationTheme {
 
     public init?(json: JSON) {
 
-        if let CABasicAnimationsJSON = json["CABasicAnimations"] as? JSON {
+        let CABasicAnimationsJSON = json["CABasicAnimations"]
+        
+        extraFastCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["extraFast"])
 
-            if let extraFastJSON = CABasicAnimationsJSON["extraFast"] as? JSON {
-                extraFastCABasicAnimationStyle = CABasicAnimationStyle(json: extraFastJSON)
-            }
+        fastCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["fast"])
 
-            if let fastJSON = CABasicAnimationsJSON["fast"] as? JSON {
-                fastCABasicAnimationStyle = CABasicAnimationStyle(json: fastJSON)
-            }
+        normalCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["normal"])
 
-            if let normalJSON = CABasicAnimationsJSON["normal"] as? JSON {
-                normalCABasicAnimationStyle = CABasicAnimationStyle(json: normalJSON)
-            }
+        slowCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["slow"])
 
-            if let slowJSON = CABasicAnimationsJSON["slow"] as? JSON {
-                slowCABasicAnimationStyle = CABasicAnimationStyle(json: slowJSON)
-            }
+        extraSlowCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["extraSlow"])
+        
 
-            if let extraSlowJSON = CABasicAnimationsJSON["extraSlow"] as? JSON {
-                extraSlowCABasicAnimationStyle = CABasicAnimationStyle(json: extraSlowJSON)
-            }
 
-        }
-
-        if let UIViewAnimationsJSON = json["UIViewAnimations"] as? JSON {
-
-            if let extraFastJSON = UIViewAnimationsJSON["extraFast"] as? JSON {
-                extraFastUIViewAnimationStyle = UIViewAnimationStyle(json: extraFastJSON)
-            }
-
-            if let fastJSON = UIViewAnimationsJSON["fast"] as? JSON {
-                fastUIViewAnimationStyle = UIViewAnimationStyle(json: fastJSON)
-            }
-
-            if let normalJSON = UIViewAnimationsJSON["normal"] as? JSON {
-                normalUIViewAnimationStyle = UIViewAnimationStyle(json: normalJSON)
-            }
-
-            if let slowJSON = UIViewAnimationsJSON["slow"] as? JSON {
-                slowUIViewAnimationStyle = UIViewAnimationStyle(json: slowJSON)
-            }
-
-            if let extraSlowJSON = UIViewAnimationsJSON["extraSlow"] as? JSON {
-                extraSlowUIViewAnimationStyle = UIViewAnimationStyle(json: extraSlowJSON)
-            }
-
-        }
+        let UIViewAnimationsJSON = json["UIViewAnimations"]
+            
+        extraFastUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["extraFast"])
+        
+        fastUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["fast"])
+    
+        normalUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["normal"])
+    
+        slowUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["slow"])
+    
+        extraSlowUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["extraSlow"])
 
     }
 

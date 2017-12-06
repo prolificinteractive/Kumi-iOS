@@ -7,287 +7,223 @@
 //
 
 import Marker
+import SwiftyJSON
 
 /// Text styles used throughout the app.
-public struct FontTheme {
-
-    // MARK: - Generic Text Styles
-
-    /// Display text style.
-    public var displayTextStyle: TextStyle?
-
-    /// Display Large text style.
-    public var displayLargeTextStyle: TextStyle?
-
-    /// Display Small text style.
-    public var displaySmallTextStyle: TextStyle?
-
-    /// Headline 1 text style.
-    public var headline1TextStyle: TextStyle?
-
-    /// Headline 2 text style.
-    public var headline2TextStyle: TextStyle?
-
-    /// Headline 3 text style.
-    public var headline3TextStyle: TextStyle?
-
-    /// Headline 4 text style.
-    public var headline4TextStyle: TextStyle?
-
-    /// Headline 5 text style.
-    public var headline5TextStyle: TextStyle?
-
-    /// Headline 6 text style.
-    public var headline6TextStyle: TextStyle?
-
-    /// Sub-headline text style.
-    public var subHeadlineTextStyle: TextStyle?
-
-    /// Sub-headline Large text style.
-    public var subHeadlineLargeTextStyle: TextStyle?
-
-    /// Sub-headline Small text style.
-    public var subHeadlineSmallTextStyle: TextStyle?
-
-    /// Body text style.
-    public var bodyTextStyle: TextStyle?
-
-    /// Body Large text style.
-    public var bodyLargeTextStyle: TextStyle?
-
-    /// Body Small text style.
-    public var bodySmallTextStyle: TextStyle?
-
-    /// Caption text style.
-    public var captionTextStyle: TextStyle?
-
-    /// Caption Large text style.
-    public var captionLargeTextStyle: TextStyle?
-
-    /// Caption Small text style.
-    public var captionSmallTextStyle: TextStyle?
-
-    // MARK: - Element-related Text Styles
-
-    /// Top Item Title Text Style.
-    public var topItemTitleTextStyle: TextStyle?
-
-    /// Top Item Subtitle Text Style.
-    public var topItemSubtitleTextStyle: TextStyle?
-
-    /// Top Item Button Text Style.
-    public var topItemButtonTextStyle: TextStyle?
-
-    /// Tab Bar Item Text Style.
-    public var tabBarItemTextStyle: TextStyle?
+public final class FontTheme {
 
     /// Tab Bar Badge Text Style.
-    public var tabBarBadgeTextStyle: TextStyle?
+    public var tabBarBadgeTextStyle: TextStyleSet!
 
-    /// Button Text Style.
-    public var buttonTextStyle: TextStyle?
+    /// Tab Bar Item Inactive Text Style.
+    public var tabBarItemInactiveTextStyle: TextStyleSet!
 
-    /// Button Large Text Style.
-    public var buttonLargeTextStyle: TextStyle?
+    /// Tab Bar Item Text Style.
+    public var tabBarItemTextStyle: TextStyleSet!
 
-    /// Button Small Text Style.
-    public var buttonSmallTextStyle: TextStyle?
+    /// Snackbar Text Text Style.
+    public var snackbarTextTextStyle: TextStyleSet!
 
-    /// Button Flat Text Style.
-    public var buttonFlatTextStyle: TextStyle?
+    /// Snackbar Action Button Title Text Style.
+    public var snackbarActionButtonTitleTextStyle: TextStyleSet!
 
-    /// Button Flat Large Text Style.
-    public var buttonFlatLargeTextStyle: TextStyle?
+    /// Segmented Title Text Style.
+    public var segmentedTitleTextStyle: TextStyleSet!
 
-    /// Button Flat Small Text Style.
-    public var buttonFlatSmallTextStyle: TextStyle?
+    /// Menu Text Style.
+    public var menuTextStyle: TextStyleSet!
 
-    /// Segmented Text Style.
-    public var segmentedTextStyle: TextStyle?
+    /// Chip Text Style.
+    public var chipTextStyle: TextStyleSet!
 
-    /// Text Field Label Text Style.
-    public var textFieldLabelTextStyle: TextStyle?
+    /// Tooltips Text Style.
+    public var tooltipsTextStyle: TextStyleSet!
 
-    /// Text Field Label Large Text Style.
-    public var textFieldLabelLargeTextStyle: TextStyle?
+    /// Top Item Subtitle Text Style.
+    public var topItemSubtitleTextStyle: TextStyleSet!
 
-    /// Text Field Label Small Text Style.
-    public var textFieldLabelSmallTextStyle: TextStyle?
+    /// Top Item Button Title Text Style.
+    public var topItemButtonTitleTextStyle: TextStyleSet!
 
-    /// Text Field Input Text Style.
-    public var textFieldInputTextStyle: TextStyle?
+    /// Top Item Title Small Text Style.
+    public var topItemTitleSmallTextStyle: TextStyleSet!
 
-    /// Text Field Input Large Text Style.
-    public var textFieldInputLargeTextStyle: TextStyle?
+    /// Top Item Title Large Text Style.
+    public var topItemTitleLargeTextStyle: TextStyleSet!
 
-    /// Text Field Input Small Text Style.
-    public var textFieldInputSmallTextStyle: TextStyle?
-
-    /// Text Field Hint Text Style.
-    public var textFieldHintTextStyle: TextStyle?
-
-    /// Text Field Hint Large Text Style.
-    public var textFieldHintLargeTextStyle: TextStyle?
+    /// Top Item Title Normal Text Style.
+    public var topItemTitleNormalTextStyle: TextStyleSet!
 
     /// Text Field Hint Small Text Style.
-    public var textFieldHintSmallTextStyle: TextStyle?
+    public var textFieldHintSmallTextStyle: TextStyleSet!
+
+    /// Text Field Hint Large Text Style.
+    public var textFieldHintLargeTextStyle: TextStyleSet!
+
+    /// Text Field Hint Normal Text Style.
+    public var textFieldHintNormalTextStyle: TextStyleSet!
+
+    /// Text Field Label Small Text Style.
+    public var textFieldLabelSmallTextStyle: TextStyleSet!
+
+    /// Text Field Label Large Text Style.
+    public var textFieldLabelLargeTextStyle: TextStyleSet!
+
+    /// Text Field Label Normal Text Style.
+    public var textFieldLabelNormalTextStyle: TextStyleSet!
+
+    /// Text Field Input Small Text Style.
+    public var textFieldInputSmallTextStyle: TextStyleSet!
+
+    /// Text Field Input Large Text Style.
+    public var textFieldInputLargeTextStyle: TextStyleSet!
+
+    /// Text Field Input Normal Text Style.
+    public var textFieldInputNormalTextStyle: TextStyleSet!
+
+    /// Button Title Small Text Style.
+    public var buttonTitleSmallTextStyle: TextStyleSet!
+
+    /// Button Title Large Text Style.
+    public var buttonTitleLargeTextStyle: TextStyleSet!
+
+    /// Button Title Normal Text Style.
+    public var buttonTitleNormalTextStyle: TextStyleSet!
+
+    /// Button Flat Title Small Text Style.
+    public var buttonFlatTitleSmallTextStyle: TextStyleSet!
+
+    /// Button Flat Title Large Text Style.
+    public var buttonFlatTitleLargeTextStyle: TextStyleSet!
+
+    /// Button Flat Title Normal Text Style.
+    public var buttonFlatTitleNormalTextStyle: TextStyleSet!
+
+    /// Caption Small Text Style.
+    public var captionSmallTextStyle: TextStyleSet!
+
+    /// Caption Large Text Style.
+    public var captionLargeTextStyle: TextStyleSet!
+
+    /// Caption Normal Text Style.
+    public var captionNormalTextStyle: TextStyleSet!
+//
+    /// Body Small Text Style.
+    public var bodySmallTextStyle: TextStyleSet!
+
+    /// Body Large Text Style.
+    public var bodyLargeTextStyle: TextStyleSet!
+
+    /// Body Normal Text Style.
+    public var bodyNormalTextStyle: TextStyleSet
+
+    /// Sub Headline Small Text Style.
+    public var subHeadlineSmallTextStyle: TextStyleSet!
+
+    /// Sub Headline Large Text Style.
+    public var subHeadlineLargeTextStyle: TextStyleSet!
+
+    /// Sub Headline Normal Text Style.
+    public var subHeadlineNormalTextStyle: TextStyleSet!
+
+    /// Headline6 Text Style.
+    public var headline6TextStyle: TextStyleSet!
+
+    /// Headline5 Text Style.
+    public var headline5TextStyle: TextStyleSet!
+
+    /// Headline4 Text Style.
+    public var headline4TextStyle: TextStyleSet!
+
+    /// Headline3 Text Style.
+    public var headline3TextStyle: TextStyleSet!
+
+    /// Headline2 Text Style.
+    public var headline2TextStyle: TextStyleSet!
+
+    /// Headline1 Text Style.
+    public var headline1TextStyle: TextStyleSet!
+
+    /// Display Small Text Style.
+    public var displaySmallTextStyle: TextStyleSet!
+
+    /// Display Large Text Style.
+    public var displayLargeTextStyle: TextStyleSet!
+
+    /// Display Normal Text Style.
+    public var displayNormalTextStyle: TextStyleSet!
 
     public init?(json: JSON) {
-        if let displayJSON = json["display"] as? JSON {
-            displayTextStyle = TextStyle(json: displayJSON)
+        
+        guard let bodyNormalTextStyle = TextStyleSet(json: json["bodyNormal"]) else {
+            return nil
         }
 
-        if let displayLargeJSON = json["displayLarge"] as? JSON {
-            displayLargeTextStyle = TextStyle(json: displayLargeJSON)
-        }
+        self.bodyNormalTextStyle = bodyNormalTextStyle
 
-        if let displaySmallJSON = json["displaySmall"] as? JSON {
-            displaySmallTextStyle = TextStyle(json: displaySmallJSON)
-        }
+        bodySmallTextStyle = TextStyleSet(json: json["bodySmall"], defaultStyle: bodyNormalTextStyle.regular)
+        bodyLargeTextStyle = TextStyleSet(json: json["bodyLarge"], defaultStyle: bodyNormalTextStyle.regular)
 
-        if let headline1JSON = json["headline1"] as? JSON {
-            headline1TextStyle = TextStyle(json: headline1JSON)
-        }
+        headline1TextStyle = TextStyleSet(json: json["headline1"], defaultStyle: bodyNormalTextStyle.regular)
+        headline2TextStyle = TextStyleSet(json: json["headline2"], defaultStyle: headline1TextStyle.regular)
+        headline3TextStyle = TextStyleSet(json: json["headline3"], defaultStyle: headline2TextStyle.regular)
+        headline4TextStyle = TextStyleSet(json: json["headline4"], defaultStyle: headline3TextStyle.regular)
+        headline5TextStyle = TextStyleSet(json: json["headline5"], defaultStyle: headline4TextStyle.regular)
+        headline6TextStyle = TextStyleSet(json: json["headline6"], defaultStyle: headline5TextStyle.regular)
 
-        if let headline2JSON = json["headline2"] as? JSON {
-            headline2TextStyle = TextStyle(json: headline2JSON)
-        }
+        displayNormalTextStyle = TextStyleSet(json: json["displayNormal"], defaultStyle: headline1TextStyle.regular)
+        displaySmallTextStyle = TextStyleSet(json: json["displaySmall"], defaultStyle: displayNormalTextStyle.regular)
+        displayLargeTextStyle = TextStyleSet(json: json["displayLarge"], defaultStyle: displayNormalTextStyle.regular)
 
-        if let headline3JSON = json["headline3"] as? JSON {
-            headline3TextStyle = TextStyle(json: headline3JSON)
-        }
+        captionNormalTextStyle = TextStyleSet(json: json["captionNormal"], defaultStyle: headline1TextStyle.regular)
+        captionSmallTextStyle = TextStyleSet(json: json["captionSmall"], defaultStyle: captionNormalTextStyle.regular)
+        captionLargeTextStyle = TextStyleSet(json: json["captionLarge"], defaultStyle: captionNormalTextStyle.regular)
 
-        if let headline4JSON = json["headline4"] as? JSON {
-            headline4TextStyle = TextStyle(json: headline4JSON)
-        }
+        tabBarItemTextStyle = TextStyleSet(json: json["tabBarItem"], defaultStyle: captionNormalTextStyle.regular)
+        tabBarItemInactiveTextStyle = TextStyleSet(json: json["tabBarItemInactive"], defaultStyle: tabBarItemTextStyle.regular)
+        tabBarBadgeTextStyle = TextStyleSet(json: json["tabBarBadge"], defaultStyle: tabBarItemTextStyle.regular)
 
-        if let headline5JSON = json["headline5"] as? JSON {
-            headline5TextStyle = TextStyle(json: headline5JSON)
-        }
+        topItemSubtitleTextStyle = TextStyleSet(json: json["topItemSubtitle"], defaultStyle: captionNormalTextStyle.regular)
 
-        if let headline6JSON = json["headline6"] as? JSON {
-            headline6TextStyle = TextStyle(json: headline6JSON)
-        }
+        subHeadlineNormalTextStyle = TextStyleSet(json: json["subHeadlineNormal"], defaultStyle: bodyNormalTextStyle.regular)
+        subHeadlineSmallTextStyle = TextStyleSet(json: json["subHeadlineSmall"], defaultStyle: subHeadlineNormalTextStyle.regular)
+        subHeadlineLargeTextStyle = TextStyleSet(json: json["subHeadlineLarge"], defaultStyle: subHeadlineNormalTextStyle.regular)
 
-        if let subHeadlineJSON = json["subHeadline"] as? JSON {
-            subHeadlineTextStyle = TextStyle(json: subHeadlineJSON)
-        }
 
-        if let subHeadlineLargeJSON = json["subHeadlineLarge"] as? JSON {
-            subHeadlineLargeTextStyle = TextStyle(json: subHeadlineLargeJSON)
-        }
+        buttonTitleNormalTextStyle = TextStyleSet(json: json["buttonTitleNormal"], defaultStyle: bodyNormalTextStyle.regular)
+        buttonTitleSmallTextStyle = TextStyleSet(json: json["buttonTitleSmall"], defaultStyle: buttonTitleNormalTextStyle.regular)
+        buttonTitleLargeTextStyle = TextStyleSet(json: json["buttonTitleLarge"], defaultStyle: buttonTitleNormalTextStyle.regular)
 
-        if let subHeadlineSmallJSON = json["subHeadlineSmall"] as? JSON {
-            subHeadlineSmallTextStyle = TextStyle(json: subHeadlineSmallJSON)
-        }
+        buttonFlatTitleNormalTextStyle = TextStyleSet(json: json["buttonFlatTitleNormal"], defaultStyle: bodyNormalTextStyle.regular)
+        buttonFlatTitleSmallTextStyle = TextStyleSet(json: json["buttonFlatTitleSmall"], defaultStyle: buttonFlatTitleNormalTextStyle.regular)
+        buttonFlatTitleLargeTextStyle = TextStyleSet(json: json["buttonFlatTitleLarge"], defaultStyle: buttonFlatTitleNormalTextStyle.regular)
 
-        if let bodyJSON = json["body"] as? JSON {
-            bodyTextStyle = TextStyle(json: bodyJSON)
-        }
+        textFieldInputNormalTextStyle = TextStyleSet(json: json["textFieldInputNormal"], defaultStyle: bodyNormalTextStyle.regular)
+        textFieldInputSmallTextStyle = TextStyleSet(json: json["textFieldInputSmall"], defaultStyle: textFieldInputNormalTextStyle.regular)
+        textFieldInputLargeTextStyle = TextStyleSet(json: json["textFieldInputLarge"], defaultStyle: textFieldInputNormalTextStyle.regular)
 
-        if let bodyLargeJSON = json["bodyLarge"] as? JSON {
-            bodyLargeTextStyle = TextStyle(json: bodyLargeJSON)
-        }
+        textFieldLabelNormalTextStyle = TextStyleSet(json: json["textFieldLabelNormal"], defaultStyle: textFieldInputNormalTextStyle.regular)
+        textFieldLabelSmallTextStyle = TextStyleSet(json: json["textFieldLabelSmall"], defaultStyle: textFieldLabelNormalTextStyle.regular)
+        textFieldLabelLargeTextStyle = TextStyleSet(json: json["textFieldLabelLarge"], defaultStyle: textFieldLabelNormalTextStyle.regular)
 
-        if let bodySmallJSON = json["bodySmall"] as? JSON {
-            bodySmallTextStyle = TextStyle(json: bodySmallJSON)
-        }
+        textFieldHintNormalTextStyle = TextStyleSet(json: json["textFieldHintNormal"], defaultStyle: textFieldInputNormalTextStyle.regular)
+        textFieldHintSmallTextStyle = TextStyleSet(json: json["textFieldHintSmall"], defaultStyle: textFieldHintNormalTextStyle.regular)
+        textFieldHintLargeTextStyle = TextStyleSet(json: json["textFieldHintLarge"], defaultStyle: textFieldHintNormalTextStyle.regular)
 
-        if let captionJSON = json["caption"] as? JSON {
-            captionTextStyle = TextStyle(json: captionJSON)
-        }
 
-        if let captionLargeJSON = json["captionLarge"] as? JSON {
-            captionLargeTextStyle = TextStyle(json: captionLargeJSON)
-        }
+        topItemTitleNormalTextStyle = TextStyleSet(json: json["topItemTitleNormal"], defaultStyle: bodyNormalTextStyle.regular)
+        topItemTitleSmallTextStyle = TextStyleSet(json: json["topItemTitleSmall"], defaultStyle: topItemTitleNormalTextStyle.regular)
+        topItemTitleLargeTextStyle = TextStyleSet(json: json["topItemTitleLarge"], defaultStyle: topItemTitleNormalTextStyle.regular)
+        topItemButtonTitleTextStyle = TextStyleSet(json: json["topItemButtonTitle"], defaultStyle: topItemTitleNormalTextStyle.regular)
 
-        if let captionSmallJSON = json["captionSmall"] as? JSON {
-            captionSmallTextStyle = TextStyle(json: captionSmallJSON)
-        }
-
-        if let topItemTitleJSON = json["topItemTitle"] as? JSON {
-            topItemTitleTextStyle = TextStyle(json: topItemTitleJSON)
-        }
-
-        if let topItemSubtitleJSON = json["topItemSubtitle"] as? JSON {
-            topItemSubtitleTextStyle = TextStyle(json: topItemSubtitleJSON)
-        }
-
-        if let topItemButtonJSON = json["topItemButton"] as? JSON {
-            topItemButtonTextStyle = TextStyle(json: topItemButtonJSON)
-        }
-
-        if let tabBarItemJSON = json["tabBarItem"] as? JSON {
-            tabBarItemTextStyle = TextStyle(json: tabBarItemJSON)
-        }
-
-        if let tabBarBadgeJSON = json["tabBarBadge"] as? JSON {
-            tabBarBadgeTextStyle = TextStyle(json: tabBarBadgeJSON)
-        }
-
-        if let buttonJSON = json["button"] as? JSON {
-            buttonTextStyle = TextStyle(json: buttonJSON)
-        }
-
-        if let buttonLargeJSON = json["buttonLarge"] as? JSON {
-            buttonLargeTextStyle = TextStyle(json: buttonLargeJSON)
-        }
-
-        if let buttonSmallJSON = json["buttonSmall"] as? JSON {
-            buttonSmallTextStyle = TextStyle(json: buttonSmallJSON)
-        }
-
-        if let buttonFlatJSON = json["buttonFlat"] as? JSON {
-            buttonFlatTextStyle = TextStyle(json: buttonFlatJSON)
-        }
-
-        if let buttonFlatLargeJSON = json["buttonFlatLarge"] as? JSON {
-            buttonFlatLargeTextStyle = TextStyle(json: buttonFlatLargeJSON)
-        }
-
-        if let buttonFlatSmallJSON = json["buttonFlatSmall"] as? JSON {
-            buttonFlatSmallTextStyle = TextStyle(json: buttonFlatSmallJSON)
-        }
-
-        if let segmentedJSON = json["segmented"] as? JSON {
-            segmentedTextStyle = TextStyle(json: segmentedJSON)
-        }
-
-        if let textFieldLabelJSON = json["textFieldLabel"] as? JSON {
-            textFieldLabelTextStyle = TextStyle(json: textFieldLabelJSON)
-        }
-
-        if let textFieldLabelLargeJSON = json["textFieldLabelLarge"] as? JSON {
-            textFieldLabelLargeTextStyle = TextStyle(json: textFieldLabelLargeJSON)
-        }
-
-        if let textFieldLabelSmallJSON = json["textFieldLabelSmall"] as? JSON {
-            textFieldLabelSmallTextStyle = TextStyle(json: textFieldLabelSmallJSON)
-        }
-
-        if let textFieldInputJSON = json["textFieldInput"] as? JSON {
-            textFieldInputTextStyle = TextStyle(json: textFieldInputJSON)
-        }
-
-        if let textFieldInputLargeJSON = json["textFieldInputLarge"] as? JSON {
-            textFieldInputLargeTextStyle = TextStyle(json: textFieldInputLargeJSON)
-        }
-
-        if let textFieldInputSmallJSON = json["textFieldInputSmall"] as? JSON {
-            textFieldInputSmallTextStyle = TextStyle(json: textFieldInputSmallJSON)
-        }
-
-        if let textFieldHintJSON = json["textFieldHint"] as? JSON {
-            textFieldHintTextStyle = TextStyle(json: textFieldHintJSON)
-        }
-
-        if let textFieldHintLargeJSON = json["textFieldHintLarge"] as? JSON {
-            textFieldHintLargeTextStyle = TextStyle(json: textFieldHintLargeJSON)
-        }
-
-        if let textFieldHintSmallJSON = json["textFieldHintSmall"] as? JSON {
-            textFieldHintSmallTextStyle = TextStyle(json: textFieldHintSmallJSON)
-        }
+        tooltipsTextStyle = TextStyleSet(json: json["tooltips"], defaultStyle: bodyNormalTextStyle.regular)
+        chipTextStyle = TextStyleSet(json: json["chip"], defaultStyle: bodyNormalTextStyle.regular)
+        menuTextStyle = TextStyleSet(json: json["menu"], defaultStyle: bodyNormalTextStyle.regular)
+        segmentedTitleTextStyle = TextStyleSet(json: json["segmentedTitle"], defaultStyle: bodyNormalTextStyle.regular)
+        snackbarTextTextStyle = TextStyleSet(json: json["snackbarText"], defaultStyle: bodyNormalTextStyle.regular)
+        snackbarActionButtonTitleTextStyle = TextStyleSet(json: json["snackbarActionButtonTitle"], defaultStyle: bodyNormalTextStyle.regular)
+        
+    
     }
 
 }

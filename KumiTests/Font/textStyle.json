@@ -1,0 +1,1933 @@
+{
+    "kumi": {
+        "type": "font",
+        "version": "1.0.0"
+    },
+    "tabBarBadge": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "tabBarItemInactive": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "tabBarItem": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "snackbarText": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "snackbarActionButtonTitle": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "segmentedTitle": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "menu": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "chip": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "tooltips": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "topItemSubtitle": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "topItemButtonTitle": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "topItemTitleSmall": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "topItemTitleLarge": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "topItemTitleNormal": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    }
+  },
+  "textFieldHintSmall": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "textFieldHintLarge": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "textFieldHintNormal": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "textFieldLabelSmall": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "textFieldLabelLarge": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "textFieldLabelNormal": {
+    "emphasis": {
+      "kern": 3,
+      "textSize": 13,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    },
+    "strong": {
+      "kern": 3,
+      "textSize": 13,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    },
+    "regular": {
+      "kern": 3,
+      "textSize": 13,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    }
+  },
+  "textFieldInputSmall": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "textFieldInputLarge": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "textFieldInputNormal": {
+    "emphasis": {
+      "kern": 0.4444444,
+      "textSize": 16,
+      "font": "HelveticaNeue",
+      "textAlign": "natural",
+      "color": {
+        "red": 0.1505631357,
+        "green": 0.1505586356,
+        "blue": 0.1505612135,
+        "alpha": 1,
+        "hex": "ff262626"
+      }
+    },
+    "strong": {
+      "kern": 0.4444444,
+      "textSize": 16,
+      "font": "HelveticaNeue",
+      "textAlign": "natural",
+      "color": {
+        "red": 0.1505631357,
+        "green": 0.1505586356,
+        "blue": 0.1505612135,
+        "alpha": 1,
+        "hex": "ff262626"
+      }
+    },
+    "regular": {
+      "kern": 0.4444444,
+      "textSize": 16,
+      "font": "HelveticaNeue",
+      "textAlign": "natural",
+      "color": {
+        "red": 0.1505631357,
+        "green": 0.1505586356,
+        "blue": 0.1505612135,
+        "alpha": 1,
+        "hex": "ff262626"
+      }
+    }
+  },
+  "buttonTitleSmall": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue-Italic",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue-Bold",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 21,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "buttonTitleLarge": {
+    "emphasis": {
+      "kern": 3,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "alpha": 1,
+        "hex": "ff000000"
+      }
+    },
+    "strong": {
+      "kern": 3,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "alpha": 1,
+        "hex": "ff000000"
+      }
+    },
+    "regular": {
+      "kern": 3,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "alpha": 1,
+        "hex": "ff000000"
+      }
+    }
+  },
+  "buttonTitleNormal": {
+    "emphasis": {
+      "kern": 2,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 2,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 2,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "buttonFlatTitleSmall": {
+    "emphasis": {
+      "kern": 0.9166667,
+      "textSize": 11,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.3411764706,
+        "green": 0,
+        "blue": 1,
+        "alpha": 1,
+        "hex": "ff5700ff"
+      }
+    },
+    "strong": {
+      "kern": 0.9166667,
+      "textSize": 11,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.3411764706,
+        "green": 0,
+        "blue": 1,
+        "alpha": 1,
+        "hex": "ff5700ff"
+      }
+    },
+    "regular": {
+      "kern": 0.9166667,
+      "textSize": 11,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.3411764706,
+        "green": 0,
+        "blue": 1,
+        "alpha": 1,
+        "hex": "ff5700ff"
+      }
+    }
+  },
+  "buttonFlatTitleLarge": {
+    "emphasis": {
+      "kern": 3,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 3,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 3,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "buttonFlatTitleNormal": {
+    "emphasis": {
+      "kern": 2,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 2,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 2,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "captionSmall": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 9,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 9,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 9,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "captionLarge": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "captionNormal": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 11,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 11,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 11,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "bodySmall": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    }
+  },
+  "bodyLarge": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 16,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.5019607843,
+        "green": 0.5019607843,
+        "blue": 0.5019607843,
+        "alpha": 1,
+        "hex": "ff808080"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 16,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.5019607843,
+        "green": 0.5019607843,
+        "blue": 0.5019607843,
+        "alpha": 1,
+        "hex": "ff808080"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 16,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.5019607843,
+        "green": 0.5019607843,
+        "blue": 0.5019607843,
+        "alpha": 1,
+        "hex": "ff808080"
+      }
+    }
+  },
+  "bodyNormal": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 14,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 14,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 14,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.4266758859,
+        "green": 0.4266631007,
+        "blue": 0.4266703427,
+        "alpha": 1,
+        "hex": "ff6d6d6d"
+      }
+    }
+  },
+  "subHeadlineSmall": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 9,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 9,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 9,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "subHeadlineLarge": {
+    "emphasis": {
+      "kern": 0.800000011920929,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0.800000011920929,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0.800000011920929,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "subHeadlineNormal": {
+    "emphasis": {
+      "kern": 0.800000011920929,
+      "textSize": 10,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0.800000011920929,
+      "textSize": 10,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0.800000011920929,
+      "textSize": 10,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "headline6": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 12,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "headline5": {
+    "emphasis": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 14,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    },
+    "strong": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 14,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    },
+    "regular": {
+      "color": {
+        "alpha": 1,
+        "blue": 0.3019607843137255,
+        "green": 0.2392156862745098,
+        "red": 0.1568627450980392,
+        "hex": "ff283d4d"
+      },
+      "kern": 0,
+      "textSize": 14,
+      "font": "HelveticaNeue",
+      "textAlign": "left"
+    }
+  },
+  "headline4": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 13,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 13,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 13,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "headline3": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 16,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 16,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 16,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "headline2": {
+    "emphasis": {
+      "kern": 0.5,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0.5,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0.5,
+      "textSize": 18,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "headline1": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 20,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.1505631357,
+        "green": 0.1505586356,
+        "blue": 0.1505612135,
+        "alpha": 1,
+        "hex": "ff262626"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 20,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.1505631357,
+        "green": 0.1505586356,
+        "blue": 0.1505612135,
+        "alpha": 1,
+        "hex": "ff262626"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 20,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.1505631357,
+        "green": 0.1505586356,
+        "blue": 0.1505612135,
+        "alpha": 1,
+        "hex": "ff262626"
+      }
+    }
+  },
+  "displaySmall": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 24,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  },
+  "displayLarge": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 32,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "alpha": 1,
+        "hex": "ff000000"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 32,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "alpha": 1,
+        "hex": "ff000000"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 32,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "alpha": 1,
+        "hex": "ff000000"
+      }
+    }
+  },
+  "displayNormal": {
+    "emphasis": {
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "strong": {
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    },
+    "regular": {
+      "kern": 0,
+      "textSize": 28,
+      "font": "HelveticaNeue",
+      "textAlign": "left",
+      "color": {
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 1,
+        "hex": "ff333333"
+      }
+    }
+  }
+}

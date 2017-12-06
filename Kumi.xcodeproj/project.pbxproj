@@ -17,7 +17,6 @@
 		154487481EE4BD0500DCD7A9 /* ShadowStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154487461EE4BD0500DCD7A9 /* ShadowStyleTests.swift */; };
 		154487491EE4BD0500DCD7A9 /* ShadowThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154487471EE4BD0500DCD7A9 /* ShadowThemeTests.swift */; };
 		1544874C1EE4BD7C00DCD7A9 /* Layers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1544874A1EE4BD7C00DCD7A9 /* Layers.json */; };
-		1544874D1EE4BD7C00DCD7A9 /* LayerStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 1544874B1EE4BD7C00DCD7A9 /* LayerStyle.json */; };
 		154487501EE4C4C800DCD7A9 /* Shadows.json in Resources */ = {isa = PBXBuildFile; fileRef = 1544874E1EE4C4C800DCD7A9 /* Shadows.json */; };
 		154487511EE4C4C800DCD7A9 /* ShadowStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 1544874F1EE4C4C800DCD7A9 /* ShadowStyle.json */; };
 		154487531EE4D2F200DCD7A9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154487521EE4D2F200DCD7A9 /* UIViewExtension.swift */; };
@@ -40,16 +39,13 @@
 		8EC737521EB292A10087846F /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737451EB292A10087846F /* CALayerExtension.swift */; };
 		8EC737531EB292A10087846F /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737461EB292A10087846F /* CornerRadius.swift */; };
 		8EC737581EB292A10087846F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7374B1EB292A10087846F /* UIColor+Extensions.swift */; };
-		8EC737631EB38FF30087846F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737621EB38FF30087846F /* Theme.swift */; };
+		8EC737631EB38FF30087846F /* Kumi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737621EB38FF30087846F /* Kumi.swift */; };
 		8EC7376B1EB3984B0087846F /* UIColor+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7376A1EB3984B0087846F /* UIColor+JSON.swift */; };
 		8EC7376E1EB39FA40087846F /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7376D1EB39FA40087846F /* JSONHelper.swift */; };
 		8EC737711EB3A0330087846F /* ColorThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737701EB3A0330087846F /* ColorThemeTests.swift */; };
-		8EC737731EB3A1790087846F /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EC737721EB3A1790087846F /* Colors.json */; };
 		8EC737781EB3AB280087846F /* FontStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EC737771EB3AB280087846F /* FontStyle.json */; };
 		8EC7377A1EB3AB360087846F /* TextStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737791EB3AB360087846F /* TextStyleTests.swift */; };
 		8EC7377C1EB3AC6D0087846F /* FontThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7377B1EB3AC6D0087846F /* FontThemeTests.swift */; };
-		8EC7377E1EB3ACCE0087846F /* Fonts.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7377D1EB3ACCE0087846F /* Fonts.json */; };
-		8EC737811EB3B9D20087846F /* Theme.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EC737801EB3B9D20087846F /* Theme.json */; };
 		8EC737831EB3B9DB0087846F /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737821EB3B9DB0087846F /* ThemeTests.swift */; };
 		8EC737931EB3CBA90087846F /* CABasicAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737861EB3CBA90087846F /* CABasicAnimationStyle.swift */; };
 		8EC737941EB3CBA90087846F /* UIViewAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737871EB3CBA90087846F /* UIViewAnimationStyle.swift */; };
@@ -59,6 +55,16 @@
 		8EC737981EB3CBA90087846F /* LayerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7378E1EB3CBA90087846F /* LayerTheme.swift */; };
 		8EC737991EB3CBA90087846F /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737901EB3CBA90087846F /* ShadowStyle.swift */; };
 		8EC7379A1EB3CBA90087846F /* ShadowTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737911EB3CBA90087846F /* ShadowTheme.swift */; };
+		90DBE9F01FC4B327008C6914 /* TextStyleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DBE9EF1FC4B327008C6914 /* TextStyleSet.swift */; };
+		90DBE9F31FC4B330008C6914 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DBE9F11FC4B330008C6914 /* ColorSet.swift */; };
+		90DBE9F41FC4B330008C6914 /* ColorSet+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DBE9F21FC4B330008C6914 /* ColorSet+JSON.swift */; };
+		90DBE9F71FC4B356008C6914 /* LayerStyleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DBE9F51FC4B356008C6914 /* LayerStyleSet.swift */; };
+		90DBE9F81FC4B356008C6914 /* LayerStyleSet+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DBE9F61FC4B356008C6914 /* LayerStyleSet+JSON.swift */; };
+		90DBE9FA1FC4B4C9008C6914 /* textStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 90DBE9F91FC4B4C9008C6914 /* textStyle.json */; };
+		90DBE9FC1FC4B4DB008C6914 /* colorStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 90DBE9FB1FC4B4DB008C6914 /* colorStyle.json */; };
+		90DBE9FE1FC4B970008C6914 /* layerStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 90DBE9FD1FC4B970008C6914 /* layerStyle.json */; };
+		90FBCCAB1FCDE32500BDBEF1 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBCCAA1FCDE32500BDBEF1 /* JSONHelper.swift */; };
+		90FBCCAD1FCDEC1E00BDBEF1 /* SwiftyJSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBCCAC1FCDEC1E00BDBEF1 /* SwiftyJSONHelper.swift */; };
 		AB5CCF0B6D9EB7BB0CA58726 /* Pods_Kumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4CF5A50CF18BF86C3F0A5E /* Pods_Kumi.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +91,6 @@
 		154487461EE4BD0500DCD7A9 /* ShadowStyleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowStyleTests.swift; sourceTree = "<group>"; };
 		154487471EE4BD0500DCD7A9 /* ShadowThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowThemeTests.swift; sourceTree = "<group>"; };
 		1544874A1EE4BD7C00DCD7A9 /* Layers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Layers.json; sourceTree = "<group>"; };
-		1544874B1EE4BD7C00DCD7A9 /* LayerStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LayerStyle.json; sourceTree = "<group>"; };
 		1544874E1EE4C4C800DCD7A9 /* Shadows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Shadows.json; sourceTree = "<group>"; };
 		1544874F1EE4C4C800DCD7A9 /* ShadowStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ShadowStyle.json; sourceTree = "<group>"; };
 		154487521EE4D2F200DCD7A9 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -110,16 +115,13 @@
 		8EC737451EB292A10087846F /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		8EC737461EB292A10087846F /* CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		8EC7374B1EB292A10087846F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		8EC737621EB38FF30087846F /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8EC737621EB38FF30087846F /* Kumi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kumi.swift; sourceTree = "<group>"; };
 		8EC7376A1EB3984B0087846F /* UIColor+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+JSON.swift"; sourceTree = "<group>"; };
 		8EC7376D1EB39FA40087846F /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		8EC737701EB3A0330087846F /* ColorThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorThemeTests.swift; sourceTree = "<group>"; };
-		8EC737721EB3A1790087846F /* Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
 		8EC737771EB3AB280087846F /* FontStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FontStyle.json; sourceTree = "<group>"; };
 		8EC737791EB3AB360087846F /* TextStyleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyleTests.swift; sourceTree = "<group>"; };
 		8EC7377B1EB3AC6D0087846F /* FontThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontThemeTests.swift; sourceTree = "<group>"; };
-		8EC7377D1EB3ACCE0087846F /* Fonts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fonts.json; sourceTree = "<group>"; };
-		8EC737801EB3B9D20087846F /* Theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theme.json; sourceTree = "<group>"; };
 		8EC737821EB3B9DB0087846F /* ThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
 		8EC737861EB3CBA90087846F /* CABasicAnimationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABasicAnimationStyle.swift; sourceTree = "<group>"; };
 		8EC737871EB3CBA90087846F /* UIViewAnimationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimationStyle.swift; sourceTree = "<group>"; };
@@ -129,6 +131,16 @@
 		8EC7378E1EB3CBA90087846F /* LayerTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerTheme.swift; sourceTree = "<group>"; };
 		8EC737901EB3CBA90087846F /* ShadowStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowStyle.swift; sourceTree = "<group>"; };
 		8EC737911EB3CBA90087846F /* ShadowTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowTheme.swift; sourceTree = "<group>"; };
+		90DBE9EF1FC4B327008C6914 /* TextStyleSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyleSet.swift; sourceTree = "<group>"; };
+		90DBE9F11FC4B330008C6914 /* ColorSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
+		90DBE9F21FC4B330008C6914 /* ColorSet+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorSet+JSON.swift"; sourceTree = "<group>"; };
+		90DBE9F51FC4B356008C6914 /* LayerStyleSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerStyleSet.swift; sourceTree = "<group>"; };
+		90DBE9F61FC4B356008C6914 /* LayerStyleSet+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LayerStyleSet+JSON.swift"; sourceTree = "<group>"; };
+		90DBE9F91FC4B4C9008C6914 /* textStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = textStyle.json; sourceTree = "<group>"; };
+		90DBE9FB1FC4B4DB008C6914 /* colorStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colorStyle.json; sourceTree = "<group>"; };
+		90DBE9FD1FC4B970008C6914 /* layerStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = layerStyle.json; sourceTree = "<group>"; };
+		90FBCCAA1FCDE32500BDBEF1 /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		90FBCCAC1FCDEC1E00BDBEF1 /* SwiftyJSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSONHelper.swift; sourceTree = "<group>"; };
 		96B214361F8486E6AC17A2EE /* Pods_KumiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2015E1EE26E9062197C1AA4 /* Pods-Kumi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kumi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kumi/Pods-Kumi.debug.xcconfig"; sourceTree = "<group>"; };
 		C969D8DFF51173F62569A900 /* Pods-KumiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,8 +171,8 @@
 		1544873E1EE4B5C600DCD7A9 /* Layer */ = {
 			isa = PBXGroup;
 			children = (
+				90DBE9FD1FC4B970008C6914 /* layerStyle.json */,
 				1544874A1EE4BD7C00DCD7A9 /* Layers.json */,
-				1544874B1EE4BD7C00DCD7A9 /* LayerStyle.json */,
 				154487421EE4BCFC00DCD7A9 /* LayerStyleTests.swift */,
 				154487431EE4BCFC00DCD7A9 /* LayerThemeTests.swift */,
 			);
@@ -254,7 +266,7 @@
 				8EC7378C1EB3CBA90087846F /* Layer */,
 				8EC7378F1EB3CBA90087846F /* Shadow */,
 				8EC7373F1EB292A10087846F /* Utility */,
-				8EC737621EB38FF30087846F /* Theme.swift */,
+				8EC737621EB38FF30087846F /* Kumi.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -274,6 +286,8 @@
 				154487381EE4AD7300DCD7A9 /* CATransform3D+JSON.swift */,
 				154487391EE4AD7300DCD7A9 /* CGSize+JSON.swift */,
 				1544873A1EE4AD7300DCD7A9 /* TextStyle+JSON.swift */,
+				90FBCCAA1FCDE32500BDBEF1 /* JSONHelper.swift */,
+				90FBCCAC1FCDEC1E00BDBEF1 /* SwiftyJSONHelper.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -289,7 +303,7 @@
 		8EC7376F1EB3A02A0087846F /* Color */ = {
 			isa = PBXGroup;
 			children = (
-				8EC737721EB3A1790087846F /* Colors.json */,
+				90DBE9FB1FC4B4DB008C6914 /* colorStyle.json */,
 				8EC737701EB3A0330087846F /* ColorThemeTests.swift */,
 			);
 			path = Color;
@@ -298,7 +312,7 @@
 		8EC737761EB3AAEC0087846F /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				8EC7377D1EB3ACCE0087846F /* Fonts.json */,
+				90DBE9F91FC4B4C9008C6914 /* textStyle.json */,
 				8EC737771EB3AB280087846F /* FontStyle.json */,
 				8EC737791EB3AB360087846F /* TextStyleTests.swift */,
 				8EC7377B1EB3AC6D0087846F /* FontThemeTests.swift */,
@@ -309,7 +323,6 @@
 		8EC7377F1EB3B9D20087846F /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				8EC737801EB3B9D20087846F /* Theme.json */,
 				8EC737821EB3B9DB0087846F /* ThemeTests.swift */,
 			);
 			path = Theme;
@@ -330,6 +343,8 @@
 		8EC737881EB3CBA90087846F /* Color */ = {
 			isa = PBXGroup;
 			children = (
+				90DBE9F11FC4B330008C6914 /* ColorSet.swift */,
+				90DBE9F21FC4B330008C6914 /* ColorSet+JSON.swift */,
 				8EC737891EB3CBA90087846F /* ColorTheme.swift */,
 			);
 			path = Color;
@@ -338,6 +353,7 @@
 		8EC7378A1EB3CBA90087846F /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				90DBE9EF1FC4B327008C6914 /* TextStyleSet.swift */,
 				8EC7378B1EB3CBA90087846F /* FontTheme.swift */,
 			);
 			path = Font;
@@ -346,6 +362,8 @@
 		8EC7378C1EB3CBA90087846F /* Layer */ = {
 			isa = PBXGroup;
 			children = (
+				90DBE9F51FC4B356008C6914 /* LayerStyleSet.swift */,
+				90DBE9F61FC4B356008C6914 /* LayerStyleSet+JSON.swift */,
 				8EC7378D1EB3CBA90087846F /* LayerStyle.swift */,
 				154487341EE4AD3E00DCD7A9 /* LayerStyle+JSON.swift */,
 				8EC7378E1EB3CBA90087846F /* LayerTheme.swift */,
@@ -484,16 +502,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1544874C1EE4BD7C00DCD7A9 /* Layers.json in Resources */,
-				1544874D1EE4BD7C00DCD7A9 /* LayerStyle.json in Resources */,
 				154487501EE4C4C800DCD7A9 /* Shadows.json in Resources */,
-				8EC7377E1EB3ACCE0087846F /* Fonts.json in Resources */,
-				8EC737811EB3B9D20087846F /* Theme.json in Resources */,
+				90DBE9FA1FC4B4C9008C6914 /* textStyle.json in Resources */,
 				154487631EE4DA5C00DCD7A9 /* CABasicAnimationStyle.json in Resources */,
 				154487661EE4DA6300DCD7A9 /* Animations.json in Resources */,
 				8EC737781EB3AB280087846F /* FontStyle.json in Resources */,
-				8EC737731EB3A1790087846F /* Colors.json in Resources */,
 				154487511EE4C4C800DCD7A9 /* ShadowStyle.json in Resources */,
 				154487641EE4DA5C00DCD7A9 /* UIViewAnimationStyle.json in Resources */,
+				90DBE9FE1FC4B970008C6914 /* layerStyle.json in Resources */,
+				90DBE9FC1FC4B4DB008C6914 /* colorStyle.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,13 +523,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kumi-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8DF7ABC0BCFF8F77D3A256F /* [CP] Embed Pods Frameworks */ = {
@@ -521,9 +541,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kumi/Kumi.framework",
+				"${BUILT_PRODUCTS_DIR}/Marker/Marker.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kumi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Marker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -536,13 +563,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KumiTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED88623CA29617BB06C23BB6 /* [CP] Copy Pods Resources */ = {
@@ -587,20 +617,27 @@
 				8EC737531EB292A10087846F /* CornerRadius.swift in Sources */,
 				8EC737521EB292A10087846F /* CALayerExtension.swift in Sources */,
 				8EC737931EB3CBA90087846F /* CABasicAnimationStyle.swift in Sources */,
+				90FBCCAB1FCDE32500BDBEF1 /* JSONHelper.swift in Sources */,
+				90DBE9F01FC4B327008C6914 /* TextStyleSet.swift in Sources */,
 				8EC737991EB3CBA90087846F /* ShadowStyle.swift in Sources */,
 				8EC7374D1EB292A10087846F /* AlphaValue.swift in Sources */,
+				90DBE9F31FC4B330008C6914 /* ColorSet.swift in Sources */,
 				8EC737951EB3CBA90087846F /* ColorTheme.swift in Sources */,
+				90FBCCAD1FCDEC1E00BDBEF1 /* SwiftyJSONHelper.swift in Sources */,
 				8EC737971EB3CBA90087846F /* LayerStyle.swift in Sources */,
 				8EC7376B1EB3984B0087846F /* UIColor+JSON.swift in Sources */,
 				1544875D1EE4D3A800DCD7A9 /* AnimationTheme.swift in Sources */,
 				8EC737961EB3CBA90087846F /* FontTheme.swift in Sources */,
 				8EC7374E1EB292A10087846F /* AnimationDuration.swift in Sources */,
+				90DBE9F41FC4B330008C6914 /* ColorSet+JSON.swift in Sources */,
+				90DBE9F81FC4B356008C6914 /* LayerStyleSet+JSON.swift in Sources */,
 				8EC737981EB3CBA90087846F /* LayerTheme.swift in Sources */,
 				154487681EE4DCE700DCD7A9 /* CABasicAnimationStyle+JSON.swift in Sources */,
 				8EC737581EB292A10087846F /* UIColor+Extensions.swift in Sources */,
 				8EC737501EB292A10087846F /* BorderWidth.swift in Sources */,
 				1544873D1EE4AD7300DCD7A9 /* TextStyle+JSON.swift in Sources */,
-				8EC737631EB38FF30087846F /* Theme.swift in Sources */,
+				8EC737631EB38FF30087846F /* Kumi.swift in Sources */,
+				90DBE9F71FC4B356008C6914 /* LayerStyleSet.swift in Sources */,
 				154487371EE4AD4E00DCD7A9 /* ShadowStyle+JSON.swift in Sources */,
 				154487531EE4D2F200DCD7A9 /* UIViewExtension.swift in Sources */,
 				1544876C1EE4DFB500DCD7A9 /* UIViewAnimationStyle+JSON.swift in Sources */,

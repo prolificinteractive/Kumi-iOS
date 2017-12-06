@@ -24,4 +24,5 @@ This framework provides all the values for fonts and colors you need to apply a 
   s.source_files = 'Kumi/Core/**/*'
 
   s.dependency 'Marker'
+  s.dependency 'SwiftyJSON'
 end

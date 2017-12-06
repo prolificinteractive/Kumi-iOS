@@ -15,7 +15,6 @@ class AnimationThemeTests: XCTestCase {
     var animationTheme: AnimationTheme!
 
     override func setUp() {
-        super.setUp()
 
         super.setUp()
 
@@ -34,6 +33,7 @@ class AnimationThemeTests: XCTestCase {
     }
 
     func testAnimationThemeCreation() {
+        
         XCTAssertNotNil(animationTheme.extraFastCABasicAnimationStyle)
         XCTAssertNotNil(animationTheme.fastCABasicAnimationStyle)
         XCTAssertNotNil(animationTheme.normalCABasicAnimationStyle)

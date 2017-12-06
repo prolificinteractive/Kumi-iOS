@@ -18,8 +18,8 @@ class LayerStyleTests: XCTestCase {
         super.setUp()
 
         do {
-            let layerStyleJSON = try JSONHelper.getJSON("LayerStyle")
-            layerStyle = LayerStyle(json: layerStyleJSON)
+            let layerThemeJSON = try JSONHelper.getJSON("layerStyle")
+            layerStyle = LayerTheme(json: layerThemeJSON)?.textInputPrimary.normal
         } catch let error {
             XCTFail(error.localizedDescription)
         }
@@ -35,15 +35,15 @@ class LayerStyleTests: XCTestCase {
         XCTAssertEqual(layerStyle.opacity, 1.0)
         XCTAssertEqual(layerStyle.masksToBounds, false)
         XCTAssertEqual(layerStyle.isDoubleSided, true)
-        XCTAssertEqual(layerStyle.cornerRadius, 3.0)
-        XCTAssertEqual(layerStyle.backgroundColor, UIColor(red: 1, green: 0, blue: 0, alpha: 1).cgColor)
-        XCTAssertEqual(layerStyle.borderWidth, 0.0)
-        XCTAssertEqual(layerStyle.borderColor, UIColor(red: 0, green: 1, blue: 0, alpha: 1).cgColor)
+        XCTAssertEqual(layerStyle.cornerRadius, 4.0)
+        XCTAssertEqual(layerStyle.backgroundColor, nil)
+        XCTAssertEqual(layerStyle.borderWidth, 2.0)
+        XCTAssertNotNil(layerStyle.borderColor)
         XCTAssertEqual(layerStyle.shadowStyle.shadowOpacity, 1.0)
         XCTAssertEqual(layerStyle.shadowStyle.shadowOffset.width, 0)
-        XCTAssertEqual(layerStyle.shadowStyle.shadowOffset.height, 7)
-        XCTAssertEqual(layerStyle.shadowStyle.shadowRadius, 14)
-        XCTAssertEqual(layerStyle.shadowColor, UIColor(red: 1, green: 1, blue: 0, alpha: 1).cgColor)
+        XCTAssertEqual(layerStyle.shadowStyle.shadowOffset.height, 0)
+        XCTAssertEqual(layerStyle.shadowStyle.shadowRadius, 0)
+        XCTAssertEqual(layerStyle.shadowColor, nil)
         XCTAssertNotNil(layerStyle.transform)
     }
 

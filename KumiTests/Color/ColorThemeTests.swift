@@ -17,7 +17,8 @@ class ColorThemeTests: XCTestCase {
         super.setUp()
 
         do {
-            let colorThemeJSON = try JSONHelper.getJSON("Colors")
+            let colorThemeJSON = try JSONHelper.getJSON("colorStyle")
+            print(colorThemeJSON)
             colorTheme = ColorTheme(json: colorThemeJSON)
         } catch let error {
             XCTFail(error.localizedDescription)
@@ -30,242 +31,310 @@ class ColorThemeTests: XCTestCase {
         super.tearDown()
     }
 
-    func testColorThemePrimary() {
+    func testColorThemeRegularTertiary() {
         // Given
-        let primary = colorTheme.primary
-        let primaryMuted = colorTheme.primaryMuted
-        let primaryFaded = colorTheme.primaryFaded
-
+        let regularTertiary = colorTheme.regularTertiary?.normal
+        let regularTertiaryLight = colorTheme.regularTertiary?.light
+        let regularTertiaryDark = colorTheme.regularTertiary?.dark
+        let regularTertiaryFaded = colorTheme.regularTertiary?.faded
+        
         // When
-        let expectedPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedPrimaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
-        let expectedPrimaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        let expectedRegularTertiary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
+        let expectedRegularTertiaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedRegularTertiaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
+        let expectedRegularTertiaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
+        
         // Then
-        XCTAssertEqual(primary, expectedPrimary)
-        XCTAssertEqual(primaryMuted, expectedPrimaryMuted)
-        XCTAssertEqual(primaryFaded, expectedPrimaryFaded)
+        XCTAssertEqual(regularTertiary, expectedRegularTertiary)
+        XCTAssertEqual(regularTertiaryLight, expectedRegularTertiaryLight)
+        XCTAssertEqual(regularTertiaryDark, expectedRegularTertiaryDark)
+        XCTAssertEqual(regularTertiaryFaded, expectedRegularTertiaryFaded)
     }
-
-    func testColorThemeSecondary() {
+    
+    
+    
+    func testColorThemeRegularSecondary() {
         // Given
-        let secondary = colorTheme.secondary
-        let secondaryMuted = colorTheme.secondaryMuted
-        let secondaryFaded = colorTheme.secondaryFaded
-
+        let regularSecondary = colorTheme.regularSecondary?.normal
+        let regularSecondaryLight = colorTheme.regularSecondary?.light
+        let regularSecondaryDark = colorTheme.regularSecondary?.dark
+        let regularSecondaryFaded = colorTheme.regularSecondary?.faded
+        
         // When
-        let expectedSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedSecondaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
-        let expectedSecondaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        let expectedRegularSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
+        let expectedRegularSecondaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedRegularSecondaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
+        let expectedRegularSecondaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
+        
         // Then
-        XCTAssertEqual(secondary, expectedSecondary)
-        XCTAssertEqual(secondaryMuted, expectedSecondaryMuted)
-        XCTAssertEqual(secondaryFaded, expectedSecondaryFaded)
+        XCTAssertEqual(regularSecondary, expectedRegularSecondary)
+        XCTAssertEqual(regularSecondaryLight, expectedRegularSecondaryLight)
+        XCTAssertEqual(regularSecondaryDark, expectedRegularSecondaryDark)
+        XCTAssertEqual(regularSecondaryFaded, expectedRegularSecondaryFaded)
     }
-
-    func testColorThemeTertiary() {
+    
+    
+    
+    func testColorThemeRegularPrimary() {
         // Given
-        let tertiary = colorTheme.tertiary
-        let tertiaryMuted = colorTheme.tertiaryMuted
-        let tertiaryFaded = colorTheme.tertiaryFaded
-
+        let regularPrimary = colorTheme.regularPrimary?.normal
+        let regularPrimaryLight = colorTheme.regularPrimary?.light
+        let regularPrimaryDark = colorTheme.regularPrimary?.dark
+        let regularPrimaryFaded = colorTheme.regularPrimary?.faded
+        
         // When
-        let expectedTertiary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedTertiaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
-        let expectedTertiaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        let expectedRegularPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
+        let expectedRegularPrimaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedRegularPrimaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
+        let expectedRegularPrimaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
+        
         // Then
-        XCTAssertEqual(tertiary, expectedTertiary)
-        XCTAssertEqual(tertiaryMuted, expectedTertiaryMuted)
-        XCTAssertEqual(tertiaryFaded, expectedTertiaryFaded)
+        XCTAssertEqual(regularPrimary, expectedRegularPrimary)
+        XCTAssertEqual(regularPrimaryLight, expectedRegularPrimaryLight)
+        XCTAssertEqual(regularPrimaryDark, expectedRegularPrimaryDark)
+        XCTAssertEqual(regularPrimaryFaded, expectedRegularPrimaryFaded)
     }
-
-    func testColorThemeInvertPrimary() {
-        // Given
-        let invertPrimary = colorTheme.invertPrimary
-        let invertPrimaryMuted = colorTheme.invertPrimaryMuted
-        let invertPrimaryFaded = colorTheme.invertPrimaryFaded
-
-        // When
-        let expectedInvertPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedInvertPrimaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
-        let expectedInvertPrimaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
-        // Then
-        XCTAssertEqual(invertPrimary, expectedInvertPrimary)
-        XCTAssertEqual(invertPrimaryMuted, expectedInvertPrimaryMuted)
-        XCTAssertEqual(invertPrimaryFaded, expectedInvertPrimaryFaded)
-    }
-
-    func testColorThemeInvertSecondary() {
-        // Given
-        let invertSecondary = colorTheme.invertSecondary
-        let invertSecondaryMuted = colorTheme.invertSecondaryMuted
-        let invertSecondaryFaded = colorTheme.invertSecondaryFaded
-
-        // When
-        let expectedInvertSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedInvertSecondaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
-        let expectedInvertSecondaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
-        // Then
-        XCTAssertEqual(invertSecondary, expectedInvertSecondary)
-        XCTAssertEqual(invertSecondaryMuted, expectedInvertSecondaryMuted)
-        XCTAssertEqual(invertSecondaryFaded, expectedInvertSecondaryFaded)
-    }
-
+    
+    
+    
     func testColorThemeInvertTertiary() {
         // Given
-        let invertTertiary = colorTheme.invertTertiary
-        let invertTertiaryMuted = colorTheme.invertTertiaryMuted
-        let invertTertiaryFaded = colorTheme.invertTertiaryFaded
-
+        let invertTertiary = colorTheme.invertTertiary?.normal
+        let invertTertiaryLight = colorTheme.invertTertiary?.light
+        let invertTertiaryDark = colorTheme.invertTertiary?.dark
+        let invertTertiaryFaded = colorTheme.invertTertiary?.faded
+        
         // When
         let expectedInvertTertiary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedInvertTertiaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedInvertTertiaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedInvertTertiaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
         let expectedInvertTertiaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        
         // Then
         XCTAssertEqual(invertTertiary, expectedInvertTertiary)
-        XCTAssertEqual(invertTertiaryMuted, expectedInvertTertiaryMuted)
+        XCTAssertEqual(invertTertiaryLight, expectedInvertTertiaryLight)
+        XCTAssertEqual(invertTertiaryDark, expectedInvertTertiaryDark)
         XCTAssertEqual(invertTertiaryFaded, expectedInvertTertiaryFaded)
     }
-
-    func testColorThemeEmphasisPrimary() {
+    
+    
+    
+    func testColorThemeInvertSecondary() {
         // Given
-        let emphasisPrimary = colorTheme.emphasisPrimary
-        let emphasisPrimaryMuted = colorTheme.emphasisPrimaryMuted
-        let emphasisPrimaryFaded = colorTheme.emphasisPrimaryFaded
-
+        let invertSecondary = colorTheme.invertSecondary?.normal
+        let invertSecondaryLight = colorTheme.invertSecondary?.light
+        let invertSecondaryDark = colorTheme.invertSecondary?.dark
+        let invertSecondaryFaded = colorTheme.invertSecondary?.faded
+        
         // When
-        let expectedEmphasisPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedEmphasisPrimaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
-        let expectedEmphasisPrimaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        let expectedInvertSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
+        let expectedInvertSecondaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedInvertSecondaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
+        let expectedInvertSecondaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
+        
         // Then
-        XCTAssertEqual(emphasisPrimary, expectedEmphasisPrimary)
-        XCTAssertEqual(emphasisPrimaryMuted, expectedEmphasisPrimaryMuted)
-        XCTAssertEqual(emphasisPrimaryFaded, expectedEmphasisPrimaryFaded)
+        XCTAssertEqual(invertSecondary, expectedInvertSecondary)
+        XCTAssertEqual(invertSecondaryLight, expectedInvertSecondaryLight)
+        XCTAssertEqual(invertSecondaryDark, expectedInvertSecondaryDark)
+        XCTAssertEqual(invertSecondaryFaded, expectedInvertSecondaryFaded)
     }
-
-    func testColorThemeEmphasisSecondary() {
+    
+    
+    
+    func testColorThemeInvertPrimary() {
         // Given
-        let emphasisSecondary = colorTheme.emphasisSecondary
-        let emphasisSecondaryMuted = colorTheme.emphasisSecondaryMuted
-        let emphasisSecondaryFaded = colorTheme.emphasisSecondaryFaded
-
+        let invertPrimary = colorTheme.invertPrimary?.normal
+        let invertPrimaryLight = colorTheme.invertPrimary?.light
+        let invertPrimaryDark = colorTheme.invertPrimary?.dark
+        let invertPrimaryFaded = colorTheme.invertPrimary?.faded
+        
         // When
-        let expectedEmphasisSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedEmphasisSecondaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
-        let expectedEmphasisSecondaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        let expectedInvertPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
+        let expectedInvertPrimaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedInvertPrimaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
+        let expectedInvertPrimaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
+        
         // Then
-        XCTAssertEqual(emphasisSecondary, expectedEmphasisSecondary)
-        XCTAssertEqual(emphasisSecondaryMuted, expectedEmphasisSecondaryMuted)
-        XCTAssertEqual(emphasisSecondaryFaded, expectedEmphasisSecondaryFaded)
+        XCTAssertEqual(invertPrimary, expectedInvertPrimary)
+        XCTAssertEqual(invertPrimaryLight, expectedInvertPrimaryLight)
+        XCTAssertEqual(invertPrimaryDark, expectedInvertPrimaryDark)
+        XCTAssertEqual(invertPrimaryFaded, expectedInvertPrimaryFaded)
     }
-
+    
+    
+    
     func testColorThemeEmphasisTertiary() {
         // Given
-        let emphasisTertiary = colorTheme.emphasisTertiary
-        let emphasisTertiaryMuted = colorTheme.emphasisTertiaryMuted
-        let emphasisTertiaryFaded = colorTheme.emphasisTertiaryFaded
-
+        let emphasisTertiary = colorTheme.emphasisTertiary?.normal
+        let emphasisTertiaryLight = colorTheme.emphasisTertiary?.light
+        let emphasisTertiaryDark = colorTheme.emphasisTertiary?.dark
+        let emphasisTertiaryFaded = colorTheme.emphasisTertiary?.faded
+        
         // When
         let expectedEmphasisTertiary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedEmphasisTertiaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedEmphasisTertiaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedEmphasisTertiaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
         let expectedEmphasisTertiaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        
         // Then
         XCTAssertEqual(emphasisTertiary, expectedEmphasisTertiary)
-        XCTAssertEqual(emphasisTertiaryMuted, expectedEmphasisTertiaryMuted)
+        XCTAssertEqual(emphasisTertiaryLight, expectedEmphasisTertiaryLight)
+        XCTAssertEqual(emphasisTertiaryDark, expectedEmphasisTertiaryDark)
         XCTAssertEqual(emphasisTertiaryFaded, expectedEmphasisTertiaryFaded)
     }
-
-    func testColorThemeInvertEmphasisPrimary() {
+    
+    
+    
+    func testColorThemeEmphasisSecondary() {
         // Given
-        let invertEmphasisPrimary = colorTheme.invertEmphasisPrimary
-        let invertEmphasisPrimaryMuted = colorTheme.invertEmphasisPrimaryMuted
-        let invertEmphasisPrimaryFaded = colorTheme.invertEmphasisPrimaryFaded
-
+        let emphasisSecondary = colorTheme.emphasisSecondary?.normal
+        let emphasisSecondaryLight = colorTheme.emphasisSecondary?.light
+        let emphasisSecondaryDark = colorTheme.emphasisSecondary?.dark
+        let emphasisSecondaryFaded = colorTheme.emphasisSecondary?.faded
+        
         // When
-        let expectedInvertEmphasisPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedInvertEmphasisPrimaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
-        let expectedInvertEmphasisPrimaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        let expectedEmphasisSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
+        let expectedEmphasisSecondaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedEmphasisSecondaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
+        let expectedEmphasisSecondaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
+        
         // Then
-        XCTAssertEqual(invertEmphasisPrimary, expectedInvertEmphasisPrimary)
-        XCTAssertEqual(invertEmphasisPrimaryMuted, expectedInvertEmphasisPrimaryMuted)
-        XCTAssertEqual(invertEmphasisPrimaryFaded, expectedInvertEmphasisPrimaryFaded)
+        XCTAssertEqual(emphasisSecondary, expectedEmphasisSecondary)
+        XCTAssertEqual(emphasisSecondaryLight, expectedEmphasisSecondaryLight)
+        XCTAssertEqual(emphasisSecondaryDark, expectedEmphasisSecondaryDark)
+        XCTAssertEqual(emphasisSecondaryFaded, expectedEmphasisSecondaryFaded)
     }
-
-    func testColorThemeInvertEmphasisSecondary() {
+    
+    
+    
+    func testColorThemeEmphasisPrimary() {
         // Given
-        let invertEmphasisSecondary = colorTheme.invertEmphasisSecondary
-        let invertEmphasisSecondaryMuted = colorTheme.invertEmphasisSecondaryMuted
-        let invertEmphasisSecondaryFaded = colorTheme.invertEmphasisSecondaryFaded
-
+        let emphasisPrimary = colorTheme.emphasisPrimary?.normal
+        let emphasisPrimaryLight = colorTheme.emphasisPrimary?.light
+        let emphasisPrimaryDark = colorTheme.emphasisPrimary?.dark
+        let emphasisPrimaryFaded = colorTheme.emphasisPrimary?.faded
+        
         // When
-        let expectedInvertEmphasisSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedInvertEmphasisSecondaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
-        let expectedInvertEmphasisSecondaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        let expectedEmphasisPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
+        let expectedEmphasisPrimaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedEmphasisPrimaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
+        let expectedEmphasisPrimaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
+        
         // Then
-        XCTAssertEqual(invertEmphasisSecondary, expectedInvertEmphasisSecondary)
-        XCTAssertEqual(invertEmphasisSecondaryMuted, expectedInvertEmphasisSecondaryMuted)
-        XCTAssertEqual(invertEmphasisSecondaryFaded, expectedInvertEmphasisSecondaryFaded)
+        XCTAssertEqual(emphasisPrimary, expectedEmphasisPrimary)
+        XCTAssertEqual(emphasisPrimaryLight, expectedEmphasisPrimaryLight)
+        XCTAssertEqual(emphasisPrimaryDark, expectedEmphasisPrimaryDark)
+        XCTAssertEqual(emphasisPrimaryFaded, expectedEmphasisPrimaryFaded)
     }
-
+    
+    
+    
     func testColorThemeInvertEmphasisTertiary() {
         // Given
-        let invertEmphasisTertiary = colorTheme.invertEmphasisTertiary
-        let invertEmphasisTertiaryMuted = colorTheme.invertEmphasisTertiaryMuted
-        let invertEmphasisTertiaryFaded = colorTheme.invertEmphasisTertiaryFaded
-
+        let invertEmphasisTertiary = colorTheme.invertEmphasisTertiary?.normal
+        let invertEmphasisTertiaryLight = colorTheme.invertEmphasisTertiary?.light
+        let invertEmphasisTertiaryDark = colorTheme.invertEmphasisTertiary?.dark
+        let invertEmphasisTertiaryFaded = colorTheme.invertEmphasisTertiary?.faded
+        
         // When
         let expectedInvertEmphasisTertiary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedInvertEmphasisTertiaryMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedInvertEmphasisTertiaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedInvertEmphasisTertiaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
         let expectedInvertEmphasisTertiaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        
         // Then
         XCTAssertEqual(invertEmphasisTertiary, expectedInvertEmphasisTertiary)
-        XCTAssertEqual(invertEmphasisTertiaryMuted, expectedInvertEmphasisTertiaryMuted)
+        XCTAssertEqual(invertEmphasisTertiaryLight, expectedInvertEmphasisTertiaryLight)
+        XCTAssertEqual(invertEmphasisTertiaryDark, expectedInvertEmphasisTertiaryDark)
         XCTAssertEqual(invertEmphasisTertiaryFaded, expectedInvertEmphasisTertiaryFaded)
     }
-
-    func testColorThemeGrayout() {
+    
+    
+    
+    func testColorThemeInvertEmphasisSecondary() {
         // Given
-        let grayout = colorTheme.grayout
-        let grayoutMuted = colorTheme.grayoutMuted
-        let grayoutFaded = colorTheme.grayoutFaded
-
+        let invertEmphasisSecondary = colorTheme.invertEmphasisSecondary?.normal
+        let invertEmphasisSecondaryLight = colorTheme.invertEmphasisSecondary?.light
+        let invertEmphasisSecondaryDark = colorTheme.invertEmphasisSecondary?.dark
+        let invertEmphasisSecondaryFaded = colorTheme.invertEmphasisSecondary?.faded
+        
         // When
-        let expectedGrayout = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedGrayoutMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
-        let expectedGrayoutFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        let expectedInvertEmphasisSecondary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
+        let expectedInvertEmphasisSecondaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedInvertEmphasisSecondaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
+        let expectedInvertEmphasisSecondaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
+        
         // Then
-        XCTAssertEqual(grayout, expectedGrayout)
-        XCTAssertEqual(grayoutMuted, expectedGrayoutMuted)
-        XCTAssertEqual(grayoutFaded, expectedGrayoutFaded)
+        XCTAssertEqual(invertEmphasisSecondary, expectedInvertEmphasisSecondary)
+        XCTAssertEqual(invertEmphasisSecondaryLight, expectedInvertEmphasisSecondaryLight)
+        XCTAssertEqual(invertEmphasisSecondaryDark, expectedInvertEmphasisSecondaryDark)
+        XCTAssertEqual(invertEmphasisSecondaryFaded, expectedInvertEmphasisSecondaryFaded)
     }
-
+    
+    
+    
+    func testColorThemeInvertEmphasisPrimary() {
+        // Given
+        let invertEmphasisPrimary = colorTheme.invertEmphasisPrimary?.normal
+        let invertEmphasisPrimaryLight = colorTheme.invertEmphasisPrimary?.light
+        let invertEmphasisPrimaryDark = colorTheme.invertEmphasisPrimary?.dark
+        let invertEmphasisPrimaryFaded = colorTheme.invertEmphasisPrimary?.faded
+        
+        // When
+        let expectedInvertEmphasisPrimary = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
+        let expectedInvertEmphasisPrimaryLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedInvertEmphasisPrimaryDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
+        let expectedInvertEmphasisPrimaryFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
+        
+        // Then
+        XCTAssertEqual(invertEmphasisPrimary, expectedInvertEmphasisPrimary)
+        XCTAssertEqual(invertEmphasisPrimaryLight, expectedInvertEmphasisPrimaryLight)
+        XCTAssertEqual(invertEmphasisPrimaryDark, expectedInvertEmphasisPrimaryDark)
+        XCTAssertEqual(invertEmphasisPrimaryFaded, expectedInvertEmphasisPrimaryFaded)
+    }
+    
+    
+    
     func testColorThemeDestructive() {
         // Given
-        let destructive = colorTheme.destructive
-        let destructiveMuted = colorTheme.destructiveMuted
-        let destructiveFaded = colorTheme.destructiveFaded
-
+        let destructive = colorTheme.destructive?.normal
+        let destructiveLight = colorTheme.destructive?.light
+        let destructiveDark = colorTheme.destructive?.dark
+        let destructiveFaded = colorTheme.destructive?.faded
+        
         // When
         let expectedDestructive = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
-        let expectedDestructiveMuted = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedDestructiveLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedDestructiveDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
         let expectedDestructiveFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
-
+        
         // Then
         XCTAssertEqual(destructive, expectedDestructive)
-        XCTAssertEqual(destructiveMuted, expectedDestructiveMuted)
+        XCTAssertEqual(destructiveLight, expectedDestructiveLight)
+        XCTAssertEqual(destructiveDark, expectedDestructiveDark)
         XCTAssertEqual(destructiveFaded, expectedDestructiveFaded)
+    }
+    
+    
+    
+    func testColorThemeGrayout() {
+        // Given
+        let grayout = colorTheme.grayout?.normal
+        let grayoutLight = colorTheme.grayout?.light
+        let grayoutDark = colorTheme.grayout?.dark
+        let grayoutFaded = colorTheme.grayout?.faded
+        
+        // When
+        let expectedGrayout = UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.6)
+        let expectedGrayoutLight = UIColor(red: 0.9, green: 0.8, blue: 0.4, alpha: 0.3)
+        let expectedGrayoutDark = UIColor(red: 0.3, green: 0.2, blue: 0.2, alpha: 1)
+        let expectedGrayoutFaded = UIColor(red: 0.5, green: 0.5, blue: 0.4, alpha: 0.2)
+        
+        // Then
+        XCTAssertEqual(grayout, expectedGrayout)
+        XCTAssertEqual(grayoutLight, expectedGrayoutLight)
+        XCTAssertEqual(grayoutDark, expectedGrayoutDark)
+        XCTAssertEqual(grayoutFaded, expectedGrayoutFaded)
     }
 
 }

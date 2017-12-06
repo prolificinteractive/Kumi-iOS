@@ -1,4 +1,8 @@
 {
+    "kumi": {
+        "type": "shadow",
+        "version": "1.0.0"
+    },
     "none": {
         "$ref": "test",
         "shadowOpacity": 1,
