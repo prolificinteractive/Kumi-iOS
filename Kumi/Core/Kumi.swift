@@ -57,7 +57,7 @@ public struct Kumi {
     
     public static func setup(bundle: Bundle) {
         let files = bundle.paths(forResourcesOfType: "json", inDirectory: nil)
-        let jsons = files.flatMap { JSONHelper.readJSON(path: $0) }.filter { !$0["kumi"].isEmpty }
+        let jsons = files.compactMap { JSONHelper.readJSON(path: $0) }.filter { !$0["kumi"].isEmpty }
         for json in jsons {
             switch json["kumi"]["type"].stringValue {
             case "color":

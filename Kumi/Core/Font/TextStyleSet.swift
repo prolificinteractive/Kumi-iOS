@@ -9,6 +9,10 @@
 import Foundation
 import Marker
 
+public extension TextStyle {
+    static public let `default` = TextStyle(font: Font.systemFont(ofSize: 18))
+}
+
 public struct TextStyleSet {
     
     public var regular: TextStyle {
@@ -29,11 +33,13 @@ public struct TextStyleSet {
     
     fileprivate var _emphasis: TextStyle?
     
-    public init(normal: TextStyle, strong: TextStyle?, emphasis: TextStyle?) {
+    public init(normal: TextStyle, strong: TextStyle? = nil, emphasis: TextStyle? = nil) {
         self._regular = normal
         self._strong = strong ?? normal
         self._emphasis = emphasis ?? normal
     }
+    
+    public static let `default` = TextStyleSet(normal: .default)
     
 }
 

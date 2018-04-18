@@ -155,9 +155,7 @@ public final class FontTheme {
 
     public init?(json: JSON) {
         
-        guard let bodyNormalTextStyle = TextStyleSet(json: json["bodyNormal"]) else {
-            return nil
-        }
+        let bodyNormalTextStyle = TextStyleSet(json: json["bodyNormal"]) ?? .default
 
         self.bodyNormalTextStyle = bodyNormalTextStyle
 
