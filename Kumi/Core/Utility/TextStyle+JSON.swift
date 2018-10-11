@@ -73,15 +73,35 @@ private extension NSUnderlineStyle {
     static func fromString(string: String) -> NSUnderlineStyle? {
         switch string {
         case "none":
+            #if swift(>=4.2)
+            return nil
+            #else
             return NSUnderlineStyle.styleNone
+            #endif
         case "single":
+            #if swift(>=4.2)
+            return NSUnderlineStyle.single
+            #else
             return NSUnderlineStyle.styleSingle
+            #endif
         case "thick":
+            #if swift(>=4.2)
+            return NSUnderlineStyle.thick
+            #else
             return NSUnderlineStyle.styleThick
+            #endif
         case "double":
+            #if swift(>=4.2)
+            return NSUnderlineStyle.double
+            #else
             return NSUnderlineStyle.styleDouble
+            #endif
         case "patternSolid":
+            #if swift(>=4.2)
+            return nil
+            #else
             return NSUnderlineStyle.patternSolid
+            #endif
         case "patternDot":
             return NSUnderlineStyle.patternDot
         case "patternDash":
