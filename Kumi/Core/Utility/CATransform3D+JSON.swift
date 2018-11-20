@@ -10,7 +10,7 @@ import SwiftyJSON
 
 extension CATransform3D {
     
-    init?(json: JSON) {
+    init(json: JSON) {
         
         self = CATransform3DIdentity
         

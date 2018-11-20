@@ -120,17 +120,15 @@ private extension NSUnderlineStyle {
 
 extension TextStyleSet {
     
-    init?(json: JSON) {
-        guard let normal = TextStyle(json: json["regular"]) else {
-            return nil
-        }
+    init(json: JSON) {
+        let normal = TextStyle(json: json["regular"]) 
         self.init(normal: normal,
                   strong: TextStyle(json: json["strong"]),
                   emphasis: TextStyle(json: json["emphasis"]))
     }
     
     init(json: JSON, defaultStyle: TextStyle) {
-        self.init(normal: TextStyle(json: json["regular"]) ?? defaultStyle,
+        self.init(normal: TextStyle(json: json["regular"]) ,
                   strong: TextStyle(json: json["strong"]),
                   emphasis: TextStyle(json: json["emphasis"]))
     }
@@ -139,19 +137,13 @@ extension TextStyleSet {
 
 extension TextStyle {
 
-    init?(json: JSON) {
+    init(json: JSON) {
         
-        guard let fontNameJSON = json["font"].string else {
-            return nil
-        }
-        let textSize = json["textSize"].cgFloat ?? 14
+        let textSize = json["textSize"].cgFloat ?? 16
+        let fontNameJSON = json["font"].stringValue
 
-        var font = Font(name: fontNameJSON, size: textSize)
-        if font == nil {
-            print("WARNING Missing font : \(fontNameJSON)")
-            font = Font.systemFont(ofSize: textSize)
-        }
-        
+        let font = Font(name: fontNameJSON, size: textSize) ?? .systemFont(ofSize: textSize)
+
         let emFont = font
         let strongFont = font
         var textColor: UIColor?
@@ -204,7 +196,7 @@ extension TextStyle {
 
         strikethroughColor = UIColor(json: json["textDecorationColor"] )
         
-        self.init(font: font!,
+        self.init(font: font,
                   emFont: emFont,
                   strongFont: strongFont,
                   textColor: textColor,

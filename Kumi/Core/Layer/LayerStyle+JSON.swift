@@ -11,7 +11,7 @@ import SwiftyJSON
 
 extension LayerStyle {
 
-    public init?(json: JSON) {
+    public init(json: JSON) {
         var opacity: Float = 1
         var masksToBounds: Bool = false
         var isDoubleSided: Bool = true
@@ -45,20 +45,14 @@ extension LayerStyle {
 
         
         borderColor = UIColor(json: json["borderColor"])?.cgColor
-        
 
         backgroundColor = UIColor(json: json["backgroundColor"])?.cgColor
-        
 
         shadowStyle = ShadowStyle(json: json["shadowStyle"])
         
-        
         shadowColor = UIColor(json: json["shadowColor"])?.cgColor
-        
 
-        if let transformValue = CATransform3D(json: json["transform"]) {
-            transform = transformValue
-        }
+        transform = CATransform3D(json: json["transform"])
     
 
         self.init(opacity: opacity,

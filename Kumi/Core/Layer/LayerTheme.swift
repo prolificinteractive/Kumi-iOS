@@ -56,37 +56,37 @@ public final class LayerTheme {
     /// Default primary Layer Style Set.
     public var defaultPrimary: LayerStyleSet!
 
-    public init?(json: JSON) {
+    public init(json: JSON) {
         
         defaultPrimary = LayerStyleSet(json: json["defaultPrimary"])
         
-        defaultSecondary = LayerStyleSet(json: json["defaultSecondary"], defaultLayerStyle: defaultPrimary.normal) ?? defaultPrimary
+        defaultSecondary = LayerStyleSet(json: json["defaultSecondary"], defaultLayerStyle: defaultPrimary.normal) 
         
-        defaultTertiary = LayerStyleSet(json: json["defaultTertiary"], defaultLayerStyle: defaultSecondary.normal) ?? defaultSecondary
+        defaultTertiary = LayerStyleSet(json: json["defaultTertiary"], defaultLayerStyle: defaultSecondary.normal) 
         
-        gridPrimary = LayerStyleSet(json: json["gridPrimary"], defaultLayerStyle: defaultPrimary.normal) ?? defaultPrimary
+        gridPrimary = LayerStyleSet(json: json["gridPrimary"], defaultLayerStyle: defaultPrimary.normal) 
         
-        gridSecondary = LayerStyleSet(json: json["gridSecondary"], defaultLayerStyle: gridPrimary.normal) ?? gridPrimary
+        gridSecondary = LayerStyleSet(json: json["gridSecondary"], defaultLayerStyle: gridPrimary.normal) 
         
-        gridTertiary = LayerStyleSet(json: json["gridTertiary"], defaultLayerStyle: gridSecondary.normal) ?? gridSecondary
+        gridTertiary = LayerStyleSet(json: json["gridTertiary"], defaultLayerStyle: gridSecondary.normal) 
         
-        listPrimary = LayerStyleSet(json: json["listPrimary"], defaultLayerStyle: defaultPrimary.normal) ?? defaultPrimary
+        listPrimary = LayerStyleSet(json: json["listPrimary"], defaultLayerStyle: defaultPrimary.normal) 
         
-        listSecondary = LayerStyleSet(json: json["listSecondary"], defaultLayerStyle: listPrimary.normal) ?? listPrimary
+        listSecondary = LayerStyleSet(json: json["listSecondary"], defaultLayerStyle: listPrimary.normal) 
         
-        listTertiary = LayerStyleSet(json: json["listTertiary"], defaultLayerStyle: listSecondary.normal) ?? listSecondary
+        listTertiary = LayerStyleSet(json: json["listTertiary"], defaultLayerStyle: listSecondary.normal) 
         
-        buttonPrimary = LayerStyleSet(json: json["buttonPrimary"], defaultLayerStyle: defaultPrimary.normal) ?? defaultPrimary
+        buttonPrimary = LayerStyleSet(json: json["buttonPrimary"], defaultLayerStyle: defaultPrimary.normal) 
         
-        buttonSecondary = LayerStyleSet(json: json["buttonSecondary"], defaultLayerStyle: buttonPrimary.normal) ?? buttonPrimary
+        buttonSecondary = LayerStyleSet(json: json["buttonSecondary"], defaultLayerStyle: buttonPrimary.normal) 
         
-        buttonTertiary = LayerStyleSet(json: json["buttonTertiary"], defaultLayerStyle: buttonSecondary.normal) ?? buttonSecondary
+        buttonTertiary = LayerStyleSet(json: json["buttonTertiary"], defaultLayerStyle: buttonSecondary.normal) 
         
-        textInputPrimary = LayerStyleSet(json: json["textInputPrimary"], defaultLayerStyle: defaultPrimary.normal) ?? defaultPrimary
+        textInputPrimary = LayerStyleSet(json: json["textInputPrimary"], defaultLayerStyle: defaultPrimary.normal) 
         
-        textInputSecondary = LayerStyleSet(json: json["textInputSecondary"], defaultLayerStyle: textInputPrimary.normal) ?? textInputPrimary
+        textInputSecondary = LayerStyleSet(json: json["textInputSecondary"], defaultLayerStyle: textInputPrimary.normal) 
         
-        textInputTertiary = LayerStyleSet(json: json["textInputTertiary"], defaultLayerStyle: textInputSecondary.normal) ?? textInputSecondary
+        textInputTertiary = LayerStyleSet(json: json["textInputTertiary"], defaultLayerStyle: textInputSecondary.normal) 
         
     }
 }

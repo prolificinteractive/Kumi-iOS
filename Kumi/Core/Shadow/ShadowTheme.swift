@@ -55,7 +55,7 @@ public final class ShadowTheme {
                            shadowOffset: shadowOffset)
     }
 
-    public init?(json: JSON) {
+    public init(json: JSON) {
 
         noneShadowStyle = ShadowStyle(json: json["none"])
     

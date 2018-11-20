@@ -11,17 +11,17 @@ import SwiftyJSON
 
 public extension LayerStyleSet {
     
-    init?(json: JSON) {
+    init(json: JSON) {
 
-        self.init(normal: LayerStyle(json: json["normal"])!,
+        self.init(normal: LayerStyle(json: json["normal"]),
                   highlighted: LayerStyle(json: json["highlighted"]),
                   focused: LayerStyle(json: json["focused"]),
                   selected: LayerStyle(json: json["selected"]),
                   disabled: LayerStyle(json: json["disabled"]))
     }
     
-    init?(json: JSON, defaultLayerStyle: LayerStyle) {
-        let layerNormal = LayerStyle(json: json["normal"]) ?? defaultLayerStyle
+    init(json: JSON, defaultLayerStyle: LayerStyle) {
+        let layerNormal = LayerStyle(json: json["normal"])
         self.init(normal: layerNormal,
                   highlighted: LayerStyle(json: json["highlighted"]),
                   focused: LayerStyle(json: json["focused"]),

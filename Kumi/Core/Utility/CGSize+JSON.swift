@@ -10,10 +10,11 @@ import SwiftyJSON
 
 extension CGSize {
 
-    init?(json: JSON) {
+    init(json: JSON) {
         guard let width = json["width"].cgFloat,
             let height = json["height"].cgFloat else {
-                return nil
+                self.init(width: 0, height: 0)
+                return
         }
 
         self.init(width: width, height: height)

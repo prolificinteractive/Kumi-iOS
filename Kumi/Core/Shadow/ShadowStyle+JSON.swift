@@ -11,7 +11,7 @@ import SwiftyJSON
 
 extension ShadowStyle {
 
-    public init?(json: JSON) {
+    public init(json: JSON) {
         var shadowOpacity: Float = 1.0
         var shadowRadius: CGFloat = 0
         var shadowOffset: CGSize = CGSize.zero
@@ -25,9 +25,7 @@ extension ShadowStyle {
             shadowRadius = shadowRadiusValue
         }
 
-        if let shadowOffsetValue = CGSize(json: json["shadowOffset"]) {
-            shadowOffset = shadowOffsetValue
-        }
+        shadowOffset = CGSize(json: json["shadowOffset"])
 
         shadowColor = UIColor(json: json["shadowColor"])?.cgColor
 

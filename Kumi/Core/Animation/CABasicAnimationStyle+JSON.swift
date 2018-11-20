@@ -10,7 +10,7 @@ import SwiftyJSON
 
 extension CABasicAnimationStyle {
     
-    public init?(json: JSON) {
+    public init(json: JSON) {
 
         var duration: TimeInterval = 0.35
         var delay: TimeInterval = 0

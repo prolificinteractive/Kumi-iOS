@@ -11,10 +11,10 @@ import SwiftyJSON
 
 public struct ColorSet {
     
-    public var normal: UIColor!
-    public var dark: UIColor!
-    public var light: UIColor!
-    public var faded: UIColor!
+    public var normal: UIColor
+    public var dark: UIColor
+    public var light: UIColor
+    public var faded: UIColor
     
     public init(normal: UIColor, dark: UIColor?, light: UIColor?, faded: UIColor?) {
         self.normal = normal

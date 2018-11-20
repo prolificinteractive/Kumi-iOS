@@ -19,7 +19,7 @@ class LayerStyleTests: XCTestCase {
 
         do {
             let layerThemeJSON = try JSONHelper.getJSON("layerStyle")
-            layerStyle = LayerTheme(json: layerThemeJSON)?.textInputPrimary.normal
+            layerStyle = LayerTheme(json: layerThemeJSON).textInputPrimary.normal
         } catch let error {
             XCTFail(error.localizedDescription)
         }
