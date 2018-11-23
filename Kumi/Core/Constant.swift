@@ -19,13 +19,13 @@ public final class Constant {
     let xxlarge: CGFloat
     
     public init(json: JSON) {
-        xxsmall = json["xxsmall"].cgFloatValue
-        xsmall = json["xsmall"].cgFloatValue
-        small = json["small"].cgFloatValue
-        medium = json["medium"].cgFloatValue
-        large = json["large"].cgFloatValue
-        xlarge = json["xlarge"].cgFloatValue
-        xxlarge = json["xxlarge"].cgFloatValue
+        xxsmall = json["xxsmall"].cgFloat ?? 2
+        xsmall = json["xsmall"].cgFloat ?? 4
+        small = json["small"].cgFloat ?? 8
+        medium = json["medium"].cgFloat ?? 16
+        large = json["large"].cgFloat ?? 24
+        xlarge = json["xlarge"].cgFloat ?? 56
+        xxlarge = json["xxlarge"].cgFloat ?? 72
     }
     
     public init(xxsmall: CGFloat,
