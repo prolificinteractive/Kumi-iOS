@@ -10,13 +10,13 @@ import SwiftyJSON
 
 public final class Constant {
     
-    let xxsmall: CGFloat
-    let xsmall: CGFloat
-    let small: CGFloat
-    let medium: CGFloat
-    let large: CGFloat
-    let xlarge: CGFloat
-    let xxlarge: CGFloat
+    public let xxsmall: CGFloat
+    public let xsmall: CGFloat
+    public let small: CGFloat
+    public let medium: CGFloat
+    public let large: CGFloat
+    public let xlarge: CGFloat
+    public let xxlarge: CGFloat
     
     public init(json: JSON) {
         xxsmall = json["xxsmall"].cgFloat ?? 2
