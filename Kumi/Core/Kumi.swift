@@ -28,6 +28,9 @@ public struct Kumi {
     /// Shadow theme object.
     fileprivate static var _shadow = ShadowTheme(json: JSON({}))
     
+    /// Constant object
+    fileprivate static var _constant = Constant(json: JSON({}))
+    
     // public
     
     public static var color: ColorTheme {
@@ -50,6 +53,10 @@ public struct Kumi {
         return _shadow
     }
     
+    public static var constant: Constant {
+        return _constant
+    }
+    
     // Use `Kumi.setup()` at `AppDelegate` or before use.
     public static func setup() {
         setup(bundle: Bundle.main)
@@ -69,19 +76,16 @@ public struct Kumi {
             switch json["kumi"]["type"].stringValue {
             case "color":
                 _color = ColorTheme(json: json)
-                break
             case "font":
                 _font = FontTheme(json: json)
-                break
             case "layer":
                 _layer = LayerTheme(json: json)
-                break
             case "animation":
                 _animation = AnimationTheme(json: json)
-                break
             case "shadow":
                 _shadow = ShadowTheme(json: json)
-                break
+            case "constant":
+                _constant = Constant(json: json)
             default: break
             }
         }
@@ -94,5 +98,6 @@ public struct Kumi {
         _layer = LayerTheme(json: j["layer"])
         _animation = AnimationTheme(json: j["animation"])
         _shadow = ShadowTheme(json: j["shadow"])
+        _constant = Constant(json: j["constant"])
     }
 }

@@ -1,5 +1,5 @@
 PODS:
-  - Kumi (0.0.5):
+  - Kumi (0.0.6):
     - Marker
     - SwiftyJSON
   - Marker (1.1.0)
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  Kumi: c7fe75721ff7499e2eb98d8db112874691831bcf
+  Kumi: f1ae68356b066602f3b944317d955b8f518fcee8
   Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
