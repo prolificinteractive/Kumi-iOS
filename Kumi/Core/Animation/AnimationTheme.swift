@@ -69,6 +69,28 @@ public final class AnimationTheme {
         slowUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["slow"])
     
         extraSlowUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["extraSlow"])
+        
+        Generics.dictionary["animations.CABasicAnimations"] = CABasicAnimationsJSON
+        Generics.dictionary["animations.UIViewAnimations"] = UIViewAnimationsJSON
+        
+        [
+            "extraFast": extraFastCABasicAnimationStyle,
+            "fast": fastCABasicAnimationStyle,
+            "normal": normalCABasicAnimationStyle,
+            "slow": slowCABasicAnimationStyle,
+            "extraSlow": extraSlowCABasicAnimationStyle
+            ].forEach { (key, value) in
+                Generics.dictionary["animations.CABasicAnimations.\(key)"] = value
+        }
+        [
+            "extraFast": extraFastUIViewAnimationStyle,
+            "fast": fastUIViewAnimationStyle,
+            "normal": normalUIViewAnimationStyle,
+            "slow": slowUIViewAnimationStyle,
+            "extraSlow": extraSlowUIViewAnimationStyle
+            ].forEach { (key, value) in
+                Generics.dictionary["animations.UIViewAnimations.\(key)"] = value
+        }
 
     }
 

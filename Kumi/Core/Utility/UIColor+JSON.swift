@@ -11,6 +11,7 @@ import SwiftyJSON
 extension UIColor {
 
     convenience init?(json: JSON) {
+        print(json)
         if let kumiValue = json.kumiValue as? JSON {
             self.init(json: kumiValue)
             return
@@ -27,7 +28,6 @@ extension UIColor {
             
             var rgbValue:UInt64 = 0
             Scanner(string: cString).scanHexInt64(&rgbValue)
-            
             if cString.count == 8 {
                 let r = CGFloat((rgbValue & 0x00FF0000) >> 16) / 255.0
                 let g = CGFloat((rgbValue & 0x0000FF00) >> 8) / 255.0

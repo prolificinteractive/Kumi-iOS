@@ -31,4 +31,8 @@ public final class Generics {
             "animations": animations
         ]) { left, right in return left }
     }
+    
+    public subscript(key: String) -> Any? {
+        return Generics.dictionary[key]
+    }
 }
