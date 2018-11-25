@@ -10,10 +10,10 @@ import SwiftyJSON
 
 public final class Generics {
     
-    var colors: ColorTheme!
-    var texts: FontTheme!
-    var layers: LayerTheme!
-    var animations: AnimationTheme!
+    public var colors: ColorTheme!
+    public var texts: FontTheme!
+    public var layers: LayerTheme!
+    public var animations: AnimationTheme!
     
     init(json: JSON) {
         colors = ColorTheme(json: json["colors"])
