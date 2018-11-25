@@ -10,7 +10,7 @@ import SwiftyJSON
 
 public final class Generics {
     
-    public static var dictionary: [String: Any] = [:]
+    static var dictionary: [String: Any] = [:]
     
     var colors: ColorTheme!
     var texts: FontTheme!

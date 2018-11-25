@@ -11,7 +11,6 @@ import SwiftyJSON
 extension UIColor {
 
     convenience init?(json: JSON) {
-        print(json)
         if let kumiValue = json.kumiValue as? JSON {
             self.init(json: kumiValue)
             return

@@ -34,7 +34,7 @@ public extension JSON {
             case "@constants":
                 return Kumi.constants[path]
             case "@generices":
-                fatalError("not implement yet")
+                return Kumi.generics[_path.joined(separator: ".")]
             default:
                 return string
             }
