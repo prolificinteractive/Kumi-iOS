@@ -12,16 +12,16 @@ import SwiftyJSON
 extension ColorSet {
     
     public init(json: JSON) {
-        self.init(normal: UIColor(json: json["normal"]) ?? .clear,
-                  dark: UIColor(json: json["dark"]),
-                  light: UIColor(json: json["light"]),
-                  faded: UIColor(json: json["faded"]))
+        self.init(normal: UIColor(json: json["normal"].kumiValue) ?? .clear,
+                  dark: UIColor(json: json["dark"].kumiValue),
+                  light: UIColor(json: json["light"].kumiValue),
+                  faded: UIColor(json: json["faded"].kumiValue))
     }
     
     public init(json: JSON, defaultColor: UIColor) {
-        self.init(normal: UIColor(json: json["normal"]) ?? defaultColor ,
-                  dark: UIColor(json: json["dark"]),
-                  light: UIColor(json: json["light"]),
-                  faded: UIColor(json: json["faded"]))
+        self.init(normal: UIColor(json: json["normal"].kumiValue) ?? defaultColor ,
+                  dark: UIColor(json: json["dark"].kumiValue),
+                  light: UIColor(json: json["light"].kumiValue),
+                  faded: UIColor(json: json["faded"].kumiValue))
     }
 }

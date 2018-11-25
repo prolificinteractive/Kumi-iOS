@@ -155,129 +155,72 @@ public final class FontTheme {
 
     public init(json: JSON) {
         
-        let bodyNormalTextStyle = TextStyleSet(json: json["bodyNormal"])
+        let bodyNormalTextStyle = TextStyleSet(json: json["bodyNormal"].kumiValue)
 
         self.bodyNormalTextStyle = bodyNormalTextStyle
 
-        bodySmallTextStyle = TextStyleSet(json: json["bodySmall"], defaultStyle: bodyNormalTextStyle.regular)
-        bodyLargeTextStyle = TextStyleSet(json: json["bodyLarge"], defaultStyle: bodyNormalTextStyle.regular)
+        bodySmallTextStyle = TextStyleSet(json: json["bodySmall"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        bodyLargeTextStyle = TextStyleSet(json: json["bodyLarge"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
 
-        headline1TextStyle = TextStyleSet(json: json["headline1"], defaultStyle: bodyNormalTextStyle.regular)
-        headline2TextStyle = TextStyleSet(json: json["headline2"], defaultStyle: headline1TextStyle.regular)
-        headline3TextStyle = TextStyleSet(json: json["headline3"], defaultStyle: headline2TextStyle.regular)
-        headline4TextStyle = TextStyleSet(json: json["headline4"], defaultStyle: headline3TextStyle.regular)
-        headline5TextStyle = TextStyleSet(json: json["headline5"], defaultStyle: headline4TextStyle.regular)
-        headline6TextStyle = TextStyleSet(json: json["headline6"], defaultStyle: headline5TextStyle.regular)
+        headline1TextStyle = TextStyleSet(json: json["headline1"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        headline2TextStyle = TextStyleSet(json: json["headline2"].kumiValue, defaultStyle: headline1TextStyle.regular)
+        headline3TextStyle = TextStyleSet(json: json["headline3"].kumiValue, defaultStyle: headline2TextStyle.regular)
+        headline4TextStyle = TextStyleSet(json: json["headline4"].kumiValue, defaultStyle: headline3TextStyle.regular)
+        headline5TextStyle = TextStyleSet(json: json["headline5"].kumiValue, defaultStyle: headline4TextStyle.regular)
+        headline6TextStyle = TextStyleSet(json: json["headline6"].kumiValue, defaultStyle: headline5TextStyle.regular)
 
-        displayNormalTextStyle = TextStyleSet(json: json["displayNormal"], defaultStyle: headline1TextStyle.regular)
-        displaySmallTextStyle = TextStyleSet(json: json["displaySmall"], defaultStyle: displayNormalTextStyle.regular)
-        displayLargeTextStyle = TextStyleSet(json: json["displayLarge"], defaultStyle: displayNormalTextStyle.regular)
+        displayNormalTextStyle = TextStyleSet(json: json["displayNormal"].kumiValue, defaultStyle: headline1TextStyle.regular)
+        displaySmallTextStyle = TextStyleSet(json: json["displaySmall"].kumiValue, defaultStyle: displayNormalTextStyle.regular)
+        displayLargeTextStyle = TextStyleSet(json: json["displayLarge"].kumiValue, defaultStyle: displayNormalTextStyle.regular)
 
-        captionNormalTextStyle = TextStyleSet(json: json["captionNormal"], defaultStyle: headline1TextStyle.regular)
-        captionSmallTextStyle = TextStyleSet(json: json["captionSmall"], defaultStyle: captionNormalTextStyle.regular)
-        captionLargeTextStyle = TextStyleSet(json: json["captionLarge"], defaultStyle: captionNormalTextStyle.regular)
+        captionNormalTextStyle = TextStyleSet(json: json["captionNormal"].kumiValue, defaultStyle: headline1TextStyle.regular)
+        captionSmallTextStyle = TextStyleSet(json: json["captionSmall"].kumiValue, defaultStyle: captionNormalTextStyle.regular)
+        captionLargeTextStyle = TextStyleSet(json: json["captionLarge"].kumiValue, defaultStyle: captionNormalTextStyle.regular)
 
-        tabBarItemTextStyle = TextStyleSet(json: json["tabBarItem"], defaultStyle: captionNormalTextStyle.regular)
-        tabBarItemInactiveTextStyle = TextStyleSet(json: json["tabBarItemInactive"], defaultStyle: tabBarItemTextStyle.regular)
-        tabBarBadgeTextStyle = TextStyleSet(json: json["tabBarBadge"], defaultStyle: tabBarItemTextStyle.regular)
+        tabBarItemTextStyle = TextStyleSet(json: json["tabBarItem"].kumiValue, defaultStyle: captionNormalTextStyle.regular)
+        tabBarItemInactiveTextStyle = TextStyleSet(json: json["tabBarItemInactive"].kumiValue, defaultStyle: tabBarItemTextStyle.regular)
+        tabBarBadgeTextStyle = TextStyleSet(json: json["tabBarBadge"].kumiValue, defaultStyle: tabBarItemTextStyle.regular)
 
-        topItemSubtitleTextStyle = TextStyleSet(json: json["topItemSubtitle"], defaultStyle: captionNormalTextStyle.regular)
+        topItemSubtitleTextStyle = TextStyleSet(json: json["topItemSubtitle"].kumiValue, defaultStyle: captionNormalTextStyle.regular)
 
-        subHeadlineNormalTextStyle = TextStyleSet(json: json["subHeadlineNormal"], defaultStyle: bodyNormalTextStyle.regular)
-        subHeadlineSmallTextStyle = TextStyleSet(json: json["subHeadlineSmall"], defaultStyle: subHeadlineNormalTextStyle.regular)
-        subHeadlineLargeTextStyle = TextStyleSet(json: json["subHeadlineLarge"], defaultStyle: subHeadlineNormalTextStyle.regular)
-
-
-        buttonTitleNormalTextStyle = TextStyleSet(json: json["buttonTitleNormal"], defaultStyle: bodyNormalTextStyle.regular)
-        buttonTitleSmallTextStyle = TextStyleSet(json: json["buttonTitleSmall"], defaultStyle: buttonTitleNormalTextStyle.regular)
-        buttonTitleLargeTextStyle = TextStyleSet(json: json["buttonTitleLarge"], defaultStyle: buttonTitleNormalTextStyle.regular)
-
-        buttonFlatTitleNormalTextStyle = TextStyleSet(json: json["buttonFlatTitleNormal"], defaultStyle: bodyNormalTextStyle.regular)
-        buttonFlatTitleSmallTextStyle = TextStyleSet(json: json["buttonFlatTitleSmall"], defaultStyle: buttonFlatTitleNormalTextStyle.regular)
-        buttonFlatTitleLargeTextStyle = TextStyleSet(json: json["buttonFlatTitleLarge"], defaultStyle: buttonFlatTitleNormalTextStyle.regular)
-
-        textFieldInputNormalTextStyle = TextStyleSet(json: json["textFieldInputNormal"], defaultStyle: bodyNormalTextStyle.regular)
-        textFieldInputSmallTextStyle = TextStyleSet(json: json["textFieldInputSmall"], defaultStyle: textFieldInputNormalTextStyle.regular)
-        textFieldInputLargeTextStyle = TextStyleSet(json: json["textFieldInputLarge"], defaultStyle: textFieldInputNormalTextStyle.regular)
-
-        textFieldLabelNormalTextStyle = TextStyleSet(json: json["textFieldLabelNormal"], defaultStyle: textFieldInputNormalTextStyle.regular)
-        textFieldLabelSmallTextStyle = TextStyleSet(json: json["textFieldLabelSmall"], defaultStyle: textFieldLabelNormalTextStyle.regular)
-        textFieldLabelLargeTextStyle = TextStyleSet(json: json["textFieldLabelLarge"], defaultStyle: textFieldLabelNormalTextStyle.regular)
-
-        textFieldHintNormalTextStyle = TextStyleSet(json: json["textFieldHintNormal"], defaultStyle: textFieldInputNormalTextStyle.regular)
-        textFieldHintSmallTextStyle = TextStyleSet(json: json["textFieldHintSmall"], defaultStyle: textFieldHintNormalTextStyle.regular)
-        textFieldHintLargeTextStyle = TextStyleSet(json: json["textFieldHintLarge"], defaultStyle: textFieldHintNormalTextStyle.regular)
+        subHeadlineNormalTextStyle = TextStyleSet(json: json["subHeadlineNormal"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        subHeadlineSmallTextStyle = TextStyleSet(json: json["subHeadlineSmall"].kumiValue, defaultStyle: subHeadlineNormalTextStyle.regular)
+        subHeadlineLargeTextStyle = TextStyleSet(json: json["subHeadlineLarge"].kumiValue, defaultStyle: subHeadlineNormalTextStyle.regular)
 
 
-        topItemTitleNormalTextStyle = TextStyleSet(json: json["topItemTitleNormal"], defaultStyle: bodyNormalTextStyle.regular)
-        topItemTitleSmallTextStyle = TextStyleSet(json: json["topItemTitleSmall"], defaultStyle: topItemTitleNormalTextStyle.regular)
-        topItemTitleLargeTextStyle = TextStyleSet(json: json["topItemTitleLarge"], defaultStyle: topItemTitleNormalTextStyle.regular)
-        topItemButtonTitleTextStyle = TextStyleSet(json: json["topItemButtonTitle"], defaultStyle: topItemTitleNormalTextStyle.regular)
+        buttonTitleNormalTextStyle = TextStyleSet(json: json["buttonTitleNormal"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        buttonTitleSmallTextStyle = TextStyleSet(json: json["buttonTitleSmall"].kumiValue, defaultStyle: buttonTitleNormalTextStyle.regular)
+        buttonTitleLargeTextStyle = TextStyleSet(json: json["buttonTitleLarge"].kumiValue, defaultStyle: buttonTitleNormalTextStyle.regular)
 
-        tooltipsTextStyle = TextStyleSet(json: json["tooltips"], defaultStyle: bodyNormalTextStyle.regular)
-        chipTextStyle = TextStyleSet(json: json["chip"], defaultStyle: bodyNormalTextStyle.regular)
-        menuTextStyle = TextStyleSet(json: json["menu"], defaultStyle: bodyNormalTextStyle.regular)
-        segmentedTitleTextStyle = TextStyleSet(json: json["segmentedTitle"], defaultStyle: bodyNormalTextStyle.regular)
-        snackbarTextTextStyle = TextStyleSet(json: json["snackbarText"], defaultStyle: bodyNormalTextStyle.regular)
-        snackbarActionButtonTitleTextStyle = TextStyleSet(json: json["snackbarActionButtonTitle"], defaultStyle: bodyNormalTextStyle.regular)
-        [
-            "bodyNormal": bodyNormalTextStyle,
-            "bodySmall": bodySmallTextStyle,
-            "bodyLarge": bodyLargeTextStyle,
-            "headline1": headline1TextStyle,
-            "headline2": headline2TextStyle,
-            "headline3": headline3TextStyle,
-            "headline4": headline4TextStyle,
-            "headline5": headline5TextStyle,
-            "headline6": headline6TextStyle,
-            "displayNormal": displayNormalTextStyle,
-            "displaySmall": displayNormalTextStyle,
-            "displayLarge": displayLargeTextStyle,
-            "captionNormal": captionNormalTextStyle,
-            "captionSmall": captionSmallTextStyle,
-            "captionLarge": captionLargeTextStyle,
-            "tabBarItem": tabBarItemTextStyle,
-            "tabBarItemInactive": tabBarItemInactiveTextStyle,
-            "tabBarBadge": tabBarBadgeTextStyle,
-            "topItemSubtitle": topItemSubtitleTextStyle,
-            "subHeadlineNormal": subHeadlineNormalTextStyle,
-            "subHeadlineSmall": subHeadlineSmallTextStyle,
-            "subHeadlineLarge": subHeadlineLargeTextStyle,
-            "buttonTitleNormal": buttonTitleNormalTextStyle,
-            "buttonTitleSmall": buttonTitleSmallTextStyle,
-            "buttonTitleLarge": buttonTitleLargeTextStyle,
-            "buttonFlatTitleNormal": buttonFlatTitleNormalTextStyle,
-            "buttonFlatTitleSmall": buttonFlatTitleSmallTextStyle,
-            "buttonFlatTitleLarge": buttonFlatTitleLargeTextStyle,
-            "textFieldInputNormal": textFieldInputNormalTextStyle,
-            "textFiledInputSmall": textFieldInputSmallTextStyle,
-            "textFieldInputLarge": textFieldInputLargeTextStyle,
-            "textFieldLabelNormal": textFieldLabelNormalTextStyle,
-            "textFiledLabelSmall": textFieldLabelSmallTextStyle,
-            "textFiledLabelLarge": textFieldLabelLargeTextStyle,
-            "textFieldHintNormal": textFieldHintNormalTextStyle,
-            "textFieldHintSmall": textFieldHintSmallTextStyle,
-            "textFiledHintLarge": textFieldHintLargeTextStyle,
-            "topItemTitleNormal": topItemTitleNormalTextStyle,
-            "topItemTitleSmall": topItemTitleSmallTextStyle,
-            "topItemTitleLarge": topItemTitleLargeTextStyle,
-            "topItemButtonTitle": topItemButtonTitleTextStyle,
-            "tooltips": tooltipsTextStyle,
-            "chip": chipTextStyle,
-            "menu": menuTextStyle,
-            "segmentedTitle": segmentedTitleTextStyle,
-            "snackbarText": snackbarTextTextStyle,
-            "snackbarActionButtonTitle": snackbarActionButtonTitleTextStyle
-            ].forEach { (key, value) in
-                let dict: [String: Any] = [
-                    "texts.\(key)": value!,
-                    "texts.\(key).regular": value!.regular,
-                    "texts.\(key).emphasis": value!.emphasis,
-                    "texts.\(key).strong": value!.strong
-                ]
-                Generics.dictionary.merge(dict) { l, r in return l }
-        }
-    
+        buttonFlatTitleNormalTextStyle = TextStyleSet(json: json["buttonFlatTitleNormal"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        buttonFlatTitleSmallTextStyle = TextStyleSet(json: json["buttonFlatTitleSmall"].kumiValue, defaultStyle: buttonFlatTitleNormalTextStyle.regular)
+        buttonFlatTitleLargeTextStyle = TextStyleSet(json: json["buttonFlatTitleLarge"].kumiValue, defaultStyle: buttonFlatTitleNormalTextStyle.regular)
+
+        textFieldInputNormalTextStyle = TextStyleSet(json: json["textFieldInputNormal"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        textFieldInputSmallTextStyle = TextStyleSet(json: json["textFieldInputSmall"].kumiValue, defaultStyle: textFieldInputNormalTextStyle.regular)
+        textFieldInputLargeTextStyle = TextStyleSet(json: json["textFieldInputLarge"].kumiValue, defaultStyle: textFieldInputNormalTextStyle.regular)
+
+        textFieldLabelNormalTextStyle = TextStyleSet(json: json["textFieldLabelNormal"].kumiValue, defaultStyle: textFieldInputNormalTextStyle.regular)
+        textFieldLabelSmallTextStyle = TextStyleSet(json: json["textFieldLabelSmall"].kumiValue, defaultStyle: textFieldLabelNormalTextStyle.regular)
+        textFieldLabelLargeTextStyle = TextStyleSet(json: json["textFieldLabelLarge"].kumiValue, defaultStyle: textFieldLabelNormalTextStyle.regular)
+
+        textFieldHintNormalTextStyle = TextStyleSet(json: json["textFieldHintNormal"].kumiValue, defaultStyle: textFieldInputNormalTextStyle.regular)
+        textFieldHintSmallTextStyle = TextStyleSet(json: json["textFieldHintSmall"].kumiValue, defaultStyle: textFieldHintNormalTextStyle.regular)
+        textFieldHintLargeTextStyle = TextStyleSet(json: json["textFieldHintLarge"].kumiValue, defaultStyle: textFieldHintNormalTextStyle.regular)
+
+
+        topItemTitleNormalTextStyle = TextStyleSet(json: json["topItemTitleNormal"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        topItemTitleSmallTextStyle = TextStyleSet(json: json["topItemTitleSmall"].kumiValue, defaultStyle: topItemTitleNormalTextStyle.regular)
+        topItemTitleLargeTextStyle = TextStyleSet(json: json["topItemTitleLarge"].kumiValue, defaultStyle: topItemTitleNormalTextStyle.regular)
+        topItemButtonTitleTextStyle = TextStyleSet(json: json["topItemButtonTitle"].kumiValue, defaultStyle: topItemTitleNormalTextStyle.regular)
+
+        tooltipsTextStyle = TextStyleSet(json: json["tooltips"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        chipTextStyle = TextStyleSet(json: json["chip"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        menuTextStyle = TextStyleSet(json: json["menu"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        segmentedTitleTextStyle = TextStyleSet(json: json["segmentedTitle"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        snackbarTextTextStyle = TextStyleSet(json: json["snackbarText"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+        snackbarActionButtonTitleTextStyle = TextStyleSet(json: json["snackbarActionButtonTitle"].kumiValue, defaultStyle: bodyNormalTextStyle.regular)
+
     }
 
 }

@@ -46,51 +46,29 @@ public final class AnimationTheme {
 
         let CABasicAnimationsJSON = json["CABasicAnimations"]
         
-        extraFastCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["extraFast"])
+        extraFastCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["extraFast"].kumiValue)
 
-        fastCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["fast"])
+        fastCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["fast"].kumiValue)
 
-        normalCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["normal"])
+        normalCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["normal"].kumiValue)
 
-        slowCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["slow"])
+        slowCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["slow"].kumiValue)
 
-        extraSlowCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["extraSlow"])
+        extraSlowCABasicAnimationStyle = CABasicAnimationStyle(json: CABasicAnimationsJSON["extraSlow"].kumiValue)
         
 
 
         let UIViewAnimationsJSON = json["UIViewAnimations"]
             
-        extraFastUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["extraFast"])
+        extraFastUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["extraFast"].kumiValue)
         
-        fastUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["fast"])
+        fastUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["fast"].kumiValue)
     
-        normalUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["normal"])
+        normalUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["normal"].kumiValue)
     
-        slowUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["slow"])
+        slowUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["slow"].kumiValue)
     
-        extraSlowUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["extraSlow"])
-        
-        Generics.dictionary["animations.CABasicAnimations"] = CABasicAnimationsJSON
-        Generics.dictionary["animations.UIViewAnimations"] = UIViewAnimationsJSON
-        
-        [
-            "extraFast": extraFastCABasicAnimationStyle,
-            "fast": fastCABasicAnimationStyle,
-            "normal": normalCABasicAnimationStyle,
-            "slow": slowCABasicAnimationStyle,
-            "extraSlow": extraSlowCABasicAnimationStyle
-            ].forEach { (key, value) in
-                Generics.dictionary["animations.CABasicAnimations.\(key)"] = value
-        }
-        [
-            "extraFast": extraFastUIViewAnimationStyle,
-            "fast": fastUIViewAnimationStyle,
-            "normal": normalUIViewAnimationStyle,
-            "slow": slowUIViewAnimationStyle,
-            "extraSlow": extraSlowUIViewAnimationStyle
-            ].forEach { (key, value) in
-                Generics.dictionary["animations.UIViewAnimations.\(key)"] = value
-        }
+        extraSlowUIViewAnimationStyle = UIViewAnimationStyle(json: UIViewAnimationsJSON["extraSlow"].kumiValue)
 
     }
 

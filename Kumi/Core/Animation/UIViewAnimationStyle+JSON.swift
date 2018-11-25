@@ -9,26 +9,26 @@ import SwiftyJSON
 
 extension UIViewAnimationStyle {
 
-    public init(json: JSON) {
-
+    public init(json _json: JSON) {
+        let json = _json.kumiValue
         var duration: TimeInterval = 0.35
         var delay: TimeInterval = 0
         var dampingRatio: CGFloat = 1
         var velocity: CGFloat = 0
 
-        if let durationValue = json["duration"].double {
+        if let durationValue = json["duration"].kumiValue.double {
             duration = durationValue
         }
 
-        if let delayValue = json["delay"].double {
+        if let delayValue = json["delay"].kumiValue.double {
             delay = delayValue
         }
 
-        if let dampingRatioValue = json["dampingRatio"].cgFloat {
+        if let dampingRatioValue = json["dampingRatio"].kumiValue.cgFloat {
             dampingRatio = dampingRatioValue
         }
 
-        if let velocityValue = json["velocity"].cgFloat {
+        if let velocityValue = json["velocity"].kumiValue.cgFloat {
             velocity = velocityValue
         }
 

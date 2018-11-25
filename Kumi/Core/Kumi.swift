@@ -11,6 +11,7 @@ import SwiftyJSON
 
 public struct Kumi {
     
+    static var _json = JSON({})
     // private section
     /// Constant object
     fileprivate static var _constants = JSON({})
@@ -29,6 +30,7 @@ public struct Kumi {
     }
     
     public static func setup(withJSON json: JSON) {
+        _json = json
         _constants = json["constants"]
         _generics = Generics(json: json["generics"])
     }

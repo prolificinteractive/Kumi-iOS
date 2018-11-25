@@ -10,11 +10,8 @@ import SwiftyJSON
 
 extension UIColor {
 
-    convenience init?(json: JSON) {
-        if let kumiValue = json.kumiValue as? JSON {
-            self.init(json: kumiValue)
-            return
-        }
+    convenience init?(json _json: JSON) {
+        let json = _json.kumiValue
         if let hex = json.string {
             var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
             if (cString.hasPrefix("#")) {
@@ -43,12 +40,12 @@ extension UIColor {
             return
             
         }
-        guard let red = json["red"].kumiCGFloat,
-        let green = json["green"].kumiCGFloat,
-        let blue = json["blue"].kumiCGFloat else {
+        guard let red = json["red"].kumiValue.cgFloat,
+        let green = json["green"].kumiValue.cgFloat,
+        let blue = json["blue"].kumiValue.cgFloat else {
                 return nil
         }
-        let alpha: CGFloat = json["alpha"].kumiCGFloat ?? 1
+        let alpha: CGFloat = json["alpha"].kumiValue.cgFloat ?? 1
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
 

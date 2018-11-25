@@ -56,46 +56,22 @@ public final class ColorTheme {
 
 
     public init(json: JSON) {
-        regularPrimary = ColorSet(json: json["regularPrimary"])
-        regularSecondary = ColorSet(json: json["regularSecondary"], defaultColor: regularPrimary.normal) 
-        regularTertiary = ColorSet(json: json["regularTertiary"], defaultColor: regularSecondary.normal) 
-        invertPrimary = ColorSet(json: json["invertPrimary"], defaultColor: regularPrimary.normal) 
-        invertSecondary = ColorSet(json: json["invertSecondary"], defaultColor: invertPrimary.normal) 
-        invertTertiary = ColorSet(json: json["invertTertiary"], defaultColor: invertSecondary.normal) 
-        emphasisPrimary = ColorSet(json: json["emphasisPrimary"], defaultColor: regularPrimary.normal) 
-        emphasisSecondary = ColorSet(json: json["emphasisSecondary"], defaultColor: emphasisPrimary.normal) 
-        emphasisTertiary = ColorSet(json: json["emphasisTertiary"], defaultColor: emphasisSecondary.normal) 
-        invertEmphasisPrimary = ColorSet(json: json["invertEmphasisPrimary"], defaultColor: regularPrimary.normal) 
-        invertEmphasisSecondary = ColorSet(json: json["invertEmphasisSecondary"], defaultColor: invertEmphasisPrimary.normal) 
-        invertEmphasisTertiary = ColorSet(json: json["invertEmphasisTertiary"], defaultColor: invertEmphasisSecondary.normal) 
-        grayout = ColorSet(json: json["grayout"], defaultColor: regularPrimary.normal) 
-        destructive = ColorSet(json: json["destructive"], defaultColor: regularPrimary.normal)
+        regularPrimary = ColorSet(json: json["regularPrimary"].kumiValue)
+        regularSecondary = ColorSet(json: json["regularSecondary"].kumiValue, defaultColor: regularPrimary.normal)
+        regularTertiary = ColorSet(json: json["regularTertiary"].kumiValue, defaultColor: regularSecondary.normal)
+        invertPrimary = ColorSet(json: json["invertPrimary"].kumiValue, defaultColor: regularPrimary.normal)
+        invertSecondary = ColorSet(json: json["invertSecondary"].kumiValue, defaultColor: invertPrimary.normal)
+        invertTertiary = ColorSet(json: json["invertTertiary"].kumiValue, defaultColor: invertSecondary.normal)
+        emphasisPrimary = ColorSet(json: json["emphasisPrimary"].kumiValue, defaultColor: regularPrimary.normal)
+        emphasisSecondary = ColorSet(json: json["emphasisSecondary"].kumiValue, defaultColor: emphasisPrimary.normal)
+        emphasisTertiary = ColorSet(json: json["emphasisTertiary"].kumiValue, defaultColor: emphasisSecondary.normal)
+        invertEmphasisPrimary = ColorSet(json: json["invertEmphasisPrimary"].kumiValue, defaultColor: regularPrimary.normal)
+        invertEmphasisSecondary = ColorSet(json: json["invertEmphasisSecondary"].kumiValue, defaultColor: invertEmphasisPrimary.normal)
+        invertEmphasisTertiary = ColorSet(json: json["invertEmphasisTertiary"].kumiValue, defaultColor: invertEmphasisSecondary.normal)
+        grayout = ColorSet(json: json["grayout"].kumiValue, defaultColor: regularPrimary.normal)
+        destructive = ColorSet(json: json["destructive"].kumiValue, defaultColor: regularPrimary.normal)
         
-        [
-            "regularPrimary": regularPrimary,
-            "regularSecondary": regularSecondary,
-            "regularTertiary": regularTertiary,
-            "invertPrimary": invertPrimary,
-            "invertSecondary": invertSecondary,
-            "invertTertiary": invertTertiary,
-            "emphasisPrimary": emphasisPrimary,
-            "emphasisSecondary": emphasisSecondary,
-            "emphasisTertiary": emphasisTertiary,
-            "invertEmphasisPrimary": invertEmphasisPrimary,
-            "invertEmphasisSecondary": invertEmphasisSecondary,
-            "invertEmphasisTertiary": invertEmphasisTertiary,
-            "grayout": grayout,
-            "destructive": destructive
-            ].forEach { (key, value) in
-                let dict: [String: Any] = [
-                    "colors.\(key)": value!,
-                    "colors.\(key).normal": value!.normal,
-                    "colors.\(key).dark": value!.dark,
-                    "colors.\(key).light": value!.light,
-                    "colors.\(key).faded": value!.faded
-                ]
-                Generics.dictionary.merge(dict) { l, r in return l }
-        }
+        
     }
 
 }

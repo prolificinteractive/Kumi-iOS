@@ -14,14 +14,14 @@ extension CATransform3D {
         
         self = CATransform3DIdentity
         
-        if let perspective = json["perspective"].cgFloat {
+        if let perspective = json["perspective"].kumiValue.cgFloat {
             self.m34 = perspective
         }
         
-        if let rotate = json["rotate"].cgFloat,
-            let rotateX = json["rotateX"].cgFloat,
-            let rotateY = json["rotateY"].cgFloat,
-            let rotateZ = json["rotateZ"].cgFloat {
+        if let rotate = json["rotate"].kumiValue.cgFloat,
+            let rotateX = json["rotateX"].kumiValue.cgFloat,
+            let rotateY = json["rotateY"].kumiValue.cgFloat,
+            let rotateZ = json["rotateZ"].kumiValue.cgFloat {
             
             self = CATransform3DRotate(self,
                                        rotate,
@@ -31,9 +31,9 @@ extension CATransform3D {
             
         }
         
-        if let scaleX = json["scaleX"].cgFloat,
-            let scaleY = json["scaleY"].cgFloat,
-            let scaleZ = json["scaleZ"].cgFloat {
+        if let scaleX = json["scaleX"].kumiValue.cgFloat,
+            let scaleY = json["scaleY"].kumiValue.cgFloat,
+            let scaleZ = json["scaleZ"].kumiValue.cgFloat {
             
             self = CATransform3DScale(self,
                                       scaleX,
@@ -41,9 +41,9 @@ extension CATransform3D {
                                       scaleZ)
         }
         
-        if let translateX = json["translateX"].cgFloat,
-            let translateY = json["translateY"].cgFloat,
-            let translateZ = json["translateZ"].cgFloat {
+        if let translateX = json["translateX"].kumiValue.cgFloat,
+            let translateY = json["translateY"].kumiValue.cgFloat,
+            let translateZ = json["translateZ"].kumiValue.cgFloat {
             
             self = CATransform3DTranslate(self,
                                           translateX,

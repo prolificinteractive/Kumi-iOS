@@ -11,7 +11,8 @@ import SwiftyJSON
 
 extension LayerStyle {
 
-    public init(json: JSON) {
+    public init(json _json: JSON) {
+        let json = _json.kumiValue
         var opacity: Float = 1
         var masksToBounds: Bool = false
         var isDoubleSided: Bool = true
@@ -23,36 +24,36 @@ extension LayerStyle {
         var shadowColor: CGColor?
         var transform: CATransform3D = CATransform3DIdentity
 
-        if let opacityValue = json["opacity"].double {
+        if let opacityValue = json["opacity"].kumiValue.double {
             opacity = Float(opacityValue)
         }
 
-        if let masksToBoundsValue = json["masksToBounds"].bool {
+        if let masksToBoundsValue = json["masksToBounds"].kumiValue.bool {
             masksToBounds = masksToBoundsValue
         }
 
-        if let isDoubleSidedValue = json["isDoubleSided"].bool {
+        if let isDoubleSidedValue = json["isDoubleSided"].kumiValue.bool {
             isDoubleSided = isDoubleSidedValue
         }
 
-        if let cornerRadiusValue = json["cornerRadius"].cgFloat {
+        if let cornerRadiusValue = json["cornerRadius"].kumiValue.cgFloat {
             cornerRadius = cornerRadiusValue
         }
 
-        if let borderWidthValue = json["borderWidth"].cgFloat {
+        if let borderWidthValue = json["borderWidth"].kumiValue.cgFloat {
             borderWidth = borderWidthValue
         }
 
         
-        borderColor = UIColor(json: json["borderColor"])?.cgColor
+        borderColor = UIColor(json: json["borderColor"].kumiValue)?.cgColor
 
-        backgroundColor = UIColor(json: json["backgroundColor"])?.cgColor
+        backgroundColor = UIColor(json: json["backgroundColor"].kumiValue)?.cgColor
 
-        shadowStyle = ShadowStyle(json: json["shadowStyle"])
+        shadowStyle = ShadowStyle(json: json["shadowStyle"].kumiValue)
         
-        shadowColor = UIColor(json: json["shadowColor"])?.cgColor
+        shadowColor = UIColor(json: json["shadowColor"].kumiValue)?.cgColor
 
-        transform = CATransform3D(json: json["transform"])
+        transform = CATransform3D(json: json["transform"].kumiValue)
     
 
         self.init(opacity: opacity,

@@ -39,7 +39,7 @@
             "displayNormal": {
                 "regular": {
                     "font": "@constants.fontNames.displayRegular",
-                    "textSize": "@constants.numbers.medium",
+                    "textSize": "@constants.numbers.large",
                     "color": "@generics.colors.regularPrimary.normal"
                 }
             },

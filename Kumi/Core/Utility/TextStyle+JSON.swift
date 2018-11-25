@@ -121,27 +121,27 @@ private extension NSUnderlineStyle {
 extension TextStyleSet {
     
     init(json: JSON) {
-        let normal = TextStyle(json: json["regular"]) 
+        let normal = TextStyle(json: json["regular"].kumiValue)
         self.init(normal: normal,
-                  strong: TextStyle(json: json["strong"]),
-                  emphasis: TextStyle(json: json["emphasis"]))
+                  strong: TextStyle(json: json["strong"].kumiValue),
+                  emphasis: TextStyle(json: json["emphasis"].kumiValue))
     }
     
     init(json: JSON, defaultStyle: TextStyle) {
-        self.init(normal: TextStyle(json: json["regular"]) ,
-                  strong: TextStyle(json: json["strong"]),
-                  emphasis: TextStyle(json: json["emphasis"]))
+        self.init(normal: TextStyle(json: json["regular"].kumiValue) ,
+                  strong: TextStyle(json: json["strong"].kumiValue),
+                  emphasis: TextStyle(json: json["emphasis"].kumiValue))
     }
     
 }
 
 extension TextStyle {
 
-    init(json: JSON) {
-        
-        let textSize = json["textSize"].kumiCGFloat ?? 16
-        let fontNameJSON = json["font"].kumiString ?? ""
-
+    init(json _json: JSON) {
+        let json = _json.kumiValue
+       
+        let textSize = json["textSize"].kumiValue.cgFloat ?? 16
+        let fontNameJSON = json["font"].kumiValue.stringValue
         let font = Font(name: fontNameJSON, size: textSize) ?? .systemFont(ofSize: textSize)
 
         let emFont = font
@@ -159,38 +159,36 @@ extension TextStyle {
         var strikethroughStyle: NSUnderlineStyle?
         var strikethroughColor: UIColor?
         var textTransform: TextTransform = .none
+        
+        textColor = UIColor(json: json["color"])
+        
+        characterSpacing = json["letterSpacing"].kumiValue.cgFloatValue
+        
+        lineSpacing = json["lineSpacing"].kumiValue.cgFloatValue
 
+        lineHeightMultiple = json["lineHeightMultiple"].kumiValue.cgFloatValue
 
+        minimumLineHeight = json["minimumLineHeight"].kumiValue.cgFloatValue
         
-        textColor = (json["color"].kumiValue as? UIColor) ?? UIColor(json: json["color"])
-        
-        characterSpacing = json["letterSpacing"].kumiCGFloat
-        
-        lineSpacing = json["lineSpacing"].kumiCGFloat
+        maximumLineHeight = json["maximumLineHeight"].kumiValue.cgFloatValue
 
-        lineHeightMultiple = json["lineHeightMultiple"].kumiCGFloat
-
-        minimumLineHeight = json["minimumLineHeight"].kumiCGFloat
+        paragraphSpacing = json["paragraphSpacing"].kumiValue.cgFloatValue
         
-        maximumLineHeight = json["maximumLineHeight"].kumiCGFloat
-
-        paragraphSpacing = json["paragraphSpacing"].kumiCGFloat
+        paragraphSpacingBefore = json["paragraphSpacingBefore"].kumiValue.cgFloatValue
         
-        paragraphSpacingBefore = json["paragraphSpacingBefore"].kumiCGFloat
-        
-        if let textAlignmentString = json["textAlign"].kumiString {
+        if let textAlignmentString = json["textAlign"].kumiValue.string {
             textAlignment = NSTextAlignment.fromString(string: textAlignmentString)
         }
 
-        if let lineBreakModeString = json["lineBreakMode"].kumiString {
+        if let lineBreakModeString = json["lineBreakMode"].kumiValue.string {
             lineBreakMode = NSLineBreakMode.fromString(string: lineBreakModeString)
         }
 
-        if let strikethroughStyleString = json["strikethroughStyle"].kumiString {
+        if let strikethroughStyleString = json["strikethroughStyle"].kumiValue.string {
             strikethroughStyle = NSUnderlineStyle.fromString(string: strikethroughStyleString)
         }
 
-        if let transform = json["textTransform"].kumiString {
+        if let transform = json["textTransform"].kumiValue.string {
             textTransform = TextTransform(string: transform)
         }
 

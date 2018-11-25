@@ -10,29 +10,15 @@ import SwiftyJSON
 
 public final class Generics {
     
-    static var dictionary: [String: Any] = [:]
-    
     var colors: ColorTheme!
     var texts: FontTheme!
     var layers: LayerTheme!
     var animations: AnimationTheme!
     
     init(json: JSON) {
-        Generics.dictionary = [:]
         colors = ColorTheme(json: json["colors"])
         texts = FontTheme(json: json["texts"])
         layers = LayerTheme(json: json["layers"])
         animations = AnimationTheme(json: ["animations"])
-        Generics.dictionary["colors"] = colors
-        Generics.dictionary.merge([
-            "colors": colors,
-            "texts": texts,
-            "layers": layers,
-            "animations": animations
-        ]) { left, right in return left }
-    }
-    
-    public subscript(key: String) -> Any? {
-        return Generics.dictionary[key]
     }
 }

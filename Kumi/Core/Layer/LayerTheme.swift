@@ -58,63 +58,35 @@ public final class LayerTheme {
 
     public init(json: JSON) {
         
-        defaultPrimary = LayerStyleSet(json: json["defaultPrimary"])
+        defaultPrimary = LayerStyleSet(json: json["defaultPrimary"].kumiValue)
         
-        defaultSecondary = LayerStyleSet(json: json["defaultSecondary"], defaultLayerStyle: defaultPrimary.normal)
+        defaultSecondary = LayerStyleSet(json: json["defaultSecondary"].kumiValue, defaultLayerStyle: defaultPrimary.normal)
         
-        defaultTertiary = LayerStyleSet(json: json["defaultTertiary"], defaultLayerStyle: defaultSecondary.normal) 
+        defaultTertiary = LayerStyleSet(json: json["defaultTertiary"].kumiValue, defaultLayerStyle: defaultSecondary.normal)
         
-        gridPrimary = LayerStyleSet(json: json["gridPrimary"], defaultLayerStyle: defaultPrimary.normal) 
+        gridPrimary = LayerStyleSet(json: json["gridPrimary"].kumiValue, defaultLayerStyle: defaultPrimary.normal)
         
-        gridSecondary = LayerStyleSet(json: json["gridSecondary"], defaultLayerStyle: gridPrimary.normal) 
+        gridSecondary = LayerStyleSet(json: json["gridSecondary"].kumiValue, defaultLayerStyle: gridPrimary.normal)
         
-        gridTertiary = LayerStyleSet(json: json["gridTertiary"], defaultLayerStyle: gridSecondary.normal) 
+        gridTertiary = LayerStyleSet(json: json["gridTertiary"].kumiValue, defaultLayerStyle: gridSecondary.normal)
         
-        listPrimary = LayerStyleSet(json: json["listPrimary"], defaultLayerStyle: defaultPrimary.normal) 
+        listPrimary = LayerStyleSet(json: json["listPrimary"].kumiValue, defaultLayerStyle: defaultPrimary.normal)
         
-        listSecondary = LayerStyleSet(json: json["listSecondary"], defaultLayerStyle: listPrimary.normal) 
+        listSecondary = LayerStyleSet(json: json["listSecondary"].kumiValue, defaultLayerStyle: listPrimary.normal)
         
-        listTertiary = LayerStyleSet(json: json["listTertiary"], defaultLayerStyle: listSecondary.normal) 
+        listTertiary = LayerStyleSet(json: json["listTertiary"].kumiValue, defaultLayerStyle: listSecondary.normal)
         
-        buttonPrimary = LayerStyleSet(json: json["buttonPrimary"], defaultLayerStyle: defaultPrimary.normal) 
+        buttonPrimary = LayerStyleSet(json: json["buttonPrimary"].kumiValue, defaultLayerStyle: defaultPrimary.normal)
         
-        buttonSecondary = LayerStyleSet(json: json["buttonSecondary"], defaultLayerStyle: buttonPrimary.normal) 
+        buttonSecondary = LayerStyleSet(json: json["buttonSecondary"].kumiValue, defaultLayerStyle: buttonPrimary.normal)
         
-        buttonTertiary = LayerStyleSet(json: json["buttonTertiary"], defaultLayerStyle: buttonSecondary.normal) 
+        buttonTertiary = LayerStyleSet(json: json["buttonTertiary"].kumiValue, defaultLayerStyle: buttonSecondary.normal)
         
-        textInputPrimary = LayerStyleSet(json: json["textInputPrimary"], defaultLayerStyle: defaultPrimary.normal) 
+        textInputPrimary = LayerStyleSet(json: json["textInputPrimary"].kumiValue, defaultLayerStyle: defaultPrimary.normal)
         
-        textInputSecondary = LayerStyleSet(json: json["textInputSecondary"], defaultLayerStyle: textInputPrimary.normal) 
+        textInputSecondary = LayerStyleSet(json: json["textInputSecondary"].kumiValue, defaultLayerStyle: textInputPrimary.normal)
         
-        textInputTertiary = LayerStyleSet(json: json["textInputTertiary"], defaultLayerStyle: textInputSecondary.normal)
-        
-        [
-            "defaultPrimary": defaultPrimary,
-            "defaultSecondary": defaultSecondary,
-            "defaultTertiary": defaultTertiary,
-            "gridPrimary": gridPrimary,
-            "gridSecondary": gridSecondary,
-            "gridTertiary": gridTertiary,
-            "listPrimary": listPrimary,
-            "listSecondary": listSecondary,
-            "listTertiary": listTertiary,
-            "buttonPrimary": buttonPrimary,
-            "buttonSecondary": buttonSecondary,
-            "buttonTertiary": buttonTertiary,
-            "textInputPrimary": textInputPrimary,
-            "textInputSecondary": textInputSecondary,
-            "textInputTertiary": textInputTertiary
-            ].forEach { (key, value) in
-                let dict: [String: Any] = [
-                    "texts.\(key)": value!,
-                    "texts.\(key).normal": value!.normal,
-                    "texts.\(key).selected": value!.selected,
-                    "texts.\(key).highlighted": value!.highlighted,
-                    "layers.\(key).disabled": value!.disabled,
-                    "layers.\(key).focused": value!.focused
-                ]
-                Generics.dictionary.merge(dict) { l, r in return l }
-        }
+        textInputTertiary = LayerStyleSet(json: json["textInputTertiary"].kumiValue, defaultLayerStyle: textInputSecondary.normal)
         
     }
 }

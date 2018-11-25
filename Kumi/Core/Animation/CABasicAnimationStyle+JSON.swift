@@ -10,18 +10,18 @@ import SwiftyJSON
 
 extension CABasicAnimationStyle {
     
-    public init(json: JSON) {
-
+    public init(json _json: JSON) {
+        let json = _json.kumiValue
         var duration: TimeInterval = 0.35
         var delay: TimeInterval = 0
         var timingFunction: CAMediaTimingFunction = CAMediaTimingFunction(controlPoints: 0, 0, 1, 1)
         var isRemovedOnCompletion: Bool = false
 
-        if let durationValue = json["duration"].double {
+        if let durationValue = json["duration"].kumiValue.double {
             duration = durationValue
         }
 
-        if let delayValue = json["delay"].double {
+        if let delayValue = json["delay"].kumiValue.double {
             delay = delayValue
         }
 
@@ -31,7 +31,7 @@ extension CABasicAnimationStyle {
         }
     
 
-        if let isRemovedOnCompletionValue = json["isRemovedOnCompletion"].bool {
+        if let isRemovedOnCompletionValue = json["isRemovedOnCompletion"].kumiValue.bool {
             isRemovedOnCompletion = isRemovedOnCompletionValue
         }
 

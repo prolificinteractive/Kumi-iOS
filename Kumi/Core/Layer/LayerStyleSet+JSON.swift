@@ -13,20 +13,20 @@ public extension LayerStyleSet {
     
     init(json: JSON) {
 
-        self.init(normal: (json["normal"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["normal"]),
-                  highlighted:  (json["highlighted"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["highlighted"]),
-                  focused: (json["focused"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["focused"]),
-                  selected: (json["selected"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["selected"]),
-                  disabled: (json["disabled"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["disabled"]))
+        self.init(normal: LayerStyle(json: json["normal"].kumiValue),
+                  highlighted: LayerStyle(json: json["highlighted"].kumiValue),
+                  focused: LayerStyle(json: json["focused"].kumiValue),
+                  selected: LayerStyle(json: json["selected"].kumiValue),
+                  disabled: LayerStyle(json: json["disabled"].kumiValue))
     }
     
     init(json: JSON, defaultLayerStyle: LayerStyle) {
-        let layerNormal = (json["normal"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["normal"])
+        let layerNormal = LayerStyle(json: json["normal"].kumiValue)
         self.init(normal: layerNormal,
-                  highlighted: (json["highlighted"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["highlighted"]),
-                  focused: (json["focused"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["focused"]),
-                  selected: (json["selected"].kumiValue as? LayerStyle) ??  LayerStyle(json: json["selected"]),
-                  disabled: (json["disabled"].kumiValue as? LayerStyle) ??  LayerStyle(json: json["disabled"]))
+                  highlighted: LayerStyle(json: json["highlighted"].kumiValue),
+                  focused: LayerStyle(json: json["focused"].kumiValue),
+                  selected: LayerStyle(json: json["selected"].kumiValue),
+                  disabled:  LayerStyle(json: json["disabled"].kumiValue))
     }
     
 }
