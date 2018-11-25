@@ -86,7 +86,35 @@ public final class LayerTheme {
         
         textInputSecondary = LayerStyleSet(json: json["textInputSecondary"], defaultLayerStyle: textInputPrimary.normal) 
         
-        textInputTertiary = LayerStyleSet(json: json["textInputTertiary"], defaultLayerStyle: textInputSecondary.normal) 
+        textInputTertiary = LayerStyleSet(json: json["textInputTertiary"], defaultLayerStyle: textInputSecondary.normal)
+        
+        [
+            "defaultPrimary": defaultPrimary,
+            "defaultSecondary": defaultSecondary,
+            "defaultTertiary": defaultTertiary,
+            "gridPrimary": gridPrimary,
+            "gridSecondary": gridSecondary,
+            "gridTertiary": gridTertiary,
+            "listPrimary": listPrimary,
+            "listSecondary": listSecondary,
+            "listTertiary": listTertiary,
+            "buttonPrimary": buttonPrimary,
+            "buttonSecondary": buttonSecondary,
+            "buttonTertiary": buttonTertiary,
+            "textInputPrimary": textInputPrimary,
+            "textInputSecondary": textInputSecondary,
+            "textInputTertiary": textInputTertiary
+            ].forEach { (key, value) in
+                let dict: [String: Any] = [
+                    "texts.\(key)": value!,
+                    "texts.\(key).normal": value!.normal,
+                    "texts.\(key).selected": value!.selected,
+                    "texts.\(key).highlighted": value!.highlighted,
+                    "layers.\(key).disabled": value!.disabled,
+                    "layers.\(key).focused": value!.focused
+                ]
+                Generics.dictionary.merge(dict) { l, r in return l }
+        }
         
     }
 }
