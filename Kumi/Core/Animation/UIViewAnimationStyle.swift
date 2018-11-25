@@ -12,22 +12,22 @@ import UIKit
 public struct UIViewAnimationStyle {
 
     /// The view animation duration.
-    public let duration: TimeInterval
+    public var duration: TimeInterval
 
     /// The view animation delay.
-    public let delay: TimeInterval
+    public var delay: TimeInterval
 
     /// The view animation damping ratio.
-    public let dampingRatio: CGFloat
+    public var dampingRatio: CGFloat
 
     /// The view animation velocity.
-    public let velocity: CGFloat
+    public var velocity: CGFloat
     
     /// The view animation options.
     #if swift(>=4.2)
-    public let options: UIView.AnimationOptions
+    public var options: UIView.AnimationOptions
     #else
-    public let options: UIViewAnimationOptions
+    public var options: UIViewAnimationOptions
     #endif
     
     /// Initializes the view animation style.
