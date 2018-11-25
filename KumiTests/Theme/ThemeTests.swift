@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import Kumi
+@testable import Marker
 
 class ThemeTests: XCTestCase {
 
@@ -24,8 +25,8 @@ class ThemeTests: XCTestCase {
     func testThemeCreation() {
         XCTAssertNotNil(Kumi.constants)
         XCTAssertEqual("#ff4f0421", Kumi.generics.colors.regularPrimary.normal.toHexString())
-        print(Generics.dictionary)
         XCTAssertEqual(Generics.dictionary["colors.regularPrimary.normal"] as! UIColor, Kumi.generics.colors.regularPrimary.normal)
+        XCTAssertEqual((Generics.dictionary["texts.bodyNormal.regular"] as! TextStyle).font, Kumi.generics.texts.bodyNormalTextStyle.regular.font)
         
     }
 
