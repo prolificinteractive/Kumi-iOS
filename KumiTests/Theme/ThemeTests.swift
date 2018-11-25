@@ -14,20 +14,19 @@ class ThemeTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        Kumi.setup(bundle: Bundle(for: type(of: self)))
+        Kumi.setup(withJSON: try! JSONHelper.getJSON("Theme"))
     }
 
     override func tearDown() {
-
         super.tearDown()
     }
 
     func testThemeCreation() {
-        XCTAssertNotNil(Kumi.color)
-        XCTAssertNotNil(Kumi.font)
-        XCTAssertNotNil(Kumi.layer)
-        XCTAssertNotNil(Kumi.animation)
-        XCTAssertNotNil(Kumi.shadow)
+        XCTAssertNotNil(Kumi.constants)
+        XCTAssertEqual("#ff4f0421", Kumi.generics.colors.regularPrimary.normal.toHexString())
+        print(Generics.dictionary)
+        XCTAssertEqual(Generics.dictionary["colors.regularPrimary.normal"] as! UIColor, Kumi.generics.colors.regularPrimary.normal)
+        
     }
 
 }

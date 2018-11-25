@@ -69,7 +69,33 @@ public final class ColorTheme {
         invertEmphasisSecondary = ColorSet(json: json["invertEmphasisSecondary"], defaultColor: invertEmphasisPrimary.normal) 
         invertEmphasisTertiary = ColorSet(json: json["invertEmphasisTertiary"], defaultColor: invertEmphasisSecondary.normal) 
         grayout = ColorSet(json: json["grayout"], defaultColor: regularPrimary.normal) 
-        destructive = ColorSet(json: json["destructive"], defaultColor: regularPrimary.normal) 
+        destructive = ColorSet(json: json["destructive"], defaultColor: regularPrimary.normal)
+        
+        [
+            "regularPrimary": regularPrimary,
+            "regularSecondary": regularSecondary,
+            "regularTertiary": regularTertiary,
+            "invertPrimary": invertPrimary,
+            "invertSecondary": invertSecondary,
+            "invertTertiary": invertTertiary,
+            "emphasisPrimary": emphasisPrimary,
+            "emphasisSecondary": emphasisSecondary,
+            "emphasisTertiary": emphasisTertiary,
+            "invertEmphasisPrimary": invertEmphasisPrimary,
+            "invertEmphasisSecondary": invertEmphasisSecondary,
+            "invertEmphasisTertiary": invertEmphasisTertiary,
+            "grayout": grayout,
+            "destructive": destructive
+            ].forEach { (key, value) in
+                let dict: [String: Any] = [
+                    "colors.\(key)": value!,
+                    "colors.\(key).normal": value!.normal,
+                    "colors.\(key).dark": value!.dark,
+                    "colors.\(key).light": value!.light,
+                    "colors.\(key).faded": value!.faded
+                ]
+                Generics.dictionary.merge(dict) { l, r in return l }
+        }
     }
 
 }

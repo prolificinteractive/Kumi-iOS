@@ -48,22 +48,22 @@ private extension NSTextAlignment {
 
 private extension NSLineBreakMode {
 
-    static func fromString(string: String) -> NSLineBreakMode? {
+    static func fromString(string: String) -> NSLineBreakMode {
         switch string {
         case "byWordWrapping":
-            return NSLineBreakMode.byWordWrapping
+            return .byWordWrapping
         case "byCharWrapping":
-            return NSLineBreakMode.byCharWrapping
+            return .byCharWrapping
         case "byClipping":
-            return NSLineBreakMode.byClipping
+            return .byClipping
         case "byTruncatingHead":
-            return NSLineBreakMode.byTruncatingHead
+            return .byTruncatingHead
         case "​​byTruncatingTail":
-            return NSLineBreakMode.byTruncatingTail
+            return .byTruncatingTail
         case "byTruncatingMiddle":
-            return NSLineBreakMode.byTruncatingMiddle
+            return .byTruncatingMiddle
         default:
-            return nil
+            return .byWordWrapping
         }
     }
 }
@@ -76,42 +76,42 @@ private extension NSUnderlineStyle {
             #if swift(>=4.2)
             return nil
             #else
-            return NSUnderlineStyle.styleNone
+            return .styleNone
             #endif
         case "single":
             #if swift(>=4.2)
-            return NSUnderlineStyle.single
+            return .single
             #else
-            return NSUnderlineStyle.styleSingle
+            return .styleSingle
             #endif
         case "thick":
             #if swift(>=4.2)
-            return NSUnderlineStyle.thick
+            return .thick
             #else
-            return NSUnderlineStyle.styleThick
+            return .styleThick
             #endif
         case "double":
             #if swift(>=4.2)
-            return NSUnderlineStyle.double
+            return .double
             #else
-            return NSUnderlineStyle.styleDouble
+            return .styleDouble
             #endif
         case "patternSolid":
             #if swift(>=4.2)
             return nil
             #else
-            return NSUnderlineStyle.patternSolid
+            return .patternSolid
             #endif
         case "patternDot":
-            return NSUnderlineStyle.patternDot
+            return .patternDot
         case "patternDash":
-            return NSUnderlineStyle.patternDash
+            return .patternDash
         case "patternDashDot":
-            return NSUnderlineStyle.patternDashDot
+            return .patternDashDot
         case "patternDashDotDot":
-            return NSUnderlineStyle.patternDashDotDot
+            return .patternDashDotDot
         case "byWord":
-            return NSUnderlineStyle.byWord
+            return .byWord
         default:
             return nil
         }
@@ -139,8 +139,8 @@ extension TextStyle {
 
     init(json: JSON) {
         
-        let textSize = json["textSize"].cgFloat ?? 16
-        let fontNameJSON = json["font"].stringValue
+        let textSize = json["textSize"].kumiCGFloat ?? 16
+        let fontNameJSON = json["font"].kumiString ?? ""
 
         let font = Font(name: fontNameJSON, size: textSize) ?? .systemFont(ofSize: textSize)
 
@@ -164,33 +164,33 @@ extension TextStyle {
         
         textColor = UIColor(json: json["color"])
         
-        characterSpacing = json["letterSpacing"].cgFloat
+        characterSpacing = json["letterSpacing"].kumiCGFloat
         
-        lineSpacing = json["lineSpacing"].cgFloat
+        lineSpacing = json["lineSpacing"].kumiCGFloat
 
-        lineHeightMultiple = json["lineHeightMultiple"].cgFloat
+        lineHeightMultiple = json["lineHeightMultiple"].kumiCGFloat
 
-        minimumLineHeight = json["minimumLineHeight"].cgFloat
+        minimumLineHeight = json["minimumLineHeight"].kumiCGFloat
         
-        maximumLineHeight = json["maximumLineHeight"].cgFloat
+        maximumLineHeight = json["maximumLineHeight"].kumiCGFloat
 
-        paragraphSpacing = json["paragraphSpacing"].cgFloat
+        paragraphSpacing = json["paragraphSpacing"].kumiCGFloat
         
-        paragraphSpacingBefore = json["paragraphSpacingBefore"].cgFloat
+        paragraphSpacingBefore = json["paragraphSpacingBefore"].kumiCGFloat
         
-        if let textAlignmentString = json["textAlign"].string {
+        if let textAlignmentString = json["textAlign"].kumiString {
             textAlignment = NSTextAlignment.fromString(string: textAlignmentString)
         }
 
-        if let lineBreakModeString = json["lineBreakMode"].string {
+        if let lineBreakModeString = json["lineBreakMode"].kumiString {
             lineBreakMode = NSLineBreakMode.fromString(string: lineBreakModeString)
         }
 
-        if let strikethroughStyleString = json["strikethroughStyle"].string {
+        if let strikethroughStyleString = json["strikethroughStyle"].kumiString {
             strikethroughStyle = NSUnderlineStyle.fromString(string: strikethroughStyleString)
         }
 
-        if let transform = json["textTransform"].string {
+        if let transform = json["textTransform"].kumiString {
             textTransform = TextTransform(string: transform)
         }
 

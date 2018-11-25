@@ -220,7 +220,63 @@ public final class FontTheme {
         segmentedTitleTextStyle = TextStyleSet(json: json["segmentedTitle"], defaultStyle: bodyNormalTextStyle.regular)
         snackbarTextTextStyle = TextStyleSet(json: json["snackbarText"], defaultStyle: bodyNormalTextStyle.regular)
         snackbarActionButtonTitleTextStyle = TextStyleSet(json: json["snackbarActionButtonTitle"], defaultStyle: bodyNormalTextStyle.regular)
-        
+        [
+            "bodyNormal": bodyNormalTextStyle,
+            "bodySmall": bodySmallTextStyle,
+            "bodyLarge": bodyLargeTextStyle,
+            "headline1": headline1TextStyle,
+            "headline2": headline2TextStyle,
+            "headline3": headline3TextStyle,
+            "headline4": headline4TextStyle,
+            "headline5": headline5TextStyle,
+            "headline6": headline6TextStyle,
+            "displayNormal": displayNormalTextStyle,
+            "displaySmall": displayNormalTextStyle,
+            "displayLarge": displayLargeTextStyle,
+            "captionNormal": captionNormalTextStyle,
+            "captionSmall": captionSmallTextStyle,
+            "captionLarge": captionLargeTextStyle,
+            "tabBarItem": tabBarItemTextStyle,
+            "tabBarItemInactive": tabBarItemInactiveTextStyle,
+            "tabBarBadge": tabBarBadgeTextStyle,
+            "topItemSubtitle": topItemSubtitleTextStyle,
+            "subHeadlineNormal": subHeadlineNormalTextStyle,
+            "subHeadlineSmall": subHeadlineSmallTextStyle,
+            "subHeadlineLarge": subHeadlineLargeTextStyle,
+            "buttonTitleNormal": buttonTitleNormalTextStyle,
+            "buttonTitleSmall": buttonTitleSmallTextStyle,
+            "buttonTitleLarge": buttonTitleLargeTextStyle,
+            "buttonFlatTitleNormal": buttonFlatTitleNormalTextStyle,
+            "buttonFlatTitleSmall": buttonFlatTitleSmallTextStyle,
+            "buttonFlatTitleLarge": buttonFlatTitleLargeTextStyle,
+            "textFieldInputNormal": textFieldInputNormalTextStyle,
+            "textFiledInputSmall": textFieldInputSmallTextStyle,
+            "textFieldInputLarge": textFieldInputLargeTextStyle,
+            "textFieldLabelNormal": textFieldLabelNormalTextStyle,
+            "textFiledLabelSmall": textFieldLabelSmallTextStyle,
+            "textFiledLabelLarge": textFieldLabelLargeTextStyle,
+            "textFieldHintNormal": textFieldHintNormalTextStyle,
+            "textFieldHintSmall": textFieldHintSmallTextStyle,
+            "textFiledHintLarge": textFieldHintLargeTextStyle,
+            "topItemTitleNormal": topItemTitleNormalTextStyle,
+            "topItemTitleSmall": topItemTitleSmallTextStyle,
+            "topItemTitleLarge": topItemTitleLargeTextStyle,
+            "topItemButtonTitle": topItemButtonTitleTextStyle,
+            "tooltips": tooltipsTextStyle,
+            "chip": chipTextStyle,
+            "menu": menuTextStyle,
+            "segmentedTitle": segmentedTitleTextStyle,
+            "snackbarText": snackbarTextTextStyle,
+            "snackbarActionButtonTitle": snackbarActionButtonTitleTextStyle
+            ].forEach { (key, value) in
+                let dict: [String: Any] = [
+                    "texts.\(key)": value!,
+                    "texts.\(key).regular": value!.regular,
+                    "texts.\(key).emphasis": value!.emphasis,
+                    "texts.\(key).strong": value!.strong
+                ]
+                Generics.dictionary.merge(dict) { l, r in return l }
+        }
     
     }
 

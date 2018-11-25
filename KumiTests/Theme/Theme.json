@@ -1,0 +1,191 @@
+{
+  "id": "5ccc9c0e-9f7d-40e5-94b0-f70f6e15525f",
+  "product": "Levi's",
+  "constants": {
+    "colors": {
+      "darkRed": "ff4f0421",
+      "blue": "ff0000ff"
+    },
+    "fontNames": {
+      "displayLight": "SFUIDisplay-Light",
+      "displayRegular": "SFUIDisplay-Regular"
+    },
+    "numbers": {
+      "xxsmall": 2,
+      "xsmall": 4,
+      "small": 8,
+      "medium": 16,
+      "large": 32,
+      "xlarge": 48,
+      "xxlarge": 72
+    }
+  },
+  "generics": {
+    "colors": {
+      "regularPrimary": {
+        "normal": "@constants.colors.darkRed",
+        "dark": "@constants.colors.darkRed",
+        "faded": "@constants.colors.darkRed",
+        "light": "@constants.colors.darkRed"
+      },
+      "regularSecondary": {
+        "normal": "@constants.colors.blue",
+        "dark": "@constants.colors.blue",
+        "faded": "@constants.colors.blue",
+        "light": "@constants.colors.blue"
+      }
+    },
+    "texts": {
+      "displayNormal": {
+        "regular": {
+          "font": "@constants.fontNames.displayRegular",
+          "textSize": "@constants.numbers.medium",
+          "color": "@generics.colors.primary.regular"
+        }
+      },
+      "body": {
+        "regular": {
+          "font": "@constants.fontNames.displayRegular",
+          "textSize": "@constants.numbers.medium",
+          "color": "@generics.colors.primary.regular"
+        }
+      }
+    },
+    "layers": {
+      "buttonPrimary": {
+        "highlighted": {
+          "backgroundColor": "ffa42c3d",
+          "cornerRadius": 28,
+          "shadowStyle": {
+            "shadowOpacity": 1,
+            "shadowColor": "66d0d2d3"
+          },
+          "shadowOffset": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "normal": {
+          "backgroundColor": "ffce374d",
+          "cornerRadius": 28,
+          "shadowStyle": {
+            "shadowRadius": 8,
+            "shadowColor": "66d0d2d3",
+            "shadowOpacity": 1,
+            "shadowOffset": {
+              "width": 0,
+              "height": 2
+            }
+          }
+        },
+        "focused": {
+          "backgroundColor": "ffe28a97",
+          "cornerRadius": 28,
+          "shadowStyle": {
+            "shadowRadius": 16,
+            "shadowColor": "66d0d2d3",
+            "shadowOpacity": 1,
+            "shadowOffset": {
+              "width": 0,
+              "height": 4
+            }
+          }
+        },
+        "selected": {
+          "backgroundColor": "ffce374d",
+          "cornerRadius": 28,
+          "shadowStyle": {
+            "shadowRadius": 8,
+            "shadowColor": "66d0d2d3",
+            "shadowOpacity": 1,
+            "shadowOffset": {
+              "width": 0,
+              "height": 2
+            }
+          }
+        },
+        "disabled": {
+          "backgroundColor": "ffbcc1c6",
+          "cornerRadius": 28,
+          "shadowStyle": {
+            "shadowRadius": 0,
+            "shadowColor": "66d0d2d3",
+            "shadowOpacity": 1,
+            "shadowOffset": {
+              "width": 0,
+              "height": 0
+            }
+          }
+        }
+      }
+    },
+    "animation": {
+      "extraFast": {
+        "timingFunction": {
+          "c2x": 0.2,
+          "c2y": 1,
+          "c1x": 0.4,
+          "c1y": 0
+        },
+        "isRemovedOnCompletion": true,
+        "dampingRatio": 1,
+        "delay": 0,
+        "velocity": 0,
+        "duration": 0.175
+      },
+      "fast": {
+        "timingFunction": {
+          "c2x": 0.2,
+          "c2y": 1,
+          "c1x": 0.4,
+          "c1y": 0
+        },
+        "isRemovedOnCompletion": true,
+        "dampingRatio": 1,
+        "delay": 0,
+        "velocity": 0,
+        "duration": 0.2625
+      },
+      "normal": {
+        "timingFunction": {
+          "c2x": 0.2,
+          "c2y": 1,
+          "c1x": 0.4,
+          "c1y": 0
+        },
+        "isRemovedOnCompletion": true,
+        "dampingRatio": 1,
+        "delay": 0,
+        "velocity": 0,
+        "duration": 0.35
+      },
+      "slow": {
+        "timingFunction": {
+          "c2x": 0.2,
+          "c2y": 1,
+          "c1x": 0.4,
+          "c1y": 0
+        },
+        "isRemovedOnCompletion": true,
+        "dampingRatio": 1,
+        "delay": 0,
+        "velocity": 0,
+        "duration": 0.7
+      },
+      "extraSlow": {
+        "timingFunction": {
+          "c2x": 0.2,
+          "c2y": 1,
+          "c1x": 0.4,
+          "c1y": 0
+        },
+        "isRemovedOnCompletion": true,
+        "dampingRatio": 1,
+        "delay": 0,
+        "velocity": 0,
+        "duration": 1.4
+      }
+    }
+  },
+  "functionals": {}
+}

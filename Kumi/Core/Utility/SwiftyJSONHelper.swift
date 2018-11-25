@@ -8,8 +8,8 @@
 
 import SwiftyJSON
 
-extension JSON {
-    var cgFloat: CGFloat? {
+public extension JSON {
+    public var cgFloat: CGFloat? {
         if let double = double {
             return CGFloat(double)
         }
@@ -19,7 +19,50 @@ extension JSON {
         return nil
     }
     
-    var cgFloatValue: CGFloat {
+    public var cgFloatValue: CGFloat {
         return CGFloat(floatValue)
+    }
+    
+    public var kumiValue: Any? {
+        if let string = string, string[0] == "@" {
+            var _path = string.split(separator: ".")
+            let first = _path.removeFirst()
+            let path: [JSONSubscriptType] = _path.map {
+                String($0)
+            }
+            switch first {
+            case "@constants":
+                return Kumi.constants[path]
+            case "@generices":
+                fatalError("not implement yet")
+            default:
+                return string
+            }
+        }
+        return nil
+    }
+    
+    public var kumiJSON: JSON? {
+        return kumiValue as? JSON
+    }
+    
+    public var kumiFloat: Float? {
+        return kumiJSON?.float ?? float
+    }
+    
+    public var kumiDouble: Double? {
+        return kumiJSON?.double ?? double
+    }
+    
+    public var kumiCGFloat: CGFloat? {
+        return kumiJSON?.cgFloat ?? cgFloatValue
+    }
+    
+    public var kumiString: String? {
+        return kumiJSON?.string ?? string
+    }
+    
+    public var kumiInt: Int? {
+        return kumiJSON?.int ?? int
     }
 }
