@@ -13,20 +13,20 @@ public extension LayerStyleSet {
     
     init(json: JSON) {
 
-        self.init(normal: LayerStyle(json: json["normal"]),
-                  highlighted: LayerStyle(json: json["highlighted"]),
-                  focused: LayerStyle(json: json["focused"]),
-                  selected: LayerStyle(json: json["selected"]),
-                  disabled: LayerStyle(json: json["disabled"]))
+        self.init(normal: (json["normal"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["normal"]),
+                  highlighted:  (json["highlighted"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["highlighted"]),
+                  focused: (json["focused"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["focused"]),
+                  selected: (json["selected"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["selected"]),
+                  disabled: (json["disabled"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["disabled"]))
     }
     
     init(json: JSON, defaultLayerStyle: LayerStyle) {
-        let layerNormal = LayerStyle(json: json["normal"])
+        let layerNormal = (json["normal"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["normal"])
         self.init(normal: layerNormal,
-                  highlighted: LayerStyle(json: json["highlighted"]),
-                  focused: LayerStyle(json: json["focused"]),
-                  selected: LayerStyle(json: json["selected"]),
-                  disabled: LayerStyle(json: json["disabled"]))
+                  highlighted: (json["highlighted"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["highlighted"]),
+                  focused: (json["focused"].kumiValue as? LayerStyle) ?? LayerStyle(json: json["focused"]),
+                  selected: (json["selected"].kumiValue as? LayerStyle) ??  LayerStyle(json: json["selected"]),
+                  disabled: (json["disabled"].kumiValue as? LayerStyle) ??  LayerStyle(json: json["disabled"]))
     }
     
 }

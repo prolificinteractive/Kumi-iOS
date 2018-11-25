@@ -33,13 +33,17 @@ public extension JSON {
             switch first {
             case "@constants":
                 return Kumi.constants[path]
-            case "@generices":
+            case "@generics":
                 return Kumi.generics[_path.joined(separator: ".")]
             default:
                 return string
             }
         }
         return nil
+    }
+    
+    public func getKumiValue<T>() -> T? {
+        return kumiValue as? T
     }
     
     public var kumiJSON: JSON? {

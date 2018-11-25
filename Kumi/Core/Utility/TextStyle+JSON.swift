@@ -162,7 +162,7 @@ extension TextStyle {
 
 
         
-        textColor = UIColor(json: json["color"])
+        textColor = (json["color"].kumiValue as? UIColor) ?? UIColor(json: json["color"])
         
         characterSpacing = json["letterSpacing"].kumiCGFloat
         

@@ -40,14 +40,14 @@
                 "regular": {
                     "font": "@constants.fontNames.displayRegular",
                     "textSize": "@constants.numbers.medium",
-                    "color": "@generics.colors.primary.regular"
+                    "color": "@generics.colors.regularPrimary.normal"
                 }
             },
-            "body": {
+            "bodyNormal": {
                 "regular": {
                     "font": "@constants.fontNames.displayRegular",
                     "textSize": "@constants.numbers.medium",
-                    "color": "@generics.colors.primary.regular"
+                    "color": "@generics.colors.regularPrimary.normal"
                 }
             }
         },

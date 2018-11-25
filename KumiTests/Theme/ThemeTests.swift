@@ -28,6 +28,7 @@ class ThemeTests: XCTestCase {
         XCTAssertEqual(Kumi.generics["colors.regularPrimary.normal"] as! UIColor, Kumi.generics.colors.regularPrimary.normal)
         XCTAssertEqual((Kumi.generics["texts.bodyNormal.regular"] as! TextStyle).font, Kumi.generics.texts.bodyNormalTextStyle.regular.font)
         XCTAssertEqual((Kumi.generics["animations.UIViewAnimations.fast"] as! UIViewAnimationStyle).duration, Kumi.generics.animations.fastUIViewAnimationStyle.duration)
+        XCTAssertEqual(Kumi.generics.texts.bodyNormalTextStyle.regular.textColor!.toHexString(), Kumi.generics.colors.regularPrimary.normal.toHexString())
         
     }
 

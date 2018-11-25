@@ -60,7 +60,7 @@ public final class LayerTheme {
         
         defaultPrimary = LayerStyleSet(json: json["defaultPrimary"])
         
-        defaultSecondary = LayerStyleSet(json: json["defaultSecondary"], defaultLayerStyle: defaultPrimary.normal) 
+        defaultSecondary = LayerStyleSet(json: json["defaultSecondary"], defaultLayerStyle: defaultPrimary.normal)
         
         defaultTertiary = LayerStyleSet(json: json["defaultTertiary"], defaultLayerStyle: defaultSecondary.normal) 
         
