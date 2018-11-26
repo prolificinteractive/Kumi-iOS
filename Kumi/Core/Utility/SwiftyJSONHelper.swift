@@ -7,6 +7,7 @@
 //
 
 import SwiftyJSON
+import Marker
 
 public extension JSON {
     public var cgFloat: CGFloat? {
@@ -31,5 +32,41 @@ public extension JSON {
             return Kumi._json[path].kumiValue
         }
         return self
+    }
+    
+    public var color: UIColor? {
+        return UIColor(json: self)
+    }
+    
+    public var colorValue: UIColor {
+        return color ?? .white
+    }
+    
+    public var textStyleSetValue: TextStyleSet {
+        return TextStyleSet(json: kumiValue)
+    }
+    
+    public var textStyleValue: TextStyle {
+        return TextStyle(json: kumiValue)
+    }
+    
+    public var layerStyleSetValue: LayerStyleSet {
+        return LayerStyleSet(json: kumiValue)
+    }
+    
+    public var caBasicAnimationStyleValue: CABasicAnimationStyle {
+        return CABasicAnimationStyle(json: kumiValue)
+    }
+    
+    public var uiViewAnimationStyle: UIViewAnimationStyle {
+        return UIViewAnimationStyle(json: kumiValue)
+    }
+    
+    public var sizeValue: CGSize {
+        return CGSize(json: kumiValue)
+    }
+    
+    public var transform3DValue: CATransform3D {
+        return CATransform3D(json: kumiValue)
     }
 }
