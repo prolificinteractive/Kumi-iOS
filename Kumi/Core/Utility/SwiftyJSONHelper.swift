@@ -69,4 +69,9 @@ public extension JSON {
     public var transform3DValue: CATransform3D {
         return CATransform3D(json: kumiValue)
     }
+    
+    public var edgeInsetsValue: UIEdgeInsets {
+        return UIEdgeInsets(json: kumiValue)
+    }
+    
 }

@@ -38,6 +38,7 @@
 		8EC737981EB3CBA90087846F /* LayerTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7378E1EB3CBA90087846F /* LayerTheme.swift */; };
 		8EC737991EB3CBA90087846F /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737901EB3CBA90087846F /* ShadowStyle.swift */; };
 		8EC7379A1EB3CBA90087846F /* ShadowTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC737911EB3CBA90087846F /* ShadowTheme.swift */; };
+		9019497C21AC733100AC2B67 /* UIEdgeInsets+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019497B21AC733100AC2B67 /* UIEdgeInsets+JSON.swift */; };
 		90A3412821AA3B5400788705 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A3412721AA3B5400788705 /* String+Extension.swift */; };
 		90A3412A21AA42B000788705 /* Theme.json in Resources */ = {isa = PBXBuildFile; fileRef = 90A3412921AA42B000788705 /* Theme.json */; };
 		90A3412E21AA455800788705 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A3412D21AA455800788705 /* Generics.swift */; };
@@ -99,6 +100,7 @@
 		8EC737901EB3CBA90087846F /* ShadowStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowStyle.swift; sourceTree = "<group>"; };
 		8EC737911EB3CBA90087846F /* ShadowTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowTheme.swift; sourceTree = "<group>"; };
 		90151C8A21A853770020BA4B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9019497B21AC733100AC2B67 /* UIEdgeInsets+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+JSON.swift"; sourceTree = "<group>"; };
 		90A3412721AA3B5400788705 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		90A3412921AA42B000788705 /* Theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theme.json; sourceTree = "<group>"; };
 		90A3412D21AA455800788705 /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				8EC7376A1EB3984B0087846F /* UIColor+JSON.swift */,
 				154487381EE4AD7300DCD7A9 /* CATransform3D+JSON.swift */,
 				154487391EE4AD7300DCD7A9 /* CGSize+JSON.swift */,
+				9019497B21AC733100AC2B67 /* UIEdgeInsets+JSON.swift */,
 				1544873A1EE4AD7300DCD7A9 /* TextStyle+JSON.swift */,
 				90FBCCAA1FCDE32500BDBEF1 /* JSONHelper.swift */,
 				90FBCCAC1FCDEC1E00BDBEF1 /* SwiftyJSONHelper.swift */,
@@ -511,6 +514,7 @@
 				8EC7374E1EB292A10087846F /* AnimationDuration.swift in Sources */,
 				90DBE9F41FC4B330008C6914 /* ColorSet+JSON.swift in Sources */,
 				90DBE9F81FC4B356008C6914 /* LayerStyleSet+JSON.swift in Sources */,
+				9019497C21AC733100AC2B67 /* UIEdgeInsets+JSON.swift in Sources */,
 				90A3412E21AA455800788705 /* Generics.swift in Sources */,
 				8EC737981EB3CBA90087846F /* LayerTheme.swift in Sources */,
 				154487681EE4DCE700DCD7A9 /* CABasicAnimationStyle+JSON.swift in Sources */,
