@@ -19,6 +19,9 @@ public struct Kumi {
     /// Generics object.
     fileprivate static var _generics = Generics(json: JSON({}))
     
+    /// Functionals object.
+    fileprivate static var _functionals = JSON({})
+    
     // public
     
     public static var constants: JSON {
@@ -29,9 +32,18 @@ public struct Kumi {
         return _generics
     }
     
+    public static var functionals: JSON {
+        return _functionals
+    }
+    
     public static func setup(withJSON json: JSON) {
         _json = json
         _constants = json["constants"]
         _generics = Generics(json: json["generics"])
+        _functionals = json["functionals"]
     }
+}
+
+public protocol FunctionalProtocol {
+    init (json: JSON)
 }
