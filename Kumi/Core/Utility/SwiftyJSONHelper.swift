@@ -50,6 +50,10 @@ public extension JSON {
         return TextStyle(json: kumiValue)
     }
     
+    public var layerStyleValue: LayerStyle {
+        return LayerStyle(json: kumiValue)
+    }
+    
     public var layerStyleSetValue: LayerStyleSet {
         return LayerStyleSet(json: kumiValue)
     }
