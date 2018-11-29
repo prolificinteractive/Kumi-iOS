@@ -22,7 +22,7 @@ public final class Generics {
         colors = ColorTheme(json: json["colors"])
         texts = FontTheme(json: json["texts"])
         layers = LayerTheme(json: json["layers"])
-        animations = AnimationTheme(json: ["animations"])
+        animations = AnimationTheme(json: json["animations"])
     }
     
     public subscript(path: JSONSubscriptType) -> JSON {
