@@ -24,12 +24,20 @@ public extension JSON {
         return CGFloat(floatValue)
     }
     
-    var kumiValue: JSON {
-        if var string = string, string[0] == "@" {
+    private func path(from: String) -> [JSONSubscriptType] {
+        var string = String(from)
+        if string.first == "@" {
             string.removeFirst()
-            let _path = string.split(separator: ".")
-            let path: [JSONSubscriptType] = _path.map { String($0) }
-            return Kumi._json[path].kumiValue
+        }
+        return string.split(separator: ".").map { String($0) }
+    }
+    
+    public var kumiValue: JSON {
+        if let val = self["@"].string {
+            return try! Kumi._json[path(from: val)].kumiValue.merged(with: self)
+        }
+        if let string = string, string[0] == "@" {
+            return Kumi._json[path(from: string)].kumiValue
         }
         return self
     }

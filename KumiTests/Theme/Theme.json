@@ -3,6 +3,7 @@
     "product": "Levi's",
     "constants": {
         "colors": {
+            "whiteSmoke": "FFF5F5F5",
             "darkRed": "ff4f0421",
             "blue": "ff0000ff"
         },
@@ -22,6 +23,9 @@
     },
     "generics": {
         "colors": {
+            "invertPrimary": {
+                "normal": "@constants.colors.whiteSmoke"
+            },
             "regularPrimary": {
                 "normal": "@constants.colors.darkRed",
                 "dark": "@constants.colors.darkRed",
@@ -119,101 +123,266 @@
                 }
             }
         },
-        "animations" : {
-            "UIViewAnimations" : {
-                "extraFast" : {
-                    "dampingRatio" : 1,
-                    "delay" : 0,
-                    "velocity" : 0,
-                    "duration" : 0.17499999999999999
+        "animations": {
+            "UIViewAnimations": {
+                "extraFast": {
+                    "dampingRatio": 1,
+                    "delay": 0,
+                    "velocity": 0,
+                    "duration": 0.17499999999999999
                 },
-                "fast" : {
-                    "dampingRatio" : 1,
-                    "delay" : 0,
-                    "velocity" : 0,
-                    "duration" : 0.26250000000000001
+                "fast": {
+                    "dampingRatio": 1,
+                    "delay": 0,
+                    "velocity": 0,
+                    "duration": 0.26250000000000001
                 },
-                "normal" : {
-                    "dampingRatio" : 1,
-                    "delay" : 0,
-                    "velocity" : 0,
-                    "duration" : 0.34999999999999998
+                "normal": {
+                    "dampingRatio": 1,
+                    "delay": 0,
+                    "velocity": 0,
+                    "duration": 0.34999999999999998
                 },
-                "slow" : {
-                    "dampingRatio" : 1,
-                    "delay" : 0,
-                    "velocity" : 0,
-                    "duration" : 0.69999999999999996
+                "slow": {
+                    "dampingRatio": 1,
+                    "delay": 0,
+                    "velocity": 0,
+                    "duration": 0.69999999999999996
                 },
-                "extraSlow" : {
-                    "dampingRatio" : 1,
-                    "delay" : 0,
-                    "velocity" : 0,
-                    "duration" : 1.3999999999999999
+                "extraSlow": {
+                    "dampingRatio": 1,
+                    "delay": 0,
+                    "velocity": 0,
+                    "duration": 1.3999999999999999
                 }
             },
-            "kumi" : {
-                "type" : "animation",
-                "version" : "1.0.0"
+            "kumi": {
+                "type": "animation",
+                "version": "1.0.0"
             },
-            "CABasicAnimations" : {
-                "extraFast" : {
-                    "timingFunction" : {
-                        "c2x" : 0.20000000000000001,
-                        "c2y" : 1,
-                        "c1x" : 0.40000000000000002,
-                        "c1y" : 0
+            "CABasicAnimations": {
+                "extraFast": {
+                    "timingFunction": {
+                        "c2x": 0.20000000000000001,
+                        "c2y": 1,
+                        "c1x": 0.40000000000000002,
+                        "c1y": 0
                     },
-                    "isRemovedOnCompletion" : true,
-                    "delay" : 0,
-                    "duration" : 0.087499999999999994
+                    "isRemovedOnCompletion": true,
+                    "delay": 0,
+                    "duration": 0.087499999999999994
                 },
-                "fast" : {
-                    "timingFunction" : {
-                        "c2x" : 0.20000000000000001,
-                        "c2y" : 1,
-                        "c1x" : 0.40000000000000002,
-                        "c1y" : 0
+                "fast": {
+                    "timingFunction": {
+                        "c2x": 0.20000000000000001,
+                        "c2y": 1,
+                        "c1x": 0.40000000000000002,
+                        "c1y": 0
                     },
-                    "isRemovedOnCompletion" : true,
-                    "delay" : 0,
-                    "duration" : 0.17499999999999999
+                    "isRemovedOnCompletion": true,
+                    "delay": 0,
+                    "duration": 0.17499999999999999
                 },
-                "normal" : {
-                    "timingFunction" : {
-                        "c2x" : 0.20000000000000001,
-                        "c2y" : 1,
-                        "c1x" : 0.40000000000000002,
-                        "c1y" : 0
+                "normal": {
+                    "timingFunction": {
+                        "c2x": 0.20000000000000001,
+                        "c2y": 1,
+                        "c1x": 0.40000000000000002,
+                        "c1y": 0
                     },
-                    "isRemovedOnCompletion" : true,
-                    "delay" : 0,
-                    "duration" : 0.34999999999999998
+                    "isRemovedOnCompletion": true,
+                    "delay": 0,
+                    "duration": 0.34999999999999998
                 },
-                "slow" : {
-                    "timingFunction" : {
-                        "c2x" : 0.20000000000000001,
-                        "c2y" : 1,
-                        "c1x" : 0.40000000000000002,
-                        "c1y" : 0
+                "slow": {
+                    "timingFunction": {
+                        "c2x": 0.20000000000000001,
+                        "c2y": 1,
+                        "c1x": 0.40000000000000002,
+                        "c1y": 0
                     },
-                    "isRemovedOnCompletion" : true,
-                    "delay" : 0,
-                    "duration" : 0.69999999999999996
+                    "isRemovedOnCompletion": true,
+                    "delay": 0,
+                    "duration": 0.69999999999999996
                 },
-                "extraSlow" : {
-                    "timingFunction" : {
-                        "c2x" : 0.20000000000000001,
-                        "c2y" : 1,
-                        "c1x" : 0.40000000000000002,
-                        "c1y" : 0
+                "extraSlow": {
+                    "timingFunction": {
+                        "c2x": 0.20000000000000001,
+                        "c2y": 1,
+                        "c1x": 0.40000000000000002,
+                        "c1y": 0
                     },
-                    "isRemovedOnCompletion" : true,
-                    "delay" : 0,
-                    "duration" : 1.3999999999999999
+                    "isRemovedOnCompletion": true,
+                    "delay": 0,
+                    "duration": 1.3999999999999999
                 }
             }
         }
     },
-    "functionals": {}
+    "functionals": {
+        "TabBarController": {
+            "isTabBarHairLineEnabled": false,
+            "isTabBarTranslucent": false,
+            "background": "@generics.color.regularSecondary.normal",
+            "tintColor": "@generics.color.invertPrimary.normal",
+            "useSytemTabBarStyle": "@generics.color.regularSecondary.normal"
+        },
+        "NavigationController": {
+            "gutter": 5,
+            "layoutMargins": {
+                "top": 16,
+                "left": 16,
+                "bottom": 16,
+                "right": 16
+            },
+            "useSystemNavigationBarStyle": false,
+            "systemNavigationBarStyle": 0,
+            "customNavigationBarColor": "ffffff",
+            "statusBarStyle": 0,
+            "navigationBarTintColor": "ff0000",
+            "navigationBarLargeTitleTextStyle": "@generics.texts.bodyLargeTextStyle.regular",
+            "navigationBarTitleTextStyle": "@generics.texts.bodyNormalTextStyle.regular",
+            "showParentTitleOnBackButton": false
+        },
+        "ProductCategoryCollectionViewCell": {
+            "gutter": 5,
+            "cellWidthDiverder": {
+                "large": 250,
+                "small": 200
+            }
+        },
+        "ProductHeaderTextSetStackView": {
+            "productNameTextStyle": "@generics.texts.bodyNormalTextStyle.regular",
+            "productVarientInfoTextStyle": "@generics.texts.captionNormalTextStyle.regular",
+            "priceTextStyle": "@generics.texts.bodyNormalTextStyle.regular",
+            "margin": {
+                "top": 4,
+                "left": 0,
+                "bottom": 24,
+                "right": 0
+            }
+        },
+        "ProductDetailTextContentTableViewCell": {
+            "productShortDescriptionTextStyle": "@generics.texts.bodyNormalTextStyle.regular"
+        },
+        "ShopViewController": {
+            "viewBackgroundColor": "ffffff"
+        },
+        "ProductCategoryViewController": {
+            "viewBackgroundColor": "@generics.colors.invertPrimary.normal",
+            "productCollectionViewGutter": 5
+        },
+        "ProductDetailViewController": {
+            "viewBackgroundColor": "@generics.colors.invertPrimary.normal",
+            "mainButtonTransitionThreshold": 16,
+            "imageAspectRatio": 1,
+            "title": "PDP"
+        },
+        "ShopTableViewCell": {
+            "margin": {
+                "top": 0,
+                "left": 0,
+                "bottom": 4,
+                "right": 0
+            },
+            "isSizingByAspectRatio": false,
+            "aspectRatio": 2.0,
+            "height": 200.0,
+            "labelTextColor": "ff000000",
+            "labelBackgroundColor": "ffffffff",
+            "labelPadding": {
+                "top": 32,
+                "left": 24,
+                "bottom": 32,
+                "right": 24
+            }
+        },
+        "ProductDetailVarientPickerTableViewCell": {
+            "titleLabel": {
+                "text": "ProductDetailVarientPickerTableViewCellTitle"
+            },
+            "stackView": {
+                "spacing": 24,
+                "insetsConstraint": {
+                    "bottom": 24
+                }
+            }
+        },
+        "VarientImageControl": {
+            "overlayView": {
+                "backgroundColor": "ff000000"
+            }
+        },
+        "ImageVarientPickerControl": {
+            "margin": {
+                "top": 4,
+                "bottom": 4
+            },
+            "spacing": 4,
+            "aspectRatio": 1,
+            "numberOfDisplayingImage": 3.5
+        },
+        "NeonLabel": {
+            "isHighlighted": {
+                "animationStyle": {
+                    "@": "generics.animations.UIViewAnimations.extraFast",
+                    "duration": 4
+                }
+            }
+        },
+        "NeonImageView": {
+            "isHighlighted": {
+                "animationStyle": "@generics.animations.UIViewAnimations.extraFast"
+            },
+            "isSelected": {
+                "animationStyle": "@generics.animations.UIViewAnimations.extraFast"
+            }
+        },
+        "ProductCellToProductDetailViewControllerAnimatedTransitioning": {
+            "backgroundView": {
+                "backgroundColor": "ffffff"
+            },
+            "transitionProductDetailTextContentLabelTranslationOffsetY": 32
+        },
+        "ProductDetailImageTableViewCell": {
+            "scrollViewIndicator": {
+                "insetsConstraint": {
+                    "bottom": 8
+                }
+            }
+        },
+        "ProductDetailSecondaryActionsTableViewCell": {
+            "stackView": {
+                "spacing": 24,
+                "insetsConstraint": {
+                    "bottom": 24
+                }
+            }
+        },
+        "ProductDetailReleventProductsTableViewCell": {
+            "titleLabel": {
+                "text": "SHOPPERS ALSO VIEWED"
+            },
+            "stackView": {
+                "spacing": 24,
+                "insetsConstraint": {
+                    "top": 24,
+                    "bottom": 24
+                }
+            }
+        },
+        "ProductCategoryView": {
+            "gutter": 5,
+            "cellWidthDiverder": {
+                "small": 200,
+                "large": 250
+            },
+            "layoutMargins": {
+                "top": 16,
+                "left": 16,
+                "bottom": 16,
+                "right": 16
+            }
+        }
+    }
 }

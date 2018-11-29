@@ -27,6 +27,7 @@ class ThemeTests: XCTestCase {
         XCTAssertEqual("#ff4f0421", Kumi.generics.colors.regularPrimary.normal.toHexString())
         XCTAssertEqual(Kumi.generics.texts.bodyNormalTextStyle.regular.textColor!.toHexString(), "#ff4f0421")
         XCTAssertEqual(Kumi.generics.texts.displayNormalTextStyle.regular.font.pointSize, 32)
+        XCTAssertEqual(Kumi.functionals["NeonLabel"]["isHighlighted"]["animationStyle"].uiViewAnimationStyle.duration, 4)
     }
 
 }
