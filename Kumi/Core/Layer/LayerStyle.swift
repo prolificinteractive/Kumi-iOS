@@ -117,6 +117,13 @@ public struct LayerStyle {
     }
 
     // MARK: - Modifier Functions
+    
+    // Returns a layer style in the same style as the receiver with the specified opacity.
+    public func withOpacity(_ opacity: Float) -> LayerStyle {
+        var layerStyle = self
+        layerStyle.opacity = opacity
+        return layerStyle
+    }
 
     // Returns a layer style in the same style as the receiver with the specified corner radius.
     public func withCornerRadius(_ cornerRadius: CGFloat) -> LayerStyle {
