@@ -89,4 +89,7 @@ public extension JSON {
         return UIStackView.Alignment(json: kumiValue)
     }
     
+    public var contentModeValue: UIView.ContentMode {
+        return UIView.ContentMode(json: kumiValue)
+    }
 }

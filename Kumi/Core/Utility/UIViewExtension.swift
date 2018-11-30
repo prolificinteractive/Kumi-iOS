@@ -6,7 +6,7 @@
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
-import UIKit
+import SwiftyJSON
 
 public extension UIView {
 
@@ -26,3 +26,40 @@ public extension UIView {
     }
 
 }
+
+extension UIView.ContentMode {
+    
+    public init(string: String) {
+        switch string {
+        case "scaleToFill":
+            self = .scaleToFill
+        case "scaleAspectFit":
+            self = .scaleAspectFit
+        case "scaleAspectFill":
+            self = .scaleAspectFill
+        case "redraw":
+            self = .redraw
+        case "center":
+            self = .center
+        case "top":
+            self = .top
+        case "right":
+            self = .right
+        case "topLeft":
+            self = .topLeft
+        case "topRight":
+            self = .topRight
+        case "bottomLeft":
+            self = .bottomLeft
+        case "bottomRight":
+            self = .bottomRight
+        default:
+            self = .scaleToFill
+        }
+    }
+    
+    init(json: JSON) {
+        self = UIView.ContentMode(string: json.kumiValue.stringValue)
+    }
+}
+
