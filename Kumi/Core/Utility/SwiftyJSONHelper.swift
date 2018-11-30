@@ -10,17 +10,17 @@ import SwiftyJSON
 
 public extension JSON {
     public var cgFloat: CGFloat? {
-        if let double = double {
+        if let double = kumiValue.double {
             return CGFloat(double)
         }
-        if let int = int {
+        if let int = kumiValue.int {
             return CGFloat(int)
         }
         return nil
     }
     
     public var cgFloatValue: CGFloat {
-        return CGFloat(floatValue)
+        return CGFloat(kumiValue.floatValue)
     }
     
     private func path(from: String) -> [JSONSubscriptType] {
