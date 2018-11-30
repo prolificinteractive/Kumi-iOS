@@ -11,10 +11,10 @@ import SwiftyJSON
 extension CAMediaTimingFunction {
     
     convenience init?(json: JSON) {
-        guard let c1x = json["c1x"].float,
-            let c1y = json["c1y"].float,
-            let c2x = json["c2x"].float,
-            let c2y = json["c2y"].float else {
+        guard let c1x = json["c1x"].kumiValue.float,
+            let c1y = json["c1y"].kumiValue.float,
+            let c2x = json["c2x"].kumiValue.float,
+            let c2y = json["c2y"].kumiValue.float else {
                 return nil
         }
 
