@@ -85,4 +85,8 @@ public extension JSON {
         return UIEdgeInsets(json: kumiValue)
     }
     
+    public var stackViewAlignment: UIStackView.Alignment {
+        return UIStackView.Alignment(json: kumiValue)
+    }
+    
 }

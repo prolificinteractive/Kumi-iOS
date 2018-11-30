@@ -9,6 +9,35 @@
 import Foundation
 import SwiftyJSON
 
+extension UIStackView.Alignment {
+    init(string: String) {
+        switch string {
+        case "fill":
+            self = .fill
+        case "leading":
+            self = .leading
+        case "top":
+            self = .top
+        case "firstBaseline":
+            self = .firstBaseline
+        case "center":
+            self = .center
+        case "trailing":
+            self = .trailing
+        case "bottom":
+            self = .bottom
+        case "lastBaseline":
+            self = .lastBaseline
+        default:
+            self = .fill
+        }
+    }
+    
+    init(json: JSON) {
+        self = UIStackView.Alignment(string: json.kumiValue.stringValue)
+    }
+}
+
 private extension TextTransform {
 
     init(string: String) {
