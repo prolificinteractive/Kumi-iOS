@@ -30,9 +30,9 @@ public struct CABasicAnimationStyle {
     ///   - delay: The delay to use.
     ///   - timingFunction: The timing function to use.
     ///   - isRemovedOnCompletion: Indicates if the system should remove the animation on completion.
-    public init(duration: TimeInterval,
+    public init(duration: TimeInterval = 0.35,
                 delay: TimeInterval = 0,
-                timingFunction: CAMediaTimingFunction,
+                timingFunction: CAMediaTimingFunction = CAMediaTimingFunction(controlPoints: 0, 0, 1, 1),
                 isRemovedOnCompletion: Bool = false) {
         self.duration = duration
         self.delay = delay

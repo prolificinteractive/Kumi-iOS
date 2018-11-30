@@ -39,7 +39,7 @@ public struct UIViewAnimationStyle {
     ///   - velocity: The velocity to use.
     ///   - options: The options to use.
     #if swift(>=4.2)
-    public init(duration: TimeInterval,
+    public init(duration: TimeInterval = 0.35,
     delay: TimeInterval = 0,
     dampingRatio: CGFloat = 1,
     velocity: CGFloat = 0,
@@ -51,7 +51,7 @@ public struct UIViewAnimationStyle {
     self.options = options
     }
     #else
-    public init(duration: TimeInterval,
+    public init(duration: TimeInterval = 0.35,
                 delay: TimeInterval = 0,
                 dampingRatio: CGFloat = 1,
                 velocity: CGFloat = 0,
