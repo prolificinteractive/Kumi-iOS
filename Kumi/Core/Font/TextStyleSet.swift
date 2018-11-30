@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Marker
 
 public extension TextStyle {
     static public let `default` = TextStyle(font: Font.systemFont(ofSize: 18))

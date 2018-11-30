@@ -7,7 +7,6 @@
 //
 
 import SwiftyJSON
-import Marker
 
 public extension JSON {
     public var cgFloat: CGFloat? {

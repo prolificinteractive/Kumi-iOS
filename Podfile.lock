@@ -1,20 +1,16 @@
 PODS:
   - Kumi (0.0.6):
-    - Marker
     - SwiftyJSON
-  - Marker (1.1.0)
-  - SwiftLint (0.26.0)
-  - SwiftyJSON (4.1.0)
+  - SwiftLint (0.28.2)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Kumi (from `./`)
-  - Marker
   - SwiftLint
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Marker
     - SwiftLint
     - SwiftyJSON
 
@@ -23,10 +19,9 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  Kumi: f1ae68356b066602f3b944317d955b8f518fcee8
-  Marker: f35e0b5d9c97d6997d6b89b23f189e0e4cc127c7
-  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
-  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  Kumi: 4fda3f4254d60b8e02d7fb65f42ebf846cb84b32
+  SwiftLint: f1629ae733b64e9cad20052de01d1debd5b640e7
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
 PODFILE CHECKSUM: 60767acfb77199fbd21e42f1bd2835b8d062ca58
 

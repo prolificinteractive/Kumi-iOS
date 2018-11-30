@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Marker
 import SwiftyJSON
 
 private extension TextTransform {
@@ -159,6 +158,7 @@ extension TextStyle {
         var strikethroughStyle: NSUnderlineStyle?
         var strikethroughColor: UIColor?
         var textTransform: TextTransform = .none
+        var margin: UIEdgeInsets = .zero
         
         textColor = UIColor(json: json["color"])
         
@@ -194,6 +194,8 @@ extension TextStyle {
 
         strikethroughColor = UIColor(json: json["textDecorationColor"] )
         
+        margin = json["margin"].edgeInsetsValue
+        
         self.init(font: font,
                   emFont: emFont,
                   strongFont: strongFont,
@@ -209,7 +211,8 @@ extension TextStyle {
                   lineBreakMode: lineBreakMode,
                   strikethroughStyle: strikethroughStyle,
                   strikethroughColor: strikethroughColor,
-                  textTransform: textTransform)
+                  textTransform: textTransform,
+                  margin: margin)
     }
 
 }
