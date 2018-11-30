@@ -168,7 +168,7 @@ public struct TextStyle {
     ///   - linkFont: Link style.
     ///   - linkColor: Link color.
     ///   - textTransform: Text transform option.
-    public init(font: Font,
+    public init(font: Font = .systemFont(ofSize: Font.labelFontSize),
                 emFont: Font? = nil,
                 strongFont: Font? = nil,
                 textColor: Color? = nil,
