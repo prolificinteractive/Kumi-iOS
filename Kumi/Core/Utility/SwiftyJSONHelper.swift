@@ -92,4 +92,8 @@ public extension JSON {
     public var contentModeValue: UIView.ContentMode {
         return UIView.ContentMode(json: kumiValue)
     }
+    
+    public var textAlignmentValue: NSTextAlignment {
+        return NSTextAlignment.fromString(string: kumiValue.stringValue)
+    }
 }

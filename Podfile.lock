@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  Kumi: 4fda3f4254d60b8e02d7fb65f42ebf846cb84b32
+  Kumi: 8760005c63373ccea24b80794b868a916bd51522
   SwiftLint: f1629ae733b64e9cad20052de01d1debd5b640e7
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 

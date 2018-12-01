@@ -57,9 +57,9 @@ private extension TextTransform {
 
 }
 
-private extension NSTextAlignment {
+extension NSTextAlignment {
 
-    static func fromString(string: String) -> NSTextAlignment? {
+    static func fromString(string: String) -> NSTextAlignment {
         switch string {
         case "left":
             return NSTextAlignment.left
@@ -68,13 +68,13 @@ private extension NSTextAlignment {
         case "right":
             return NSTextAlignment.right
         default:
-            return nil
+            return NSTextAlignment.left
         }
     }
 
 }
 
-private extension NSLineBreakMode {
+extension NSLineBreakMode {
 
     static func fromString(string: String) -> NSLineBreakMode {
         switch string {
