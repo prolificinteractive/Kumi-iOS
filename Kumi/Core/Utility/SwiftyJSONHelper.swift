@@ -42,7 +42,9 @@ public extension JSON {
     public var kumiValue: JSON {
         if let val = self["@"].string {
              do {
-                return try Kumi._json[path(from: val)].kumiValue.merged(with: self)
+                var result = try Kumi._json[path(from: val)].kumiValue.merged(with: self)
+                result.dictionaryObject?.removeValue(forKey: "@")
+                return result
              } catch {
                 return Kumi._json[path(from: val)].kumiValue
             }
