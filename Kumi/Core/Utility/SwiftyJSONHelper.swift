@@ -41,12 +41,16 @@ public extension JSON {
     
     public var kumiValue: JSON {
         if let val = self["@"].string {
-            return try! Kumi._json[path(from: val)].kumiValue.merged(with: self)
+             do {
+                return try Kumi._json[path(from: val)].kumiValue.merged(with: self)
+             } catch {
+                return Kumi._json[path(from: val)].kumiValue
+            }
         }
         if let at = atBegins {
             return at
         }
-        if !self["="].isEmpty {
+        if self["="].exists() {
             return self["="].kumiValue
         }
         return self

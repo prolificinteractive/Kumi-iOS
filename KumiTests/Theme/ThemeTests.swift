@@ -23,6 +23,8 @@ class ThemeTests: XCTestCase {
 
     func testThemeCreation() {
         XCTAssertNotNil(Kumi.constants)
+        XCTAssertEqual(Kumi.constants["numbers"]["xxsmall"].cgFloatValue, 2)
+        print(Kumi._json["animations"])
         XCTAssertEqual(Kumi.generics.animations.extraFastUIViewAnimationStyle.duration, 0.17499999999999999)
         XCTAssertEqual(Kumi.generics.animations.extraFastCABasicAnimationStyle.duration, 0.087499999999999994)
     }

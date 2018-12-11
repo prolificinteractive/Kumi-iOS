@@ -1,31 +1,146 @@
 {
-    "id": "5ccc9c0e-9f7d-40e5-94b0-f70f6e15525f",
+    "id": "9171a301-bafd-4457-b2af-71d5b1596058",
     "name": "Levi's",
+    "prototypes": {
+        "size": {
+            "width": "number",
+            "height": "number"
+        },
+        "edgeInsets": {
+            "top": "number",
+            "left": "number",
+            "bottom": "number",
+            "right": "number"
+        },
+        "transform": {
+            "perspective": "number",
+            "rotate": "number",
+            "rotateX": "number",
+            "rotateY": "number",
+            "rotateZ": "number",
+            "scaleX": "percentage",
+            "scaleY": "percentage",
+            "scaleZ": "percentage",
+            "translateX": "number",
+            "translateY": "number",
+            "translateZ": "number"
+        },
+        "timingFunction": {
+            "c1x": "percentage",
+            "c1y": "percentage",
+            "c2x": "percentage",
+            "c2y": "percentage"
+        },
+        "textStyle": {
+            "font": "fontName",
+            "textSize": "number",
+            "letterSpacing": "number",
+            "lineSpacing": "number",
+            "lineHeightMultiple": "percentage",
+            "minimumLineHeight": "number",
+            "maximumLineHeight": "number",
+            "paragraphSpacing": "number",
+            "paragraphSpacingBefore": "number",
+            "textAlignment": "textAlignment",
+            "lineBreakMode": "lineBreakMode",
+            "textTransform": "textTransform",
+            "margin": "edgeInsets"
+        },
+        "layerStyle": {
+            "opacity": "percentage",
+            "masksToBounds": "bool",
+            "isDoubleSided": "bool",
+            "cornerRadius": "number",
+            "borderWidth": "number",
+            "borderColor": "color",
+            "backgroundColor": "color",
+            "shadowStyle": "shadowStyle",
+            "shadowColor": "color",
+            "transform": "transform",
+            "isRectangularShadow": "bool"
+        },
+        "shadowStyle": {
+            "shadowOpacity": "percentage",
+            "shadowRadius": "number",
+            "shadowOffset": "size",
+            "shadowColor": "color"
+        },
+        "uiViewAnimationStyle": {
+            "duration": "timeInterval",
+            "delay": "timeInterval",
+            "dampingRatio": "number",
+            "velocity": "number",
+            "options": "uiViewAnimationOptions"
+        },
+        "animationStyle": {
+            "duration": "timeInterval",
+            "delay": "timeInterval",
+            "timingFunction": "timingFunction",
+            "isRemovedOnCompletion": "bool"
+        }
+    },
     "constants": {
         "dummyValues": {
             "textAlignment": "center",
             "stackViewAlignment": "fill"
         },
         "numbers": {
-            "xxsmall": 2,
-            "xsmall": 4,
-            "small": 8,
-            "medium": 16,
-            "large": 32,
-            "xlarge": 48,
-            "xxlarge": 72
+            "xxsmall": {
+                "__type": "number",
+                "=": 2
+            },
+            "xsmall": {
+                "__type": "number",
+                "=": 4
+            },
+            "small": {
+                "__type": "number",
+                "=": 8
+            },
+            "medium": {
+                "__type": "number",
+                "=": 16
+            },
+            "large": {
+                "__type": "number",
+                "=": 32
+            },
+            "xlarge": {
+                "__type": "number",
+                "=": 48
+            },
+            "xxlarge": {
+                "__type": "number",
+                "=": 72
+            }
         },
-        
-        "globalOpacity":{
-            "overlay": 0.6,
-            "highlighted": 0.6,
-            "disabled": 0.6
-            
+        "globalOpacity": {
+            "overlay": {
+                "__type": "percentage",
+                "=": 0.6
+            },
+            "highlighted": {
+                "__type": "percentage",
+                "=": 0.6
+            },
+            "disabled": {
+                "__type": "percentage",
+                "=": 0.6
+            }
         },
-        "globalSpacings":{
-            "cellGutter": 6,
-            "varientPickerGutter": 8,
-            "headlineSpacing": 16
+        "globalSpacings": {
+            "cellGutter": {
+                "__type": "number",
+                "=": 6
+            },
+            "varientPickerGutter": {
+                "__type": "number",
+                "=": 8
+            },
+            "headlineSpacing": {
+                "__type": "number",
+                "=": 16
+            }
         },
         "productImage": {
             "contentMode": "scaleAspectFill",
@@ -33,115 +148,257 @@
             "varientPickerAspectRatio": 1.1
         },
         "lineThickness": {
-            "single": 1,
-            "double": 2
+            "single": {
+                "__type": "number",
+                "=": 1
+            },
+            "double": {
+                "__type": "number",
+                "=": 2
+            }
         },
-        
-        
         "fontNames": {
             "interstate": {
-                "thin": "Interstate-Thin",
-                "extraLight": "Interstate-ExtraLight",
-                "light": "Interstate-Light",
-                "regular": "Interstate-Regular",
-                "bold": "Interstate-Bold",
-                "black": "Interstate-Black"
+                "thin": {
+                    "__type": "fontName",
+                    "=": "Interstate-Thin"
+                },
+                "extraLight": {
+                    "__type": "fontName",
+                    "=": "Interstate-ExtraLight"
+                },
+                "light": {
+                    "__type": "fontName",
+                    "=": "Interstate-Light"
+                },
+                "regular": {
+                    "__type": "fontName",
+                    "=": "Interstate-Regular"
+                },
+                "bold": {
+                    "__type": "fontName",
+                    "=": "Interstate-Bold"
+                },
+                "black": {
+                    "__type": "fontName",
+                    "=": "Interstate-Black"
+                }
             }
         },
         "colors": {
-            "levisRed": "ffC41230",
-            "levisRedDark": "ff8F0018",
-            "levisRedLight": "ffCE4052",
-            
-            "blue": "ff0055A3",
-            "darkBlue": "ff002140",
-            "lightBlue": "ff4C93D4",
-            
-            "green": "ff009900",
-            
-            "veryDarkGray": "FF333333",
-            "darkGray": "FF707070",
-            "darkMediumGray": "FF949494",
-            
-            "white": "FFFFFFFF",
-            "veryLightGray": "FFF9F9F9",
-            "lightGray": "FFF0F0F0",
-            "gray": "FFDDDDDD"
+            "levisRed": {
+                "__type": "color",
+                "=": "ffC41230"
+            },
+            "levisRedDark": {
+                "__type": "color",
+                "=": "ff8F0018"
+            },
+            "levisRedLight": {
+                "__type": "color",
+                "=": "ffCE4052"
+            },
+            "blue": {
+                "__type": "color",
+                "=": "ff0055A3"
+            },
+            "darkBlue": {
+                "__type": "color",
+                "=": "ff002140"
+            },
+            "lightBlue": {
+                "__type": "color",
+                "=": "ff4C93D4"
+            },
+            "green": {
+                "__type": "color",
+                "=": "ff009900"
+            },
+            "veryDarkGray": {
+                "__type": "color",
+                "=": "FF333333"
+            },
+            "darkGray": {
+                "__type": "color",
+                "=": "FF707070"
+            },
+            "darkMediumGray": {
+                "__type": "color",
+                "=": "FF949494"
+            },
+            "white": {
+                "__type": "color",
+                "=": "FFFFFFFF"
+            },
+            "veryLightGray": {
+                "__type": "color",
+                "=": "FFF9F9F9"
+            },
+            "lightGray": {
+                "__type": "color",
+                "=": "FFF0F0F0"
+            },
+            "gray": {
+                "__type": "color",
+                "=": "FFDDDDDD"
+            }
         },
         "transforms": {
             "highlighted": {
+                "__type": "transform",
                 "scaleX": 0.96,
                 "scaleY": 0.96,
                 "scaleZ": 1
             }
         },
         "urls": {
-            "navigationBarLogoURL": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/image_logo_levis.pdf?alt=media&token=e5f0df99-2428-41ed-9fbf-7af8859fd608",
-            "iconShareURL": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_share.pdf?alt=media&token=211c6dd1-7f43-431c-a1ba-b0f32fdf1030",
-            "iconSearchURL": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_search_small.pdf?alt=media&token=21871ad6-bee4-46db-967f-184081e6f598",
-            "iconLocationURL": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_location.pdf?alt=media&token=5b3ca303-c34a-455a-bf45-459f2a54543f",
-            "iconLikeURL": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_like.pdf?alt=media&token=cd93ddbd-b6be-4f1a-819b-9e803900ae9b",
-            "iconFilterURL": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_filter_small.pdf?alt=media&token=ff091380-33f6-4cb1-9ef2-225282c63660",
-            "iconBookmarkURL": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_bookmark.pdf?alt=media&token=8b0d159d-4ae8-49e0-b24c-52d20598b655",
-            "iconBackURL": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_back_small.pdf?alt=media&token=5ab8d7f0-963d-45b3-82b8-8e66594ed9fc",
-            "iconTabBarDummyURL": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_tabbar_dummy.pdf?alt=media&token=1232278e-b5d6-429e-820b-e669008b9e7d",
-            "iconArrowRightURL": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_arrow_right_small.pdf?alt=media&token=af63401e-f7da-4fcb-8f77-0e5fac4d6740"
+            "navigationBarLogoURL": {
+                "__type": "urlString",
+                "=": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/image_logo_levis.pdf?alt=media&token=e5f0df99-2428-41ed-9fbf-7af8859fd608"
+            },
+            "iconShareURL": {
+                "__type": "urlString",
+                "=": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_share.pdf?alt=media&token=211c6dd1-7f43-431c-a1ba-b0f32fdf1030"
+            },
+            "iconSearchURL": {
+                "__type": "urlString",
+                "=": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_search_small.pdf?alt=media&token=21871ad6-bee4-46db-967f-184081e6f598"
+            },
+            "iconLocationURL": {
+                "__type": "urlString",
+                "=": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_location.pdf?alt=media&token=5b3ca303-c34a-455a-bf45-459f2a54543f"
+            },
+            "iconLikeURL": {
+                "__type": "urlString",
+                "=": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_like.pdf?alt=media&token=cd93ddbd-b6be-4f1a-819b-9e803900ae9b"
+            },
+            "iconFilterURL": {
+                "__type": "urlString",
+                "=": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_filter_small.pdf?alt=media&token=ff091380-33f6-4cb1-9ef2-225282c63660"
+            },
+            "iconBookmarkURL": {
+                "__type": "urlString",
+                "=": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_bookmark.pdf?alt=media&token=8b0d159d-4ae8-49e0-b24c-52d20598b655"
+            },
+            "iconBackURL": {
+                "__type": "urlString",
+                "=": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_back_small.pdf?alt=media&token=5ab8d7f0-963d-45b3-82b8-8e66594ed9fc"
+            },
+            "iconTabBarDummyURL": {
+                "__type": "urlString",
+                "=": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_tabbar_dummy.pdf?alt=media&token=1232278e-b5d6-429e-820b-e669008b9e7d"
+            },
+            "iconArrowRightURL": {
+                "__type": "urlString",
+                "=": "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/icon_arrow_right_small.pdf?alt=media&token=af63401e-f7da-4fcb-8f77-0e5fac4d6740"
+            }
         }
     },
     "generics": {
         "colors": {
             "basicDark": {
                 "primary": {
-                    "normal": "@constants.colors.veryDarkGray"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.veryDarkGray"
+                    }
                 },
                 "secondary": {
-                    "normal": "@constants.colors.darkGray"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.darkGray"
+                    }
                 },
                 "tertiary": {
-                    "normal": "@constants.colors.darkMediumGray"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.darkMediumGray"
+                    }
                 }
             },
             "basicLight": {
                 "primary": {
-                    "normal": "@constants.colors.white"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.white"
+                    }
                 },
                 "secondary": {
-                    "normal": "@constants.colors.veryLightGray"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.veryLightGray"
+                    }
                 },
                 "tertiary": {
-                    "normal": "@constants.colors.lightGray",
-                    "dark": "@constants.colors.gray"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.lightGray"
+                    },
+                    "dark": {
+                        "__type": "color",
+                        "@": "constants.colors.gray"
+                    }
                 }
             },
             "accent": {
                 "primary": {
-                    "normal": "@constants.colors.levisRed",
-                    "dark": "@constants.colors.levisRedDark",
-                    "light": "@constants.colors.levisRedLight"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.levisRed"
+                    },
+                    "dark": {
+                        "__type": "color",
+                        "@": "constants.colors.levisRedDark"
+                    },
+                    "light": {
+                        "__type": "color",
+                        "@": "constants.colors.levisRedLight"
+                    }
                 },
                 "secondary": {
-                    "normal": "@constants.colors.blue",
-                    "dark": "@constants.colors.darkBlue",
-                    "light": "@constants.colors.lightBlue"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.blue"
+                    },
+                    "dark": {
+                        "__type": "color",
+                        "@": "constants.colors.darkBlue"
+                    },
+                    "light": {
+                        "__type": "color",
+                        "@": "constants.colors.lightBlue"
+                    }
                 }
             },
             "miscellaneous": {
                 "primary": {
-                    "normal": "@constants.colors.green"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.green"
+                    }
                 },
                 "secondary": {
-                    "normal": "@constants.colors.levisRed"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.levisRed"
+                    }
                 },
                 "destructive": {
-                    "normal": "@constants.colors.levisRed"
+                    "normal": {
+                        "__type": "color",
+                        "@": "constants.colors.levisRed"
+                    }
                 }
             }
         },
         "texts": {
             "display": {
-                "font": "@constants.fontNames.interstate.black",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.black"
+                },
                 "textSize": 48,
-                "letterSpacing":0,
+                "letterSpacing": 0,
                 "lineSpacing": 0,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -155,9 +412,12 @@
                 }
             },
             "headline1": {
-                "font": "@constants.fontNames.interstate.black",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.black"
+                },
                 "textSize": 32,
-                "letterSpacing":0,
+                "letterSpacing": 0,
                 "lineSpacing": 0,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -171,9 +431,12 @@
                 }
             },
             "headline2": {
-                "font": "@constants.fontNames.interstate.black",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.black"
+                },
                 "textSize": 20,
-                "letterSpacing":0,
+                "letterSpacing": 0,
                 "lineSpacing": 0,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -187,9 +450,12 @@
                 }
             },
             "headline3": {
-                "font": "@constants.fontNames.interstate.bold",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.bold"
+                },
                 "textSize": 14,
-                "letterSpacing":1,
+                "letterSpacing": 1,
                 "lineSpacing": 0,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -203,9 +469,12 @@
                 }
             },
             "headline4": {
-                "font": "@constants.fontNames.interstate.bold",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.bold"
+                },
                 "textSize": 14,
-                "letterSpacing":0,
+                "letterSpacing": 0,
                 "lineSpacing": 3,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -219,9 +488,12 @@
                 }
             },
             "headline5": {
-                "font": "@constants.fontNames.interstate.regular",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.regular"
+                },
                 "textSize": 13,
-                "letterSpacing":1,
+                "letterSpacing": 1,
                 "lineSpacing": 0,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -235,9 +507,12 @@
                 }
             },
             "headline6": {
-                "font": "@constants.fontNames.interstate.bold",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.bold"
+                },
                 "textSize": 12,
-                "letterSpacing":0,
+                "letterSpacing": 0,
                 "lineSpacing": 0,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -251,9 +526,12 @@
                 }
             },
             "subtitle": {
-                "font": "@constants.fontNames.interstate.regular",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.regular"
+                },
                 "textSize": 13,
-                "letterSpacing":0,
+                "letterSpacing": 0,
                 "lineSpacing": 2,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -262,14 +540,17 @@
                 "margin": {
                     "top": 0,
                     "left": 0,
-                    "bottom": 6,
+                    "bottom": 4,
                     "right": 0
                 }
             },
             "overline": {
-                "font": "@constants.fontNames.interstate.regular",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.regular"
+                },
                 "textSize": 14,
-                "letterSpacing":0,
+                "letterSpacing": 0,
                 "lineSpacing": 0,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -278,14 +559,17 @@
                 "margin": {
                     "top": 0,
                     "left": 0,
-                    "bottom": 6,
+                    "bottom": 4,
                     "right": 0
                 }
             },
             "body": {
-                "font": "@constants.fontNames.interstate.light",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.light"
+                },
                 "textSize": 14,
-                "letterSpacing":0,
+                "letterSpacing": 0,
                 "lineSpacing": 10,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -299,9 +583,12 @@
                 }
             },
             "caption": {
-                "font": "@constants.fontNames.interstate.regular",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.regular"
+                },
                 "textSize": 13,
-                "letterSpacing":0,
+                "letterSpacing": 0,
                 "lineSpacing": 0,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -315,9 +602,12 @@
                 }
             },
             "button": {
-                "font": "@constants.fontNames.interstate.bold",
+                "__type": "textStyle",
+                "font": {
+                    "@": "constants.fontNames.interstate.bold"
+                },
                 "textSize": 14,
-                "letterSpacing":0.5,
+                "letterSpacing": 0.5,
                 "lineSpacing": 0,
                 "paragraphSpacing": 0,
                 "paragraphSpacingBefore": 0,
@@ -334,93 +624,116 @@
         "layers": {
             "buttonPrimary": {
                 "normal": {
+                    "__type": "layerStyle",
                     "backgroundColor": "@generics.colors.accent.primary.normal"
                 },
                 "highlighted": {
+                    "__type": "layerStyle",
                     "backgroundColor": "@generics.colors.accent.primary.dark",
-                    "transform": "@constants.transforms.highlighted"
+                    "transform": {
+                        "@": "constants.transforms.highlighted"
+                    },
+                    "selected": {
+                        "__type": "layerStyle",
+                        "backgroundColor": "@generics.colors.accent.primary.normal"
+                    },
+                    "disabled": {
+                        "__type": "layerStyle",
+                        "backgroundColor": "@generics.colors.basicLight.tertiary.normal"
+                    }
                 },
-                "selected": {
-                    "backgroundColor": "@generics.colors.accent.primary.normal"
+                "buttonSecondary": {
+                    "normal": {
+                        "__type": "layerStyle",
+                        "backgroundColor": "@generics.colors.basicLight.primary.normal",
+                        "borderColor": "@generics.colors.basicDark.primary.normal",
+                        "borderWidth": 1
+                    },
+                    "highlighted": {
+                        "__type": "layerStyle",
+                        "backgroundColor": "@generics.colors.basicLight.secondary.normal",
+                        "borderColor": "@generics.colors.basicDark.primary.normal",
+                        "borderWidth": 1,
+                        "transform": {
+                            "@": "constants.transforms.highlighted"
+                        }
+                    },
+                    "selected": {
+                        "__type": "layerStyle",
+                        "backgroundColor": "@generics.colors.basicLight.primary.normal",
+                        "borderColor": "@generics.colors.accent.primary.normal",
+                        "borderWidth": 2
+                    },
+                    "disabled": {
+                        "__type": "layerStyle",
+                        "backgroundColor": "@generics.colors.basicLight.primary.normal",
+                        "borderColor": "@generics.colors.basicLight.tertiary.dark",
+                        "borderWidth": 1
+                    }
                 },
-                "disabled": {
-                    "backgroundColor": "@generics.colors.basicLight.tertiary.normal"
-                }
-            },
-            "buttonSecondary": {
-                "normal": {
-                    "backgroundColor": "@generics.colors.basicLight.primary.normal",
-                    "borderColor": "@generics.colors.basicDark.primary.normal",
-                    "borderWidth": 1
-                },
-                "highlighted": {
-                    "backgroundColor": "@generics.colors.basicLight.secondary.normal",
-                    "borderColor": "@generics.colors.basicDark.primary.normal",
-                    "borderWidth": 1,
-                    "transform": "@constants.transforms.highlighted"
-                },
-                "selected": {
-                    "backgroundColor": "@generics.colors.basicLight.primary.normal",
-                    "borderColor": "@generics.colors.accent.primary.normal",
-                    "borderWidth": 2
-                },
-                "disabled": {
-                    "backgroundColor": "@generics.colors.basicLight.primary.normal",
-                    "borderColor": "@generics.colors.basicLight.tertiary.dark",
-                    "borderWidth": 1
-                }
-            },
-            "selector": {
-                "normal": {
-                    "backgroundColor": "@generics.colors.basicLight.primary.normal",
-                    "borderColor": "@generics.colors.basicDark.primary.normal",
-                    "borderWidth": 1
-                },
-                "highlighted": {
-                    "backgroundColor": "@generics.colors.basicLight.tertiary.normal",
-                    "borderColor": "@generics.colors.basicDark.primary.normal",
-                    "borderWidth": 1,
-                    "transform": "@constants.transforms.highlighted"
-                },
-                "selected": {
-                    "backgroundColor": "@generics.colors.basicLight.primary.normal",
-                    "borderColor": "@generics.colors.accent.primary.normal",
-                    "borderWidth": 2
-                },
-                "disabled": {
-                    "backgroundColor": "@generics.colors.basicLight.primary.normal",
-                    "borderColor": "@generics.colors.basicLight.tertiary.dark",
-                    "borderWidth": 1
+                "selector": {
+                    "normal": {
+                        "__type": "layerStyle",
+                        "backgroundColor": "@generics.colors.basicLight.primary.normal",
+                        "borderColor": "@generics.colors.basicDark.primary.normal",
+                        "borderWidth": 1
+                    },
+                    "highlighted": {
+                        "__type": "layerStyle",
+                        "backgroundColor": "@generics.colors.basicLight.tertiary.normal",
+                        "borderColor": "@generics.colors.basicDark.primary.normal",
+                        "borderWidth": 1,
+                        "transform": {
+                            "@": "constants.transforms.highlighted"
+                        }
+                    },
+                    "selected": {
+                        "__type": "layerStyle",
+                        "backgroundColor": "@generics.colors.basicLight.primary.normal",
+                        "borderColor": "@generics.colors.accent.primary.normal",
+                        "borderWidth": 2
+                    },
+                    "disabled": {
+                        "__type": "layerStyle",
+                        "backgroundColor": "@generics.colors.basicLight.primary.normal",
+                        "borderColor": "@generics.colors.basicLight.tertiary.dark",
+                        "borderWidth": 1
+                    }
                 }
             }
         },
         "animations": {
             "UIViewAnimations": {
                 "extraFast": {
+                    "__type": "uiViewAnimationStyle",
                     "dampingRatio": 1,
                     "delay": 0,
                     "velocity": 0,
                     "duration": 0.17499999999999999
                 },
                 "fast": {
+                    "__type": "uiViewAnimationStyle",
                     "dampingRatio": 1,
                     "delay": 0,
                     "velocity": 0,
                     "duration": 0.26250000000000001
                 },
                 "normal": {
+                    "__type": "uiViewAnimationStyle",
                     "dampingRatio": 1,
                     "delay": 0,
                     "velocity": 0,
                     "duration": 0.34999999999999998
                 },
                 "slow": {
+                    "__type": "uiViewAnimationStyle",
                     "dampingRatio": 1,
                     "delay": 0,
                     "velocity": 0,
                     "duration": 0.69999999999999996
                 },
                 "extraSlow": {
+                    "__type": "uiViewAnimationStyle",
                     "dampingRatio": 1,
                     "delay": 0,
                     "velocity": 0,
@@ -433,6 +746,7 @@
             },
             "CABasicAnimations": {
                 "extraFast": {
+                    "__type": "animationStyle",
                     "timingFunction": {
                         "c2x": 0.20000000000000001,
                         "c2y": 1,
@@ -444,6 +758,7 @@
                     "duration": 0.087499999999999994
                 },
                 "fast": {
+                    "__type": "animationStyle",
                     "timingFunction": {
                         "c2x": 0.20000000000000001,
                         "c2y": 1,
@@ -455,6 +770,7 @@
                     "duration": 0.17499999999999999
                 },
                 "normal": {
+                    "__type": "animationStyle",
                     "timingFunction": {
                         "c2x": 0.20000000000000001,
                         "c2y": 1,
@@ -466,6 +782,7 @@
                     "duration": 0.34999999999999998
                 },
                 "slow": {
+                    "__type": "animationStyle",
                     "timingFunction": {
                         "c2x": 0.20000000000000001,
                         "c2y": 1,
@@ -477,6 +794,7 @@
                     "duration": 0.69999999999999996
                 },
                 "extraSlow": {
+                    "__type": "animationStyle",
                     "timingFunction": {
                         "c2x": 0.20000000000000001,
                         "c2y": 1,
@@ -492,27 +810,71 @@
     },
     "functionals": {
         "NeonButton": {
-            "normalLayerStyle": "@generics.layers.buttonPrimary.normal",
-            "highlightedLayerStyle":"@generics.layers.buttonPrimary.highlighted",
-            "selectedLayerStyle":"@generics.layers.buttonPrimary.selected",
-            "disabledLayerStyle":"@generics.layers.buttonPrimary.disabled",
-            
-            "normalTitleOpacity": 1,
-            "highlightedTitleOpacity": "@constants.globalOpacity.highlighted",
-            "focusedTitleOpacity": 1,
-            "selectedTitleOpacity": 1,
-            "disabledTitleOpacity": "@constants.globalOpacity.disabled",
-            
-            "normalTitleTextColor": "@generics.colors.basicLight.primary.normal",
-            "highlightedTitleTextColor": "@generics.colors.basicLight.primary.normal",
-            "focusedTitleTextColor": "@generics.colors.basicLight.primary.normal",
-            "selectedTitleTextColor": "@generics.colors.basicLight.primary.normal",
-            "disabledTitleTextColor": "@generics.colors.basicLight.primary.normal",
-            
-            "textStyle":"@generics.texts.button",
-            
-            "titleEdgeInsets":{},
-            "contentEdgeInsets":{
+            "normalLayerStyle": {
+                "__type": "layerStyle",
+                "@": "generics.layers.buttonPrimary.normal"
+            },
+            "highlightedLayerStyle": {
+                "__type": "layerStyle",
+                "@": "generics.layers.buttonPrimary.highlighted"
+            },
+            "selectedLayerStyle": {
+                "__type": "layerStyle",
+                "@": "generics.layers.buttonPrimary.selected"
+            },
+            "disabledLayerStyle": {
+                "__type": "layerStyle",
+                "@": "generics.layers.buttonPrimary.disabled"
+            },
+            "normalTitleOpacity": {
+                "__type": "percentage",
+                "=": 1
+            },
+            "highlightedTitleOpacity": {
+                "__type": "percentage",
+                "@": "constants.globalOpacity.highlighted"
+            },
+            "focusedTitleOpacity": {
+                "__type": "percentage",
+                "=": 1
+            },
+            "selectedTitleOpacity": {
+                "__type": "percentage",
+                "=": 1
+            },
+            "disabledTitleOpacity": {
+                "__type": "percentage",
+                "@": "constants.globalOpacity.disabled"
+            },
+            "normalTitleTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicLight.primary.normal"
+            },
+            "highlightedTitleTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicLight.primary.normal"
+            },
+            "focusedTitleTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicLight.primary.normal"
+            },
+            "selectedTitleTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicLight.primary.normal"
+            },
+            "disabledTitleTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicLight.primary.normal"
+            },
+            "textStyle": {
+                "__type": "textStyle",
+                "@": "generics.texts.button"
+            },
+            "titleEdgeInsets": {
+                "__type": "edgeInsets"
+            },
+            "contentEdgeInsets": {
+                "__type": "edgeInsets",
                 "top": 8,
                 "left": 16,
                 "bottom": 8,
@@ -520,166 +882,450 @@
             }
         },
         "NeonScrollViewIndicator": {
-            "barIndicatorColor": "@generics.colors.accent.primary.normal",
-            "barBackgroundColor": "@generics.colors.basicDark.primary.normal",
-            "barBackgroundOpacity": 0.3,
-            "height": "@constants.lineThickness.double",
+            "barIndicatorColor": {
+                "__type": "color",
+                "@": "generics.colors.accent.primary.normal"
+            },
+            "barBackgroundColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.primary.normal"
+            },
+            "barBackgroundOpacity": {
+                "__type": "percentage",
+                "=": 0.3
+            },
+            "height": {
+                "__type": "number",
+                "@": "constants.lineThickness.double"
+            },
             "isRounded": false
         },
         "NeonVarientPickerControl": {
             "minimumEdgeInset": {
+                "__type": "edgeInsets",
                 "top": 8,
                 "left": 16,
                 "bottom": 8,
                 "right": 16
             },
             "itemSize": {
+                "__type": "size",
                 "width": 48,
                 "height": 32
             },
-            "spacingBetweenItems": "@constants.globalSpacings.varientPickerGutter",
-            
-            "normalLayerStyle": "@generics.layers.selector.normal",
-            "highlightedLayerStyle": "@generics.layers.selector.highlighted",
-            "selectedLayerStyle": "@generics.layers.selector.selected",
-            "disabledLayerStyle": "@generics.layers.selector.disabled",
-            
-            "normalTitleOpacity": 1,
-            "highlightedTitleOpacity": "@constants.globalOpacity.highlighted",
-            "focusedTitleOpacity": 1,
-            "selectedTitleOpacity": 1,
-            "disabledTitleOpacity": 1,
-            
-            "normalTitleTextColor": "@generics.colors.basicDark.primary.normal",
-            "highlightedTitleTextColor": "@generics.colors.basicDark.tertiary.normal",
-            "focusedTitleTextColor": "@generics.colors.basicDark.primary.normal",
-            "selectedTitleTextColor": "@generics.colors.accent.primary.normal",
-            "disabledTitleTextColor": "@generics.colors.basicLight.tertiary.normal",
-            
-            "textStyle": "@generics.texts.overline"
-        },
-        "NeonSlidableSegmentedControl": {
-            "backgroundColor": "00000000",
-            "selectedLabelColor": "@generics.colors.accent.primary.normal",
-            "highlightedLabelColor": "@generics.colors.basicLight.tertiary.dark",
-            "normalLabelColor": "@generics.colors.basicDark.tertiary.normal",
-            "selectedIndicatorViewColor": "@generics.colors.accent.primary.normal",
-            "textStyle": "@generics.texts.overline",
-            "height": 56,
-            "spacingBetweenItems": 0,
-            "itemMargin": {
-                "left": 16,
-                "right": 16
+            "spacingBetweenItems": {
+                "__type": "number",
+                "@": "constants.globalSpacings.varientPickerGutter"
             },
-            "indicatorHeight": 2
-        },
-        "NeonVarientImageControl": {
-            "overlayView": {
-                "backgroundColor": "ff000000"
-            }
-        },
-        "NeonImageVarientPickerControl": {
-            "margin": {
-                "top": "@constants.globalSpacings.cellGutter",
-                "bottom": "@constants.globalSpacings.cellGutter"
+            "normalLayerStyle": {
+                "__type": "layerStyle",
+                "@": "generics.layers.selector.normal"
             },
-            "spacing": "@constants.globalSpacings.cellGutter",
-            "aspectRatio": "@constants.productImage.varientPickerAspectRatio",
-            "numberOfDisplayingImage": 3
-        },
-        "NeonLabel": {
-            "isHighlighted": {
-                "animationStyle": "@generics.animations.UIViewAnimations.extraFast"
-            }
-        },
-        "NeonImageView": {
-            "isHighlighted": {
-                "animationStyle": "@generics.animations.UIViewAnimations.extraFast"
+            "highlightedLayerStyle": {
+                "__type": "layerStyle",
+                "@": "generics.layers.selector.highlighted"
             },
-            "isSelected": {
-                "animationStyle": "@generics.animations.UIViewAnimations.extraFast"
-            }
-        },
-        "NeonTableViewCell": {
-            "isHairlineSeparator": false,
-            "separatorBorderWidth": "@constants.lineThickness.single",
-            "titleTextStyle": "@generics.texts.headline5",
-            "detailTextStyle": "@generics.texts.headline5",
-            "titleTextColor": "@generics.colors.basicDark.primary.normal",
-            "detailTextColor": "@generics.colors.basicDark.tertiary.normal",
-            "iconViewColor": "@generics.colors.basicDark.secondary.normal",
-            "separatorLineColor": "@generics.colors.basicLight.tertiary.normal",
-            "normalBackgroundColor": "@generics.colors.basicLight.primary.normal",
-            "highlightedBackgroundColor": "@generics.colors.basicLight.tertiary.normal",
-            "height": 56
-        },
-        "TabBarController": {
-            "tabBarTextStyle": {
-                "@": "@generics.texts.button",
-                "textSize": 10,
-                "lineSpacing": 0
+            "selectedLayerStyle": {
+                "__type": "layerStyle",
+                "@": "generics.layers.selector.selected"
             },
-            "tabBarBackgroundColor": "@generics.colors.basicLight.primary.normal",
-            "selectedItemColor": "@generics.colors.basicDark.primary.normal",
-            "unselectedItemColor": "@generics.colors.basicLight.tertiary.dark",
-            "useSytemTabBarStyle": false,
-            "isIconOnly": true,
-            "isTitleOnly": false
-        },
-        "NavigationController": {
-            "gutter": "@constants.globalSpacings.cellGutter",
-            "layoutMargins": {
-                "top": 16,
-                "left": 16,
-                "bottom": 16,
-                "right": 16
+            "disabledLayerStyle": {
+                "__type": "layerStyle",
+                "@": "generics.layers.selector.disabled"
             },
-            "useSystemNavigationBarStyle": false,
-            "systemNavigationBarStyle": 0,
-            "customNavigationBarColor": "ffffff",
-            "statusBarStyle": 0,
-            "navigationBarTintColor": "@generics.colors.basicDark.primary.normal",
-            "navigationBarLargeTitleTextStyle": "@generics.texts.headline2",
-            "navigationBarTitleTextStyle": "@generics.texts.headline6",
-            "navigationBarTitleColor": "@generics.colors.basicDark.primary.normal",
-            "showParentTitleOnBackButton": false
-        },
-        "ProductCategoryCollectionViewCell": {
-            "gutter": "@constants.globalSpacings.cellGutter",
-            "cellWidthDiverder": {
-                "large": 250,
-                "small": 200
-            }
-        },
-        "ProductHeaderTextSetStackView": {
-            "primaryStyle": {
-                "productNameTextStyle": "@generics.texts.overline",
-                "productVarientInfoTextStyle": "@generics.texts.subtitle",
-                "priceTextStyle": "@generics.texts.subtitle",
-                
-                "productNameTextColor": "@generics.colors.basicDark.primary.normal",
-                "productVarientInfoTextColor": "@generics.colors.basicDark.tertiary.normal",
-                "priceTextColor": "@generics.colors.basicDark.primary.normal",
-                
-                "textAlignment": "left",
-                
-                "showProductVarientLabel" : true,
-                "showPriceLabel": true,
-                
-                "margin": {
-                    "top": 4,
-                    "left": 0,
-                    "bottom": 24,
-                    "right": 0
+            "normalTitleOpacity": {
+                "__type": "percentage",
+                "=": 1
+            },
+            "highlightedTitleOpacity": {
+                "__type": "percentage",
+                "@": "constants.globalOpacity.highlighted"
+            },
+            "focusedTitleOpacity": {
+                "__type": "percentage",
+                "=": 1
+            },
+            "selectedTitleOpacity": {
+                "__type": "percentage",
+                "=": 1
+            },
+            "disabledTitleOpacity": {
+                "__type": "percentage",
+                "=": 1
+            },
+            "normalTitleTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.primary.normal"
+            },
+            "highlightedTitleTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.tertiary.normal"
+            },
+            "focusedTitleTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.primary.normal",
+                "selectedTitleTextColor": {
+                    "__type": "color",
+                    "@": "generics.colors.accent.primary.normal"
+                },
+                "disabledTitleTextColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicLight.tertiary.normal"
+                },
+                "textStyle": {
+                    "__type": "textStyle",
+                    "@": "generics.texts.overline"
                 }
             },
-            "secondaryStyle": "@functionals.ProductHeaderTextSetStackView.primaryStyle"
-            
+            "NeonSlidableSegmentedControl": {
+                "backgroundColor": "00000000",
+                "selectedLabelColor": {
+                    "__type": "color",
+                    "@": "generics.colors.accent.primary.normal"
+                },
+                "highlightedLabelColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicLight.tertiary.dark"
+                },
+                "normalLabelColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicDark.tertiary.normal"
+                },
+                "selectedIndicatorViewColor": {
+                    "__type": "color",
+                    "@": "generics.colors.accent.primary.normal"
+                },
+                "textStyle": {
+                    "__type": "textStyle",
+                    "@": "generics.texts.overline"
+                },
+                "height": {
+                    "__type": "number",
+                    "=": 56
+                },
+                "spacingBetweenItems": {
+                    "__type": "number",
+                    "=": 0
+                },
+                "itemMargin": {
+                    "__type": "edgeInsets",
+                    "left": 16,
+                    "right": 16
+                },
+                "indicatorHeight": {
+                    "__type": "number",
+                    "=": 2
+                }
+            },
+            "NeonVarientImageControl": {
+                "overlayView": {
+                    "backgroundColor": {
+                        "__type": "color",
+                        "=": "ff000000"
+                    }
+                }
+            },
+            "NeonImageVarientPickerControl": {
+                "margin": {
+                    "top": {
+                        "__type": "number",
+                        "@": "constants.globalSpacings.cellGutter"
+                    },
+                    "bottom": {
+                        "__type": "number",
+                        "@": "constants.globalSpacings.cellGutter"
+                    }
+                },
+                "spacing": {
+                    "__type": "number",
+                    "@": "constants.globalSpacings.cellGutter"
+                },
+                "aspectRatio": {
+                    "__type": "number",
+                    "@": "constants.productImage.varientPickerAspectRatio"
+                },
+                "numberOfDisplayingImage": {
+                    "__type": "number",
+                    "=": 3
+                }
+            },
+            "NeonLabel": {
+                "isHighlighted": {
+                    "animationStyle": {
+                        "__type": "uiViewAnimationStyle",
+                        "@": "generics.animations.UIViewAnimations.extraFast"
+                    }
+                }
+            },
+            "NeonImageView": {
+                "isHighlighted": {
+                    "animationStyle": {
+                        "__type": "uiViewAnimationStyle",
+                        "@": "generics.animations.UIViewAnimations.extraFast"
+                    }
+                },
+                "isSelected": {
+                    "animationStyle": {
+                        "__type": "uiViewAnimationStyle",
+                        "@": "generics.animations.UIViewAnimations.extraFast"
+                    }
+                }
+            },
+            "NeonTableViewCell": {
+                "isHairlineSeparator": {
+                    "__type": "bool",
+                    "=": false
+                },
+                "separatorBorderWidth": {
+                    "__type": "number",
+                    "@": "constants.lineThickness.single"
+                },
+                "titleTextStyle": {
+                    "__type": "textStyle",
+                    "@": "generics.texts.headline5"
+                },
+                "detailTextStyle": {
+                    "__type": "textStyle",
+                    "@": "generics.texts.headline5"
+                },
+                "titleTextColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicDark.primary.normal"
+                },
+                "detailTextColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicDark.tertiary.normal"
+                },
+                "iconViewColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicDark.secondary.normal"
+                },
+                "separatorLineColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicLight.tertiary.normal"
+                },
+                "normalBackgroundColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicLight.primary.normal"
+                },
+                "highlightedBackgroundColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicLight.tertiary.normal"
+                },
+                "height": {
+                    "__type": "number",
+                    "=": 56
+                }
+            },
+            "TabBarController": {
+                "tabBarTextStyle": {
+                    "@": {
+                        "__type": "textStyle",
+                        "@": "generics.texts.button"
+                    },
+                    "textSize": {
+                        "__type": "number",
+                        "=": 10
+                    },
+                    "lineSpacing": {
+                        "__type": "number",
+                        "=": 0
+                    }
+                },
+                "tabBarBackgroundColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicLight.primary.normal"
+                },
+                "selectedItemColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicDark.primary.normal"
+                },
+                "unselectedItemColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicLight.tertiary.dark"
+                },
+                "useSytemTabBarStyle": {
+                    "__type": "bool",
+                    "=": false
+                },
+                "isIconOnly": {
+                    "__type": "bool",
+                    "=": true
+                },
+                "isTitleOnly": {
+                    "__type": "bool",
+                    "=": false
+                }
+            },
+            "NavigationController": {
+                "gutter": {
+                    "__type": "number",
+                    "@": "constants.globalSpacings.cellGutter"
+                },
+                "layoutMargins": {
+                    "__type": "edgeInsets",
+                    "top": 16,
+                    "left": 16,
+                    "bottom": 16,
+                    "right": 16
+                },
+                "useSystemNavigationBarStyle": {
+                    "__type": "bool",
+                    "=": false
+                },
+                "systemNavigationBarStyle": {
+                    "__type": "number",
+                    "=": 0
+                },
+                "customNavigationBarColor": {
+                    "__type": "color",
+                    "=": "ffffff"
+                },
+                "statusBarStyle": {
+                    "__type": "number",
+                    "=": 0
+                },
+                "navigationBarTintColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicDark.primary.normal"
+                },
+                "navigationBarLargeTitleTextStyle": {
+                    "__type": "textStyle",
+                    "@": "generics.texts.headline2"
+                },
+                "navigationBarTitleTextStyle": {
+                    "__type": "textStyle",
+                    "@": "generics.texts.headline6"
+                },
+                "navigationBarTitleColor": {
+                    "__type": "color",
+                    "@": "generics.colors.basicDark.primary.normal"
+                },
+                "showParentTitleOnBackButton": {
+                    "__type": "bool",
+                    "=": false
+                }
+            },
+            "ProductCategoryCollectionViewCell": {
+                "gutter": {
+                    "__type": "number",
+                    "@": "constants.globalSpacings.cellGutter"
+                },
+                "cellWidthDiverder": {
+                    "large": {
+                        "__type": "number",
+                        "=": 250
+                    },
+                    "small": {
+                        "__type": "number",
+                        "=": 200
+                    }
+                }
+            },
+            "ProductHeaderTextSetStackView": {
+                "primaryStyle": {
+                    "productNameTextStyle": {
+                        "__type": "textStyle",
+                        "@": "generics.texts.overline"
+                    },
+                    "productVarientInfoTextStyle": {
+                        "__type": "textStyle",
+                        "@": "generics.texts.subtitle"
+                    },
+                    "priceTextStyle": {
+                        "__type": "textStyle",
+                        "@": "generics.texts.subtitle"
+                    },
+                    "productNameTextColor": {
+                        "__type": "color",
+                        "@": "generics.colors.basicDark.primary.normal"
+                    },
+                    "productVarientInfoTextColor": {
+                        "__type": "color",
+                        "@": "generics.colors.basicDark.tertiary.normal"
+                    },
+                    "priceTextColor": {
+                        "__type": "color",
+                        "@": "generics.colors.basicDark.primary.normal"
+                    },
+                    "textAlignment": {
+                        "__type": "textAlignment",
+                        "=": "left"
+                    },
+                    "showProductVarientLabel": {
+                        "__type": "bool",
+                        "=": true
+                    },
+                    "showPriceLabel": {
+                        "__type": "bool",
+                        "=": true
+                    },
+                    "margin": {
+                        "__type": "edgeInsets",
+                        "top": 4,
+                        "left": 0,
+                        "bottom": 24,
+                        "right": 0
+                    }
+                },
+                "secondaryStyle": {
+                    "productNameTextStyle": {
+                        "__type": "textStyle",
+                        "@": "generics.texts.overline"
+                    },
+                    "productVarientInfoTextStyle": {
+                        "__type": "textStyle",
+                        "@": "generics.texts.subtitle"
+                    },
+                    "priceTextStyle": {
+                        "__type": "textStyle",
+                        "@": "generics.texts.subtitle"
+                    },
+                    "productNameTextColor": {
+                        "__type": "color",
+                        "@": "generics.colors.basicDark.primary.normal"
+                    },
+                    "productVarientInfoTextColor": {
+                        "__type": "color",
+                        "@": "generics.colors.basicDark.tertiary.normal"
+                    },
+                    "priceTextColor": {
+                        "__type": "color",
+                        "@": "generics.colors.basicDark.primary.normal"
+                    },
+                    "textAlignment": {
+                        "__type": "textAlignment",
+                        "=": "left"
+                    },
+                    "showProductVarientLabel": {
+                        "__type": "bool",
+                        "=": true
+                    },
+                    "showPriceLabel": {
+                        "__type": "bool",
+                        "=": true
+                    },
+                    "margin": {
+                        "__type": "edgeInsets",
+                        "top": 4,
+                        "left": 0,
+                        "bottom": 24,
+                        "right": 0
+                    }
+                }
+            }
         },
         "ProductDetailTextContentTableViewCell": {
-            "productShortDescriptionTextStyle": "@generics.texts.body",
-            "productShortDescriptionTextColor": "@generics.colors.basicDark.secondary.normal",
+            "productShortDescriptionTextStyle": {
+                "__type": "textStyle",
+                "@": "generics.texts.body"
+            },
+            "productShortDescriptionTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.secondary.normal"
+            },
             "margin": {
+                "__type": "edgeInsets",
                 "top": 24,
                 "bottom": 24
             }
@@ -688,34 +1334,77 @@
             "viewBackgroundColor": "ffffff"
         },
         "ProductCategoryViewController": {
-            "viewBackgroundColor": "@generics.colors.invertPrimary.normal",
-            "productCollectionViewGutter": "@constants.globalSpacings.cellGutter"
+            "viewBackgroundColor": {
+                "__type": "color",
+                "@": "generics.colors.invertPrimary.normal"
+            },
+            "productCollectionViewGutter": {
+                "__type": "number",
+                "@": "constants.globalSpacings.cellGutter"
+            }
         },
         "ProductDetailViewController": {
-            "viewBackgroundColor": "@generics.colors.invertPrimary.normal",
-            "mainButtonTransitionThreshold": 16,
-            "imageAspectRatio": 1,
-            "stickyMainButtonInset": {
-                
+            "viewBackgroundColor": {
+                "__type": "color",
+                "@": "generics.colors.invertPrimary.normal"
             },
-            "title": "PDP"
+            "mainButtonTransitionThreshold": {
+                "__type": "number",
+                "=": 16
+            },
+            "imageAspectRatio": {
+                "__type": "number",
+                "=": 1
+            },
+            "stickyMainButtonInset": {
+                "__type": "edgeInsets"
+            },
+            "title": {
+                "__type": "string",
+                "=": "PDP"
+            }
         },
         "ShopTableViewCell": {
             "margin": {
+                "__type": "edgeInsets",
                 "top": 0,
                 "left": 0,
-                "bottom": "@constants.globalSpacings.cellGutter",
+                "bottom": {
+                    "@": "constants.globalSpacings.cellGutter"
+                },
                 "right": 0
             },
             "isSizingByAspectRatio": false,
-            "aspectRatio": 2.0,
-            "height": 180,
-            "labelAlignment": "center",
-            "labelTextStyle": "@generics.texts.headline2",
-            "labelNormalTextColor": "@generics.colors.basicLight.primary.normal",
-            "labelHighlightedTextColor": "@generics.colors.basicDark.tertiary.normal",
-            "labelBackgroundColor": "00000000",
+            "aspectRatio": {
+                "__type": "number",
+                "=": 2.0
+            },
+            "height": {
+                "__type": "number",
+                "=": 180
+            },
+            "labelAlignment": {
+                "__type": "contentAlignment",
+                "=": "center"
+            },
+            "labelTextStyle": {
+                "__type": "textStyle",
+                "@": "generics.texts.headline2"
+            },
+            "labelNormalTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicLight.primary.normal"
+            },
+            "labelHighlightedTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.tertiary.normal"
+            },
+            "labelBackgroundColor": {
+                "__type": "color",
+                "=": "00000000"
+            },
             "labelPadding": {
+                "__type": "edgeInsets",
                 "top": 0,
                 "left": 0,
                 "bottom": 0,
@@ -723,89 +1412,187 @@
             }
         },
         "ProductDetailVarientPickerTableViewCell": {
-            "spacingBetweenTitleAndContent" : "@constants.globalSpacings.headlineSpacing",
+            "spacingBetweenTitleAndContent": {
+                "__type": "number",
+                "@": "constants.globalSpacings.headlineSpacing"
+            },
             "titleText": "Size",
-            
-            "titleTextStyle": "@generics.texts.headline3",
-            "titleTextColor" :"@generics.colors.basicDark.primary.normal",
-            
+            "titleTextStyle": {
+                "__type": "textStyle",
+                "@": "generics.texts.headline3"
+            },
+            "titleTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.primary.normal"
+            },
             "margin": {
+                "__type": "edgeInsets",
                 "bottom": 24
             }
         },
         "ProductDetailViewControllerAnimatedTransitioning": {
             "backgroundView": {
-                "backgroundColor": "ffffff"
+                "backgroundColor": {
+                    "__type": "color",
+                    "=": "ffffff"
+                }
             },
             "transitionProductDetailTextContentLabelTranslationOffsetY": 32,
             "animationStyle": {
+                "__type": "uiViewAnimationStyle",
                 "@": "generics.animations.UIViewAnimations.normal",
                 "duration": 0.5
             }
         },
         "ProductDetailImageTableViewCell": {
-            "imageSizeRatio": "@constants.productImage.aspectRatio",
-            "imageContentMode": "@constants.productImage.contentMode",
+            "imageSizeRatio": {
+                "__type": "number",
+                "@": "constants.productImage.aspectRatio"
+            },
+            "imageContentMode": {
+                "__type": "contentMode",
+                "@": "constants.productImage.contentMode"
+            },
             "indicatorMargin": {
+                "__type": "edgeInsets",
                 "bottom": 8
             },
             "scrollViewIndicator": {
                 "insetsConstraint": {
+                    "__type": "edgeInsets",
                     "bottom": 8
                 }
             }
         },
         "ProductDetailImageVarientPickerTableViewCell": {
             "margin": {
-                "top": "@constants.globalSpacings.cellGutter",
-                "bottom": "@constants.globalSpacings.cellGutter"
+                "__type": "edgeInsets",
+                "top": {
+                    "@": "constants.globalSpacings.cellGutter"
+                },
+                "bottom": {
+                    "@": "constants.globalSpacings.cellGutter"
+                }
             },
-            "spacing": "@constants.globalSpacings.cellGutter",
-            "aspectRatio": "@constants.productImage.varientPickerAspectRatio",
-            "numberOfDisplayingImage": 3
+            "spacing": {
+                "__type": "number",
+                "@": "constants.globalSpacings.cellGutter"
+            },
+            "aspectRatio": {
+                "__type": "number",
+                "@": "constants.productImage.varientPickerAspectRatio"
+            },
+            "numberOfDisplayingImage": {
+                "__type": "number",
+                "=": 3
+            }
         },
         "ProductDetailSecondaryActionsTableViewCell": {
-            "normalColor": "@generics.colors.basicDark.primary.normal",
-            "highlightedColor": "@generics.colors.basicDark.tertiary.normal",
-            "disabledColor": "@generics.colors.basicDark.primary.normal",
-            "textStyle": "@generics.texts.body",
-            "iconWidth": 56,
-            "spacingBetweenItems": 32,
-            "spacingBetweenImageAndText": 8,
+            "normalColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.primary.normal"
+            },
+            "highlightedColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.tertiary.normal"
+            },
+            "disabledColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.primary.normal"
+            },
+            "textStyle": {
+                "__type": "textStyle",
+                "@": "generics.texts.body"
+            },
+            "iconWidth": {
+                "__type": "number",
+                "=": 56
+            },
+            "spacingBetweenItems": {
+                "__type": "number",
+                "=": 32
+            },
+            "spacingBetweenImageAndText": {
+                "__type": "number",
+                "=": 8
+            },
             "margin": {
+                "__type": "edgeInsets",
                 "bottom": 24
             }
         },
         "ProductDetailReleventProductsTableViewCell": {
-            "productViewGutterSpacing": "@constants.globalSpacings.cellGutter",
-            "spacingBetweenTitleAndProducts": "@constants.globalSpacings.headlineSpacing",
+            "productViewGutterSpacing": {
+                "__type": "number",
+                "@": "constants.globalSpacings.cellGutter"
+            },
+            "spacingBetweenTitleAndProducts": {
+                "__type": "number",
+                "@": "constants.globalSpacings.headlineSpacing"
+            },
             "titleText": "Shoppers Also Viewed",
-            "titleTextStyle":"@generics.texts.headline3",
-            "titleTextColor":"@generics.colors.basicDark.primary.normal",
-            "margin":{
+            "titleTextStyle": {
+                "__type": "textStyle",
+                "@": "generics.texts.headline3"
+            },
+            "titleTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.primary.normal"
+            },
+            "margin": {
+                "__type": "edgeInsets",
                 "top": 24,
-                "bottom": 24}
+                "bottom": 24
+            }
         },
         "ProductCategoryView": {
-            "imageSizeRatio": "@constants.productImage.aspectRatio",
-            "imageContentMode": "@constants.productImage.contentMode",
-            "gutter": "@constants.globalSpacings.cellGutter",
+            "imageSizeRatio": {
+                "__type": "number",
+                "@": "constants.productImage.aspectRatio"
+            },
+            "imageContentMode": {
+                "__type": "contentMode",
+                "@": "constants.productImage.contentMode"
+            },
+            "gutter": {
+                "__type": "number",
+                "@": "constants.globalSpacings.cellGutter"
+            },
             "cellWidthDiverder": {
-                "small": 200,
-                "large": 250
+                "small": {
+                    "__type": "number",
+                    "=": 200
+                },
+                "large": {
+                    "__type": "number",
+                    "=": 250
+                }
             },
             "textContentLayoutMargins": {
+                "__type": "edgeInsets",
                 "top": 16,
                 "left": 12,
                 "bottom": 16,
                 "right": 12
             },
-            "textContentHeight": 100
+            "textContentHeight": {
+                "__type": "number",
+                "=": 100
+            }
         },
         "DummyViewController": {
-            "dummyTextStyle": "@generics.texts.caption",
-            "dummyTextColor": "@generics.colors.basicDark.tertiary.normal",
-            "backgroundColor": "@generics.colors.basicLight.tertiary.normal"
+            "dummyTextStyle": {
+                "__type": "textStyle",
+                "@": "generics.texts.caption"
+            },
+            "dummyTextColor": {
+                "__type": "color",
+                "@": "generics.colors.basicDark.tertiary.normal"
+            },
+            "backgroundColor": {
+                "__type": "color",
+                "@": "generics.colors.basicLight.tertiary.normal"
+            }
         }
     }
 }
