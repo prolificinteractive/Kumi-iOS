@@ -14,6 +14,13 @@ extension CATransform3D {
         
         self = CATransform3DIdentity
         
+        if !json.isEmpty {
+            print(json)
+            print(json["scaleX"].kumiValue.cgFloat)
+            print(json["scaleY"].kumiValue.cgFloat)
+            print(json["scaleZ"].kumiValue.cgFloat)
+        }
+        
         if let perspective = json["perspective"].kumiValue.cgFloat {
             self.m34 = perspective
         }

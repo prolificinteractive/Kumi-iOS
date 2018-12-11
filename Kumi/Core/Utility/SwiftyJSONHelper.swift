@@ -31,12 +31,23 @@ public extension JSON {
         return string.split(separator: ".").map { String($0) }
     }
     
+    @available(*, deprecated, message: "No longer available")
+    private var atBegins: JSON? {
+        if let string = string, string[0] == "@" {
+            return Kumi._json[path(from: string)].kumiValue
+        }
+        return nil
+    }
+    
     public var kumiValue: JSON {
         if let val = self["@"].string {
             return try! Kumi._json[path(from: val)].kumiValue.merged(with: self)
         }
-        if let string = string, string[0] == "@" {
-            return Kumi._json[path(from: string)].kumiValue
+        if let at = atBegins {
+            return at
+        }
+        if !self["="].isEmpty {
+            return self["="].kumiValue
         }
         return self
     }
@@ -46,7 +57,7 @@ public extension JSON {
     }
     
     public var colorValue: UIColor {
-        return color ?? .white
+        return color ?? .clear
     }
     
     public var textStyleSetValue: TextStyleSet {
