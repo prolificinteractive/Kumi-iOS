@@ -63,7 +63,7 @@ public extension JSON {
     }
     
     public var colorValue: UIColor {
-        return color ?? .clear
+        return color ?? .white
     }
     
     public var textStyleSetValue: TextStyleSet {

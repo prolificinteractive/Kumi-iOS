@@ -27,5 +27,6 @@ class ThemeTests: XCTestCase {
         XCTAssertEqual(Kumi.generics.animations.extraFastUIViewAnimationStyle.duration, 0.17499999999999999)
         XCTAssertEqual(Kumi.generics.animations.extraFastCABasicAnimationStyle.duration, 0.087499999999999994)
         XCTAssertEqual(Kumi.functionals["NeonButton"]["normalLayerStyle"].kumiValue.rawString()!, Kumi.generics["layers"]["buttonPrimary"]["normal"].kumiValue.rawString()!)
+        XCTAssertEqual(Kumi.constants["urls"]["navigationBarLogoURL"].kumiValue.stringValue, "https://firebasestorage.googleapis.com/v0/b/platform-x-demo.appspot.com/o/image_logo_levis.pdf?alt=media&token=e5f0df99-2428-41ed-9fbf-7af8859fd608")
     }
 }
