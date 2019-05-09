@@ -39,7 +39,7 @@ public extension TextStyle {
     ///   - newUnderlineColor: New underline color.
     ///   - newTextTransform: New text transform.
     /// - Returns: New Text Style with updated value(s).
-    public func with(newFont: Font? = nil,
+    func with(newFont: Font? = nil,
                      newEmFont: Font? = nil,
                      newStrongFont: Font? = nil,
                      newTextColor: Color? = nil,
@@ -116,7 +116,7 @@ public extension TextStyle {
     ///   - color: Strikethrough color. Defaults to textColor.
     ///   - style: Strikethrough style. Defaults to single line.
     /// - Returns: New TextStyle with strikethrough.
-    public func strikethrough(color: Color? = nil, style: NSUnderlineStyle = .single) -> TextStyle {
+    func strikethrough(color: Color? = nil, style: NSUnderlineStyle = .single) -> TextStyle {
         return self.with(
             newStrikethroughStyle: style,
             newStrikethroughColor: color ?? textColor
@@ -128,7 +128,7 @@ public extension TextStyle {
     /// - Parameter color: Underline color. Defaults to textColor.
     /// - Parameter style: Underline style. Defaults to single line.
     /// - Returns: New TextStyle with underline.
-    public func underlined(color: Color? = nil, style: NSUnderlineStyle = .single) -> TextStyle {
+    func underlined(color: Color? = nil, style: NSUnderlineStyle = .single) -> TextStyle {
         return self.with(
             newUnderlineStyle: style,
             newUnderlineColor: color ?? textColor

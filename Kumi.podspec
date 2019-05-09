@@ -19,7 +19,7 @@ This framework provides all the values for fonts and colors you need to apply a 
   s.license          = 'MIT'
   s.author           = { "Prolific Interactive" => "info@prolificinteractive.com" }
   s.source           = { :git => "https://github.com/prolificinteractive/Kumi-iOS.git", :tag => s.version.to_s }
-
+  s.swift_version = "5.0"
   s.ios.deployment_target = '9.0'
   s.source_files = 'Kumi/Core/**/*' ,'Kumi/Marker/**/*'
 

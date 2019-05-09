@@ -10,7 +10,7 @@ import SwiftyJSON
 
 public extension UIView {
 
-    public class func animate(withStyle style: UIViewAnimationStyle,
+    class func animate(withStyle style: UIViewAnimationStyle,
                               delay: TimeInterval = 0,
                               animations: @escaping () -> Swift.Void,
                               completion: ((Bool) -> Swift.Void)? = nil) {

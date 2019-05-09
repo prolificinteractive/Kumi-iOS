@@ -51,9 +51,9 @@ extension Rule: Equatable {
 // MARK: Hashable
 
 extension Rule: Hashable {
-
-    var hashValue: Int {
-        return openingSymbol.hashValue ^ closingSymbol.hashValue
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(openingSymbol.hashValue ^ closingSymbol.hashValue)
     }
-
+    
 }

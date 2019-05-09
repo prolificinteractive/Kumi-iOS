@@ -541,17 +541,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Prolific Interactive";
 				TargetAttributes = {
 					8EC736CB1EB28CB60087846F = {
 						CreatedOnToolsVersion = 8.3.2;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					8EC736D41EB28CB60087846F = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 5ZZ7W4SB26;
+						DevelopmentTeam = 7J5JZ3G2QB;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -559,10 +559,11 @@
 			};
 			buildConfigurationList = 8EC736C61EB28CB60087846F /* Build configuration list for PBXProject "Kumi" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 8EC736C21EB28CB60087846F;
 			productRefGroup = 8EC736CD1EB28CB60087846F /* Products */;
@@ -618,7 +619,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kumi/Kumi.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -629,7 +630,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D8759F2CF40E51A495AC2621 /* [CP] Check Pods Manifest.lock */ = {
@@ -747,6 +748,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -809,6 +811,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -878,7 +881,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -899,7 +902,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.Kumi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -907,12 +910,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0251124A7024710B80B393FE /* Pods-KumiTests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
+				DEVELOPMENT_TEAM = 7J5JZ3G2QB;
 				INFOPLIST_FILE = KumiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.KumiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -920,12 +923,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C969D8DFF51173F62569A900 /* Pods-KumiTests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
+				DEVELOPMENT_TEAM = 7J5JZ3G2QB;
 				INFOPLIST_FILE = KumiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.KumiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

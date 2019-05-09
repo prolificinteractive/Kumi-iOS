@@ -9,7 +9,7 @@
 import SwiftyJSON
 
 public extension JSON {
-    public var cgFloat: CGFloat? {
+    var cgFloat: CGFloat? {
         if let double = kumiValue.double {
             return CGFloat(double)
         }
@@ -19,7 +19,7 @@ public extension JSON {
         return nil
     }
     
-    public var cgFloatValue: CGFloat {
+    var cgFloatValue: CGFloat {
         return CGFloat(kumiValue.floatValue)
     }
     
@@ -31,7 +31,6 @@ public extension JSON {
         return string.split(separator: ".").map { String($0) }
     }
     
-    @available(*, deprecated, message: "No longer available")
     private var atBegins: JSON? {
         if let string = string, string[0] == "@" {
             return Kumi._json[path(from: string)].kumiValue
@@ -39,7 +38,7 @@ public extension JSON {
         return nil
     }
     
-    public var kumiValue: JSON {
+    var kumiValue: JSON {
         if let val = self["@"].string {
              do {
                 var result = try Kumi._json[path(from: val)].kumiValue.merged(with: self)
@@ -58,59 +57,59 @@ public extension JSON {
         return self
     }
     
-    public var color: UIColor? {
+    var color: UIColor? {
         return UIColor(json: self)
     }
     
-    public var colorValue: UIColor {
+    var colorValue: UIColor {
         return color ?? .white
     }
     
-    public var textStyleSetValue: TextStyleSet {
+    var textStyleSetValue: TextStyleSet {
         return TextStyleSet(json: kumiValue)
     }
     
-    public var textStyleValue: TextStyle {
+    var textStyleValue: TextStyle {
         return TextStyle(json: kumiValue)
     }
     
-    public var layerStyleValue: LayerStyle {
+    var layerStyleValue: LayerStyle {
         return LayerStyle(json: kumiValue)
     }
     
-    public var layerStyleSetValue: LayerStyleSet {
+    var layerStyleSetValue: LayerStyleSet {
         return LayerStyleSet(json: kumiValue)
     }
     
-    public var caBasicAnimationStyleValue: CABasicAnimationStyle {
+    var caBasicAnimationStyleValue: CABasicAnimationStyle {
         return CABasicAnimationStyle(json: kumiValue)
     }
     
-    public var uiViewAnimationStyle: UIViewAnimationStyle {
+    var uiViewAnimationStyle: UIViewAnimationStyle {
         return UIViewAnimationStyle(json: kumiValue)
     }
     
-    public var sizeValue: CGSize {
+    var sizeValue: CGSize {
         return CGSize(json: kumiValue)
     }
     
-    public var transform3DValue: CATransform3D {
+    var transform3DValue: CATransform3D {
         return CATransform3D(json: kumiValue)
     }
     
-    public var edgeInsetsValue: UIEdgeInsets {
+    var edgeInsetsValue: UIEdgeInsets {
         return UIEdgeInsets(json: kumiValue)
     }
     
-    public var stackViewAlignment: UIStackView.Alignment {
+    var stackViewAlignment: UIStackView.Alignment {
         return UIStackView.Alignment(json: kumiValue)
     }
     
-    public var contentModeValue: UIView.ContentMode {
+    var contentModeValue: UIView.ContentMode {
         return UIView.ContentMode(json: kumiValue)
     }
     
-    public var textAlignmentValue: NSTextAlignment {
+    var textAlignmentValue: NSTextAlignment {
         return NSTextAlignment.fromString(string: kumiValue.stringValue)
     }
 }
