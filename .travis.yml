@@ -3,10 +3,10 @@
 # # * https://github.com/supermarin/xcpretty#usage
 #
 language: objective-c
-osx_image: xcode9
+osx_image: xcode10
 cache: cocoapods
 env:
-- SWIFT_VERSION=4.0
+- SWIFT_VERSION=4.2
 podfile: Podfile
 before_install:
 #- gem install cocoapods # Since Travis is not always on latest version

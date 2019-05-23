@@ -44,7 +44,7 @@ class TextStyleTests: XCTestCase {
         XCTAssertEqual(textStyle.paragraphSpacingBefore, 3.0)
         XCTAssertEqual(textStyle.textAlignment, .left)
         XCTAssertEqual(textStyle.lineBreakMode, .byTruncatingTail)
-        XCTAssertEqual(textStyle.strikethroughStyle, .styleNone)
+        XCTAssertEqual(textStyle.strikethroughStyle, .none)
     }
 
 }

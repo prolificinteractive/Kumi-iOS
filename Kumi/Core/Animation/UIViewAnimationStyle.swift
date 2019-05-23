@@ -22,10 +22,14 @@ public struct UIViewAnimationStyle {
 
     /// The view animation velocity.
     public let velocity: CGFloat
-
+    
     /// The view animation options.
+    #if swift(>=4.2)
+    public let options: UIView.AnimationOptions
+    #else
     public let options: UIViewAnimationOptions
-
+    #endif
+    
     /// Initializes the view animation style.
     ///
     /// - Parameters:
@@ -34,6 +38,19 @@ public struct UIViewAnimationStyle {
     ///   - dampingRatio: The damping ratio to use.
     ///   - velocity: The velocity to use.
     ///   - options: The options to use.
+    #if swift(>=4.2)
+    public init(duration: TimeInterval,
+    delay: TimeInterval = 0,
+    dampingRatio: CGFloat = 1,
+    velocity: CGFloat = 0,
+    options: UIView.AnimationOptions = [.allowUserInteraction]) {
+    self.duration = duration
+    self.delay = delay
+    self.dampingRatio = dampingRatio
+    self.velocity = velocity
+    self.options = options
+    }
+    #else
     public init(duration: TimeInterval,
                 delay: TimeInterval = 0,
                 dampingRatio: CGFloat = 1,
@@ -45,5 +62,6 @@ public struct UIViewAnimationStyle {
         self.velocity = velocity
         self.options = options
     }
-
+    #endif
+    
 }

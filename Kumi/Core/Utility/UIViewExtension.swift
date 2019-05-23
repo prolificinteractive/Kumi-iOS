@@ -11,12 +11,12 @@ import UIKit
 public extension UIView {
 
     public class func animate(withStyle style: UIViewAnimationStyle,
-                              delay: TimeInterval?,
+                              delay: TimeInterval = 0,
                               animations: @escaping () -> Swift.Void,
                               completion: ((Bool) -> Swift.Void)? = nil) {
 
         animate(withDuration: style.duration,
-                delay: delay != nil ? delay! : 0,
+                delay: delay,
                 usingSpringWithDamping: style.dampingRatio,
                 initialSpringVelocity: style.velocity,
                 options: style.options,
