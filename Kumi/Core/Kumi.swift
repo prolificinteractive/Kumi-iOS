@@ -22,6 +22,9 @@ public struct Kumi {
     /// Functionals object.
     fileprivate static var _functionals = JSON({})
     
+    /// View source
+    fileprivate static var _viewSource = JSON({})
+    
     // public
     
     public static var constants: JSON {
@@ -36,11 +39,16 @@ public struct Kumi {
         return _functionals
     }
     
+    public static var viewSource: JSON {
+        return _viewSource
+    }
+    
     public static func setup(withJSON json: JSON) {
         _json = json
         _constants = json["constants"]
         _generics = Generics(json: json["generics"])
         _functionals = json["functionals"]
+        _viewSource = json["viewSource"]
     }
 }
 
