@@ -8,6 +8,7 @@
 
 import Foundation
 import Marker
+import SwiftyJSON
 
 private extension TextTransform {
 

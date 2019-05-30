@@ -6,6 +6,8 @@
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
+import SwiftyJSON
+
 extension JSON {
     var cgFloat: CGFloat? {
         if let double = double {

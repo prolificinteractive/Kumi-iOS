@@ -7,6 +7,7 @@
 //
 
 import Marker
+import SwiftyJSON
 
 /// Text styles used throughout the app.
 public final class FontTheme {

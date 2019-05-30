@@ -5,6 +5,7 @@
 //  Created by VIRAKRI JINANGKUL on 6/4/17.
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
+import SwiftyJSON
 
 extension UIViewAnimationStyle {
 
