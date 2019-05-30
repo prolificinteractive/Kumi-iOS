@@ -538,20 +538,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kumi/Kumi.framework",
 				"${BUILT_PRODUCTS_DIR}/Marker/Marker.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kumi.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Marker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D8759F2CF40E51A495AC2621 /* [CP] Check Pods Manifest.lock */ = {
