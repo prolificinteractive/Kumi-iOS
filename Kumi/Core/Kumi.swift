@@ -43,6 +43,10 @@ public struct Kumi {
         return _viewSource
     }
     
+    public static var root: JSON {
+        return _json
+    }
+    
     public static func setup(withJSON json: JSON) {
         _json = json
         _constants = json["constants"]
