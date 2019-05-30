@@ -6,8 +6,7 @@
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
-/// Kumi layer theme.
-import SwiftyJSON
+/// Kumi layer theme
 
 public final class LayerTheme {
 

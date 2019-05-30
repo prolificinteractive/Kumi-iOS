@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 extension ColorSet {
     

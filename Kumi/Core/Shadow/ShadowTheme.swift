@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 
 /// Defines an interface for fonts used in the app.
 public final class ShadowTheme {
