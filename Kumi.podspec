@@ -21,7 +21,8 @@ This framework provides all the values for fonts and colors you need to apply a 
   s.source           = { :git => "https://github.com/prolificinteractive/Kumi-iOS.git", :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'Kumi/Core/**/*', 'Kumi/SwiftyJSON-4.2.0/Source/*'
+  s.source_files = 'Kumi/Core/**/*'
 
   s.dependency 'Marker'
+  s.dependency 'SwiftyJSON'
 end
