@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 
 /// Kumi color theme.
 public final class ColorTheme {

@@ -66,6 +66,7 @@
 		90FBCCAB1FCDE32500BDBEF1 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBCCAA1FCDE32500BDBEF1 /* JSONHelper.swift */; };
 		90FBCCAD1FCDEC1E00BDBEF1 /* SwiftyJSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBCCAC1FCDEC1E00BDBEF1 /* SwiftyJSONHelper.swift */; };
 		AB5CCF0B6D9EB7BB0CA58726 /* Pods_Kumi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4CF5A50CF18BF86C3F0A5E /* Pods_Kumi.framework */; };
+		DC9779B822A01BA400057B69 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97796922A01BA400057B69 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,8 @@
 		96B214361F8486E6AC17A2EE /* Pods_KumiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2015E1EE26E9062197C1AA4 /* Pods-Kumi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kumi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kumi/Pods-Kumi.debug.xcconfig"; sourceTree = "<group>"; };
 		C969D8DFF51173F62569A900 /* Pods-KumiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC97796922A01BA400057B69 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		DC97796C22A01BA400057B69 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
 		FC4CF5A50CF18BF86C3F0A5E /* Pods_Kumi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kumi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -237,6 +240,7 @@
 			children = (
 				8EC736CF1EB28CB60087846F /* Kumi.h */,
 				8EC7371F1EB291C70087846F /* Core */,
+				DC97795222A01B9E00057B69 /* SwiftyJSON-4.2.0 */,
 				8EC736D01EB28CB60087846F /* Info.plist */,
 			);
 			path = Kumi;
@@ -381,6 +385,23 @@
 			path = Shadow;
 			sourceTree = "<group>";
 		};
+		DC97795222A01B9E00057B69 /* SwiftyJSON-4.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				DC97796822A01BA400057B69 /* Source */,
+			);
+			path = "SwiftyJSON-4.2.0";
+			sourceTree = "<group>";
+		};
+		DC97796822A01BA400057B69 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DC97796922A01BA400057B69 /* SwiftyJSON.swift */,
+				DC97796C22A01BA400057B69 /* SwiftyJSON.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		F32D11083DE4B5B87424B869 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,7 +494,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 8EC736C21EB28CB60087846F;
 			productRefGroup = 8EC736CD1EB28CB60087846F /* Products */;
@@ -538,20 +561,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kumi/Kumi.framework",
 				"${BUILT_PRODUCTS_DIR}/Marker/Marker.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kumi.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Marker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KumiTests/Pods-KumiTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D8759F2CF40E51A495AC2621 /* [CP] Check Pods Manifest.lock */ = {
@@ -594,6 +615,7 @@
 				8EC737971EB3CBA90087846F /* LayerStyle.swift in Sources */,
 				8EC7376B1EB3984B0087846F /* UIColor+JSON.swift in Sources */,
 				1544875D1EE4D3A800DCD7A9 /* AnimationTheme.swift in Sources */,
+				DC9779B822A01BA400057B69 /* SwiftyJSON.swift in Sources */,
 				8EC737961EB3CBA90087846F /* FontTheme.swift in Sources */,
 				8EC7374E1EB292A10087846F /* AnimationDuration.swift in Sources */,
 				90DBE9F41FC4B330008C6914 /* ColorSet+JSON.swift in Sources */,

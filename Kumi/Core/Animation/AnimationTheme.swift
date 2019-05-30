@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 
 /// Animation theme.
 public final class AnimationTheme {

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SwiftyJSON
+import Kumi
 
 /// JSON errors
 ///

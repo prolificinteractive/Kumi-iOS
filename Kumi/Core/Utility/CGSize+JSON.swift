@@ -6,8 +6,6 @@
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
 //
 
-import SwiftyJSON
-
 extension CGSize {
 
     init?(json: JSON) {
