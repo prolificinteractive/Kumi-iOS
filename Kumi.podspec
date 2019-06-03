@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Kumi"
-  s.version          = "0.0.6"
+  s.version          = "0.0.7"
   s.summary          = "An iOS framework for easy theme integration to your application"
 
   s.description      = <<-DESC
@@ -21,7 +21,7 @@ This framework provides all the values for fonts and colors you need to apply a 
   s.source           = { :git => "https://github.com/prolificinteractive/Kumi-iOS.git", :tag => s.version.to_s }
   s.swift_version = "5.0"
   s.ios.deployment_target = '9.0'
-  s.source_files = 'Kumi/Core/**/*' ,'Kumi/Marker/**/*'
+  s.source_files = 'Sources/Kumi/Core/**/*' ,'Sources/Kumi/Marker/**/*'
 
   s.dependency 'SwiftyJSON'
 end

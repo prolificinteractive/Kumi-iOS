@@ -202,8 +202,8 @@
 		8EC736C21EB28CB60087846F = {
 			isa = PBXGroup;
 			children = (
-				8EC736CE1EB28CB60087846F /* Kumi */,
-				8EC736D91EB28CB70087846F /* KumiTests */,
+				904D868422A5D8B0003490D2 /* Tests */,
+				904D868322A5D88C003490D2 /* Sources */,
 				8EC736CD1EB28CB60087846F /* Products */,
 				F32D11083DE4B5B87424B869 /* Pods */,
 				5F79F9AF9E8405D517EA61F7 /* Frameworks */,
@@ -347,6 +347,22 @@
 				8EC737911EB3CBA90087846F /* ShadowTheme.swift */,
 			);
 			path = Shadow;
+			sourceTree = "<group>";
+		};
+		904D868322A5D88C003490D2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8EC736CE1EB28CB60087846F /* Kumi */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		904D868422A5D8B0003490D2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8EC736D91EB28CB70087846F /* KumiTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		90A3412C21AA454B00788705 /* Generics */ = {
@@ -874,7 +890,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Kumi/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Kumi/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.Kumi;
@@ -896,7 +912,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Kumi/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Kumi/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prolificinteractive.Kumi;
